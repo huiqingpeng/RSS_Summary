@@ -180,11 +180,24 @@ def format_content(content: str) -> str:
     formatted_parts = []
     for section in sections:
         if section.startswith('【'):
-            # This is a section header, wrap it in strong tag
-            formatted_parts.append(f'<strong>{section}</strong>')
+            # This is a section header, extract the title
+            title = section.strip('【】')
+            formatted_parts.append(f'<div class="summary-section"><h4>{title}</h4>')
         elif section.strip():
-            # This is content, wrap in p tag
-            formatted_parts.append(f'<p>{section.strip()}</p>')
+            # Split Chinese and English
+            text = section.strip()
+            # Try to split by finding where English starts (after Chinese with period or at the end)
+            parts = re.split(r'(\s+[A-Z][a-z])', text, maxsplit=1)
+
+            if len(parts) >= 3:
+                # Has both Chinese and English
+                chinese = parts[0].strip()
+                english = ''.join(parts[1:]).strip()
+                formatted_parts.append(f'<div class="lang-zh">{chinese}</div>')
+                formatted_parts.append(f'<div class="lang-en">{english}</div></div>')
+            else:
+                # Just one language
+                formatted_parts.append(f'<div class="lang-zh">{text}</div></div>')
 
     return '\n'.join(formatted_parts)
 
@@ -313,6 +326,10 @@ def build_site():
     # Create a custom filter for basename
     def _basename(path):
         return os.path.basename(path)
+
+    # Format content for all articles
+    for article in articles:
+        article['content'] = format_content(article['content'])
 
     env = Environment(autoescape=select_autoescape(['html', 'xml']))
     env.filters['basename'] = _basename

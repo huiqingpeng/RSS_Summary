@@ -6,8 +6,10 @@
     <title>Implementing Falcon-H1 Hybrid Architecture in NVIDIA Megatron Core - RSS AI Digest</title>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
-    <meta name="description" content="&lt;strong&gt;【是什么 / What it is】&lt;/strong&gt;
-&lt;p&gt;本文介绍了阿布扎比技术创新研究所（TII）如何将其Falcon-H1混合架构和BitNet量化技术集成到NVIDIA Megatron Core训练框架中。Falcon-H1采用独特的并行设计，将Transformer注意力机制与Mamba-2状态空间模型（SSM）在同一层内并行运行，而非传统的顺序堆叠；同时TII还贡献...">
+    <meta name="description" content="&lt;div class=&#34;lang-zh&#34;&gt;&lt;div class=&#34;summary-section&#34;&gt;&lt;h4&gt;是什么 /&lt;/div&gt;
+&lt;div class=&#34;lang-en&#34;&gt;What it is&lt;/h4&gt;
+&lt;div class=&#34;lang-zh&#34;&gt;本文介绍了阿布扎比技术创新研究所（TII）如何将其Falcon-H1混合架构和BitNet量化技术集成到NVIDIA&lt;/div&gt;
+&lt;div class=...">
 </head>
 <body>
     <header>
@@ -30,22 +32,26 @@
             </header>
 
             <div class="article-content">
-                <strong>【是什么 / What it is】</strong>
-<p>本文介绍了阿布扎比技术创新研究所（TII）如何将其Falcon-H1混合架构和BitNet量化技术集成到NVIDIA Megatron Core训练框架中。Falcon-H1采用独特的并行设计，将Transformer注意力机制与Mamba-2状态空间模型（SSM）在同一层内并行运行，而非传统的顺序堆叠；同时TII还贡献了1.58比特的Falcon Edge模型支持，使Megatron Core能够训练极端量化的LLM。
+                <div class="lang-zh"><div class="summary-section"><h4>是什么 /</div>
+<div class="lang-en">What it is</h4>
+<div class="lang-zh">本文介绍了阿布扎比技术创新研究所（TII）如何将其Falcon-H1混合架构和BitNet量化技术集成到NVIDIA</div>
+<div class="lang-en">Megatron Core训练框架中。Falcon-H1采用独特的并行设计，将Transformer注意力机制与Mamba-2状态空间模型（SSM）在同一层内并行运行，而非传统的顺序堆叠；同时TII还贡献了1.58比特的Falcon Edge模型支持，使Megatron Core能够训练极端量化的LLM。
 
 This article describes how the Technology Innovation Institute (TII) integrated its Falcon-H1 hybrid architecture and BitNet quantization into NVIDIA's Megatron Core training framework. Falcon-H1 features a unique parallel design that runs Transformer attention and Mamba-2 state-space models (SSM) simultaneously within each layer rather than sequential stacking; TII also contributed 1.58-bit Falcon Edge model support, enabling Megatron Core to train extremely quantized LLMs.
 
----</p>
-<strong>【为什么重要 / Why it matters】</strong>
-<p>这一集成展示了开源大模型生态系统的协作演进：Megatron Core从NVIDIA内部工具转变为社区驱动的框架，而TII的贡献证明了复杂自定义架构（如异构混合层、非可学习μP乘数）可以系统化地扩展主流训练基础设施。同时，BitNet集成标志着1比特LLM训练从研究概念走向规模化工业实践，可能显著降低训练成本和推理能耗。
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一集成展示了开源大模型生态系统的协作演进：Megatron</div>
+<div class="lang-en">Core从NVIDIA内部工具转变为社区驱动的框架，而TII的贡献证明了复杂自定义架构（如异构混合层、非可学习μP乘数）可以系统化地扩展主流训练基础设施。同时，BitNet集成标志着1比特LLM训练从研究概念走向规模化工业实践，可能显著降低训练成本和推理能耗。
 
 This integration demonstrates the collaborative evolution of open-source LLM ecosystems: Megatron Core has transformed from an NVIDIA-internal tool to a community-driven framework, and TII's contributions prove that complex custom architectures—such as heterogeneous hybrid layers and non-learnable μP multipliers—can systematically extend mainstream training infrastructure. Meanwhile, BitNet integration marks the transition of 1-bit LLM training from research concept to scalable industrial practice, potentially reducing training costs and inference energy consumption dramatically.
 
----</p>
-<strong>【我能用什么 / How I can use it】</strong>
-<p>开发者可参考TII的**两仓库协作模式**（Megatron Core提供原语层、Megatron Bridge实现完整模型）来集成自己的混合架构；具体可借鉴`ParallelHybridLayer`实现并行层设计，或利用`ModuleSpec`扩展机制自定义层类型组合。对于量化研究，可直接复用`BitNetColumnParallelLinear`等层在保持张量并行兼容的同时引入极端量化，或基于Triton内核开发自定义量化算子。
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可参考TII的**两仓库协作模式**（Megatron</div>
+<div class="lang-en">Core提供原语层、Megatron Bridge实现完整模型）来集成自己的混合架构；具体可借鉴`ParallelHybridLayer`实现并行层设计，或利用`ModuleSpec`扩展机制自定义层类型组合。对于量化研究，可直接复用`BitNetColumnParallelLinear`等层在保持张量并行兼容的同时引入极端量化，或基于Triton内核开发自定义量化算子。
 
-Developers can reference TII's **two-repo collaboration pattern** (Megatron Core for primitives, Megatron Bridge for full models) to integrate their own hybrid architectures; specifically, adapt `ParallelHybridLayer` for parallel layer designs or leverage the `ModuleSpec` extension mechanism for custom layer type combinations. For quantization research, reuse layers like `BitNetColumnParallelLinear` to introduce extreme quantization while maintaining tensor-parallel compatibility, or develop custom quantization operators based on Triton kernels.</p>
+Developers can reference TII's **two-repo collaboration pattern** (Megatron Core for primitives, Megatron Bridge for full models) to integrate their own hybrid architectures; specifically, adapt `ParallelHybridLayer` for parallel layer designs or leverage the `ModuleSpec` extension mechanism for custom layer type combinations. For quantization research, reuse layers like `BitNetColumnParallelLinear` to introduce extreme quantization while maintaining tensor-parallel compatibility, or develop custom quantization operators based on Triton kernels.</div></div></div></div>
             </div>
 
             <div class="article-footer">

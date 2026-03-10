@@ -9,7 +9,7 @@ sources:
 
   - name: "Bootlin Blog"
     slug: "bootlin"
-    url: "https://bootlin.com/blog/feed/"
+    url: "https://bootlin.com/blog/feed/index.xml"
     category: "embedded"
 
   - name: "Hackaday"

@@ -383,6 +383,41 @@ header .stat-divider {
     border-left: 3px solid var(--primary-color);
 }
 
+/* Summary Section Styling */
+.summary-section {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.summary-section h4 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.lang-zh {
+    margin-bottom: 10px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.lang-en {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: 12px;
+    border-left: 3px solid var(--secondary-color);
+    opacity: 0.9;
+}
+
 .article-content strong {
     font-weight: 700;
     color: var(--primary-color);
