@@ -101,7 +101,7 @@ INDEX_TEMPLATE = '''<!DOCTYPE html>
                         {{ article.content | truncate(300) }}
                     </div>
                     <div class="article-actions">
-                        <a href="{{ article.published }}/{{ article.filename }}" class="read-more">Read Summary →</a>
+                        <a href="{{ article.published }}/{{ article.filename }}" class="read-more">Summary</a>
                         <a href="{{ article.url }}" target="_blank" class="original-link">Original Article</a>
                     </div>
                 </article>
@@ -153,7 +153,7 @@ ARTICLE_TEMPLATE = '''<!DOCTYPE html>
             </header>
 
             <div class="article-content">
-                {{ article.content }}
+                {{ article.content | safe }}
             </div>
 
             <div class="article-footer">
@@ -175,6 +175,23 @@ ARTICLE_TEMPLATE = '''<!DOCTYPE html>
     </footer>
 </body>
 </html>'''
+
+
+def format_content(content: str) -> str:
+    """Format content by splitting into paragraphs based on 【 markers."""
+    # Split by 【 which marks different sections
+    sections = re.split(r'(【[^】]+】)', content)
+
+    formatted_parts = []
+    for section in sections:
+        if section.startswith('【'):
+            # This is a section header, wrap it in strong tag
+            formatted_parts.append(f'<strong>{section}</strong>')
+        elif section.strip():
+            # This is content, wrap in p tag
+            formatted_parts.append(f'<p>{section.strip()}</p>')
+
+    return '\n'.join(formatted_parts)
 
 
 def parse_article_metadata(markdown: str) -> Dict:
@@ -332,6 +349,9 @@ def build_site():
 
             # Generate filename
             filename = article['filename']
+
+            # Format content with proper paragraph breaks
+            article['content'] = format_content(article['content'])
 
             html = article_template.render(article=article)
 

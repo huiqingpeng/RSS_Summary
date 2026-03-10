@@ -6,11 +6,8 @@
     <title>LeRobot v0.5.0: Scaling Every Dimension - RSS AI Digest</title>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
-    <meta name="description" content="【是什么 / What it is】
-
-LeRobot v0.5.0 是 Hugging Face 开源机器人学习框架的重大版本更新，在硬件支持、策略模型、数据处理和仿真环境四个维度实现全面扩展。这是该项目迄今为止最大的发布，包含 200 多个合并的 PR 和 50 多位新贡献者，首次引入人形机器人支持（Unitree G1）以及多种新的视觉-语言-动作（VLA）策略模型。
-
-LeRobot v0...">
+    <meta name="description" content="&lt;strong&gt;【是什么 / What it is】&lt;/strong&gt;
+&lt;p&gt;LeRobot v0.5.0 是 Hugging Face 开源机器人学习框架的重大版本更新，在硬件支持、策略模型、数据处理和仿真环境四个维度实现全面扩展。这是该项目迄今为止最大的发布，包含 200 多个合并的 PR 和 50 多位新贡献者，首次引入人形机器人支持（Unitree G1）以及多种新的视觉-语言-动作（VL...">
 </head>
 <body>
     <header>
@@ -33,23 +30,18 @@ LeRobot v0...">
             </header>
 
             <div class="article-content">
-                【是什么 / What it is】
+                <strong>【是什么 / What it is】</strong>
+<p>LeRobot v0.5.0 是 Hugging Face 开源机器人学习框架的重大版本更新，在硬件支持、策略模型、数据处理和仿真环境四个维度实现全面扩展。这是该项目迄今为止最大的发布，包含 200 多个合并的 PR 和 50 多位新贡献者，首次引入人形机器人支持（Unitree G1）以及多种新的视觉-语言-动作（VLA）策略模型。
 
-LeRobot v0.5.0 是 Hugging Face 开源机器人学习框架的重大版本更新，在硬件支持、策略模型、数据处理和仿真环境四个维度实现全面扩展。这是该项目迄今为止最大的发布，包含 200 多个合并的 PR 和 50 多位新贡献者，首次引入人形机器人支持（Unitree G1）以及多种新的视觉-语言-动作（VLA）策略模型。
+LeRobot v0.5.0 is a major release of Hugging Face's open-source robot learning framework, achieving comprehensive expansion across four dimensions: hardware support, policy models, data processing, and simulation environments. This is the project's largest release to date, featuring over 200 merged PRs and 50+ new contributors, introducing for the first time humanoid robot support (Unitree G1) and multiple new Vision-Language-Action (VLA) policy models.</p>
+<strong>【为什么重要 / Why it matters】</strong>
+<p>此次发布标志着开源机器人学习从实验室级机械臂向通用具身智能的关键跃迁，人形机器人支持与自回归 VLA 模型的回归（Pi0-FAST）大幅拓宽了可研究的机器人类型和任务复杂度。实时分块推理（RTC）和流式视频编码等技术优化直接针对真实部署中的延迟痛点，使学术研究更易转化为实际应用。
 
-LeRobot v0.5.0 is a major release of Hugging Face&#39;s open-source robot learning framework, achieving comprehensive expansion across four dimensions: hardware support, policy models, data processing, and simulation environments. This is the project&#39;s largest release to date, featuring over 200 merged PRs and 50+ new contributors, introducing for the first time humanoid robot support (Unitree G1) and multiple new Vision-Language-Action (VLA) policy models.
+This release marks a critical leap for open-source robot learning from lab-grade robotic arms toward general-purpose embodied AI, with humanoid support and the return of autoregressive VLAs (Pi0-FAST) dramatically expanding the types of robots and task complexity that can be studied. Technical optimizations like Real-Time Chunking (RTC) and streaming video encoding directly address latency pain points in real-world deployment, making it easier to translate academic research into practical applications.</p>
+<strong>【我能用什么 / How I can use it】</strong>
+<p>研究者可通过 `lerobot-train --policy.type=pi0_fast` 快速实验最新的自回归 VLA 策略，或利用 LoRA 微调大模型适配特定机器人；开发者可借助 EnvHub 直接从 Hugging Face Hub 加载仿真环境，结合 RTC 配置实现低延迟的实机部署；数据收集团队则应启用 `streaming_encoding=True` 和 `video_backend="auto"` 消除录制等待时间，提升数据生产效率。
 
-【为什么重要 / Why it matters】
-
-此次发布标志着开源机器人学习从实验室级机械臂向通用具身智能的关键跃迁，人形机器人支持与自回归 VLA 模型的回归（Pi0-FAST）大幅拓宽了可研究的机器人类型和任务复杂度。实时分块推理（RTC）和流式视频编码等技术优化直接针对真实部署中的延迟痛点，使学术研究更易转化为实际应用。
-
-This release marks a critical leap for open-source robot learning from lab-grade robotic arms toward general-purpose embodied AI, with humanoid support and the return of autoregressive VLAs (Pi0-FAST) dramatically expanding the types of robots and task complexity that can be studied. Technical optimizations like Real-Time Chunking (RTC) and streaming video encoding directly address latency pain points in real-world deployment, making it easier to translate academic research into practical applications.
-
-【我能用什么 / How I can use it】
-
-研究者可通过 `lerobot-train --policy.type=pi0_fast` 快速实验最新的自回归 VLA 策略，或利用 LoRA 微调大模型适配特定机器人；开发者可借助 EnvHub 直接从 Hugging Face Hub 加载仿真环境，结合 RTC 配置实现低延迟的实机部署；数据收集团队则应启用 `streaming_encoding=True` 和 `video_backend=&#34;auto&#34;` 消除录制等待时间，提升数据生产效率。
-
-Researchers can quickly experiment with the latest autoregressive VLA policies via `lerobot-train --policy.type=pi0_fast`, or use LoRA to fine-tune large models for specific robots; developers can leverage EnvHub to load simulation environments directly from Hugging Face Hub and configure RTC for low-latency real-world deployment; data collection teams should enable `streaming_encoding=True` and `video_backend=&#34;auto&#34;` to eliminate recording wait times and improve data production efficiency.
+Researchers can quickly experiment with the latest autoregressive VLA policies via `lerobot-train --policy.type=pi0_fast`, or use LoRA to fine-tune large models for specific robots; developers can leverage EnvHub to load simulation environments directly from Hugging Face Hub and configure RTC for low-latency real-world deployment; data collection teams should enable `streaming_encoding=True` and `video_backend="auto"` to eliminate recording wait times and improve data production efficiency.</p>
             </div>
 
             <div class="article-footer">
