@@ -1,0 +1,31 @@
+# Sensitive API Configuration
+# This file contains secrets - DO NOT commit to version control
+
+# Git
+.git/
+*.log
+rss-digest.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+config/api_keys.yaml
+data/seen.json

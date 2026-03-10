@@ -1,0 +1,75 @@
+sources:
+  # ============================================================
+  # 1. 嵌入式系统与底层硬核开发
+  # ============================================================
+  - name: "CNX Software"
+    slug: "cnx-software"
+    url: "https://www.cnx-software.com/feed/"
+    category: "embedded"
+
+  - name: "Bootlin Blog"
+    slug: "bootlin"
+    url: "https://bootlin.com/blog/feed/"
+    category: "embedded"
+
+  - name: "Hackaday"
+    slug: "hackaday"
+    url: "https://hackaday.com/blog/feed/"
+    category: "embedded"
+
+  - name: "NVIDIA Developer Blog"
+    slug: "nvidia-dev"
+    url: "https://developer.nvidia.com/blog/feed/"
+    category: "embedded"
+
+  # ============================================================
+  # 2. 人工智能与大语言模型（LLM）前沿
+  # ============================================================
+  - name: "Hugging Face Blog"
+    slug: "huggingface"
+    url: "https://huggingface.co/blog/feed.xml"
+    category: "ai"
+
+  - name: "HuggingFace Daily Papers"
+    slug: "huggingface-papers"
+    url: "https://rsshub.app/huggingface/daily-papers"
+    category: "ai"
+
+  # ============================================================
+  # 3. 技术视野与团队领导力
+  # ============================================================
+  - name: "The Pragmatic Engineer"
+    slug: "pragmaticengineer"
+    url: "https://newsletter.pragmaticengineer.com/feed"
+    category: "tech"
+
+  - name: "Will Larson (StaffEng)"
+    slug: "lethain"
+    url: "https://lethain.com/feeds/"
+    category: "tech"
+
+  # ============================================================
+  # 4. 宏观周期与财务投资
+  # ============================================================
+  - name: "SCMP Business"
+    slug: "scmp-business"
+    url: "https://www.scmp.com/rss/91/feed"
+    category: "finance"
+
+  # ============================================================
+  # 5. 科学健康与生活方式
+  # ============================================================
+  - name: "Examine.com"
+    slug: "examine"
+    url: "https://examine.com/feed/"
+    category: "health"
+
+  - name: "Sprudge"
+    slug: "sprudge"
+    url: "https://sprudge.com/feed/"
+    category: "lifestyle"
+
+  - name: "Perfect Daily Grind"
+    slug: "pdg"
+    url: "https://perfectdailygrind.com/feed/"
+    category: "lifestyle"

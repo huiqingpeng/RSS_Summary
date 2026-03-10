@@ -1,0 +1,23 @@
+---
+title: "China vows to stabilise oil and gas output in new 5-year plan as global risks mount"
+source: "SCMP Business"
+url: "https://www.scmp.com/economy/global-economy/article/3345995/china-vows-stabilise-oil-and-gas-output-new-5-year-plan-global-risks-mount?utm_source=rss_feed"
+published: "2026-03-09"
+summarized: "2026-03-10T12:58:05.861166"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+中国在其第15个五年计划中承诺稳定油气产量，目标到2030年将能源总产能提升至58亿吨标准煤当量，较第14个五年计划的46亿吨目标大幅提升。该计划强调通过中长期战略行动扩大储备、提高产量，以应对中东局势不稳和油价突破100美元带来的全球能源供应风险。
+
+China has committed to stabilizing oil and gas production in its 15th five-year plan, targeting total energy production capacity of 5.8 billion tonnes of standard coal equivalent by 2030, up from the 14th plan's goal of 4.6 billion tonnes. The plan emphasizes expanding reserves and increasing output through medium- and long-term strategic actions to address global energy supply risks arising from Middle East instability and oil prices breaching US$100 per barrel.
+
+【为什么重要 / Why it matters】
+此举标志着中国将能源安全置于国家战略核心位置，在全球地缘政治风险加剧和能源供应链脆弱的背景下，通过强化自给自足能力来降低外部依赖。该计划不仅反映了中国对长期能源供需失衡的预判，也预示着全球能源格局中"安全优先于转型"的政策转向趋势。
+
+This signals China's placement of energy security at the core of national strategy, strengthening self-sufficiency to reduce external dependency amid intensifying geopolitical risks and fragile energy supply chains. The plan reflects China's anticipation of long-term energy supply-demand imbalances and foreshadows a global policy shift toward "security over transition" in energy planning.
+
+【我能用什么 / How I can use it】
+能源行业从业者可关注中国战略油气产区（如新疆、渤海湾、四川盆地）的投资与技术服务机会；企业供应链管理者应评估关键原材料的能源成本波动风险，建立多元化采购策略；研究人员可深入分析"保供"政策与"双碳"目标之间的平衡机制，探索传统能源与新能源协同发展的技术路径。
+
+Energy sector professionals should monitor investment and technical service opportunities in China's strategic oil and gas production bases (e.g., Xinjiang, Bohai Bay, Sichuan Basin); corporate supply chain managers should assess energy cost volatility risks for key materials and build diversified sourcing strategies; researchers can analyze the balancing mechanism between "supply security" policies and "dual carbon" goals, exploring technical pathways for synergistic development of traditional and new energy sources.

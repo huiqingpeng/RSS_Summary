@@ -1,0 +1,38 @@
+ai:
+  # Provider: "claude" or "openai"
+  provider: "openai"
+  model_claude: "claude-opus-4-6"
+  # Sensitive config moved to config/api_keys.yaml
+  max_tokens: 1000
+  language: "bilingual"
+
+schedule:
+  interval_hours: 6
+
+storage:
+  seen_file: "data/seen.json"
+  articles_dir: "articles"
+  summaries_dir: "summaries"
+
+git:
+  auto_push: true
+  remote: "origin"
+  branch: "main"
+
+logging:
+  level: "INFO"
+  file: "rss-digest.log"
+
+# Error handling
+retry:
+  max_attempts: 2
+  timeout_seconds: 30
+
+# Content limits
+content:
+  max_chars_for_ai: 8000  # Truncate articles longer than this before sending to AI
+
+# Date filter
+fetch:
+  # Only fetch articles from the last N days (0 = no limit)
+  max_days_back: 2
