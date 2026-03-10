@@ -2,8 +2,7 @@ ai:
   # Provider: "claude" or "openai"
   provider: "openai"
   model_claude: "claude-opus-4-6"
-  # Sensitive config moved to config/api_keys.yaml
-  max_tokens: 1000
+  # Sensitive config (api_key, api_base_url, model_openai, max_tokens) moved to config/api_keys.yaml
   language: "bilingual"
 
 schedule:
