@@ -1,0 +1,20 @@
+---
+title: "CityU professor convicted of offering HK$1,000 bribe to avoid tenancy payout"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3346075/cityu-professor-convicted-offering-hk1000-bribe-avoid-tenancy-payout?utm_source=rss_feed"
+published: "2026-03-10"
+summarized: "2026-03-10T15:34:28.382278"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+香港城市大学一名48岁经济学副教授杜杜（Du Du）因试图向地产代理行贿1000港元以避免支付1.6万港元违约赔偿，被沙田法院裁定"向代理人提供利益"罪名成立。案件源于2022年11月，该教授在签署临时租约当天反悔，声称受不当影响，并以"朋友"身份请求中介私下解决，被法院驳称其"备忘录无法律约束力"的辩解不可信。
+A 48-year-old associate professor of economics and finance at City University of Hong Kong, Du Du, was convicted of offering a HK$1,000 bribe to a property agent to avoid paying HK$16,000 in tenancy breach compensation. The case originated in November 2022 when the professor backed out of a provisional tenancy agreement on the same day of signing, claiming undue influence and asking the agent to settle "as a friend," but the court rejected his defense that the contract was merely a non-binding memorandum.
+
+【为什么重要 / Why it matters】
+此案揭示了高学历专业人士同样可能因法律认知盲区或侥幸心理而触犯贿赂罪行，1000港元小额贿赂与1.6万港元违约金的悬殊对比更凸显其风险判断失误。同时，香港对"向代理人提供利益"的严格执法表明，即便金额微小、意图"私了"，任何形式的利益输送均可能构成刑事犯罪，对学术界诚信及专业人士合规意识具有警示意义。
+This case reveals that highly educated professionals can still commit bribery offenses due to legal blind spots or侥幸心理 (wishful thinking), with the stark contrast between the HK$1,000 bribe and HK$16,000 compensation highlighting his flawed risk assessment. Meanwhile, Hong Kong's strict enforcement against "offering an advantage to an agent" demonstrates that any form of benefit transfer, however small or intended as a private settlement, may constitute a criminal offense—serving as a warning for academic integrity and professional compliance awareness.
+
+【我能用什么 / How I can use it】
+专业人士应建立"合同即法律约束力"的基本认知，签署任何文件前务必审阅条款，反悔时通过正规法律途径而非私下协商解决；可借此案例完善机构合规培训，强化"小额贿赂同样入刑"的警示教育。对跨境工作者而言，需特别注意香港《防止贿赂条例》的严格适用范围，避免以内地"人情往来"思维处理商业纠纷。
+Professionals should establish the fundamental understanding that "contracts carry legal binding force," carefully reviewing terms before signing any documents and resorting to proper legal channels rather than private negotiations when reversing decisions; institutions can use this case to enhance compliance training, reinforcing that "small bribes are equally punishable." For cross-border workers, particular attention should be paid to Hong Kong's strict Prevention of Bribery Ordinance, avoiding mainland-style "personal favor" approaches to commercial disputes.

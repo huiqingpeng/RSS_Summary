@@ -88,21 +88,16 @@ INDEX_TEMPLATE = '''<!DOCTYPE html>
                 </h2>
                 {% for article in date_articles %}
                 <article class="article-card" data-source="{{ article.source }}">
-                    <h3>
-                        <a href="{{ article.published }}/{{ article.filename }}">
-                            {{ article.title }}
-                        </a>
-                    </h3>
-                    <div class="meta">
+                    <div class="card-header">
+                        <h3>
+                            <a href="{{ article.url }}" target="_blank">
+                                {{ article.title }}
+                            </a>
+                        </h3>
                         <span class="source-tag">{{ article.source }}</span>
-                        <span class="date">{{ article.published }}</span>
                     </div>
-                    <div class="summary-preview">
-                        {{ article.content | truncate(300) }}
-                    </div>
-                    <div class="article-actions">
-                        <a href="{{ article.published }}/{{ article.filename }}" class="read-more">Summary</a>
-                        <a href="{{ article.url }}" target="_blank" class="original-link">Original Article</a>
+                    <div class="summary-full">
+                        {{ article.content | safe }}
                     </div>
                 </article>
                 {% endfor %}
