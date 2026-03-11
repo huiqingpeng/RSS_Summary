@@ -185,20 +185,33 @@ def format_content(content: str) -> str:
             title = section.strip('【】')
             formatted_parts.append(f'<div class="summary-section"><h4>{title}</h4>')
         elif section.strip():
-            # Split Chinese and English
             text = section.strip()
-            # Try to split by finding where English starts (after Chinese with period or at the end)
-            parts = re.split(r'(\s+[A-Z][a-z])', text, maxsplit=1)
 
-            if len(parts) >= 3:
-                # Has both Chinese and English
-                chinese = parts[0].strip()
-                english = ''.join(parts[1:]).strip()
+            # First try: split at Chinese period + capital letter
+            match = re.search(r'。([A-Z])', text)
+            if match:
+                split_idx = match.start() + 1
+                chinese = text[:split_idx].strip()
+                english = text[split_idx:].strip()
                 formatted_parts.append(f'<div class="lang-zh">{chinese}</div>')
                 formatted_parts.append(f'<div class="lang-en">{english}</div></div>')
             else:
-                # Just one language
-                formatted_parts.append(f'<div class="lang-zh">{text}</div></div>')
+                # Second try: split by blank line (Chinese paragraph then English)
+                # Look for pattern: Chinese text ending with 。 then blank line then English
+                lines = text.split('\n\n')
+                if len(lines) >= 2:
+                    # Check if first part is Chinese and second starts with capital letter
+                    first_line = lines[0].strip()
+                    rest = '\n\n'.join(lines[1:]).strip()
+
+                    # Check if first part is Chinese (contains Chinese characters) and second is English
+                    if re.search(r'[\u4e00-\u9fff]', first_line) and re.match(r'[A-Z]', rest):
+                        formatted_parts.append(f'<div class="lang-zh">{first_line}</div>')
+                        formatted_parts.append(f'<div class="lang-en">{rest}</div></div>')
+                    else:
+                        formatted_parts.append(f'<div class="lang-zh">{text}</div></div>')
+                else:
+                    formatted_parts.append(f'<div class="lang-zh">{text}</div></div>')
 
     return '\n'.join(formatted_parts)
 
