@@ -1,0 +1,30 @@
+---
+title: "SolidRun P100 COM Express Type 6 module features LPCAMM2 memory, up to 12-core AMD Ryzen AI Embedded P185 SoC"
+source: "CNX Software"
+url: "https://www.cnx-software.com/2026/03/12/solidrun-p100-com-express-type-6-module-features-lpcamm2-memory-up-to-12-core-amd-ryzen-ai-embedded-p185-soc/"
+published: "2026-03-11"
+summarized: "2026-03-12T07:00:48.690222"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+SolidRun 发布了 P100 系列 COM Express Type 6 计算机模块，这是首批支持 AMD 最新 8-12 核 Zen 5 架构 Ryzen AI Embedded P100 系列 SoC 的嵌入式模块之一，采用 95×95mm 紧凑尺寸，集成最高 50 TOPS NPU 算力，并创新性地支持 LPCAMM2 LPDDR5X 内存接口，专为高振动工业场景设计。
+
+SolidRun has released the P100 series COM Express Type 6 computer-on-module, among the first embedded modules to support AMD's latest 8-12 core Zen 5 architecture Ryzen AI Embedded P100 series SoCs. Featuring a compact 95×95mm form factor with up to 50 TOPS NPU performance, it innovatively adopts LPCAMM2 LPDDR5X memory interface designed specifically for high-vibration industrial environments.
+
+---
+
+【为什么重要 / Why it matters】
+
+该模块代表了边缘 AI 计算的重要演进：Zen 5 架构 + RDNA 3.5 显卡 + 50 TOPS NPU 的组合使单模块即可承载 80 TOPS 系统级 AI 算力，满足 AMR 自主移动机器人、重型机械、轨道交通等"运动中的系统"对实时 AI 决策的严苛需求；LPCAMM2 内存的螺丝锁定机制解决了传统 SO-DIMM 在高振动环境下的可靠性难题，同时 10 年供货保证契合工业/汽车长生命周期需求。
+
+This module represents a significant evolution in edge AI computing: the combination of Zen 5 architecture, RDNA 3.5 graphics, and 50 TOPS NPU enables 80 TOPS system-level AI performance in a single module, meeting demanding real-time AI decision requirements for "systems in motion" such as AMRs, heavy machinery, and rail systems. The screw-lock LPCAMM2 memory mechanism solves reliability issues of traditional SO-DIMM in high-vibration environments, while the 10-year longevity commitment aligns with industrial/automotive lifecycle requirements.
+
+---
+
+【我能用什么 / How I can use it】
+
+开发者可立即获取 HoneyComb Mini-ITX 开发套件进行原型验证，利用其 PCIe x16 扩展槽、双 2.5GbE 网口和丰富显示接口快速搭建 AMR 导航、工业视觉检测或多屏车载信息娱乐系统；软件层面可结合 AMD ROCm 开源栈与 Xen 虚拟化参考架构，实现实时任务与标准 OS 的混合部署——建议关注 2026 年 7 月上市的 8-12 核高性能型号（P164-P185），同时评估 -40°C 至 +105°C 工业/汽车级变体是否匹配具体场景的温度需求。
+
+Developers can immediately obtain the HoneyComb Mini-ITX development kit for prototyping, leveraging its PCIe x16 slot, dual 2.5GbE ports, and rich display interfaces to quickly build AMR navigation, industrial vision inspection, or multi-screen automotive infotainment systems. On the software side, combine AMD ROCm open stack with Xen virtualization reference architecture for hybrid deployment of real-time tasks alongside standard OS—recommend monitoring the high-performance 8-12 core models (P164-P185) launching July 2026, and evaluating whether -40°C to +105°C industrial/automotive variants match specific temperature requirements.

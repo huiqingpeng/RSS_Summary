@@ -1,0 +1,20 @@
+---
+title: "Chile’s Boric leaves office, calls for unity after split with successor over China cable"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/china/diplomacy/article/3346275/chiles-boric-leaves-office-calls-unity-after-split-successor-over-china-cable?utm_source=rss_feed"
+published: "2026-03-11"
+summarized: "2026-03-12T07:06:13.261748"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+智利总统加布里埃尔·博里奇（Gabriel Boric）结束四年任期卸任，在最后时刻与继任者何塞·安东尼奥·卡斯特（José Antonio Kast）因"智利-中国快线"海底光缆项目爆发公开争执。该项目由中国移动国际支持，计划连接智利港口城市孔孔与香港，引发美国强烈反对，成为博里奇任期尾声的核心争议。
+Chilean President Gabriel Boric concluded his four-year term, ending with a public feud against successor José Antonio Kast over the "Chile-China Express" undersea fibre-optic cable project. Backed by China Mobile International to link Chile's port city of Concon to Hong Kong, the project enraged the US and dominated Boric's final weeks in office.
+
+【为什么重要 / Why it matters】
+此事件凸显拉丁美洲在中美地缘政治竞争中的战略困境——基础设施投资与盟友关系之间的张力日益加剧。卡斯特作为意识形态亲特朗普的极右翼领导人上台，预示着智利外交政策可能向美国倾斜，同时反映全球数字基础设施正成为大国博弈的新战场。
+This episode highlights Latin America's strategic dilemma amid US-China rivalry, where infrastructure investments clash with alliance politics. Kast's victory as a far-right leader ideologically aligned with Trump signals a potential US-leaning shift in Chilean foreign policy, while underscoring how global digital infrastructure has become a new arena for great power competition.
+
+【我能用什么 / How I can use it】
+技术从业者应关注跨境数字基础设施项目的地缘政治风险评估，将"技术主权"纳入商业决策框架；投资者可追踪拉美国家5G、数据中心及海底电缆领域的政策转向，识别中美技术脱钩带来的市场重构机会；政策研究者则需建立"基础设施-外交联动"分析模型，预判政权更迭对大型项目的冲击。
+Tech professionals should incorporate geopolitical risk assessment into cross-border digital infrastructure projects, embedding "technological sovereignty" into business frameworks. Investors can track policy shifts in Latin America's 5G, data center, and submarine cable sectors to identify market restructuring opportunities from US-China tech decoupling. Policy researchers need to build "infrastructure-diplomacy linkage" models to anticipate how regime changes impact major projects.
