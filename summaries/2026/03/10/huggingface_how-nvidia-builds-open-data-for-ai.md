@@ -1,0 +1,30 @@
+---
+title: "How NVIDIA Builds Open Data for AI"
+source: "Hugging Face Blog"
+url: "https://huggingface.co/blog/nvidia/open-data-for-ai"
+published: "2026-03-10"
+summarized: "2026-03-11T09:04:32.835113"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+NVIDIA正在通过发布开放数据集、训练配方和评估框架来构建AI开放数据生态，以解决AI开发中数据层不透明、碎片化的问题。截至目前，NVIDIA已在HuggingFace上分享了超过2PB的AI就绪训练数据，涵盖180多个数据集和650多个开放模型，横跨机器人、自动驾驶、生物信息学、合成数据等多个领域。
+
+NVIDIA is building an open data ecosystem for AI by releasing permissively licensed datasets, training recipes, and evaluation frameworks to address the opacity and fragmentation of data layers in AI development. To date, NVIDIA has shared over 2 petabytes of AI-ready training data across more than 180 datasets and 650+ open models on HuggingFace, spanning robotics, autonomous vehicles, biology, synthetic data, and more.
+
+---
+
+【为什么重要 / Why it matters】
+
+高质量数据集是AI开发的最大瓶颈之一，组织常需花费数百万美元和数月甚至超过一年的时间来收集、标注和验证数据。开放数据访问为开发者提供了更快、更具成本效益的路径来构建高质量模型，同时使跨生态系统的评估和改进变得更加容易，这对于越来越自主的智能体系统的安全性和可信度至关重要。
+
+High-quality datasets remain one of the largest bottlenecks in AI development, with organizations often spending millions of dollars and months or even over a year on data collection, annotation, and validation before training begins. Open data access offers developers a faster and more cost-effective path to building high-quality models while making evaluation and improvement easier across the ecosystem—critical for the safety and trustworthiness of increasingly autonomous agentic systems.
+
+---
+
+【我能用什么 / How I can use it】
+
+开发者可以直接在HuggingFace上获取NVIDIA的开放数据集（如用于机器人学的GR00T数据集、用于检索增强生成的NVDocs数据集、用于蛋白质设计的La Proteina等），配合GitHub上的训练配方和评估框架立即开始构建。对于特定领域应用，可参考Nemotron Personas的合成数据方法，用最少专有数据启动领域特定智能；或利用CLIMB算法优化数据混合策略，如ClimbMix所示可减少约33%的计算时间。
+
+Developers can directly access NVIDIA's open datasets on HuggingFace (such as the GR00T dataset for robotics, NVDocs for RAG, La Proteina for protein design) and start building immediately with training recipes and evaluation frameworks on GitHub. For domain-specific applications, consider adopting the Nemotron Personas synthetic data approach to bootstrap domain intelligence with minimal proprietary data, or leverage the CLIMB algorithm for data mixture optimization—as demonstrated by ClimbMix, which reduced compute time by roughly 33%.

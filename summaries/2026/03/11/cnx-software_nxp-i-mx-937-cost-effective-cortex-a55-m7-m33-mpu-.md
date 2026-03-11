@@ -1,0 +1,30 @@
+---
+title: "NXP i.MX 937 cost-effective Cortex-A55/M7/M33 MPU is a drop-in replacement for NXP i.MX 95 SoC family"
+source: "CNX Software"
+url: "https://www.cnx-software.com/2026/03/11/nxp-i-mx-937-cost-effective-cortex-a55-m7-m33-mpu-is-a-drop-in-replacement-for-nxp-i-mx-95-soc-family/"
+published: "2026-03-11"
+summarized: "2026-03-11T09:00:38.639256"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+NXP i.MX 937 是一款面向 HMI（人机界面）和边缘 AI 应用的 1.4 GHz 四核 Cortex-A55 微处理器，定位在入门级 i.MX 93 与高端 i.MX 95 系列之间，并与 i.MX 95 系列引脚兼容。它集成 Cortex-M7 实时核心、Cortex-M33 低功耗管理核心、Mali G310 GPU、1080p 视频编解码单元以及 2 eTOPS 的 NPU，预计 2027 年 Q1 上市。
+
+The NXP i.MX 937 is a 1.4 GHz quad-core Cortex-A55 microprocessor for HMI and Edge AI applications, positioned between the entry-level i.MX 93 and high-end i.MX 95 families while being pin-to-pin compatible with the latter. It integrates a Cortex-M7 real-time core, Cortex-M33 low-power manager, Mali G310 GPU, 1080p video codec, and a 2 eTOPS NPU, with availability expected in Q1 2027.
+
+---
+
+【为什么重要 / Why it matters】
+
+该芯片的核心价值在于"无缝扩展"——开发者可在统一软硬件生态中根据成本或性能需求灵活升降级，无需重新设计硬件。其引脚兼容性和共享 BSP/安全架构显著降低了产品开发周期和供应链风险，同时覆盖工业级到车规级的宽温范围，使其成为多领域边缘 AI 应用的理想平台。
+
+Its key value lies in "seamless scalability"—developers can flexibly upgrade or downgrade based on cost/performance needs within a unified software/hardware ecosystem without hardware redesign. The pin compatibility and shared BSP/security architecture significantly reduce development cycles and supply chain risks, while wide temperature ranges from industrial to automotive grades make it ideal for multi-domain Edge AI applications.
+
+---
+
+【我能用什么 / How I can use it】
+
+若正在开发工业 HMI、智能座舱或边缘 AI 设备，可提前评估 i.MX 937 作为 i.MX 95 的降本替代方案，或作为 i.MX 93 的性能升级路径；关注 2026 年底的 FRDM 开发板以提前验证设计；利用其统一的 Linux/Android BSP 和 EdgeLock 安全架构，实现产品线的快速迭代与合规认证。
+
+For industrial HMI, smart cockpit, or Edge AI device development, evaluate i.MX 937 early as a cost-down alternative to i.MX 95 or performance upgrade from i.MX 93; watch for the late-2026 FRDM board to validate designs ahead of time; leverage its unified Linux/Android BSP and EdgeLock security architecture for rapid product iteration and compliance certification across product lines.

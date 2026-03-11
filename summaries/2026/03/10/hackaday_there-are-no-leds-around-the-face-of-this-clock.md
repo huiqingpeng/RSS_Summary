@@ -1,0 +1,30 @@
+---
+title: "There Are No LEDs Around the Face of This Clock"
+source: "Hackaday"
+url: "https://hackaday.com/2026/03/10/there-are-no-leds-around-the-face-of-this-clock/"
+published: "2026-03-10"
+summarized: "2026-03-11T09:02:21.875386"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+这是一款由 Moritz v. Sivers 设计的独特时钟，表面看似带有 LED 光环的全息表盘，实则完全由全息技术实现——表盘是反射全息图，"LED 环"则是由 60 次独立曝光制成的透射全息图，真正的 LED 被隐藏在后部，通过精确角度照射来选择性点亮不同位置，营造出 LED 存在的错觉。
+
+This is a unique clock designed by Moritz v. Sivers that appears to have a holographic dial surrounded by an LED ring, but is actually realized entirely through holography—the face is a reflection hologram, while the "LED ring" is a transmission hologram made of 60 separate exposures. The actual LEDs are hidden behind the visible area and selectively illuminate different positions at precise angles, creating the illusion of lit LEDs where none exist.
+
+---
+
+【为什么重要 / Why it matters】
+
+这项技术展示了全息图作为显示介质的潜力——无需物理 LED 即可模拟发光效果，开辟了光学伪装和新型显示技术的可能性。它体现了精密光学工程与创意设计的结合，为交互装置、艺术设计和未来人机界面提供了全新思路。
+
+This technique demonstrates the potential of holograms as display media—simulating luminous effects without physical LEDs, opening possibilities for optical camouflage and novel display technologies. It exemplifies the fusion of precision optical engineering and creative design, offering fresh directions for interactive installations, artistic projects, and future human-machine interfaces.
+
+---
+
+【我能用什么 / How I can use it】
+
+可借鉴其"隐藏光源+光学重构"的原理，在装置艺术中创造虚实难辨的视觉效果；或研究多曝光全息技术，开发低功耗、无像素结构的动态显示方案；亦可关注 Moritz 的其他全息时钟项目，探索全息术在信息展示中的创新应用。
+
+One can borrow its principle of "hidden light sources + optical reconstruction" to create visually deceptive effects in installation art; or study multi-exposure holography to develop low-power, pixel-free dynamic display solutions. Following Moritz's other holographic clock projects also offers inspiration for innovative applications of holography in information display.
