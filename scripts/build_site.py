@@ -81,9 +81,10 @@ INDEX_TEMPLATE = '''<!DOCTYPE html>
         <div class="articles-list" id="articles-list">
             {% for date, date_articles in articles_by_date.items() %}
             <section class="date-group">
-                <h2 class="date-header">
+                <h2 class="date-header{% if date == today %} today{% endif %}">
                     <span class="date-icon">📅</span>
                     {{ date }}
+                    {% if date == today %}<span class="new-badge">NEW</span>{% endif %}
                     <span class="article-count">{{ date_articles|length }}</span>
                 </h2>
                 {% for article in date_articles %}
@@ -336,10 +337,12 @@ def build_site():
 
     try:
         index_template = env.from_string(INDEX_TEMPLATE)
+        today = datetime.now().strftime('%Y-%m-%d')
         index_html = index_template.render(
             articles=articles,
             articles_by_date=articles_by_date,
-            sources=sources
+            sources=sources,
+            today=today
         )
 
         with open(DOCS_DIR / 'index.html', 'w', encoding='utf-8') as f:
