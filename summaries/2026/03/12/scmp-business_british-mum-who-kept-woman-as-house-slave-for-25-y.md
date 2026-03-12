@@ -1,0 +1,30 @@
+---
+title: "British mum who kept woman as ‘house slave’ for 25 years is jailed"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/world/europe/article/3346416/british-mother-jailed-keeping-woman-house-slave-25-years?utm_source=rss_feed"
+published: "2026-03-12"
+summarized: "2026-03-13T07:07:18.494977"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+这是一起发生在英国格洛斯特郡的现代奴役案件。56岁的母亲阿曼达·威克森（Amanda Wixon）在1995年至2021年间，将一名有学习障碍的弱势女性囚禁在家中长达25年，强迫其从事家务劳动并实施身体虐待。2024年1月，威克森因非法拘禁、现代奴役罪及人身伤害罪被判入狱13年。
+
+This is a modern slavery case that occurred in Gloucestershire, UK. Amanda Wixon, a 56-year-old mother of 10, imprisoned a vulnerable woman with learning disabilities in her home from 1995 to 2021, forcing her to perform domestic labor while subjecting her to physical abuse. In January 2024, Wixon was sentenced to 13 years in prison for false imprisonment, modern slavery offenses, and assault causing actual bodily harm.
+
+---
+
+【为什么重要 / Why it matters】
+
+此案揭示了现代奴役犯罪往往隐藏于普通家庭之中，受害者因身心障碍更易被长期控制而难以逃脱。它警示社会需加强对弱势群体的保护机制，同时表明司法系统对现代奴役犯罪的惩处力度正在加强。
+
+This case reveals that modern slavery crimes often hide within ordinary households, where victims with physical or mental disabilities are more easily controlled for extended periods and find it harder to escape. It warns society of the need to strengthen protection mechanisms for vulnerable groups while demonstrating that the justice system is intensifying penalties for modern slavery offenses.
+
+---
+
+【我能用什么 / How I can use it】
+
+可关注身边弱势群体（如残障人士、移民劳工）的处境，发现异常及时向相关机构举报；了解本地反人口贩卖和现代奴役的求助热线与法律渠道；在职场或社区中推动反奴役意识教育，帮助识别隐蔽的剥削迹象。
+
+One can pay attention to the conditions of vulnerable groups nearby (such as people with disabilities or migrant workers), report abnormalities promptly to relevant authorities; learn about local anti-trafficking and modern slavery helplines and legal channels; and promote anti-slavery awareness education in workplaces or communities to help identify hidden signs of exploitation.

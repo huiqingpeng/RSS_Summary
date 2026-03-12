@@ -1,0 +1,27 @@
+---
+title: "American military bleeds US$11.3 billion in first week of Iran war: report"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/world/united-states-canada/article/3346376/american-military-bleeds-us113-billion-first-week-iran-war-report?utm_source=rss_feed"
+published: "2026-03-12"
+summarized: "2026-03-13T07:10:36.407389"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+这是一篇关于美国对伊朗军事行动"史诗狂怒行动"(Operation Epic Fury)首周成本的新闻报道。文章援引五角大楼闭门简报、CSIS智库估算及实时追踪网站等多方数据，披露美军在开战第一周即消耗超过113亿美元，日均花费高达10亿美元，且大量支出未纳入原有预算。
+
+This is a news report on the first-week costs of the US military operation against Iran, codenamed "Operation Epic Fury." It cites multiple sources—including a closed-door Pentagon briefing, CSIS think tank estimates, and a real-time cost tracker—to reveal that the US military spent over US$11.3 billion in the opening week, burning through approximately US$1 billion per day, with significant portions unbudgeted.
+
+---
+
+【为什么重要 / Why it matters】
+这一数据揭示了现代高科技战争的惊人资源消耗速度——仅前两天就耗费56亿美元弹药，远超此前公开预估，反映出精确制导武器库存压力和国防预算的结构性缺口。同时，未计入的长期成本（如退伍军人医疗）和未预算支出暗示实际财政负担可能被严重低估，对国会拨款决策和军事可持续性构成重大挑战。
+
+These figures expose the staggering resource consumption rate of modern high-tech warfare—US$5.6 billion in munitions expended in just two days, far exceeding earlier public estimates—highlighting pressures on precision-guided weapon stockpiles and structural gaps in defense budgeting. Meanwhile, unbudgeted costs and excluded long-term liabilities such as veteran healthcare suggest the true fiscal burden may be severely underestimated, posing major challenges to congressional appropriations and military sustainability.
+
+---
+
+【我能用什么 / How I can use it】
+可将此案例用于分析现代战争经济学、国防采购效率或预算透明度议题，对比不同冲突的成本结构（如伊拉克/阿富汗战争）以评估军事干预的财政可持续性。对于政策研究者或投资者，可追踪国防承包商股票与弹药库存补充周期，或开发实时战争成本可视化工具以提升公众财政意识；写作者则可借此探讨"隐形战争税"与代际公平等伦理议题。
+
+This case can be used to analyze modern war economics, defense procurement efficiency, or budget transparency—comparing cost structures across conflicts (e.g., Iraq/Afghanistan) to assess the fiscal sustainability of military interventions. For policy researchers or investors, one might track defense contractor equities and ammunition replenishment cycles, or develop real-time war cost visualization tools to enhance public fiscal literacy; writers could leverage this to explore ethical issues such as "hidden war taxes" and intergenerational equity.
