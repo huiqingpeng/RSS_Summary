@@ -1,0 +1,27 @@
+---
+title: "In a first for China, Neuracle’s implantable brain-computer interface wins approval"
+source: "SCMP Business"
+url: "https://www.scmp.com/business/banking-finance/article/3346495/first-china-neuracles-implantable-brain-computer-interface-wins-approval?utm_source=rss_feed"
+published: "2026-03-13"
+summarized: "2026-03-14T07:10:31.956638"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+中国初创公司Neuracle（宁矩科技）的植入式脑机接口（BCI）手运动功能系统获得国家药监局批准，成为全球首款可作为商业产品销售并用于患者的侵入式BCI设备。该系统由清华大学生物医学工程博士徐宏来于2011年创立的公司开发，是一种硬币大小的无线装置，放置于大脑表面而非穿透脑组织，用于读取神经信号并转化为手部动作。Neuracle上月已启动科创板IPO进程，与中信证券签署辅导协议。
+
+Neuracle, a Chinese BCI startup founded by Tsinghua PhD Xu Honglai in 2011, received approval from China's National Medical Products Administration for its implantable BCI hand motor function system—marking the world's first commercial invasive BCI product for patient use. The coin-sized wireless device sits on the brain's surface without penetrating tissue, reading neural signals to translate them into hand movements. The company has also initiated its IPO process on Shanghai's Star Market with Citic Securities.
+
+---
+
+【为什么重要 / Why it matters】
+此次批准标志着中国在侵入式脑机接口商业化领域首次领先全球，打破了Neuralink等美国公司的技术垄断预期，同时反映了中国监管机构对前沿医疗技术的积极支持态度。随着监管放开和资本涌入，中国BCI初创企业正加速发展，相关概念股已出现显著上涨，预示着该产业可能复制新能源、电动车等领域的国产替代路径。这也为全球BCI行业竞争格局带来重大变数，技术商业化速度或成为关键分水岭。
+
+This approval marks China's first global lead in commercializing invasive BCIs, disrupting expectations of American dominance by Neuralink and demonstrating proactive regulatory support for cutting-edge medical technology. With regulatory backing and capital inflows, Chinese BCI startups are accelerating—evidenced by surging stock prices of related companies—potentially replicating the domestic substitution path seen in EVs and renewable energy. This significantly reshapes global BCI competition, making commercialization speed a critical differentiator.
+
+---
+
+【我能用什么 / How I can use it】
+对于投资者，可关注科创板BCI概念股及Neuracle IPO进展，评估国产替代主题下的早期布局机会；对于医疗/科技从业者，可研究其"非穿透性"技术路径与Neuralink全侵入方案的差异，探索临床应用的合作或差异化创新空间；对于技术观察者，建议持续跟踪中国NMPA与FDA在BCI审批节奏上的对比，这将成为判断全球产业格局演变的重要风向标。
+
+For investors: monitor Star Market BCI stocks and Neuracle's IPO progress for early positioning in domestic substitution themes. For medical/tech professionals: study its "non-penetrating" approach versus Neuralink's fully invasive design to identify collaboration or differentiated innovation opportunities. For technology observers: track NMPA-FDA approval pace comparisons as a key indicator for evolving global industry dynamics.

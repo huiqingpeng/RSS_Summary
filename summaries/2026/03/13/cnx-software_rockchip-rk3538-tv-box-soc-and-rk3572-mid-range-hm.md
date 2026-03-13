@@ -1,0 +1,30 @@
+---
+title: "Rockchip RK3538 TV Box SoC and RK3572 mid-range HMI processor are coming soon"
+source: "CNX Software"
+url: "https://www.cnx-software.com/2026/03/13/rockchip-rk3538-tv-box-soc-rk3572-mid-range-hmi-processor/"
+published: "2026-03-13"
+summarized: "2026-03-14T07:01:19.161242"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+瑞芯微（Rockchip）即将推出两款中端SoC：RK3538四核Cortex-A55处理器面向电视盒子市场，RK3572六核Cortex-A73/A53处理器则专注于人机交互（HMI）应用。RK3538的详细规格已公开，支持1080p视频解码和HDMI 2.1输出；RK3572的初步信息显示其定位介于RK3568和RK3576之间，配备3 TOPS NPU和4K编解码能力。
+
+Rockchip is preparing to launch two mid-range SoCs: the RK3538 quad-core Cortex-A55 processor for TV box applications and the RK3572 hexa-core Cortex-A73/A53 SoC targeting HMI (Human Machine Interface) use cases. The RK3538's detailed specifications have been released, supporting 1080p video decoding and HDMI 2.1 output; preliminary information on the RK3572 positions it between the RK3568 and RK3576, featuring a 3 TOPS NPU and 4K encode/decode capabilities.
+
+---
+
+【为什么重要 / Why it matters】
+
+这两款芯片填补了瑞芯微产品线的中端空白，RK3538为成本敏感的流媒体设备提供现代化AV1解码支持，RK3572则为工业HMI场景带来AI推理能力与高性能CPU/GPU组合。它们的发布反映了边缘AI和智能显示市场的持续增长，同时Cortex-A73架构在能效比上的优势可能降低散热设计成本。
+
+These two chips fill the mid-range gap in Rockchip's product lineup, with the RK3538 bringing modern AV1 decoding support to cost-sensitive streaming devices and the RK3572 delivering AI inference capabilities plus high-performance CPU/GPU combinations for industrial HMI scenarios. Their release reflects the continued growth of edge AI and smart display markets, while the Cortex-A73 architecture's power efficiency advantages may reduce thermal design costs.
+
+---
+
+【我能用什么 / How I can use it】
+
+开发者可关注RK3538的RISC-V MCU特性用于低功耗协处理任务，或利用其完整的安全子系统构建DRM内容播放方案；对于RK3572，可提前评估其3 TOPS NPU在工业视觉检测、智能面板等场景的模型部署潜力，双千兆网口设计也适合边缘网关应用。建议跟踪GitHub开源社区对这两款芯片的Linux主线支持进展。
+
+Developers can leverage the RK3538's RISC-V MCU for low-power coprocessing tasks or utilize its complete security subsystem for DRM content playback solutions; for the RK3572, early evaluation of its 3 TOPS NPU for model deployment in industrial visual inspection and smart panel scenarios is recommended, while the dual Gigabit Ethernet design suits edge gateway applications. Tracking Linux mainline support progress for both chips in open-source GitHub communities is advised.

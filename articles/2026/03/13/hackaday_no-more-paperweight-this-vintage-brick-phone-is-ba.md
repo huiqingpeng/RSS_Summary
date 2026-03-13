@@ -1,0 +1,12 @@
+---
+title: "No More Paperweight: This Vintage Brick Phone Is Back Online"
+source: "Hackaday"
+url: "https://hackaday.com/2026/03/13/no-more-paperweight-this-vintage-brick-phone-is-back-online/"
+published: "2026-03-13"
+fetched: "2026-03-14T07:02:27.495803"
+---
+
+Remember those brick cellphones in the 1990s? They were comically large by today’s standards. These phones used the 1G network to communicate and, as such, have been unusable for decades now. However [Alan Boris] has resurrected this classic phone to operate today.
+Originally costing as much as today’s top-of-the-line phones, but instead of weighing just a few ounces this classic Motorola DynaTAC 8000 Classic 2 tips the scales at a hefty 1.5 lbs. [Alan Boris] decided to not just bring the electronics back to life, but to even stuff a modern cellphone inside it to make it fully functional. Given the size of this phone, finding room for the new innards wasn’t much of a challenge. In fact, after the retrofit there was less in the phone than when it started life.
+Using a perfboard and some tactile switches he was able to sense the button presses on the phone’s keypad and relay those to a Raspberry Pi Pico 2. The Pico in turn drove a small color LCD to replicate the original screen and controlled a pair of ADG729 boards used to dial the BM10 cellphone within this cellphone. The BM10 is a cellphone about the size of a 9V battery, making it easy to put inside the DynaTAC and bring the handset back to the modern cellular network.
+Thanks [Alan Boris] for the tip! Be sure to check out our other cellphone hacks as well as some of our other retrofit hacks.
