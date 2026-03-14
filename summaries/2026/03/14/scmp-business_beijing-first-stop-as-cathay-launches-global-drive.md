@@ -1,0 +1,20 @@
+---
+title: "Beijing first stop as Cathay launches global drive to hire 3,000 workers"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/hong-kong/transport/article/3346613/beijing-first-stop-cathay-launches-global-drive-hire-3000-workers?utm_source=rss_feed"
+published: "2026-03-14"
+summarized: "2026-03-15T07:08:36.300939"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+国泰航空于周六在北京启动全球招聘计划，拟在2025年招聘3,000名员工，涵盖飞行员、空乘、工程师及数字岗位，以支持其未来发展并推动入境旅游。这是该香港航空公司首次将内地作为海外招聘的首要市场，目前其内地员工已超4,000人。
+Cathay Pacific launched its global recruitment drive in Beijing on Saturday, aiming to hire 3,000 workers in 2025—including pilots, flight attendants, engineers, and digital positions—to support future development and inbound tourism. This marks the first time the Hong Kong carrier has prioritized mainland China as its top overseas recruitment market, with over 4,000 mainland employees already on staff.
+
+【为什么重要 / Why it matters】
+此举反映香港航空业加速融合内地人才市场，既缓解本地人力短缺，又借助内地庞大劳动力资源支撑国际航线扩张。同时，这标志着高端服务业（航空、数字化岗位）跨境人才流动的新趋势，为内地专业人士开辟国际化职业通道。
+This move reflects the accelerated integration of Hong Kong's aviation industry with the mainland talent pool, addressing local labor shortages while leveraging vast mainland workforce resources for international expansion. It also signals a new trend in cross-border talent mobility for high-end service sectors (aviation, digital roles), opening international career pathways for mainland professionals.
+
+【我能用什么 / How I can use it】
+航空、工程、数字化领域从业者可关注国泰等港企的内地招聘渠道，积累国际化工作经验；企业HR可借鉴其"海外首站+高校合作"模式布局跨境引才；求职者亦可留意大湾区航空业联动带来的区域职业机会。
+Aviation, engineering, and digital professionals can monitor Cathay's mainland recruitment channels to gain international work experience; corporate HR can adopt its "overseas first stop + university partnership" model for cross-border talent acquisition; job seekers may also explore regional opportunities arising from Greater Bay Area aviation industry integration.

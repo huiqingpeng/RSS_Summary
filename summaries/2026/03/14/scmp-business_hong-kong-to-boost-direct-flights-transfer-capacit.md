@@ -1,0 +1,27 @@
+---
+title: "Hong Kong to boost direct flights, transfer capacity amid Middle East turmoil"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/hong-kong/transport/article/3346588/hong-kong-boost-direct-flights-transfer-capacity-amid-middle-east-turmoil?utm_source=rss_feed"
+published: "2026-03-14"
+summarized: "2026-03-15T07:11:14.118938"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+香港运输及物流局局长陈美宝表示，当局正与航空公司协调，增加直飞航班和中转运力，将中东局势（美以与伊朗冲突）造成的航空中断转化为发展机遇。香港机场的三跑道系统及重新启用的二号客运大楼将为此提供基础设施支持。
+
+Hong Kong's Secretary for Transport and Logistics Mable Chan announced that authorities are working with airlines to increase direct flights and transfer capacity, turning aviation disruptions caused by the Middle East conflict (US-Israel war on Iran) into development opportunities. The airport's three-runway system and the reopened Terminal 2 will provide infrastructure support for this initiative.
+
+---
+
+【为什么重要 / Why it matters】
+中东局势已严重扰乱全球贸易和航空网络，凸显香港需减少对传统石油依赖、拓展供应来源的必要性。此举既能提升香港作为国际航空枢纽的竞争力，也反映了地缘政治动荡下全球供应链重构的趋势，为香港机场巩固亚太转运中心地位创造窗口期。
+
+The Middle East turmoil has severely disrupted global trade and aviation networks, highlighting the need for Hong Kong to reduce reliance on traditional oil and diversify supply sources. This move enhances Hong Kong's competitiveness as an international aviation hub and reflects the trend of global supply chain restructuring amid geopolitical instability, creating a window for the airport to solidify its position as an Asia-Pacific transit center.
+
+---
+
+【我能用什么 / How I can use it】
+关注香港至欧美新增直飞航线及中转优惠，优化商务出行或物流安排；企业可评估利用香港机场作为替代中转枢纽，规避中东航线风险；投资者可跟踪本地航空股及机场相关基建板块，把握运力扩张带来的潜在机会。
+
+Monitor new direct routes and transfer promotions between Hong Kong and Europe/US to optimize business travel or logistics arrangements; companies can evaluate using Hong Kong Airport as an alternative transit hub to mitigate Middle East route risks; investors may track local airline stocks and airport-related infrastructure sectors to capture potential opportunities from capacity expansion.
