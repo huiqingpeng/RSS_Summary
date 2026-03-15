@@ -1,0 +1,23 @@
+---
+title: "Hong Kong seeks to replace, not punish, underperforming Medical Council members"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/hong-kong/society/article/3346661/hong-kong-replace-not-punish-underperforming-medical-council-members?utm_source=rss_feed"
+published: "2026-03-15"
+summarized: "2026-03-16T07:18:35.566655"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+香港政府计划改革医务委员会（Medical Council）的运作机制，以回应公众对一宗医疗失误调查拖延15年的强烈不满。卫生局局长卢宠茂表示，修订后的《医生注册条例》草案将于今年上半年提交立法会，核心措施包括以"替换"而非"惩罚"方式处理表现不佳的成员。
+
+Hong Kong's government plans to reform the Medical Council's operations in response to public outcry over a 15-year delay in a medical blunder inquiry. Secretary for Health Lo Chung-mau announced that an amended Medical Registration Ordinance will be submitted to the Legislative Council in the first half of this year, with key measures including replacing underperforming members rather than punishing them.
+
+【为什么重要 / Why it matters】
+这一改革反映了香港在平衡专业自治与公共问责方面的治理挑战，医务委员会作为准司法机构的效率问题直接影响患者权益和医疗公信力。政府选择"替换"而非"惩罚"的温和路径，既尊重了委员志愿服务的性质，也为其他专业监管机构的改革提供了参考范式。
+
+This reform reflects Hong Kong's governance challenge in balancing professional autonomy with public accountability, as the Medical Council's efficiency as a quasi-judicial body directly impacts patient rights and medical credibility. The government's choice of "replacement" over "punishment" respects the voluntary nature of members' service while offering a reference model for reforming other professional regulatory bodies.
+
+【我能用什么 / How I can use it】
+医疗行业从业者可关注条例修订进展，理解新机制下的合规要求与职业风险；公共管理研究者可将此案例纳入"志愿性专业监管机构改革"的比较研究；患者权益倡导者则可借此推动其他延迟投诉处理机制（如法律、会计等专业团体）的透明度改革。
+
+Healthcare professionals should monitor the legislative progress to understand new compliance requirements and professional risks under the reformed mechanism. Public administration researchers can incorporate this case into comparative studies on "reform of voluntary professional regulatory bodies." Patient rights advocates can leverage this to push for transparency reforms in other delayed complaint-handling mechanisms, such as those in legal and accounting professions.
