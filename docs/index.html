@@ -15,7 +15,7 @@
             <h1><a href=".">RSS AI Digest</a></h1>
             <p class="subtitle">AI-powered article summaries from RSS feeds</p>
             <div class="stats">
-                <span class="stat-item">460 articles</span>
+                <span class="stat-item">532 articles</span>
                 <span class="stat-divider">•</span>
                 <span class="stat-item">9 sources</span>
             </div>
@@ -67,6 +67,1735 @@
         </div>
 
         <div class="articles-list" id="articles-list">
+            
+            <section class="date-group">
+                <h2 class="date-header">
+                    <span class="date-icon">📅</span>
+                    2026-03-16
+                    
+                    <span class="article-count">72</span>
+                </h2>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/week-asia/health-environment/article/3346725/malaysias-us6-billion-megaport-imperils-mah-meri-way-life?utm_source=rss_feed" target="_blank">
+                                Malaysia’s US$6 billion megaport imperils Mah Meri way of life
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章报道了马来西亚政府计划投资60亿美元扩建巴生港（Port Klang），这一大型基础设施项目威胁到雪兰莪州凯瑞岛（Pulau Carey）上Mah Meri原住民社区的渔业生计。当地渔民表示，过去五年渔获量已持续下降，而港口扩建将进一步侵占他们的传统渔场。</div>
+<div class="lang-en">This article reports on Malaysia's US$6 billion Port Klang expansion plan, a major infrastructure project that threatens the fishing livelihoods of the indigenous Mah Meri community on Pulau Carey in Selangor state. Local fishermen say their catches have already declined steadily over the past five years, and the port development will further encroach upon their traditional fishing grounds.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一案例体现了全球常见的可持续发展悖论：政府声称项目"可持续且必要"，但原住民社区却承受环境与社会成本的不对等负担。它揭示了大型基建项目中传统生计保护、原住民权益与经济发展之间的深层张力，对理解"公正转型"（just transition）议题具有典型意义。</div>
+<div class="lang-en">This case exemplifies a common global sustainability paradox: while governments claim projects are "sustainable and essential," indigenous communities bear disproportionate environmental and social costs. It reveals deep tensions between traditional livelihood protection, indigenous rights, and economic development in large-scale infrastructure—making it a telling case for understanding "just transition" issues.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可用于分析ESG投资中的社区影响评估（SIA）方法论，或作为原住民参与式规划的案例研究；也可延伸关注马来西亚《原住民土地法》与港口项目的合规性审查，以及探索"蓝色经济"框架下传统渔业与现代港口共存的可能性方案。</div>
+<div class="lang-en">It can be used to analyze Social Impact Assessment (SIA) methodologies in ESG investing, or as a case study for indigenous participatory planning; it also invites follow-up on compliance reviews between Malaysia's Aboriginal Peoples Act and port projects, as well as exploring coexistence possibilities between traditional fisheries and modern ports under a "blue economy" framework.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/" target="_blank">
+                                Introducing NVIDIA BlueField-4-Powered CMX Context Memory Storage Platform for the Next Frontier of AI
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文介绍 NVIDIA 推出的 CMX（Context Memory Storage Platform）上下文内存存储平台，这是基于 BlueField-4 处理器和 STX 参考架构的新型存储层级，专门用于解决 AI 推理中 KV 缓存（Key-Value cache）的扩展难题。随着 Agentic AI 工作负载的兴起，模型上下文窗口扩展至数百万 token，传统存储层级（G1-G4）在性能、成本和能效之间难以平衡，CMX 通过在 POD 级别创建专门的 G3.5 层级来填补这一空白。</div>
+<div class="lang-en">This article introduces NVIDIA's CMX (Context Memory Storage Platform), a new storage tier built on the BlueField-4 processor and STX reference architecture, designed to address the scaling challenges of KV cache (Key-Value cache) in AI inference. As agentic AI workloads emerge with context windows expanding to millions of tokens, traditional storage tiers (G1-G4) struggle to balance performance, cost, and energy efficiency; CMX fills this gap by creating a dedicated G3.5 tier at the POD level.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">Agentic AI 的爆发使得 KV 缓存从临时数据转变为模型的"长期记忆"，需要在多轮对话、工具和会话间持久化共享，但现有存储层级迫使企业在稀缺的 GPU HBM 与通用企业存储之间二选一，导致 GPU 利用率低下、每 token 成本飙升、功耗激增。</div>
+<div class="lang-en">CMX 通过 5 倍提升 token 吞吐量和 5 倍降低功耗，为 AI 工厂提供了可扩展、高能效的上下文存储基础设施，是支撑万亿参数模型和实时推理的关键技术突破。
+
+The explosion of agentic AI transforms KV cache from temporary data into the model's "long-term memory," requiring persistence and sharing across turns, tools, and sessions. Yet existing storage tiers force a binary choice between scarce GPU HBM and general-purpose enterprise storage, leading to underutilized GPUs, soaring per-token costs, and power consumption spikes. By delivering 5× higher token throughput and 5× better power efficiency, CMX provides scalable, energy-efficient context storage infrastructure for AI factories—a critical technical breakthrough supporting trillion-parameter models and real-time inference.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">若您正在构建或运营大规模 AI 推理基础设施，可评估将 CMX 作为 G3.5 层级整合到现有存储架构中，利用 NVIDIA Dynamo 等编排框架管理跨层级的 KV 缓存流动；对于 AI 应用开发者，应设计支持长上下文窗口和跨会话记忆保留的 Agentic 工作流，以充分利用 CMX 的预加载能力；同时关注 Vera Rubin 平台的整体架构演进，将计算、网络和存储机架作为可配置的 AI 工厂构建模块进行规划。</div>
+<div class="lang-en">If you're building or operating large-scale AI inference infrastructure, evaluate integrating CMX as a G3.5 tier into your existing storage architecture, using orchestration frameworks like NVIDIA Dynamo to manage KV cache movement across tiers; for AI application developers, design agentic workflows that support long context windows and cross-session memory retention to leverage CMX's pre-staging capabilities; also monitor the Vera Rubin platform's evolution, planning compute, networking, and storage racks as configurable building blocks for AI factories.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Sprudge">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://sprudge.com/the-sprudge-guide-to-coffee-in-hong-kong-779816.html" target="_blank">
+                                The Sprudge Guide To Coffee In Hong Kong
+                            </a>
+                        </h3>
+                        <span class="source-tag">Sprudge</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一篇介绍香港精品咖啡文化的指南文章，追溯了从1950年代港式奶茶咖啡到第三波咖啡浪潮的发展历程，并推荐了六家具有代表性的独立咖啡馆。</div>
+<div class="lang-en">This is a guide article introducing Hong Kong's specialty coffee culture, tracing its evolution from 1950s Hong Kong-style milk tea coffee to the third-wave coffee movement, while featuring six representative independent cafes.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">香港咖啡市场正面临大陆低价连锁品牌和居家咖啡的双重冲击，但精品咖啡文化仍逆势蓬勃发展，体现了消费者对品质、体验和社区连接的持续追求。</div>
+<div class="lang-en">Hong Kong's coffee market is facing dual pressures from low-priced mainland chains and home brewing, yet specialty coffee culture continues to thrive against the odds, reflecting consumers' enduring pursuit of quality, experience, and community connection.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可将这些咖啡馆作为香港旅行或商务出行的目的地清单，学习其"咖啡+威士忌""咖啡+社区互动"等跨界融合模式，或借鉴其细节设计（如杯型影响风味、冰块选择）提升个人冲煮体验。</div>
+<div class="lang-en">Use these cafes as a destination list for Hong Kong travel or business trips; learn from their cross-over models like "coffee + whiskey" or "coffee + community engagement"; or borrow their detail-oriented designs (such as cup shape affecting flavor, ice cube selection) to elevate personal brewing experiences.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/using-simulation-to-build-robotic-systems-for-hospital-automation/" target="_blank">
+                                Using Simulation to Build Robotic Systems for Hospital Automation
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文介绍了**Project Rheo**，一个由NVIDIA开发的医院自动化机器人系统开发蓝图。该方案通过数字孪生（digital twin）、仿真环境（Isaac Sim/Isaac Lab）和合成数据生成，解决医疗场景数据采集困难、安全风险高的问题，使开发者能够在虚拟医院中训练物理AI系统，再部署到真实临床环境。</div>
+<div class="lang-en">This article introduces **Project Rheo**, an NVIDIA-developed blueprint for building robotic automation systems in hospitals. It addresses the challenges of data scarcity and safety risks in healthcare settings by leveraging digital twins, simulation environments (Isaac Sim/Isaac Lab), and synthetic data generation—enabling developers to train Physical AI systems in virtual hospitals before real-world deployment.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">全球医疗系统面临结构性危机：预计到2030年临床医生缺口达1000万，数十亿诊断需求未满足，手术室效率低下每分钟损失数十美元。传统机器人训练依赖真实医院数据，但医院环境异质性强、场景复杂、安全要求极高，实地采集数据既不可行也不安全。</div>
+<div class="lang-en">Project Rheo通过"先仿真、后部署"的模式，大幅降低开发成本与临床风险，加速医疗机器人普及，有望缓解医疗资源短缺、提升护理质量并 democratize 高质量医疗服务。
+
+Global healthcare faces a structural crisis: a projected 10 million clinician shortfall by 2030, billions of unmet diagnostic needs, and OR inefficiencies costing tens of dollars per minute. Traditional robot training relies on real-world hospital data, yet clinical environments are heterogeneous, chaotic, and high-stakes—making data collection economically infeasible and unsafe. Project Rheo's "simulate-first, deploy-later" approach dramatically reduces development costs and clinical risks, accelerating medical robotics adoption to alleviate workforce shortages, improve care quality, and democratize access to high-quality healthcare.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可基于Project Rheo快速构建医院数字孪生：使用**Isaac Lab-Arena**进行场景组合（选资产+选机器人+定义任务），快速迭代OR级移动操作任务；使用**Isaac Lab**进行精密双手操作任务的强化学习训练。通过Meta Quest等设备采集专家演示数据，再利用**合成数据生成**系统性扩展数据覆盖（变换场景、光照、物体姿态等），最终输出可用于GR00T VLA模型微调或RL后训练的数据集。该模式可延伸至其他高约束、高安全要求的物理AI应用场景，如工厂、实验室或灾难救援环境。</div>
+<div class="lang-en">Developers can rapidly build hospital digital twins using Project Rheo: leverage **Isaac Lab-Arena** for scene composition (select assets + embodiment + task definition) to iterate on OR-scale loco-manipulation tasks; use **Isaac Lab** for precision bimanual manipulation with RL training. Capture expert demonstrations via Meta Quest, then systematically expand coverage through **synthetic data generation** (varying scenes, lighting, object poses) to produce datasets for GR00T VLA fine-tuning or RL post-training. This pattern extends to other high-constraint, safety-critical Physical AI domains such as factories, laboratories, or disaster response environments.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/tech/article/3346761/ai-poisoning-fake-fitness-tracker-fools-chatbots-china-sparking-outcry?utm_source=rss_feed" target="_blank">
+                                AI poisoning: fake fitness tracker fools chatbots in China, sparking outcry
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一篇关于中国央视315晚会曝光"AI投毒"（AI poisoning）现象的报道。报道揭示了不良商家如何利用生成式引擎优化（GEO）技术，通过批量发布虚假的专家评测、行业排名和用户评论，操纵AI聊天机器人的推荐结果，让虚构产品"Apollo-9"健身手环被AI推荐为优质选择。</div>
+<div class="lang-en">This article reports on China Central Television's 315 Gala exposé of "AI poisoning," revealing how bad actors exploit Generative Engine Optimization (GEO) techniques to manipulate AI chatbot recommendations. The investigation demonstrated how a system called Liqing automatically posted fabricated expert reviews, industry rankings, and user feedback to make a fictional fitness tracker "Apollo-9" appear in AI-generated top recommendations.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一事件暴露了AI信息生态系统的新漏洞：当AI模型从开放网络抓取训练数据时，恶意制造的虚假信息会污染其知识库，导致"垃圾进、垃圾出"的恶性循环。随着生成式AI成为越来越多人获取信息的主要入口，GEO操纵可能演变为比传统SEO更具破坏性的信息操控手段，亟需监管介入。</div>
+<div class="lang-en">This incident exposes a critical vulnerability in AI information ecosystems: when models scrape training data from the open web, maliciously fabricated content contaminates their knowledge bases, creating a "garbage in, garbage out" cycle. As generative AI becomes the primary information gateway for more users, GEO manipulation could evolve into a more destructive form of information control than traditional SEO, urgently requiring regulatory intervention.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">作为信息消费者，应培养"交叉验证"习惯，对AI推荐的商品或服务通过多个独立渠道核实；作为内容创作者或平台运营者，需建立内容溯源机制和AI训练数据的质量过滤流程；作为技术从业者，可关注AI对齐（AI alignment）和幻觉检测领域的研究，参与开发更具鲁棒性的信息验证工具。</div>
+<div class="lang-en">As an information consumer, cultivate a "cross-verification" habit by checking AI-recommended products or services through multiple independent channels. As a content creator or platform operator, establish content provenance mechanisms and quality filtering pipelines for AI training data. As a technology practitioner, follow research in AI alignment and hallucination detection, and contribute to developing more robust information verification tools.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/people-culture/article/3346349/how-china-ethnic-minority-groups-use-chicken-bones-small-roosters-predict-fortunes?utm_source=rss_feed" target="_blank">
+                                How China ethnic minority groups use chicken bones of small roosters to predict fortunes
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章介绍了中国西南少数民族流传数百年的"打鸡卜"（Dajibu）占卜仪式——通过锤杀公鸡并解读其股骨形态来预测吉凶祸福。该习俗可追溯至唐宋时期，源于当地缺乏医疗条件时敲击铜鼓祈愈的古老信仰，至今仍盛行于彝族、摩梭族、壮族和瑶族等群体中。</div>
+<div class="lang-en">This article introduces "Dajibu" (chicken divination), a centuries-old ritual practiced by ethnic minority groups in southwestern China where a rooster is beaten to death and its femur bones are interpreted to predict fortune. Originating from Tang and Song dynasties' spiritual beliefs tied to drum-beating for healing when medicine was unavailable, the custom remains prevalent today among groups including the Yi, Mosuo, Zhuang, and Yao.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一习俗展现了传统社会中动物作为人神沟通媒介的跨文化普遍性，同时记录了前现代医疗匮乏时期的精神应对机制。作为活态文化遗产，它为研究中国民间信仰、民族医学史及人类学的"占卜-治疗"关联提供了珍贵样本，但也引发动物伦理与传统保护之间的当代张力。</div>
+<div class="lang-en">The practice demonstrates the cross-cultural prevalence of animals as mediators between humans and spirits in traditional societies, while documenting spiritual coping mechanisms in pre-modern healthcare-scarce contexts. As living cultural heritage, it offers valuable material for studying Chinese folk beliefs, ethnic medical history, and the anthropology of "divination-healing" connections, yet also generates contemporary tension between animal ethics and tradition preservation.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可用于文化人类学课程案例、博物馆民族志展览策划，或作为探讨"传统现代化"议题的辩论素材；研究者还可对比印尼、非洲等地的骨卜传统，构建跨文化占卜体系比较研究框架。内容创作者则可将其转化为纪录片选题或沉浸式文化体验设计，但需注意呈现方式的伦理敏感性。</div>
+<div class="lang-en">It can serve as case material for cultural anthropology courses, ethnographic exhibition planning in museums, or debate fodder for "tradition modernization" topics; researchers may also compare it with bone divination in Indonesia and Africa to build cross-cultural divination system frameworks. Content creators could adapt it into documentary subjects or immersive cultural experiences, with careful attention to ethical sensitivity in presentation.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Hackaday">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://hackaday.com/2026/03/16/ask-hackaday-wired-or-wireless-headphones/" target="_blank">
+                                Ask Hackaday: Wired or Wireless Headphones?
+                            </a>
+                        </h3>
+                        <span class="source-tag">Hackaday</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文探讨了有线耳机在无线技术主导多年后重新兴起的趋势。文章分析了2025-2026年有线耳机销量激增的现象，并从音质、时尚、怀旧等多个角度探讨了这一复古潮流背后的原因。</div>
+<div class="lang-en">This article examines the resurgence of wired headphones after years of wireless dominance. It analyzes the phenomenon of exploding wired headphone sales in 2025-2026, exploring the reasons behind this retro trend from perspectives including sound quality, fashion, and nostalgia.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一趋势反映了技术消费中"功能足够好"与"体验纯粹性"之间的张力，也揭示了时尚周期对科技产品生命周期的影响力。对于音频行业和消费者而言，这意味着选择标准正在从"无线便利性"重新向"音质可靠性"和"文化表达"多元分化。</div>
+<div class="lang-en">This trend reflects the tension between "good enough functionality" and "experiential purity" in technology consumption, while revealing how fashion cycles influence tech product lifecycles. For the audio industry and consumers, it signals a diversification of selection criteria from "wireless convenience" back toward "audio reliability" and "cultural expression."
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">若拥有旧款有线耳机，可趁复古潮流高峰在二手平台溢价出售；若追求实用，选购蓝牙设备时应确认支持LDAC/aptX等现代编解码器，并注意减少信号干扰源；对创作者而言，低延迟需求场景（如视频剪辑、游戏）仍可优先考虑有线方案。</div>
+<div class="lang-en">If you own vintage wired headphones, consider selling them at a premium on secondhand platforms during this retro peak; for practical purchases, verify modern codec support (LDAC/aptX) in Bluetooth devices and minimize signal interference; for creators, prioritize wired solutions in low-latency scenarios like video editing or gaming.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Sprudge">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://sprudge.com/the-most-popular-consumer-drink-trends-are-changing-fast-809544.html" target="_blank">
+                                The Most Popular Consumer Drink Trends Are Changing Fast
+                            </a>
+                        </h3>
+                        <span class="source-tag">Sprudge</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章基于Toast POS系统（覆盖美国16万多家餐饮商户）的交易数据，分析了2024至2025年间美国消费者在咖啡店的饮品消费趋势变化，揭示了传统茶饮和滴滤咖啡销量下滑、而浓缩咖啡饮品及功能性饮料增长的现象。
+This article analyzes year-over-year changes in American consumers' beverage consumption at coffee shops and restaurants, based on transaction data from Toast's POS system covering over 160,000 food and beverage businesses, revealing declining sales of traditional teas and drip coffee alongside growth in espresso-based drinks and functional beverages.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一趋势反映了消费者行为的深层转变：在家自制饮品的便利性正在侵蚀零售端的基础品类市场，而需要专业设备的浓缩咖啡饮品仍保持零售优势；同时，功能性饮料（能量饮料、无糖汽水）的崛起表明消费者越来越注重饮品的"功效性"而非单纯的咖啡因摄入。
+This trend reflects a fundamental shift in consumer behavior: the convenience of home preparation is eroding retail market share for basic beverage categories, while espresso-based drinks requiring professional equipment maintain retail dominance; meanwhile, the rise of functional beverages signals consumers' growing prioritization of "efficacy" over mere caffeine intake.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">餐饮从业者可将资源向浓缩咖啡设备和功能性饮品菜单倾斜，同时开发"居家难以复制"的特色产品以建立竞争壁垒；投资者可关注家用咖啡设备市场及功能性饮料赛道的增长机会；个人消费者则可借此优化自己的饮品消费决策，平衡成本与体验。
+Food and beverage operators should allocate resources toward espresso equipment and functional drink menus while developing "hard-to-replicate-at-home" signature products to build competitive moats; investors may consider opportunities in home coffee equipment and functional beverage sectors; individual consumers can use these insights to optimize their own beverage consumption decisions, balancing cost and experience.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/week-asia/politics/article/3346724/myanmars-junta-proxy-parliament-meets-first-time-2021-coup?utm_source=rss_feed" target="_blank">
+                                Myanmar’s junta-proxy parliament meets for first time since 2021 coup
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">缅甸军政府代理议会自2021年政变以来首次召开会议。这个新成立的议会由军方盟友和前将军组成，旨在为被联合国和欧盟称为" sham（骗局）"的政权披上合法外衣。在仅覆盖全国三分之一地区的选举中，军方支持的联邦巩固与发展党（USDP）以仅50%的投票率赢得了81%的席位。</div>
+<div class="lang-en">Myanmar's junta-proxy parliament convened for the first time since the 2021 coup. The new assembly, stacked with military allies and ex-generals, aims to legitimize a regime branded a sham by the United Nations and EU. In an election covering barely a third of the country, the army-backed Union Solidarity and Development Party (USDP) won 81% of seats on a mere 50% turnout.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一发展标志着缅甸军方试图通过制度化的民主形式巩固权力，尽管国际社会普遍不承认其合法性。宪法保留25%议席给军队的安排，加上USDP控制的席位，使军方实际上完全掌控立法机构，包括决定总统人选的关键权力。这种模式可能成为其他威权政权"选举式威权主义"的参考案例。</div>
+<div class="lang-en">This development marks the military's attempt to consolidate power through institutionalized democratic forms, despite widespread international rejection of its legitimacy. The constitutional reservation of 25% of seats for the military, combined with USDP-controlled seats, gives the armed forces effective control over the legislature, including the crucial power to determine the presidency. This model may serve as a reference case of "electoral authoritarianism" for other authoritarian regimes.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注此类"伪装民主"案例有助于识别政治风险信号，对跨国企业投资评估和国际关系分析具有参考价值。可延伸研究宪法设计中的"嵌入式威权机制"（如保留席位制度）及其对民主转型的长期影响。对于从事东南亚研究或国际发展工作的人员，建议跟踪东盟对此事的回应及其区域规范演变。</div>
+<div class="lang-en">Monitoring such "façade democracy" cases helps identify political risk signals, valuable for multinational investment assessment and international relations analysis. One can extend research into "embedded authoritarian mechanisms" in constitutional design (such as reserved seat systems) and their long-term impact on democratic transitions. For those working in Southeast Asian studies or international development, tracking ASEAN's response and evolving regional norms is recommended.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/newton-adds-contact-rich-manipulation-and-locomotion-capabilities-for-industrial-robotics/" target="_blank">
+                                Newton Adds Contact-Rich Manipulation and Locomotion Capabilities for Industrial Robotics
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">Newton 是由 NVIDIA、Google DeepMind 和 Disney Research 联合发起的开源 GPU 加速物理仿真引擎，于 2026 年 NVIDIA GTC 大会发布 1.0 正式版。它基于 NVIDIA Warp 和 OpenUSD 构建，专为机器人灵巧操作与移动任务设计，能够同时兼顾仿真速度与物理真实性，解决了传统引擎在速度与精度之间的权衡难题。</div>
+<div class="lang-en">Newton is an open-source, GPU-accelerated physics simulator launched by NVIDIA, Google DeepMind, and Disney Research as a Linux Foundation project, with version 1.0 GA announced at NVIDIA GTC 2026. Built on NVIDIA Warp and OpenUSD, it is designed for dexterous manipulation and locomotion tasks in robotics, achieving both high simulation speed and physical realism that traditional engines typically trade off.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">工业机器人和物理 AI 的发展瓶颈在于仿真与现实之间的差距（sim-to-real gap），而 Newton 通过多求解器架构、可变形体仿真、高保真接触建模等能力显著缩小了这一差距。其模块化设计支持 MJCF/URDF/OpenUSD 等多种格式，并与 NVIDIA Isaac 生态深度集成，有望加速从机械设计、策略训练到真实部署的全流程，推动物理 AI 的规模化应用。</div>
+<div class="lang-en">The sim-to-real gap has been a critical bottleneck for industrial robotics and physical AI, and Newton addresses this through multi-solver architecture, deformable body simulation, and high-fidelity contact modeling. Its modular design supporting multiple robotics formats and deep integration with the NVIDIA Isaac ecosystem promises to accelerate the entire pipeline from mechanical design through policy training to real-world deployment, enabling scaled adoption of physical AI.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可将 Newton 作为 Isaac Lab/Sim 的后端，利用其 GPU 并行能力大规模训练 RL/模仿学习策略，尤其适用于需要精细接触感知的装配、抓取等工业场景；机械设计师可借助 Kamino 求解器验证复杂闭链机构（如多足机器人）而无需担心可仿真性；还可结合 VBD/iMPM 求解器开展线缆、布料、颗粒材料等可变形体的操作与移动研究，并通过 OpenUSD 实现资产与流程的标准化复用。</div>
+<div class="lang-en">Developers can use Newton as a backend for Isaac Lab/Sim to train RL/imitation learning policies at GPU scale, particularly for industrial tasks requiring fine contact perception like assembly and grasping; mechanical designers can leverage the Kamino solver to validate complex closed-chain mechanisms like legged robots without simulatability concerns; researchers can combine VBD/iMPM solvers for deformable manipulation and locomotion with cables, cloth, and granular materials, while standardizing asset reuse through OpenUSD.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3346766/google-open-gemini-chatbot-all-hong-kong-users-amid-citys-ai-push?utm_source=rss_feed" target="_blank">
+                                Google to open Gemini chatbot to all Hong Kong users amid city’s AI push
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">Google宣布将分阶段向香港所有用户开放其生成式AI服务Gemini，首先推出网页版，随后推出移动版聊天机器人和虚拟助手。此前，香港用户因OpenAI、Anthropic等开发商基于监管合规不确定性而实施的地理封锁，不得不依赖VPN或第三方平台访问AI服务。</div>
+<div class="lang-en">Google announced it will gradually roll out its generative AI service Gemini to all users in Hong Kong, starting with the web app before introducing a mobile version for the chatbot and virtual assistant. Previously, Hong Kong users had to rely on VPNs or third-party platforms to access AI services due to geofencing implemented by developers like OpenAI and Anthropic over regulatory and compliance uncertainties.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此举标志着香港正式融入全球主流AI生态，消除了技术访问壁垒，有望激发本地创意产业和生产力发展。同时，这也反映出Google对香港市场的长期承诺，以及在区域监管环境变化下科技巨头重新评估市场策略的趋势。</div>
+<div class="lang-en">This move signifies Hong Kong's formal integration into the global mainstream AI ecosystem, removing technical access barriers and potentially stimulating local creative industries and productivity. It also reflects Google's long-term commitment to the Hong Kong market and the broader trend of tech giants reassessing market strategies amid evolving regional regulatory environments.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">创作者和学生可直接利用Gemini的多模态能力（文本、图像、音频交互及多媒体生成）进行内容创作和学习辅助。企业和专业人士可将其整合到工作流程中提升效率，同时关注Google后续构建的完整AI生态系统以把握更多本地化AI应用机会。</div>
+<div class="lang-en">Creators and students can directly leverage Gemini's multimodal capabilities (text, image, audio interaction and multimedia generation) for content creation and learning assistance. Businesses and professionals can integrate it into workflows to boost efficiency, while keeping an eye on Google's subsequent full-stack AI ecosystem development to seize more localized AI application opportunities.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/hong-kong/law-and-crime/article/3346750/hong-kong-policeman-denies-molesting-clerk-headquarters-indecent-assault-case?utm_source=rss_feed" target="_blank">
+                                Senior Hong Kong policeman denies molesting clerk in indecent assault case
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一则关于香港警务处高级警司Ian Chow（50岁）被控三项非礼罪的法庭新闻报道。一名公务员事务局的高级文书主任指控该警官于2024年6月和11月在警察总部两次拍打其臀部并多次提出性暗示，案件目前正在东区法院审理。</div>
+<div class="lang-en">This is a court news report about Senior Superintendent Ian Chow, a 50-year-old Hong Kong police officer, who stands trial on three counts of indecent assault. A senior clerical officer from the Civil Service Bureau, seconded to the police force, accused him of patting her buttocks and making multiple propositions during two alleged incidents at police headquarters in June and November 2024.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此案凸显了职场性骚扰在权力不对等环境中的复杂性——受害者因对方身份（"Ah Sir"）而不敢即时反应，反映了权威结构如何抑制受害者发声。同时，高级警务人员涉案也引发对执法机构内部纪律文化和问责机制的公众关注。</div>
+<div class="lang-en">This case highlights the complexity of workplace sexual harassment in environments with power imbalances—the victim hesitated to react immediately due to the accused's authority ("Ah Sir"), illustrating how hierarchical structures can silence victims. It also raises public concerns about internal disciplinary culture and accountability mechanisms when senior law enforcement officers are involved.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可用于研究职场性骚扰的心理反应模式（如冻结反应、权威恐惧），或作为组织制定反骚扰培训的案例素材——特别是针对"借调人员"等跨机构工作场景中的保护机制设计。法律领域可借此分析刑事诉讼中证人可信度与延迟举报的辩证关系。</div>
+<div class="lang-en">This can be used to study psychological response patterns in workplace harassment cases (freeze response, authority intimidation), or as case material for organizational anti-harassment training—particularly regarding protection mechanisms for seconded staff in cross-institutional settings. Legally, it offers material for analyzing the dialectical relationship between witness credibility and delayed reporting in criminal proceedings.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/europe/article/3346800/bbc-asks-florida-court-dismiss-trumps-us10-billion-lawsuit-over-january-6-speech-edit?utm_source=rss_feed" target="_blank">
+                                BBC asks Florida court to dismiss Trump’s US$10 billion lawsuit over January 6 speech edit
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">BBC已向佛罗里达州联邦法院提交动议，要求驳回特朗普总统提起的100亿美元诽谤诉讼。该诉讼源于BBC一部纪录片对特朗普2021年1月6日演讲的剪辑处理，BBC辩称该纪录片从未在美国或佛罗里达州播出或流媒体上线。</div>
+<div class="lang-en">The BBC has filed a motion in a Florida federal court to dismiss a US$10 billion defamation lawsuit brought by President Donald Trump. The lawsuit stems from a BBC documentary's editing of Trump's January 6, 2021 speech, with the BBC arguing the documentary was never aired or streamed in the US or Florida.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此案凸显了跨国媒体机构面临的法律管辖权挑战，以及政治人物利用高额诉讼对新闻机构施压的趋势。</div>
+<div class="lang-en">BBC的管辖权抗辩策略可能成为国际媒体应对美国诽谤诉讼的重要先例，同时也反映了后真相时代政治与媒体关系的持续紧张。
+
+This case highlights the jurisdictional challenges facing international media organizations and the trend of political figures using high-value lawsuits to pressure news outlets. The BBC's jurisdictional defense strategy could set an important precedent for international media responding to US defamation suits, while also reflecting ongoing tensions between politics and media in the post-truth era.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">内容创作者和媒体机构可研究BBC的管辖权抗辩策略，在国际传播中提前规划法律风险规避方案；法律从业者可关注跨境诽谤诉讼的管辖权认定标准演变；研究者则可追踪此案对"实际恶意"（actual malice）举证标准在数字时代的适用影响。</div>
+<div class="lang-en">Content creators and media organizations can study the BBC's jurisdictional defense strategy to plan legal risk mitigation in advance for international distribution; legal practitioners can track the evolving standards for jurisdictional determination in cross-border defamation cases; researchers can follow this case's impact on the application of "actual malice" evidentiary standards in the digital age.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/asia/south-asia/article/3346797/nepals-lgbtq-community-celebrates-first-transgender-woman-lawmaker?utm_source=rss_feed" target="_blank">
+                                Nepal’s LGBTQ community celebrates first transgender woman lawmaker
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">尼泊尔选举委员会确认37岁的跨性别女性普里蒂卡·什雷斯塔（Pritika Shrestha）成为该国首位跨性别女性国会议员，她通过比例代表制代表中间派政党"国家独立党"（RSP）进入275人的众议院。这是尼泊尔LGBTQ群体政治代表性的历史性突破，该国约有90万人自认属于性少数群体，且拥有南亚地区最先进的LGBTQ权利法律框架。</div>
+<div class="lang-en">Nepal's Election Commission confirmed 37-year-old Pritika Shrestha as the country's first transgender woman lawmaker, entering the 275-member House of Representatives through proportional representation from the centrist Rastriya Swatantra Party (RSP). This marks a historic breakthrough in political representation for Nepal's LGBTQ community, which numbers approximately 900,000 people and operates under some of South Asia's most progressive legal frameworks for LGBTQ rights.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">什雷斯塔的当选揭示了"进步法律"与"实际政策"之间的落差——尼泊尔宪法虽保障性少数群体权利，但尚未转化为具体法律和政策，她的角色正是要弥合这一鸿沟。同时，这也反映了南亚地区政治多元化的趋势，以及新兴政党（如由说唱歌手转型的政治家领导的RSP）打破传统政治格局、吸纳边缘群体代表的社会变革动力。</div>
+<div class="lang-en">Shrestha's election exposes the gap between "progressive laws" and "actual policies"—while Nepal's constitution guarantees LGBTQ rights, these haven't translated into concrete legislation, and her role aims to bridge this divide. It also reflects broader trends in South Asian political diversification and the social transformative power of emerging parties like RSP, led by a rapper-turned-politician, to disrupt traditional politics and include marginalized representation.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注"法律文本"与"政策执行"之间的转化机制，在研究或工作中识别类似的"纸面权利"与"实际权益"差距，并探索代表制民主如何通过特定群体配额实现包容性。对于从事多元包容（DEI）政策、社会运动或国际发展工作的人，可借鉴尼泊尔模式：将宪法承诺转化为议会行动，同时监测新兴政治力量如何为传统边缘群体创造参与空间。</div>
+<div class="lang-en">Examine the translation mechanism between "legal text" and "policy implementation," identifying similar gaps between "paper rights" and "actual benefits" in research or work, and exploring how representative democracy achieves inclusion through quotas for specific groups. For those in DEI policy, social movements, or international development, Nepal's model offers lessons: converting constitutional commitments into parliamentary action while monitoring how emerging political forces create participation spaces for traditionally marginalized communities.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/" target="_blank">
+                                Inside NVIDIA Groq 3 LPX: The Low-Latency Inference Accelerator for the NVIDIA Vera Rubin Platform
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">NVIDIA Groq 3 LPX 是一款专为 NVIDIA Vera Rubin 平台设计的机架级低延迟推理加速器，与 Vera Rubin NVL72 协同设计，旨在满足 AI 智能体系统对低延迟和大上下文处理的需求。该系统基于 256 颗互联的 Groq 3 LPU 芯片构建，采用确定性执行架构和高片上 SRAM 带宽，专门优化快速、可预测的 token 生成，而 Vera Rubin NVL72 则继续承担训练和通用推理的灵活主力角色。</div>
+<div class="lang-en">NVIDIA Groq 3 LPX is a rack-scale low-latency inference accelerator for the NVIDIA Vera Rubin platform, co-designed with Vera Rubin NVL72 to meet the demands of agentic AI systems requiring low latency and large context processing. Built around 256 interconnected Groq 3 LPU chips, it employs a deterministic execution architecture with high on-chip SRAM bandwidth specifically optimized for fast, predictable token generation, while Vera Rubin NVL72 remains the flexible workhorse for training and general-purpose inference.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">随着 AI 生成速度接近每秒 1000 token，模型正从对话速度交互迈向"思维速度计算"，使 AI 系统能够持续推理、模拟和响应，实现实时协作而非回合制聊天。这一转变将显著提升多智能体系统的能力上限——协调运作的智能体群体可通过集体智能完成远超个体的复杂任务，而 LPX 与 Vera Rubin NVL72 的异构组合正是支撑这一未来的关键基础设施，可在高吞吐量和低延迟之间取得平衡。</div>
+<div class="lang-en">As AI generation speeds approach 1,000 tokens per second per user, models are evolving from conversational-speed interaction toward "speed of thought computing," enabling AI systems to reason, simulate, and respond continuously for real-time collaboration rather than turn-based chat. This shift dramatically raises the ceiling for multi-agent systems—coordinated groups of agents can accomplish far more through collective intelligence—and the heterogeneous combination of LPX and Vera Rubin NVL72 provides the essential infrastructure balancing high throughput with low latency to support this future.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">对于需要部署交互式 AI 应用的企业，可将 LPX 作为 Vera Rubin NVL72 的专用低延迟推理路径，专门加速解码循环中的延迟敏感部分（如 FFN 和 MoE 专家执行），同时保持 GPU 处理预填充和解码注意力的高吞吐能力。开发者应关注 LPX 的确定性执行特性，利用其编译器控制的显式数据移动和 320 字节向量工作单元来优化智能体系统的响应一致性；对于多智能体架构设计，可借助该系统的低抖动特性构建持续运行的协调智能体网络，探索实时协作、模拟推理等下一代 AI 应用场景。</div>
+<div class="lang-en">For enterprises deploying interactive AI applications, LPX can serve as a dedicated low-latency inference path alongside Vera Rubin NVL72, specifically accelerating latency-sensitive portions of the decode loop (FFN and MoE expert execution) while GPUs handle prefill and decode attention at high throughput. Developers should leverage LPX's deterministic execution features, utilizing compiler-controlled explicit data movement and 320-byte vector work units to optimize response consistency for agentic systems; for multi-agent architectures, the system's low-jitter characteristics enable building continuously running coordinated agent networks, exploring next-generation AI applications such as real-time collaboration and simulated reasoning.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Hackaday">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://hackaday.com/2026/03/16/the-ipv4-we-didnt-get/" target="_blank">
+                                The IPV4 We Didn’t Get
+                            </a>
+                        </h3>
+                        <span class="source-tag">Hackaday</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一篇关于网络协议发展的"架空历史"技术文章，作者[BillPG]设想了1993年IP下一代工作组选择了一条与现实不同的道路——推出IPv4x而非IPv6，通过为每个IPv4地址分配96位子地址块来实现向后兼容的128位地址扩展。
+This is an "alternate history" technical article about network protocol development, where author [BillPG] imagines a different path taken by the IP-Next-Generation working group in 1993—introducing IPv4x instead of IPv6, achieving backward-compatible 128-bit addressing by assigning a 96-bit sub-address block to every existing IPv4 address.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这个思想实验揭示了技术迁移中"破坏性创新"与"渐进式兼容"的永恒张力，IPv6二十余年缓慢普及的现实反衬出向后兼容设计的战略价值；同时作者借此引出其真实提案——IPv6到IPv4的网关方案，为当前双栈并存的困境提供新思路。
+This thought experiment reveals the eternal tension between "disruptive innovation" and "incremental compatibility" in technology migration, with IPv6's slow two-decade adoption highlighting the strategic value of backward-compatible design; meanwhile, the author uses this to introduce his actual proposal—an IPv6-to-IPv4 gateway solution offering fresh thinking for today's dual-stack coexistence dilemma.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">技术决策者可借鉴"立体声/单色唱片、彩色/黑白电视"的兼容模式，在架构升级时优先评估渐进式演进方案；网络工程师可关注作者提出的IPv6网关实现，探索减少NAT复杂度的部署策略；开发者则可将此思维模式应用于API版本迭代或数据库迁移等场景。
+Technology decision-makers can draw on the "stereo/mono records, color/B&W TV" compatibility pattern to prioritize gradual evolution in architecture upgrades; network engineers can explore the author's proposed IPv6 gateway implementation for deployment strategies reducing NAT complexity; developers can apply this thinking to API versioning or database migration scenarios.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/asia/southeast-asia/article/3346783/malaysias-petronas-wins-right-challenge-sarawak-gas-laws-court?utm_source=rss_feed" target="_blank">
+                                Malaysia’s Petronas wins right to challenge Sarawak gas laws in court
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">马来西亚最高法院于周一裁定，国家能源公司Petronas有权就砂拉越州（Sarawak）通过的多项天然气法律提起法律诉讼。这场争端源于砂拉越州试图通过立法加强对本州天然气资源的控制，而Petronas作为联邦政府全资拥有的企业，主张其对全国石油天然气资源的专属权利。</div>
+<div class="lang-en">Malaysia's Federal Court ruled on Monday that national energy firm Petronas has the right to legally challenge several gas-related laws passed by the state of Sarawak. The dispute stems from Sarawak's attempt to strengthen control over its natural gas resources through legislation, while Petronas—wholly owned by the federal government—asserts its exclusive rights over national petroleum resources.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此案触及联邦制国家中中央与地方资源分配权的核心矛盾，砂拉越拥有马来西亚超过60%的天然气储量，其诉求反映了资源富集地区追求更大自治权的趋势。判决结果将为马来西亚能源治理架构树立重要先例，并可能影响其他资源型州属（如沙巴）的类似主张，同时对外国能源投资者在当地的法律风险评估产生深远影响。</div>
+<div class="lang-en">The case addresses the core tension between central and regional resource authority in a federal system, with Sarawak—holding over 60% of Malaysia's gas reserves—reflecting a broader trend of resource-rich regions seeking greater autonomy. The outcome will set a critical precedent for Malaysia's energy governance framework, potentially influence similar claims from other resource-rich states like Sabah, and significantly impact foreign energy investors' legal risk assessments in the region.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">能源行业从业者应密切关注此案后续进展，将其纳入东南亚投资项目的政治法律风险评估框架；企业可借鉴此案例，在与联邦制国家谈判资源协议时，明确约定中央与地方权限划分及争议解决机制。此外，该案例也为研究自然资源主权、联邦制治理及能源转型中的央地博弈提供了重要的分析素材。</div>
+<div class="lang-en">Energy sector professionals should closely monitor this case's developments and incorporate it into political-legal risk assessment frameworks for Southeast Asian investments; companies can draw lessons to explicitly define central-regional authority divisions and dispute resolution mechanisms when negotiating resource agreements in federal states. Additionally, this case provides valuable analytical material for studying natural resource sovereignty, federal governance, and central-local dynamics in energy transitions.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/economy/global-economy/article/3346755/no-ships-cross-strait-hormuz-first-time-conflict-began-data-shows?utm_source=rss_feed" target="_blank">
+                                Strait of Hormuz marks first full day’s pause as no ships cross amid Iran war
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是关于霍尔木兹海峡因美以军事打击伊朗而首次出现全天无商船通行的报道。自2月28日冲突爆发以来，该全球最重要的石油运输通道于周六首次降至零通行，约400艘船只聚集在阿曼湾等待，同时全球航运路线正在大规模改道。</div>
+<div class="lang-en">This is a report on the first full day of zero commercial ship transits through the Strait of Hormuz due to US-Israel military strikes on Iran. Since the conflict began on February 28, the world's most critical oil transit chokepoint dropped to zero crossings on Saturday, with about 400 vessels clustering in the Gulf of Oman awaiting reopening while global shipping routes undergo major rerouting.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">霍尔木兹海峡承担着全球约20%的石油运输量，其瘫痪将直接冲击全球能源供应链和油价稳定。此次中断标志着中东冲突对全球贸易的物理阻断已从红海蔓延至更具战略意义的能源命脉，可能引发更广泛的经济和地缘政治连锁反应。</div>
+<div class="lang-en">The Strait of Hormuz handles approximately 20% of global oil shipments, and its paralysis directly threatens worldwide energy supply chains and oil price stability. This disruption signals that the physical impact of Middle East conflict on global trade has spread from the Red Sea to this far more strategically critical energy artery, potentially triggering broader economic and geopolitical ripple effects.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注能源板块投资机会与风险对冲，监测国际油价及航运保险费率变动；评估企业供应链韧性，特别是依赖中东石油或亚洲-欧洲航线的制造业与物流业；跟踪替代路线（好望角、苏伊士运河）的运力变化以预判运费趋势和交货周期延长风险。</div>
+<div class="lang-en">Monitor energy sector investment opportunities and risk hedging, tracking international oil prices and shipping insurance rate fluctuations; assess corporate supply chain resilience, especially for manufacturing and logistics dependent on Middle East oil or Asia-Europe routes; follow capacity changes on alternative routes (Cape of Good Hope, Suez Canal) to anticipate freight trends and delivery delay risks.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/diplomacy/article/3346792/china-under-pressure-trump-ties-high-stakes-summit-strait-hormuz-crisis?utm_source=rss_feed" target="_blank">
+                                China under pressure as Trump ties high-stakes summit to Strait of Hormuz crisis
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文报道特朗普将中美高层峰会与霍尔木兹海峡危机挂钩，施压中国派遣军舰参与美国主导的军事行动。作为全球最大的海湾石油进口国，中国正面临经济安全利益与"不干涉外交"传统原则之间的艰难权衡。</div>
+<div class="lang-en">This article reports that Trump has linked a high-stakes China-US summit to the Strait of Hormuz crisis, pressuring Beijing to dispatch warships for a US-led military operation. As the world's largest buyer of Gulf oil, China is being forced to weigh its economic security interests against its traditional principle of non-interference diplomacy.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此事凸显大国博弈中经济依赖与战略自主的张力：中国20%的石油进口经霍尔木兹海峡，但该航道安全长期依赖美国军事存在。特朗普的"交易式外交"试图将中国拉入中东安全架构，可能重塑全球能源地缘政治格局，同时测试中国"发展优先"外交模式的边界。</div>
+<div class="lang-en">This highlights the tension between economic dependence and strategic autonomy in great-power competition: 20% of China's oil imports pass through the Strait of Hormuz, yet the waterway's security has long relied on US military presence. Trump's "transactional diplomacy" attempts to draw China into the Middle East security architecture, potentially reshaping global energy geopolitics while testing the limits of China's "development-first" diplomatic model.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注能源多元化与战略储备政策动向，评估相关企业供应链风险；分析中美谈判策略时，可将此案例作为"议题挂钩"战术的典型研究素材；对于国际事务观察者，需持续追踪中国是否会以经济参与（如投资、基建）替代军事介入，创新提供区域公共产品的方式。</div>
+<div class="lang-en">Monitor policy developments in energy diversification and strategic reserves to assess supply chain risks for relevant enterprises; when analyzing China-US negotiation tactics, use this case as a typical study of "issue linkage" strategy; for international affairs observers, track whether China will substitute economic engagement (investment, infrastructure) for military intervention, innovating new approaches to providing regional public goods.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/week-asia/economics/article/3346749/confusion-over-malaysia-us-trade-deal-null-and-void-claim-retracted?utm_source=rss_feed" target="_blank">
+                                Confusion over Malaysia-US trade deal as ‘null and void’ claim retracted
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">马来西亚政府因贸易部长 Johari Abdul Ghani 撤回"美马贸易协议已无效"的言论而陷入尴尬境地。该协议于 2024 年 10 月签署，承诺以 2400 亿美元投资和采购换取 19% 的优惠关税税率，但美国最高法院 2 月裁定特朗普总统滥用紧急权力加征关税的裁决，使协议的法律基础受到质疑。</div>
+<div class="lang-en">The Malaysian government has been put on the defensive after Trade Minister Johari Abdul Ghani retracted his claim that the Malaysia-US trade deal was "null and void." The agreement, signed in October 2024, promised US$240 billion in investments and purchases in exchange for a preferential 19% tariff rate, but its legal foundation was questioned following a US Supreme Court ruling in February that found President Trump had unconstitutionally used emergency powers to impose tariffs.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此事暴露了小国在与美国进行双边贸易谈判时面临的结构性脆弱性——协议可能因美国国内政治和法律变动而瞬间失效。同时，这也反映了特朗普 2.0 时代贸易政策的高度不确定性，以及各国政府在"交易式外交"中难以预测承诺稳定性的困境。</div>
+<div class="lang-en">This incident exposes the structural vulnerability of smaller nations in bilateral trade negotiations with the US—agreements can become instantly precarious due to American domestic political and legal shifts. It also reflects the high uncertainty of trade policy in Trump 2.0 era, and the dilemma facing governments in predicting the stability of commitments under "transactional diplomacy."
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">企业决策者应在跨境协议中加入"政治风险条款"或"法律变更保护机制"，并避免将单一市场承诺作为核心商业假设。政策研究者可持续追踪美国《国际紧急经济权力法》(IEEPA) 相关诉讼进展，评估其对现有及潜在贸易安排的系统性影响。</div>
+<div class="lang-en">Business decision-makers should include "political risk clauses" or "legal change protection mechanisms" in cross-border agreements, and avoid building core business assumptions on single-market commitments. Policy researchers should track ongoing litigation related to the US International Emergency Economic Powers Act (IEEPA) to assess systemic impacts on existing and potential trade arrangements.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/week-asia/lifestyle-culture/article/3346760/most-filipino-women-think-womans-place-home-survey-finds?utm_source=rss_feed" target="_blank">
+                                Most Filipino women think a woman’s place is in the home, survey finds
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一项由菲律宾独立民调机构Social Weather Stations发布的最新社会调查结果，显示83%的菲律宾女性认为"家庭主妇与有偿工作同样充实"，创下30年来新高，同时绝大多数男女受访者都认同传统的"男主外、女主内"性别分工模式。</div>
+<div class="lang-en">This is a recent survey released by Philippine independent pollster Social Weather Stations, showing that 83% of Filipino women find "being a housewife just as fulfilling as working for pay"—a 30-year high—while an overwhelming majority of both men and women respondents endorse the traditional gender division of "men as breadwinners, women as homemakers."</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一发现挑战了"经济发展必然推动性别观念进步"的线性假设，表明菲律宾尽管在性别平等指数上位居亚洲前列，但社会文化层面仍深度认同传统角色；它揭示了政策指标与民众主观认知之间的显著落差，对全球性别研究、跨国企业人才策略及社会政策制定具有重要参考价值。</div>
+<div class="lang-en">This finding challenges the linear assumption that economic development inevitably drives progressive gender attitudes, demonstrating that despite topping regional gender equality indices, Philippine society still deeply embraces traditional roles at the cultural level; it reveals a significant gap between policy metrics and public perception, offering critical insights for global gender studies, multinational talent strategies, and social policymaking.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">若从事跨国市场研究或人力资源管理，应避免仅凭国家性别平等排名推断当地女性职业意愿，而需深入理解文化语境；若关注社会趋势，可进一步探究经济压力、远程工作兴起或代际差异如何重塑"家庭"与"事业"的定义；个人层面则可反思自身对"充实人生"的定义是否受单一叙事局限。</div>
+<div class="lang-en">For those in cross-border market research or HR management, avoid inferring local women's career aspirations solely from national gender equality rankings, and instead seek deeper cultural context; for social trend observers, further investigate how economic pressures, remote work rise, or generational shifts reshape the definitions of "family" and "career"; on a personal level, reflect on whether one's own definition of a "fulfilling life" is constrained by singular narratives.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/nvidia-dynamo-1-production-ready/" target="_blank">
+                                How NVIDIA Dynamo 1.0 Powers Multi-Node Inference at Production Scale
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">NVIDIA Dynamo 1.0 是一个专为大规模分布式多节点 AI 推理设计的开源框架，旨在解决推理模型和智能体 AI 工作流在跨 GPU 节点部署时的编排与协调挑战。该框架支持 SGLang、TensorRT LLM 和 vLLM 等主流推理引擎，并提供低延迟、高吞吐量的生产级推理能力。</div>
+<div class="lang-en">NVIDIA Dynamo 1.0 is an open-source framework designed for large-scale distributed multi-node AI inference, addressing orchestration and coordination challenges when deploying reasoning models and agentic AI workflows across GPU nodes. It supports leading inference engines including SGLang, TensorRT LLM, and vLLM, delivering low-latency, high-throughput production-grade inference capabilities.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">随着推理模型规模快速增长和智能体 AI 工作流的普及，单节点部署已无法满足生产需求，而多节点推理的复杂性成为关键瓶颈。</div>
+<div class="lang-en">Dynamo 1.0 通过 7 倍请求处理量提升（Blackwell 平台）和 4 倍智能体推理加速等实测成果，已被阿斯利康、字节跳动、美团、Pinterest 等数十家企业以及 AWS、Azure、GCP 等主流云平台采用，标志着分布式 AI 推理进入成熟生产阶段。
+
+As reasoning models rapidly grow in size and agentic AI workflows become prevalent, single-node deployment can no longer meet production demands, while multi-node inference complexity emerges as a critical bottleneck. With proven results including 7x request throughput improvement on Blackwell and 4x agentic inference acceleration, Dynamo 1.0 has been adopted by dozens of enterprises like AstraZeneca, ByteDance, Meituan, Pinterest, and major cloud platforms including AWS, Azure, and GCP, signaling that distributed AI inference has reached production maturity.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可将 Dynamo 1.0 用于构建智能体 AI 应用（利用其前端 API 传递延迟敏感度和缓存控制等元数据）、优化多模态推理（通过分离编码/预填充/解码阶段和图像嵌入缓存），以及部署视频生成模型（支持 FastVideo、SGLang Diffusion 等框架）。此外，ModelExpress 功能可将推理启动时间缩短 7 倍，适合需要频繁扩缩容的动态负载场景。</div>
+<div class="lang-en">Developers can leverage Dynamo 1.0 to build agentic AI applications (using its frontend API to pass metadata like latency sensitivity and cache control), optimize multimodal inference (via disaggregated encode/prefill/decode stages and image embedding caching), and deploy video generation models (supporting FastVideo, SGLang Diffusion, and other frameworks). Additionally, the ModelExpress feature reduces inference startup time by 7x, making it ideal for dynamic workloads requiring frequent scaling.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/united-states-canada/article/3346805/trump-administration-can-resume-third-country-deportations-appeal-court-rules?utm_source=rss_feed" target="_blank">
+                                Trump administration can resume ‘third-country’ deportations, appeal court rules
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">美国联邦上诉法院以2比1的投票结果，允许特朗普政府临时恢复"第三国驱逐"政策，即可以将无证移民驱逐到非其原籍国的其他国家。此前，地区法官Brian Murphy曾裁定该政策违法并予以阻止，但上诉法院解除了这一禁令，允许政府在诉讼期间继续执行驱逐。</div>
+<div class="lang-en">A US federal appeals court ruled 2-1 to allow the Trump administration to temporarily resume "third-country deportations," which send undocumented migrants to countries other than their home nations. This overturned a district court block, permitting deportations to continue while the case is litigated.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一裁决标志着特朗普政府移民执法策略的重要法律胜利，可能显著扩大美国驱逐无证移民的操作空间。该政策绕过传统遣返程序，将移民送往第三国，引发了对程序正义和人权保护的广泛争议，同时也反映了美国司法系统在移民问题上的深度分歧。</div>
+<div class="lang-en">This ruling marks a significant legal victory for the Trump administration's immigration enforcement strategy, potentially expanding operational capacity for deporting undocumented migrants. The policy bypasses traditional repatriation processes, raising widespread concerns about due process and human rights protections, while reflecting deep judicial divisions on immigration issues.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注该案件后续诉讼进展，了解美国移民法中的"第三国安全"原则及其国际法依据。对于涉及跨境人员流动、国际难民保护或移民政策研究的专业人士，可追踪此案例对其他国家移民政策的示范效应，并评估其对国际人权法框架的潜在冲击。</div>
+<div class="lang-en">Monitor the ongoing litigation to understand the "third-country safety" principle in US immigration law and its international law foundations. For professionals in cross-border mobility, refugee protection, or immigration policy research, track this case's demonstration effect on other nations' policies and assess its potential impact on international human rights frameworks.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/economy/global-economy/article/3346784/why-trumps-push-china-help-reopen-strait-hormuz-may-hurt-trade-talks?utm_source=rss_feed" target="_blank">
+                                Why Trump&#39;s push for China to help reopen the Strait of Hormuz may hurt trade talks
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文报道美国总统特朗普据称威胁推迟访华行程，除非中国派遣军舰协助重新开放伊朗控制的霍尔木兹海峡；这一条件为正在进行的中美巴黎贸易谈判增添了新的不确定性。当前美以与伊朗的战争已进入第三周，导致全球能源市场动荡，特朗普试图将中国卷入地区安全事务以缓解石油运输危机。</div>
+<div class="lang-en">This article reports that US President Donald Trump has reportedly threatened to postpone his visit to China unless Beijing sends warships to help reopen the Iran-controlled Strait of Hormuz, adding new uncertainty to ongoing US-China trade talks in Paris. As the US-Israeli war in Iran enters its third week and disrupts global energy markets, Trump is attempting to draw China into regional security affairs to ease oil shipment disruptions.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一发展凸显地缘政治冲突如何直接干扰大国经贸议程——能源安全与贸易谈判被意外捆绑，使本已复杂的中美关系更添变数。若特朗普兑现威胁，不仅可能冻结3月31日中美峰会的筹备进程，还会让巴黎谈判成果沦为"纸上谈兵"，进一步拖延双方在技术、经济等关键领域的争端管控。</div>
+<div class="lang-en">This development highlights how geopolitical conflicts can directly disrupt major power economic agendas—energy security and trade negotiations are unexpectedly linked, adding further complexity to already strained US-China relations. If Trump follows through on his threat, it could freeze preparations for the March 31 summit and render the Paris talks largely irrelevant, further delaying dispute management between the two sides on technology, economic and other critical fronts.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注者可将此案例纳入"地缘政治风险对供应链/投资决策影响"的分析框架，评估能源价格波动对跨境贸易的连锁效应；企业决策者应重新审视关键航道（如霍尔木兹、马六甲）的替代方案与库存策略，并跟踪中美领导人会晤动态以预判政策窗口期。研究者亦可延伸探讨"安全议题经济化"趋势对多边谈判模式的长期改变。</div>
+<div class="lang-en">Observers can incorporate this case into analytical frameworks on "geopolitical risks' impact on supply chains/investment decisions," assessing the cascading effects of energy price volatility on cross-border trade. Corporate decision-makers should re-examine alternative routes and inventory strategies for critical waterways (such as Hormuz and Malacca), and track developments regarding the US-China leaders' meeting to anticipate policy windows. Researchers may also explore how the "securitization of economic issues" trend is fundamentally altering multilateral negotiation patterns.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/" target="_blank">
+                                Scaling Autonomous AI Agents and Workloads with NVIDIA DGX Spark
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文介绍 NVIDIA DGX Spark 作为桌面级 AI 计算平台，专为运行自主 AI 智能体（Autonomous AI Agents）而设计。它搭载 NVIDIA Grace Blackwell Superchip，支持单机 128GB 显存，并可扩展至最多四节点（512GB 显存），配合 NVIDIA NeMoClaw 和 OpenShell 运行时，为本地部署大语言模型和多智能体工作负载提供安全高效的计算环境。</div>
+<div class="lang-en">This article introduces NVIDIA DGX Spark as a desktop AI computing platform designed specifically for running autonomous AI agents. It features the NVIDIA Grace Blackwell Superchip with 128GB memory per node, scalable up to four nodes (512GB total), and integrates with NVIDIA NeMoClaw and OpenShell runtime to provide a secure and efficient local environment for deploying large language models and multi-agent workloads.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">自主 AI 智能体需要处理超长上下文（30K-250K tokens）、多通道通信和后台子进程，对本地算力提出极高要求。</div>
+<div class="lang-en">DGX Spark 通过低延迟 RoCE 互联和 Tensor 并行技术，实现了近乎线性的推理和微调扩展效率，填补了从原型开发到云端部署之间的关键缺口，使开发者能够在本地构建和测试复杂的智能体系统。
+
+Autonomous AI agents demand extreme local compute for long contexts (30K-250K tokens), multi-channel communication, and background subprocesses. DGX Spark bridges the critical gap between prototyping and cloud deployment through low-latency RoCE interconnect and tensor parallelism, achieving near-linear scaling for inference and fine-tuning—enabling developers to build and test complex agent systems locally.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可利用 DGX Spark 单机运行 120B 参数模型的智能体推理，或通过多节点扩展支持 700B 参数模型；结合 TensorRT LLM、vLLM 或 SGLang 框架优化并发性能；使用 NeMoClaw 和 OpenShell 安全运行自演化智能体；并利用 Tile IR 和 cuTile Python 实现从本地开发到云端部署的无缝迁移。</div>
+<div class="lang-en">Developers can use single DGX Spark nodes for agent inference up to 120B parameters, or scale to four nodes for 700B-parameter models; optimize concurrency with TensorRT LLM, vLLM, or SGLang frameworks; safely run self-evolving agents via NeMoClaw and OpenShell; and leverage Tile IR and cuTile Python for seamless workload portability from local development to cloud deployment.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/asia/east-asia/article/3346746/2-dead-after-japanese-school-trip-boats-capsize-us-military-base-site-okinawa?utm_source=rss_feed" target="_blank">
+                                2 dead after Japanese school trip boats capsize off US military base site in Okinawa
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">两艘载有21人的船只在冲绳美军基地搬迁争议地点边野古海域倾覆，造成一名17岁女学生和71岁船长死亡，其余18人为京都高中生，当时正在参加和平教育项目考察活动。</div>
+<div class="lang-en">Two boats carrying 21 people capsized off Henoko, Okinawa—a controversial US military base relocation site—resulting in the deaths of a 17-year-old female student and a 71-year-old boat captain; the other 18 were high school students from Kyoto on a peace education field trip.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此事件凸显了海上安全风险管理在青少年教育活动中的关键缺口，尤其是在天气突变的高风险海域；同时再次将边野古美军基地争议置于公众视野，涉及和平教育与军事存在的复杂张力。</div>
+<div class="lang-en">The incident highlights critical gaps in maritime safety risk management for youth educational activities, particularly in waters prone to sudden weather changes, while also bringing renewed attention to the contentious Henoko base issue and the complex tension between peace education and military presence.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">组织户外教育活动时，应建立动态天气监测与应急预案，强制配备合格救生设备并确保全员正确使用；评估选址时需综合考量政治敏感性、环境风险与活动目标的匹配度。</div>
+<div class="lang-en">When organizing outdoor educational activities, establish dynamic weather monitoring and emergency protocols, mandate qualified life-saving equipment with verified proper usage by all participants; site selection should integrate political sensitivities, environmental risks, and alignment with activity objectives.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/hong-kong/society/article/3346782/fix-dont-fire-digital-employee-openclaw-over-security-risks-paul-chan?utm_source=rss_feed" target="_blank">
+                                Fix, don’t fire ‘digital employee’ OpenClaw over security risks: Paul Chan
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">香港财政司司长陈茂波就AI智能体OpenClaw发表看法，反对因安全风险而禁用该技术。此前香港数字政策办公室曾建议政府部门避免安装这一由奥地利工程师开发的开源AI代理框架。</div>
+<div class="lang-en">Hong Kong Financial Secretary Paul Chan voiced support for AI agent OpenClaw, opposing a ban due to security concerns. This follows the Digital Policy Office's earlier advice to government departments against installing the open-source AI agent framework developed by Austrian engineer Peter Steinberger.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此事反映了政府在AI监管与创新之间的政策张力——技术部门倾向风险规避，而高层决策者更重视技术竞争力。陈茂波将OpenClaw比作"数字员工"的表态，也预示着AI代理可能重塑劳动力市场，重复性工作或将消失。</div>
+<div class="lang-en">This reflects policy tension between AI regulation and innovation—technical departments favor risk aversion while top decision-makers prioritize technological competitiveness. Chan's comparison of OpenClaw to a "digital employee" also signals that AI agents may reshape the labor market, potentially eliminating repetitive work.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注OpenClaw等开源AI代理框架的发展，评估其在自动化工作流中的应用潜力；同时建立"修复而非禁用"的安全思维，在组织内推动AI治理框架时平衡创新与风控；个人层面可提前培养AI协作与复杂决策能力，应对劳动力结构变化。</div>
+<div class="lang-en">Track developments in open-source AI agent frameworks like OpenClaw to assess their potential for workflow automation; adopt a "fix, don't ban" security mindset when promoting AI governance frameworks that balance innovation with risk control; personally, develop AI collaboration and complex decision-making skills to adapt to structural labor market shifts.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/nvidia-vera-cpu-delivers-high-performance-bandwidth-and-efficiency-for-ai-factories/" target="_blank">
+                                NVIDIA Vera CPU Delivers High Performance, Bandwidth, and Efficiency for AI Factories
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">NVIDIA Vera CPU 是 NVIDIA 首款全定制数据中心 CPU，专为现代 AI 工作负载设计，特别是强化学习（RL）后训练和智能体（agentic）推理场景。它采用 88 个自研 Olympus 核心，配备第二代可扩展一致性互连（SCF）和 1.2 TB/s 的 LPDDR5X 内存带宽，旨在解决 AI 工厂中 CPU 成为性能瓶颈的"Amdahl 定律"问题。</div>
+<div class="lang-en">The NVIDIA Vera CPU is NVIDIA's first fully custom data center CPU, designed specifically for modern AI workloads, particularly reinforcement learning (RL) post-training and agentic inference scenarios. It features 88 self-developed Olympus cores, second-generation Scalable Coherency Fabric (SCF), and 1.2 TB/s LPDDR5X memory bandwidth, aiming to address the "Amdahl's law" problem where CPUs become performance bottlenecks in AI factories.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">随着推理模型和智能体 AI 的兴起，token 需求激增，传统 CPU 在串行任务、单线程性能和内存带宽方面的不足严重制约 GPU 利用率。</div>
+<div class="lang-en">Vera CPU 通过 50% 更快的沙箱性能、3 倍于传统 CPU 的每核内存带宽，以及确定性低延迟执行，确保 AI 工厂能高效扩展，避免训练周期中的 token 浪费，加速模型迭代。
+
+As reasoning models and agentic AI surge, token demand explodes, and traditional CPUs' limitations in serial tasks, single-threaded performance, and memory bandwidth severely constrain GPU utilization. The Vera CPU delivers 50% faster sandbox performance, 3x per-core memory bandwidth versus traditional CPUs, and deterministic low-latency execution—ensuring AI factories scale efficiently, avoiding token waste in training cycles and accelerating model iteration.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">若从事 AI 基础设施规划，可评估 Vera CPU 用于 RL 后训练集群和智能体服务部署，利用其 SMT 特性在性能与线程数间动态调优；若开发 AI 应用，可设计更复杂的工具调用链和代码生成-验证-执行闭环，依托 Vera 的高单核性能和低尾延迟特性；若关注能效，可参考其 LPDDR5X + SOCAMM 设计思路，在低功耗内存与可维护性间取得平衡。</div>
+<div class="lang-en">For AI infrastructure planning, evaluate Vera CPUs for RL post-training clusters and agentic service deployment, leveraging SMT to dynamically tune between performance and thread count; for AI application development, design more complex tool-calling chains and code generation-validation-execution loops, capitalizing on Vera's high single-core performance and low tail latency; for energy efficiency focus, reference its LPDDR5X + SOCAMM design approach to balance low-power memory with serviceability.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/business/article/3346780/hong-kong-businessman-expected-take-loss-peak-properties-he-bought-us255m?utm_source=rss_feed" target="_blank">
+                                Hong Kong businessman expected to take loss on Peak properties he bought for US$255m
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">香港商人陈景炜（Chan King-wai）及其家族正通过公开招标出售位于山顶道86、88及90号的三幅相连住宅用地，总面积约28,620平方英尺。这些物业是陈景炜数年前从长江实业集团相关企业购入，总收购价约2.55亿美元，但当前市场估值已低于购入成本，预计将出现亏损。</div>
+<div class="lang-en">Hong Kong businessman Chan King-wai and his family are selling three adjoining residential lots at 86, 88, and 90 Peak Road through public tender, totaling approximately 28,620 sq ft. These properties were acquired several years ago from companies linked to CK Group for about US$255 million, but current market valuations have fallen below the purchase price, indicating an expected loss.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此事反映了香港超级豪宅市场的持续下行压力——陈氏家族去年已以约56%的亏损出售另一处山顶物业，此次再次低价放盘，显示高端住宅市场尚未见底。这也揭示了内地背景富豪在香港房地产市场的投资困境，以及长周期持有策略在周期性调整中的风险。</div>
+<div class="lang-en">This reflects the continued downward pressure on Hong Kong's ultra-luxury residential market—the Chan family already sold another Peak property at an estimated 56% loss last year, and this new listing at below-cost prices suggests the high-end market has yet to bottom out. It also highlights the investment challenges facing mainland-background tycoons in Hong Kong's property market and the risks of long-hold strategies during cyclical corrections.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">投资者可借此案例研究顶级地段物业的流动性风险与周期时机判断，避免盲目追逐"稀缺资产"；关注香港豪宅市场与内地资金流动的关联性，作为跨境资本配置的参考指标；亦可跟踪此类大宗交易的最终成交价，评估市场真实底部信号。</div>
+<div class="lang-en">Investors can study this case to understand liquidity risks and cycle timing for prime-location assets, avoiding blind pursuit of "scarce assets"; monitor the correlation between Hong Kong's luxury market and mainland capital flows as a reference for cross-border allocation; and track the final transaction price of such deals to assess genuine market bottom signals.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/article/3346569/beijing-iran-war-trumps-china-trade-plan-new-ai-arena-7-us-china-relations-reads?utm_source=rss_feed" target="_blank">
+                                Beijing on Iran war, Trump’s China trade plan, new AI arena: 7 US-China relations reads
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文汇总了2026年3月上旬《南华早报》关于中美关系的七篇报道精选，核心聚焦特朗普第二任期下的中美互动新动态，包括美国对伊朗军事行动后的外交表态、2026年贸易政策议程中"管控式"双边关系的转向，以及中国在地区危机中的调停角色。</div>
+<div class="lang-en">This article compiles seven selected SCMP reports from early March 2026 on US-China relations, centering on new dynamics under Trump's second term: Washington's diplomatic positioning after the Iran military strike, the shift toward "managed" bilateral trade in the 2026 policy agenda, and Beijing's mediation role in regional crises.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这些信号显示中美关系正从"脱钩对抗"向"竞争性共存"微妙调整，特朗普政府对华策略呈现"边打边谈"的实用主义特征；同时中国在中东危机中的外交介入标志着其全球角色从经济参与者向安全调停者扩展，这对理解未来国际秩序重构具有指标意义。</div>
+<div class="lang-en">These signals indicate a subtle shift from "decoupling confrontation" to "competitive coexistence" in US-China relations, with Trump's approach showing pragmatic "fight-and-talk" characteristics; meanwhile, China's diplomatic intervention in the Middle East crisis marks its global role expansion from economic participant to security mediator—an indicator for understanding future international order restructuring.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注"管控式贸易"框架下的具体行业清单与关税豁免机制，评估企业供应链调整窗口期；跟踪中国在中东调停中的后续举措，分析其与传统西方斡旋模式的差异，为跨境投资与地缘政治风险预判提供参考维度。</div>
+<div class="lang-en">Monitor specific sector lists and tariff exemption mechanisms under the "managed trade" framework to assess supply chain adjustment windows for businesses; track China's follow-up mediation efforts in the Middle East and analyze their divergence from traditional Western models, providing reference dimensions for cross-border investment and geopolitical risk forecasting.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/science/article/3346722/could-chinese-breakthrough-pave-way-global-organ-transplant-system?utm_source=rss_feed" target="_blank">
+                                Could this Chinese breakthrough pave way for global organ transplant system?
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">中国研究人员成功开发了一项突破性的低温器官保存技术，能够在零下温度将动物器官冷冻数天后复苏并移植。这项技术旨在大幅延长器官的保存时间，解决当前器官移植中因时间限制导致的严重浪费问题。</div>
+<div class="lang-en">Chinese researchers have developed a breakthrough cryopreservation technology that can freeze animal organs at sub-zero temperatures for several days, revive them, and successfully transplant them. This technology aims to dramatically extend organ preservation time to address the severe waste caused by current time constraints in organ transplantation.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">目前心脏离体后仅能保存6小时，导致美国大量移植心脏被丢弃；若将保存时间延长至24小时，可清除全美器官移植等待名单。这项技术不仅能挽救更多生命，还可能建立全球化的器官分配网络，彻底改变器官移植的地理和时间限制。</div>
+<div class="lang-en">Currently, hearts can only be preserved for 6 hours after removal, leading to massive discards in the US; extending preservation to 24 hours could clear the entire US transplant waiting list. This technology could not only save more lives but also enable a global organ distribution network, fundamentally transforming the geographical and temporal constraints of organ transplantation.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">医疗从业者可关注该技术的临床转化进展，评估未来参与国际器官共享网络的可能性；研究人员可探索该技术在其他组织（如皮肤、角膜）保存中的应用延伸；政策制定者可提前规划配套的运输基础设施和跨境监管框架，为全球化器官分配体系做准备。</div>
+<div class="lang-en">Medical professionals can monitor the clinical translation progress of this technology and evaluate future participation in international organ sharing networks; researchers can explore extending this technology to other tissues (such as skin and cornea) preservation; policymakers can proactively plan supporting transportation infrastructure and cross-border regulatory frameworks in preparation for a global organ allocation system.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/middle-east/article/3346768/iran-turn-bombed-girls-school-museum-commemorating-us-crimes?utm_source=rss_feed" target="_blank">
+                                Iran to turn bombed girls’ school into museum commemorating US ‘crimes’
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">伊朗计划将一所被炸毁的女子学校改建成博物馆，以纪念2月28日美军空袭中遇难的近200名师生。这起事件发生在战争第一天，位于伊朗南部城市米纳卜，受害者包括168名7至12岁的学生、26名教师和4名家长。</div>
+<div class="lang-en">Iran plans to convert a bombed girls' school into a museum commemorating nearly 200 victims killed in a US airstrike on February 28. The attack occurred on the first day of the war in the southern city of Minab, claiming 168 pupils aged 7-12, 26 teachers, and 4 parents.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一事件反映了军事行动中平民伤亡的残酷代价，以及信息战与叙事争夺在国际冲突中的关键作用。伊朗选择以博物馆形式保存记忆，既是对受害者的纪念，也是将历史创伤转化为政治话语和民族认同塑造的工具。</div>
+<div class="lang-en">This incident highlights the brutal cost of civilian casualties in military operations and the critical role of information warfare and narrative competition in international conflicts. Iran's choice to preserve memory through a museum serves both as memorial to victims and as a tool to transform historical trauma into political discourse and national identity formation.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注此类事件可帮助我们理解现代战争中"记忆政治"的运作机制，以及媒体叙事如何影响公众认知。对于从事国际关系、新闻传播或博物馆学的人士，可研究创伤纪念空间的设计如何服务于不同的社会和政治功能。</div>
+<div class="lang-en">Tracking such events helps us understand how "memory politics" operates in modern warfare and how media narratives shape public perception. For those in international relations, journalism, or museology, studying how trauma memorial spaces are designed to serve various social and political functions offers valuable insights.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="CNX Software">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.cnx-software.com/2026/03/16/rabbit-labs-flipper-zero-esp32-c5-multi-board-features-cc1101-gps-and-dual-band-wi-fi-6/" target="_blank">
+                                Rabbit-Labs Flipper Zero ESP32-C5 multi-board features CC1101, GPS, and dual-band Wi-Fi 6
+                            </a>
+                        </h3>
+                        <span class="source-tag">CNX Software</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一款由 Rabbit-Labs EU 设计的 Flipper Zero 扩展板，基于 ESP32-C5 双频 Wi-Fi 6 微控制器，集成了 TI CC1101 次 GHz 收发器、GPS 模块、SD 卡槽和 USB-C 接口。相比同类 bulky 产品（如 ESP32 Marauder 5G Apex 5），它采用更紧凑的设计，定位为简化替代方案。</div>
+<div class="lang-en">This is an expansion board for the Flipper Zero designed by Rabbit-Labs EU, built around the ESP32-C5 dual-band Wi-Fi 6 microcontroller with integrated TI CC1101 sub-GHz transceiver, GPS module, SD card slot, and USB-C port. Positioned as a stripped-down, more compact alternative to bulkier competitors like the ESP32 Marauder 5G Apex 5.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">该扩展板将 Wi-Fi 6、蓝牙 5.0、Zigbee/Thread/Matter、次 GHz RF 和 GPS 集成到单一紧凑设备中，大幅扩展了 Flipper Zero 的无线安全测试能力，支持 wardriving、包捕获和位置日志记录。其模块化设计反映了渗透测试工具向多协议、便携化发展的趋势，同时 $125 的定价使专业级 RF 分析工具更易获取。</div>
+<div class="lang-en">This board significantly expands the Flipper Zero's wireless security testing capabilities by integrating Wi-Fi 6, Bluetooth 5.0, Zigbee/Thread/Matter, sub-GHz RF, and GPS into a single compact device—enabling wardriving, packet capture, and location logging. Its modular design reflects the trend toward multi-protocol, portable penetration testing tools, while the $125 price point makes professional-grade RF analysis more accessible.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可运行 ESP32 Marauder 固件进行无线网络扫描、包捕获和 wardriving，配合 GPS 模块记录地理位置数据；适合安全研究人员进行红队演练、无线协议分析和现场渗透测试。也可作为学习平台探索 Wi-Fi 6、802.15.4 和次 GHz 通信协议，或基于开源固件开发自定义无线安全工具。</div>
+<div class="lang-en">Run ESP32 Marauder firmware for wireless network scanning, packet capture, and wardriving with GPS-tagged location data; ideal for security researchers conducting red team exercises, wireless protocol analysis, and field penetration testing. Also serves as a learning platform to explore Wi-Fi 6, 802.15.4, and sub-GHz protocols, or as a base for developing custom wireless security tools via open-source firmware.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/europe/article/3346795/evil-uk-nursery-worker-who-raped-toddlers-his-care-jailed-24-years?utm_source=rss_feed" target="_blank">
+                                ‘Evil’ UK nursery worker who raped toddlers in his care jailed for 24 years
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一篇关于英国布里斯托尔一名30岁托儿所工作人员Nathan Bennett因性侵五名两岁幼童被判24年监禁的新闻报道。案件引发了英国首相考虑强制要求托儿所安装监控摄像头的政策讨论。</div>
+<div class="lang-en">This is a news report about 30-year-old nursery worker Nathan Bennett from Bristol, UK, who was sentenced to 24 years in prison for sexually abusing five two-year-old children in his care. The case has prompted the UK Prime Minister to consider making security cameras mandatory in nurseries.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此案暴露了儿童照护机构中存在的严重安全漏洞，以及内部人员作案的隐蔽性和危害性。法官罕见的"evil"定性反映了案件的极端恶劣性质，同时推动了英国在儿童保护立法层面的重大政策转向。</div>
+<div class="lang-en">This case reveals critical security vulnerabilities in childcare institutions and the hidden, devastating nature of insider abuse. The judge's rare use of the word "evil" reflects the extreme severity of the crimes, while simultaneously driving a significant policy shift toward mandatory surveillance legislation in UK child protection.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">家长在选择托幼机构时应主动询问其监控政策和员工背景审查机制；托幼机构管理者可参考此案完善员工监督制度与透明化运营流程；政策研究者或儿童保护倡导者可借此案例分析技术监控与隐私权的平衡议题。</div>
+<div class="lang-en">Parents should proactively inquire about surveillance policies and staff background checks when selecting childcare facilities; nursery administrators can use this case to improve staff oversight systems and transparent operational procedures; policy researchers or child protection advocates can analyze this case to explore the balance between technological surveillance and privacy rights.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/diplomacy/article/3346770/china-were-still-talking-us-about-trump-trip-after-threat-delay-over-iran-crisis?utm_source=rss_feed" target="_blank">
+                                China: we’re still talking to US about Trump trip after threat to delay over Iran crisis
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文报道中美两国正在就特朗普总统访华行程进行沟通，此前特朗普威胁称若北京不协助重新开放霍尔木兹海峡，他可能推迟访问。这一外交摩擦发生在伊朗核危机导致地区紧张局势升级的背景下。</div>
+<div class="lang-en">This article reports that China and the US are communicating about President Trump's planned visit to China, after Trump threatened to postpone the trip if Beijing does not help reopen the Strait of Hormuz. This diplomatic friction occurs against the backdrop of escalating regional tensions from the Iran nuclear crisis.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此事凸显大国博弈中"议题挂钩"策略的运用——特朗普试图将地区安全问题与双边外交议程绑定，以获取谈判筹码。这也反映出中美关系的脆弱性，即使高层互访也可能因第三方危机而横生变数，同时显示中国在关键海上通道问题上的立场正成为国际关注焦点。</div>
+<div class="lang-en">This highlights the use of "issue linkage" strategy in great power competition—Trump attempts to tie regional security matters to bilateral diplomatic agendas for negotiating leverage. It also reflects the fragility of China-US relations, where even high-level visits can be disrupted by third-party crises, and demonstrates that China's stance on critical maritime chokepoints is becoming an international focal point.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注国际谈判中的议题挂钩技巧，学习如何在复杂谈判中将不同议题相互关联以创造筹码。跟踪中美高层互动与地区热点事件的联动模式，预判外交政策走向。对于从事国际商务或跨境合作者，建议建立地缘政治风险评估机制，避免核心项目因突发外交摩擦而受阻。</div>
+<div class="lang-en">Pay attention to issue-linkage techniques in international negotiations, learning how to connect different topics to create leverage in complex talks. Track the linkage patterns between China-US high-level interactions and regional hotspots to anticipate diplomatic policy directions. For those engaged in international business or cross-border cooperation, establish geopolitical risk assessment mechanisms to prevent core projects from being disrupted by sudden diplomatic frictions.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Hackaday">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://hackaday.com/2026/03/16/making-a-better-kitchen-scale-out-of-junk-parts/" target="_blank">
+                                Making a Better Kitchen Scale out of Junk Parts
+                            </a>
+                        </h3>
+                        <span class="source-tag">Hackaday</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章介绍了技术爱好者 Mark Furneaux 如何利用废弃实验室天平的称重传感器（load cell）和金属底座，配合一个 HX710 应变片放大器模块，DIY 制作了一台高精度、实时响应的厨房秤。整个项目几乎完全使用回收零件，仅花费 7 美元购买放大器模块。</div>
+<div class="lang-en">This article describes how tech enthusiast Mark Furneaux built a high-precision, real-time responsive kitchen scale using a salvaged load cell and metal base from a discarded laboratory scale, paired with an HX710 strain gauge amplifier module. The entire project used almost entirely recycled parts, with only a $7 amplifier module purchased.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">市售廉价厨房秤普遍存在噪声过滤过度、响应延迟的问题，导致缓慢添加少量重量时读数不更新，严重影响使用体验。该项目展示了如何通过硬件改造和开源模块，以极低成本显著提升测量精度和实时性，同时体现了电子垃圾再利用的可持续价值。</div>
+<div class="lang-en">Commercial kitchen scales commonly suffer from excessive noise filtering and delayed response, causing readings to fail to update when weight is added slowly—severely impacting usability. This project demonstrates how hardware modifications and off-the-shelf modules can dramatically improve measurement precision and real-time performance at minimal cost, while exemplifying the sustainable value of e-waste reuse.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可以借鉴此思路改造现有厨房秤：保留其机械结构和称重传感器，替换或升级信号放大与处理电路；也可将 HX710/HX711 等模块与 Arduino 等微控制器结合，开发自定义软件实现数据记录、单位转换或物联网功能。此外，可从废旧工业设备、电子秤中回收应变片和负载传感器用于各类力测量项目。</div>
+<div class="lang-en">You can apply this approach to upgrade an existing kitchen scale: retain its mechanical structure and load cell while replacing or upgrading the signal amplification and processing circuitry. Alternatively, combine HX710/HX711 modules with microcontrollers like Arduino to develop custom software for data logging, unit conversion, or IoT functionality. Additionally, salvage strain gauges and load cells from discarded industrial equipment or electronic scales for various force measurement projects.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Hackaday">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://hackaday.com/2026/03/16/every-ham-shack-needs-a-ham-clock/" target="_blank">
+                                Every Ham Shack Needs a Ham Clock
+                            </a>
+                        </h3>
+                        <span class="source-tag">Hackaday</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">Ham Clock CYD 是一款专为业余无线电（ham radio）操作员设计的独立时钟设备，基于廉价的 ESP32 彩色触摸屏（CYD）开发，配备温湿度传感器和电池备份的实时时钟模块。它无需互联网即可运行，但连接网络时可显示太阳活动预报和短波/VHF 频段传播条件等专业数据。
+Ham Clock CYD is a standalone clock device designed for amateur radio operators, built around the affordable ESP32-based color touchscreen display (CYD), with additional temperature/humidity sensor and battery-backed RTC module. It functions without internet access but can display specialized data like solar forecasts and HF/VHF band conditions when connected.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">对于依赖精确时间和传播条件信息的无线电操作员而言，这款设备解决了市售方案过度依赖网络、断网即失效的痛点，同时以极低的硬件成本实现了专业功能。它体现了开源硬件社区"自力更生"的精神，为应急通信和偏远地区操作提供了可靠工具。
+For radio operators who rely on precise timing and propagation data, this device addresses the pain point of commercial solutions being too internet-dependent, while delivering professional features at minimal hardware cost. It embodies the open-source hardware community's self-reliance ethos and provides a reliable tool for emergency communications and remote operations.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可直接复用该开源项目（GitHub 仓库）搭建个人电台时钟，或根据需求定制外壳与功能扩展；也可借鉴其"离线优先+网络增强"的架构思路，应用于其他需要高可靠性的物联网设备设计。若追求极简风格，还可参考文中提到的摩斯电码时钟替代方案。
+You can replicate this open-source project from the GitHub repository for your own shack clock, or customize the enclosure and features; alternatively, apply its "offline-first, network-enhanced" architecture to other IoT devices requiring high reliability. For a minimalist aesthetic, consider the Morse code clock alternative mentioned in the article.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/" target="_blank">
+                                NVIDIA Vera Rubin POD: Seven Chips, Five Rack-Scale Systems, One AI Supercomputer
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">NVIDIA Vera Rubin POD 是 NVIDIA 推出的第三代 MGX 机架级 AI 超级计算机，由五种专用机架系统组成，整合七种协同设计的芯片（包括 GPU、CPU、网络及存储芯片），专为"代理式 AI"（Agentic AI）时代设计。该系统包含 40 个机架、1,152 颗 Rubin GPU、60 exaflops 算力，通过 NVLink 和新型 ETL 连接技术将多个机架整合为单一连贯系统。</div>
+<div class="lang-en">The NVIDIA Vera Rubin POD is a third-generation MGX rack-scale AI supercomputer comprising five specialized rack systems built on seven co-designed chips (GPUs, CPUs, networking, and storage). Designed for the agentic AI era, it features 40 racks, 1,152 Rubin GPUs, 60 exaflops of compute, and integrates multiple racks into one coherent system via NVLink and new ETL connectivity.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">AI 正从"人机交互"转向"AI 与 AI 交互"的新纪元，token 年消耗量已突破 10 千万亿且持续倍增；代理式系统需要多步骤推理、工具调用和沙盒验证，对低延迟、高吞吐、大上下文内存提出极致要求。</div>
+<div class="lang-en">Vera Rubin POD 通过机架级协同设计，实现每瓦特训练性能提升 4 倍、推理性能提升 10 倍、token 成本降至 1/10，重新定义 AI 工厂的能效与经济性标准。
+
+AI is shifting from human-AI to AI-AI interaction, with annual token consumption exceeding 10 quadrillion and growing multifold; agentic systems demand extreme low-latency, high-throughput, and massive context memory for multi-step reasoning and sandbox validation. Through rack-scale co-design, Vera Rubin POD achieves 4× training performance, 10× inference performance per watt, and 1/10 token cost versus Blackwell, redefining energy efficiency and economics for AI factories.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">若从事大模型推理服务，可关注 NVL72 + Groq 3 LPX 的组合方案，在万亿参数模型上实现 35 倍 token 吞吐提升；若构建 agentic 应用，可利用 Vera CPU 机架部署超 22,500 个并发 RL/沙盒环境进行结果验证；基础设施规划者应评估 MGX 统一机架设计（共享供电、散热、机械规格）以简化供应链和快速部署，并关注 CMX 上下文内存存储对长上下文推理的加速潜力。</div>
+<div class="lang-en">For LLM inference services, consider the NVL72 + Groq 3 LPX combination for 35× token throughput on trillion-parameter models; for agentic applications, leverage Vera CPU racks to deploy 22,500+ concurrent RL/sandbox environments for result validation; infrastructure planners should evaluate the unified MGX rack design (shared power, cooling, mechanical envelopes) to streamline supply chains and accelerate deployment, while exploring CMX context memory storage for long-context inference acceleration.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/asia/south-asia/article/3346806/afghanistan-accuses-pakistan-killing-civilians-fresh-kabul-strikes?utm_source=rss_feed" target="_blank">
+                                200 killed after Pakistan strikes hit drug rehabilitation hospital in Kabul, Taliban says
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一则关于2024年底巴基斯坦对阿富汗发动空袭的新闻报道。阿富汗塔利班政府指控巴基斯坦军方轰炸了喀布尔一家戒毒医院，造成重大伤亡，而巴基斯坦否认击中任何民用设施。</div>
+<div class="lang-en">This is a news report about Pakistani airstrikes on Afghanistan in late 2024. The Taliban government in Afghanistan accused Pakistan's military of bombing a drug rehabilitation hospital in Kabul, causing mass casualties, while Pakistan denied hitting any civilian facilities.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此次事件标志着两国边境冲突急剧升级，从边境交火发展为针对首都目标的空袭，可能引发更广泛的地区不稳定。平民设施遭袭的指控（无论真伪）也凸显了战争中信息战与人道主义危机的复杂性。</div>
+<div class="lang-en">This event marks a sharp escalation in border conflicts between the two countries, evolving from border skirmishes to airstrikes targeting the capital, potentially triggering broader regional instability. The allegations of civilian facility attacks (regardless of their veracity) also highlight the complexity of information warfare and humanitarian crises in armed conflicts.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可借此案例研究现代冲突中的信息核实挑战，对比多方信源分析真相；也可用于理解南亚地缘政治动态，或作为人道主义国际法（区分军事目标与民用设施）的教学案例。</div>
+<div class="lang-en">This case can be used to study information verification challenges in modern conflicts by comparing multiple sources to analyze truth; it also serves to understand South Asian geopolitical dynamics or as a teaching case for international humanitarian law (distinguishing military targets from civilian facilities).</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/united-states-canada/article/3346803/trump-administration-urges-judge-revisit-ruling-blocking-subpoenas-jerome-powell?utm_source=rss_feed" target="_blank">
+                                Trump administration urges judge to revisit ruling blocking subpoenas to Jerome Powell
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">美国联邦法官James Boasberg于上周五裁定，司法部对美联储主席Jerome Powell的刑事调查 subpoenas 无效，认为该调查实质目的是向Powell施压以迫使其降息或辞职。特朗普政府于周一公开提交动议，要求法官重新考虑这一裁决。
+On Friday, US federal judge James Boasberg ruled that DOJ subpoenas in a criminal investigation into Fed Chairman Jerome Powell were invalid, concluding the probe was intended to pressure Powell to lower interest rates or resign. The Trump administration filed a public motion on Monday asking the judge to reconsider this ruling.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此案触及美联储独立性的核心原则——央行应免受政治干预以制定货币政策。同时，该调查的时间点与Powell任期即将届满（5月中旬）及特朗普试图任命更"顺从"主席的意图高度重合，引发对权力制衡的担忧。此外，共和党参议员Tillis已表态在调查结束前不会投票确认任何联储提名人，增加了政治僵局风险。
+This case strikes at the core principle of Federal Reserve independence—central banks should be free from political interference in monetary policy. The probe's timing coincides with Powell's term expiring in mid-May and Trump's attempt to install a more compliant chair, raising concerns about checks and balances. Republican Senator Tillis has also stated he won't confirm any Fed nominee while the investigation continues, increasing political deadlock risk.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注5月中旬Powell任期届满前后的货币政策走向及人事变动，评估市场波动风险。理解央行独立性与政治压力之间的张力，作为分析其他主要经济体（如欧洲央行、日本央行）类似冲突的参照框架。跟踪此案的司法进展，观察美国三权分立制度在关键经济机构独立性议题上的实际运作。
+Monitor monetary policy direction and personnel changes around Powell's mid-May term expiration to assess market volatility risks. Understand the tension between central bank independence and political pressure as a reference framework for analyzing similar conflicts in other major economies (ECB, BOJ). Track the case's judicial developments to observe how US separation of powers operates on critical economic institution independence issues.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/hong-kong/article/3346720/9-injured-car-mounts-pavement-hong-kong?utm_source=rss_feed" target="_blank">
+                                Elderly driver arrested after car mounts pavement in Hong Kong, injuring 9
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一则关于香港交通事故的新闻报道：一名75岁老年司机在九龙湾试图U型转弯时误踩油门而非刹车，导致车辆冲上人行道，造成8名行人受伤，其75岁的妻子也因未系安全带被抛出车外受伤。警方以"危险驾驶导致他人严重身体伤害"罪名逮捕了该司机。</div>
+<div class="lang-en">This is a news report about a traffic accident in Hong Kong: a 75-year-old elderly driver mistakenly stepped on the accelerator instead of the brake while attempting a U-turn in Kowloon Bay, causing his car to mount the pavement and injure eight pedestrians. His 75-year-old wife was also thrown from the vehicle and injured because she was not wearing a seatbelt. Police arrested the driver for "dangerous driving causing grievous bodily harm."
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这起事故凸显了高龄驾驶员的驾驶安全风险问题——随着年龄增长，人的反应能力、判断力和肢体协调性会下降，容易导致误操作。同时，该事件也暴露了乘客未系安全带的安全隐患，以及现行驾照制度对老年驾驶员健康评估的潜在不足。</div>
+<div class="lang-en">This incident highlights the driving safety risks associated with elderly drivers—as people age, their reaction time, judgment, and physical coordination decline, making operational errors more likely. It also exposes the safety hazard of passengers not wearing seatbelts, and potentially reveals inadequacies in current licensing systems regarding health assessments for older drivers.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">如果你是驾驶员或家中有老年驾驶员：建议定期进行驾驶能力评估，考虑安装行车记录仪和车辆安全辅助设备，并养成系安全带的强制习惯。如果你是政策研究者或城市规划者：可借此案例推动老年驾驶员强制健康检查制度、智能交通监控系统，或探讨自动驾驶技术对高龄群体的辅助价值。</div>
+<div class="lang-en">If you are a driver or have elderly family members who drive: consider regular driving ability assessments, installing dash cams and vehicle safety assistance devices, and cultivating the mandatory habit of wearing seatbelts. If you are a policy researcher or urban planner: you could use this case to advocate for mandatory health check-ups for elderly drivers, intelligent traffic monitoring systems, or explore the potential of autonomous driving technology to assist aging populations.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/week-asia/people/article/3346779/arrest-stateless-teen-malaysia-highlights-plight-sabahs-1-million-non-citizens?utm_source=rss_feed" target="_blank">
+                                Arrest of stateless teen in Malaysia highlights plight of Sabah’s 1 million non-citizens
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章报道了马来西亚沙巴州一名无国籍青少年Niko Ansboy在等待学校旅行期间被警方逮捕的事件，揭示了该地区超过100万无国籍及无证件居民因马来西亚严格的公民法而被剥夺合法身份的困境。</div>
+<div class="lang-en">This article reports the arrest of a stateless teenager, Niko Ansboy, during a school trip in Sabah, Malaysia, highlighting the plight of over 1 million non-citizens and undocumented residents who are denied legal status due to Malaysia's restrictive citizenship laws.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">无国籍问题导致大量在马来西亚出生和长大的人无法获得基本权利保护，常被当作非法移民对待，面临任意拘留和缺乏教育、医疗等社会服务的风险。这一事件引发国际社会对东南亚无国籍群体人权状况的关注，也暴露了国籍法改革滞后于人口流动现实的系统性问题。</div>
+<div class="lang-en">Statelessness leaves hundreds of thousands born and raised in Malaysia without basic rights protections, often treated as undocumented migrants subject to arbitrary detention and denied access to education and healthcare. This case draws international attention to human rights conditions of stateless populations in Southeast Asia and exposes systemic gaps between restrictive nationality laws and demographic realities.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注并支持为无国籍群体提供替代教育的民间组织（如Borneo Komrad），或参与相关人权倡导活动；在研究移民政策、国际法或东南亚社会问题时，可将此案例作为分析国籍法与人权冲突的实证材料；从事跨国企业合规或NGO工作者，应了解东道国无国籍劳工的法律风险与伦理责任。</div>
+<div class="lang-en">One can support civil society organizations providing alternative education for stateless children (such as Borneo Komrad) or engage in related human rights advocacy; researchers analyzing immigration policy, international law, or Southeast Asian social issues can use this case as empirical material for studying conflicts between nationality laws and human rights; professionals in corporate compliance or NGO work should understand legal risks and ethical responsibilities regarding stateless labor in host countries.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="CNX Software">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.cnx-software.com/2026/03/16/industrial-wi-fi-7-access-point-with-redundant-12v-48v-dc-inputs-targets-autonomous-systems/" target="_blank">
+                                Industrial Wi-Fi 7 access point with redundant 12V – 48V DC inputs targets autonomous systems
+                            </a>
+                        </h3>
+                        <span class="source-tag">CNX Software</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">研华（Advantech）推出了一款名为 EKI-6333BE-4GD 的工业级 Wi-Fi 7 无线接入点，专为自主系统（如 AMR 车队、机器人协作和 XR 远程操作）设计。该设备支持三频段（2.4/5/6 GHz）、冗余 12V-48V DC 电源输入，并能在 -40°C 至 75°C 的极端温度下运行，符合工业网络安全标准 IEC 62443。</div>
+<div class="lang-en">Advantech has launched the EKI-6333BE-4GD, an industrial-grade Wi-Fi 7 tri-band wireless access point designed for autonomous systems such as AMR fleets, robotics collaboration, and XR remote operations. It features redundant 12V-48V DC power inputs, operates in temperatures from -40°C to 75°C, and complies with the IEC 62443 industrial cybersecurity standard.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">Wi-Fi 7 的 Multi-Link Operation (MLO) 和高达 5.8 Gbps 的吞吐量，为工业 4.0 场景中的低延迟、高可靠无线通信提供了关键基础设施，解决了传统 Wi-Fi 在移动机器人和实时控制中的瓶颈。随着自主移动机器人（AMR）和扩展现实（XR）远程操作的普及，工业级网络设备正从"可选"变为"必需"，网络安全合规（IEC 62443、WPA3）也成为工厂数字化的硬性门槛。</div>
+<div class="lang-en">Wi-Fi 7's Multi-Link Operation (MLO) and throughput up to 5.8 Gbps provide critical infrastructure for low-latency, high-reliability wireless communication in Industry 4.0 scenarios, addressing bottlenecks of traditional Wi-Fi in mobile robotics and real-time control. As AMR fleets and XR remote operations proliferate, industrial-grade networking equipment is shifting from "optional" to "essential," with cybersecurity compliance (IEC 62443, WPA3) becoming a mandatory threshold for factory digitalization.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">若涉及智能制造、仓储物流或远程运维项目，可将此设备作为 AMR 车队通信骨干或 XR 眼镜的无线接入节点，评估其冗余电源和宽温设计是否匹配现场环境。技术团队可进一步研究其基于 Web 的 NMS 集中管理系统，用于多站点 AP 的批量配置与固件升级，同时验证 WPA3 企业级认证与现有 IT 安全策略的兼容性。</div>
+<div class="lang-en">For smart manufacturing, warehouse logistics, or remote operation projects, this device can serve as a communication backbone for AMR fleets or wireless access nodes for XR headsets—evaluate whether its redundant power and wide-temperature design match field conditions. Technical teams can further explore its web-based NMS for centralized configuration and OTA firmware upgrades across multiple sites, while verifying WPA3 enterprise authentication compatibility with existing IT security policies.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/middle-east/article/3346748/dubai-flights-disrupted-after-drone-attack-near-airport-missile-kills-1-abu-dhabi?utm_source=rss_feed" target="_blank">
+                                Dubai flights disrupted after drone attack near airport; missile kills 1 in Abu Dhabi
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一篇关于2024年阿联酋遭受无人机和导弹袭击的新闻报道，袭击导致迪拜国际机场航班中断、阿布扎比一名平民死亡以及富查伊拉石油基础设施起火。事件发生在伊朗外长指控阿联酋向伊朗哈尔克岛发射火箭后的第二天，阿联酋否认了该指控。</div>
+<div class="lang-en">This is a news report about drone and missile attacks on the UAE in 2024, which disrupted flights at Dubai International Airport, killed one civilian in Abu Dhabi, and sparked fires at oil infrastructure in Fujairah. The attacks occurred one day after Iran's foreign minister accused the UAE of launching rockets at Iran's Kharg Island, a claim denied by UAE officials.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此次袭击凸显了民用关键基础设施（机场、能源设施）在现代混合战争中的脆弱性，无人机技术使非国家行为体也能对全球经济枢纽造成重大破坏。地缘政治紧张局势正在升级，海湾地区作为全球能源和航空运输核心节点的安全风险显著增加。</div>
+<div class="lang-en">These attacks highlight the vulnerability of civilian critical infrastructure (airports, energy facilities) in modern hybrid warfare, where drone technology enables non-state actors to inflict significant damage on global economic hubs. Geopolitical tensions are escalating, with significantly increased security risks for the Gulf region as a core node of global energy and air transport.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">企业应评估供应链和差旅路线对地缘政治热点地区的依赖，制定替代方案和危机响应预案；安全团队可参考此案例更新关键基础设施防护策略，特别是针对低空慢速无人机威胁的监测与拦截能力。研究人员可追踪无人机 warfare 的扩散趋势及其对国际法和民用航空安全规范的影响。</div>
+<div class="lang-en">Organizations should assess supply chain and travel route dependencies on geopolitical hotspots, developing contingency plans and crisis response protocols; security teams can update critical infrastructure protection strategies based on this case, particularly for detection and interception of low-altitude slow-speed drone threats. Researchers may track the proliferation trends of drone warfare and its impact on international law and civil aviation safety norms.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Hackaday">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://hackaday.com/2026/03/16/attiny85-plays-the-chrome-dinosaur-game/" target="_blank">
+                                ATtiny85 Plays the Chrome Dinosaur Game
+                            </a>
+                        </h3>
+                        <span class="source-tag">Hackaday</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章介绍了一个使用 Digispark ATtiny85 微控制器制作的自动化硬件项目，该设备通过光敏电阻传感器检测 Chrome 浏览器离线恐龙游戏中的障碍物（仙人掌和飞鸟），并自动发送 USB HID 键盘信号来控制游戏角色跳跃。这是一个将嵌入式硬件与计算机视觉简化方案相结合的趣味创客项目。</div>
+<div class="lang-en">This article describes a DIY hardware project using a Digispark ATtiny85 microcontroller that automatically plays Chrome's offline dinosaur game. The device uses light-dependent resistor (LDR) sensors to detect on-screen obstacles (cacti and birds) and sends USB HID keyboard signals to control jumps, combining embedded hardware with a simplified computer vision approach.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">该项目展示了低成本微控制器如何实现物理世界与数字界面的交互，为自动化测试、无障碍辅助技术等领域提供了启发；同时体现了创客社区将经典 Easter egg 游戏转化为硬件挑战的创意趋势，以及 USB HID 协议在跨平台设备控制中的实用性。</div>
+<div class="lang-en">This project demonstrates how low-cost microcontrollers can bridge physical hardware with digital interfaces, offering insights for automated testing and accessibility tools. It also reflects the maker community's trend of turning classic Easter eggs into hardware challenges, while showcasing the versatility of USB HID for cross-platform device control.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可以借鉴其光电传感方案为其他需要屏幕状态检测的自动化场景（如游戏挂机、UI 测试）提供低成本实现思路；学习 USB HID 设备模拟技术应用于键盘/鼠标自动化或自定义控制器开发；或将其核心逻辑迁移到更强大的平台（如 ESP32-CAM）实现基于计算机视觉的升级版方案。</div>
+<div class="lang-en">You can adapt its photoelectric sensing approach for other automation scenarios requiring screen state detection (game botting, UI testing). Study the USB HID emulation technique for keyboard/mouse automation or custom controller development. Alternatively, port the core logic to more capable platforms like ESP32-CAM for a computer vision-based upgrade.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/design-simulate-and-scale-ai-factory-infrastructure-with-nvidia-dsx-air/" target="_blank">
+                                Design, Simulate, and Scale AI Factory Infrastructure with NVIDIA DSX Air
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">NVIDIA DSX Air 是一款云端 AI 工厂基础设施模拟平台，允许企业在实际部署硬件之前，对计算、网络、存储和安全系统进行完整的设计、测试与优化。它通过提供保证容量、统一账户管理、模拟检查点和历史记录等功能，帮助用户实现全栈集群的数字化验证。</div>
+<div class="lang-en">NVIDIA DSX Air is a cloud-based AI factory infrastructure simulation platform that enables organizations to design, test, and optimize compute, networking, storage, and security systems before physical hardware deployment. It offers features like guaranteed capacity, unified account management, simulation checkpoints, and history tracking to support full-stack cluster validation.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">AI 工厂建设涉及复杂的多层系统集成，配置错误或集成问题可能导致重大延误和性能损失；DSX Air 通过"数字孪生"方式将部署周期压缩，并降低集成风险。此外，它支持 CI/CD 集成和持续验证，使基础设施运维能够跟上 AI 工作负载的快速迭代节奏，同时减少对专用硬件实验室的依赖。</div>
+<div class="lang-en">AI factory construction involves complex multi-layer system integration where misconfigurations or integration issues can cause major delays and performance losses; DSX Air compresses deployment cycles and reduces integration risks through "digital twin" simulation. Furthermore, its CI/CD integration and continuous validation capabilities allow infrastructure operations to keep pace with rapid AI workload iterations while reducing dependency on dedicated hardware labs.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">技术团队可利用 DSX Air 的 Python SDK 和 REST API 将模拟环境嵌入 CI/CD 流水线，实现配置变更的自动化预验证；企业可通过共享模拟副本建立安全的培训沙箱，降低技能提升成本。对于计划部署 NVIDIA Vera Rubin 等下一代平台的组织，可提前模拟 Spectrum-6 交换机和 NVLink 架构，确保 day-one 的互操作性和平滑迁移。</div>
+<div class="lang-en">Technical teams can leverage DSX Air's Python SDK and REST APIs to embed simulation environments into CI/CD pipelines for automated pre-validation of configuration changes; enterprises can establish secure training sandboxes through shared simulation replicas to reduce upskilling costs. For organizations planning to deploy next-generation platforms like NVIDIA Vera Rubin, they can pre-simulate Spectrum-6 switches and NVLink architectures to ensure day-one interoperability and smooth migration.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/hong-kong/society/article/3346791/northern-metropolis-streamline-land-approval-process-9-2-months-sources?utm_source=rss_feed" target="_blank">
+                                Northern Metropolis to streamline land approval process from 9 to 2 months: sources
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">香港政府计划为"北部都会区"项目推出专项立法，将土地用途变更审批流程从约9个月大幅缩短至2个月，以配合国家"十五五"规划并加速这一占地3万公顷的大型发展项目。</div>
+<div class="lang-en">The Hong Kong government plans to introduce dedicated legislation for the "Northern Metropolis" project, slashing land-use approval time from about 9 months to just 2 months, aligning with China's 15th five-year plan to accelerate this 30,000-hectare mega development.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此举标志着香港在土地审批制度上的重大改革，旨在提升行政效率、吸引投资并解决住房短缺问题，同时响应国家发展战略以增强区域经济竞争力。</div>
+<div class="lang-en">This represents a significant regulatory reform in Hong Kong's land approval system, aiming to boost administrative efficiency, attract investment, address housing shortages, and enhance regional economic competitiveness in line with national development strategies.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">房地产开发商和投资者可关注北部都会区的土地招标机会，企业可评估在该区域设立业务的前置时机，政策研究者则可追踪此类"特事特办"立法模式对其他大型基建项目的示范效应。</div>
+<div class="lang-en">Property developers and investors should monitor land tender opportunities in the Northern Metropolis; businesses can evaluate early entry timing; and policy researchers can track how this "special-case" legislative model may influence other mega infrastructure projects.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="CNX Software">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.cnx-software.com/2026/03/16/m5stamp-c6lora-tiny-18x15x2-3-mm-smd-module-pairs-esp32-c6-with-sx1262-lora-chip/" target="_blank">
+                                M5Stamp C6LoRa tiny (18×15×2.3 mm) SMD module pairs ESP32-C6 with SX1262 LoRa chip
+                            </a>
+                        </h3>
+                        <span class="source-tag">CNX Software</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">M5Stamp C6LoRa 是一款超小型（18×15×2.3 mm）表面贴装模块，将 ESP32-C6（支持 Wi-Fi 6、蓝牙 LE、802.15.4）与 SX1262 LoRa 收发器集成于一体，实现高速短距与低速远距通信的融合。该模块专为空间受限的嵌入式物联网应用设计，售价 12.95 美元。</div>
+<div class="lang-en">The M5Stamp C6LoRa is an ultra-compact (18×15×2.3 mm) SMD module that integrates the ESP32-C6 (Wi-Fi 6, Bluetooth LE, 802.15.4) with the SX1262 LoRa transceiver, combining high-speed short-range and low-speed long-range communications. Priced at $12.95, it is designed for space-constrained embedded IoT applications.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">该模块解决了物联网设备中"短距高速连接"与"远距低功耗传输"难以兼顾的痛点，单芯片方案可显著降低硬件复杂度和 BOM 成本。其 1.7 克重量和邮票级尺寸使其特别适合农业监测、智能表计等电池供电的户外分布式场景。</div>
+<div class="lang-en">This module addresses the pain point of balancing "short-range high-speed connectivity" with "long-range low-power transmission" in IoT devices, with a single-chip solution significantly reducing hardware complexity and BOM costs. Its 1.7g weight and stamp-sized form factor make it especially suitable for battery-powered outdoor distributed scenarios like agricultural monitoring and smart metering.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可直接利用 M5Stack 提供的 Arduino/PlatformIO 开发环境和 RadioLib 库快速原型，通过 I/O 扩展器管理 LoRa 控制信号以节省 GPIO；设计产品时需注意 BAT 供电时需拉高 MODULE_EN，并遵循特定的 SX1262 初始化时序（复位→天线开关→LNA 使能）。</div>
+<div class="lang-en">Developers can rapidly prototype using M5Stack's Arduino/PlatformIO environment with the RadioLib library, managing LoRa control signals via the I/O expander to save GPIO pins; when designing products, note that BAT power supply requires pulling MODULE_EN high, and follow the specific SX1262 initialization sequence (reset → antenna switch → LNA enable).</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/military/article/3346773/what-lessons-does-taiwan-see-iran-and-ukraine-its-air-defence-strategy?utm_source=rss_feed" target="_blank">
+                                What lessons does Taiwan see from Iran and Ukraine for its air-defence strategy?
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">台湾防务部门向立法机构提交报告，指出需要发展低成本拦截武器来应对中国大陆日益增长的远程火箭弹和无人机威胁。该报告借鉴了美伊以之间的导弹无人机攻防战以及俄乌战争的经验，认为传统昂贵的防空导弹系统难以应对大规模廉价武器的饱和攻击。</div>
+<div class="lang-en">Taiwan's defence ministry submitted a report to lawmakers stating that low-cost interceptor weapons are urgently needed to counter the mainland Chinese military's growing arsenal of long-range rockets and drones. Drawing lessons from recent missile and drone exchanges between the US, Israel, and Iran, as well as the Ukraine war, the report argues that traditional expensive air-defence systems cannot withstand saturation attacks by large numbers of cheap weapons.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一战略转变反映了现代战争形态的根本变化：低成本、大规模、智能化的武器系统正在颠覆传统的"以质取胜"防御理念。对台湾而言，这不仅是军事技术路线的调整，更涉及如何在有限预算下建立可持续的防御体系，同时也为其他面临不对称威胁的国家和地区提供了重要参考。</div>
+<div class="lang-en">This strategic shift reflects a fundamental change in modern warfare: low-cost, large-scale, and intelligent weapon systems are disrupting the traditional "quality over quantity" defence philosophy. For Taiwan, this is not merely a military technical adjustment, but involves building a sustainable defence system within limited budgets, while also providing important reference for other countries and regions facing asymmetric threats.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">技术决策者应重新评估"高价值目标-高成本防护"的传统思维，探索分布式、模块化的低成本防御方案；安全研究人员可关注定向能武器、电子战、AI目标识别等新兴拦截技术的发展；投资者则可留意军民两用无人机、智能弹药及相关传感器产业链的投资机会。</div>
+<div class="lang-en">Technology decision-makers should reassess the traditional "high-value target, high-cost protection" mindset and explore distributed, modular low-cost defence solutions; security researchers can focus on emerging interception technologies such as directed energy weapons, electronic warfare, and AI target recognition; investors may look for opportunities in dual-use drones, smart munitions, and related sensor industry chains.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/tech/big-tech/article/3346789/alibaba-reshuffles-ai-units-new-token-hub-group-led-ceo-eddie-wu?utm_source=rss_feed" target="_blank">
+                                Alibaba reshuffles AI units into a new ‘Token Hub’ group, led by CEO Eddie Wu
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">阿里巴巴集团于周一宣布成立"Token Hub"（ATH）事业群，由CEO吴泳铭直接领导，将旗下所有核心AI团队和产品整合到统一架构下，包括通义实验室、模型即服务业务、Qwen个人AI助手业务单元、钉钉AI企业工作流团队"悟空"以及AI创新业务单元。该组织围绕"token"概念构建——即AI大语言模型处理和生成文本、图像或代码时的基本计算与输出单位。</div>
+<div class="lang-en">Alibaba Group announced on Monday the establishment of the "Token Hub" (ATH) Business Group, led directly by CEO Eddie Wu, consolidating all its core AI teams and products under one unified structure—including Tongyi Laboratory, model-as-a-service business, Qwen personal AI assistant unit, Dingtalk AI enterprise workflow team "Wukong," and a separate AI Innovation unit. The organization is built around the concept of the "token," the fundamental unit of computation and output generated by AI large language models when processing and producing text, images, or code.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一重组标志着阿里巴巴从分散的AI业务布局转向以"token"为统一度量衡的集中化战略，反映出中国科技巨头正在加速AI资源整合以提升协同效率；同时，CEO亲自挂帅表明AI已成为阿里巴巴最高优先级的战略方向，其"创造token、交付token、应用token"的使命宣言也揭示了行业正从模型竞争转向以token经济为核心的商业化落地阶段。</div>
+<div class="lang-en">This reorganization signals Alibaba's shift from fragmented AI operations to a centralized strategy with "token" as the unified metric, reflecting Chinese tech giants' acceleration of AI resource integration to enhance coordination efficiency. Meanwhile, the CEO's direct leadership indicates AI has become Alibaba's highest-priority strategic direction, and its mission statement of "create tokens, deliver tokens, apply tokens" also reveals the industry's transition from model competition to commercialization focused on the token economy.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注阿里巴巴Qwen系列模型的开源动态及API定价策略，评估其作为企业AI基础设施的性价比优势；研究"Token Hub"模式下的企业级AI工作流解决方案（如钉钉+AI集成），为组织数字化转型提供参考；同时可借鉴"token经济学"思维，在自身业务中量化AI算力投入与产出的衡量标准，优化AI应用的ROI评估体系。</div>
+<div class="lang-en">Monitor Alibaba's Qwen series open-source developments and API pricing strategies to evaluate their cost-effectiveness as enterprise AI infrastructure; study enterprise-level AI workflow solutions under the "Token Hub" model (such as Dingtalk+AI integration) to provide references for organizational digital transformation; and adopt "token economics" thinking to quantify AI computing input and output metrics in your own business, optimizing ROI evaluation frameworks for AI applications.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/military/article/3346774/pla-ramps-taiwan-patrols-after-lull-beijing-slams-lais-independence-confession?utm_source=rss_feed" target="_blank">
+                                PLA ramps up Taiwan patrols after lull as Beijing slams Lai’s ‘independence confession’
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">中国人民解放军在两周相对平静后，于周末大幅增加对台湾附近的军机巡逻，26架次战机出动，其中16架进入台湾防空识别区。此次行动恰逢台湾领导人赖清德发表"主权"言论后，北京方面强烈谴责其"台独自白"。</div>
+<div class="lang-en">The People's Liberation Army significantly increased aircraft sorties near Taiwan over the weekend after a two-week lull, dispatching 26 sorties with 16 entering Taiwan's air defence identification zone. This escalation coincided with Beijing's strong rebuke of Taiwanese leader William Lai's "independence confession" following his "sovereignty" remarks.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一事件显示台海军事紧张局势的周期性波动与政治言论高度联动，军事威慑已成为北京对台政策的核心工具。此前长达7天的暂停曾引发外界对缓和信号的猜测，但此次迅速反弹表明，任何被视为"台独"的政治表态都将触发即时军事回应，反映出两岸关系的脆弱性和不可预测性。</div>
+<div class="lang-en">This incident demonstrates the cyclical nature of cross-strait military tensions closely tied to political rhetoric, with military deterrence serving as Beijing's core policy instrument. The rapid rebound after a seven-day pause—previously interpreted as a potential easing signal—shows that any political statement perceived as "pro-independence" triggers immediate military responses, highlighting the fragility and unpredictability of cross-strait relations.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">对于关注地缘政治风险的企业和投资者，可将台海军事活动数据纳入风险预警指标体系，建立与关键政治节点（如领导人讲话、国际访问）关联的监测机制。研究人员可进一步分析"暂停-升级"模式背后的决策逻辑，为预测未来台海局势演变提供框架；政策分析人员则应关注军事信号与外交谈判之间的互动关系，以评估危机管控的实际空间。</div>
+<div class="lang-en">For businesses and investors monitoring geopolitical risks, PLA activity data near Taiwan can be incorporated into risk early-warning systems with monitoring mechanisms tied to key political nodes like leader speeches and international visits. Researchers can analyze the "pause-escalation" pattern's decision-making logic to forecast future cross-strait developments, while policy analysts should examine the interplay between military signaling and diplomatic negotiations to assess actual crisis management room.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Hackaday">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://hackaday.com/2026/03/16/lego-machine-plays-tic-tac-toe-without-electronics/" target="_blank">
+                                LEGO Machine Plays Tic-Tac-Toe Without Electronics
+                            </a>
+                        </h3>
+                        <span class="source-tag">Hackaday</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一台完全由乐高积木搭建的纯机械井字棋（Tic-Tac-Toe）游戏机，由Joost van Velzen设计。它不使用任何电子元件，而是通过52个机械逻辑门和204位机械内存来处理游戏状态并做出应对。</div>
+<div class="lang-en">This is a purely mechanical Tic-Tac-Toe playing machine built entirely from LEGO bricks, designed by Joost van Velzen. It uses no electronics whatsoever, instead processing game states and making moves through 52 mechanical logic gates and 204 bits of mechanical memory.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这个项目展示了机械计算的可能性，为理解计算机基本原理提供了直观的物理模型。它同时融合了复古美学（18世纪自动机风格）与现代创客文化，在LEGO Ideas平台获得广泛关注，体现了低技术解决方案的独特魅力。</div>
+<div class="lang-en">This project demonstrates the possibility of mechanical computing, offering an intuitive physical model for understanding fundamental computer principles. It blends retro aesthetics (18th-century automaton style) with modern maker culture, gaining significant attention on LEGO Ideas and showcasing the unique appeal of low-tech solutions.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可以借鉴这种"去电子化"思维，在教学中用物理模型解释抽象的计算概念；也可探索机械逻辑在特定场景（如极端环境、艺术装置）中的应用潜力；对于乐高或创客爱好者，这是研究机械记忆与逻辑门实现的优秀参考案例。</div>
+<div class="lang-en">One can adopt this "de-electrification" approach to explain abstract computing concepts through physical models in education; explore applications of mechanical logic in specific scenarios (extreme environments, art installations); for LEGO or maker enthusiasts, this serves as an excellent reference for studying mechanical memory and logic gate implementations.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/middle-east/article/3346799/emirates-flies-full-flights-out-dubai-near-empty-ones-back?utm_source=rss_feed" target="_blank">
+                                Emirates flies full flights out of Dubai, near-empty ones back
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章报道了中东局势紧张（伊朗战争前夕）对阿联酋航空运营的冲击：这家全球最大国际航空公司原本每日数百趟近乎满座的航班，如今出现返程航班载客率暴跌至20%、甚至A380巨型客机仅载35人的极端情况，同时面临每日数千名 outbound 乘客爽约的困境。
+This article reports on the operational shock to Emirates—the world's largest international airline—amid rising Middle East tensions (on the eve of the Iran war): flights that were once nearly full now see return load factors plummeting to 20%, with one A380 jumbo jet carrying fewer than 35 passengers, alongside thousands of daily no-shows on outbound flights.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这揭示了地缘政治风险对全球航空枢纽模式的脆弱性：迪拜作为连接东西方的超级中转站，其"去程满座、返程空载"的不对称客流暴露了过度依赖单一区域枢纽的结构性风险，也预示着国际旅行需求对安全危机的极端敏感性。
+This exposes the fragility of global aviation hub models to geopolitical risk: Dubai's asymmetric "full outbound, empty return" traffic reveals structural risks of over-reliance on single regional hubs, while demonstrating how international travel demand collapses at the slightest security crisis.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">对于航空业从业者，可研究"危机弹性定价"与动态航线重组策略；对于投资者，需将地缘政治压力测试纳入航空股估值模型；对于旅行者，可关注此类危机窗口期的弹性票务政策与低价返程机会。
+For aviation professionals: study "crisis-resilient pricing" and dynamic route restructuring; for investors: incorporate geopolitical stress-testing into airline valuation models; for travelers: monitor flexible ticketing policies and discounted return opportunities during such crisis windows.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/economy/global-economy/article/3346787/china-and-us-end-trade-talks-doubts-form-over-trump-visit?utm_source=rss_feed" target="_blank">
+                                China and the US end trade talks in Paris as doubts form over Trump visit
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">This article reports on the conclusion of the sixth round of China-US trade talks held in Paris, where both sides discussed extending bilateral tariff measures and establishing investment promotion mechanisms. Chinese Vice Commerce Minister Li Chenggang described the consultations as "deep, frank and constructive," though the talks occurred amid growing uncertainty about a potential visit by former President Trump.
+
+本文报道了在巴黎举行的第六轮中美贸易谈判结束，双方讨论了延长双边关税措施和建立投资促进机制等议题。中国商务部副部长李成钢称磋商"深入、坦诚、富有建设性"，但谈判背景是外界对特朗普可能访华的猜测日益增多。</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">The talks signal ongoing diplomatic efforts to stabilize the world's most consequential bilateral economic relationship despite persistent tensions, including new US Section 301 investigations that China strongly opposes. The focus on maintaining tariff stability and creating investment mechanisms suggests both sides recognize the costs of escalation, even as structural disagreements remain unresolved.
+
+这些谈判表明，尽管存在持续紧张关系（包括中国强烈反对的美国新的301条款调查），双方仍在努力稳定全球最重要的双边经济关系。双方关注维持关税稳定和创建投资机制，表明两国都认识到升级对抗的代价，尽管结构性分歧仍未解决。</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">Business leaders and investors should monitor follow-up announcements on tariff extensions and investment frameworks to adjust supply chain and market entry strategies accordingly. Researchers and policymakers can analyze the divergence between China's public messaging (emphasizing consensus) and its formal opposition to US trade actions to better anticipate negotiation dynamics.
+
+企业领导者和投资者应密切关注关税延期和投资框架的后续公告，以相应调整供应链和市场进入策略。研究人员和政策制定者可以分析中国公开表态（强调共识）与其正式反对美国贸易行动之间的差异，以更好地预判谈判动态。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/diplomacy/article/3346717/chinas-supply-chain-meets-wall-african-resource-nationalism?utm_source=rss_feed" target="_blank">
+                                China’s supply chain meets the wall of African resource nationalism
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章讨论非洲资源富国（以津巴布韦为例）正通过出口禁令等政策加强对关键矿产的控制，导致全球价格上涨并冲击中国供应链。津巴布韦将原定于2027年的锂矿出口禁令提前实施，以迫使更多本地增值加工，而中国电池生产商约15%的锂精矿供应依赖该国，因此受到严重打击。
+This article discusses how resource-rich African nations (with Zimbabwe as an example) are tightening control over critical minerals through policies like export bans, driving up global prices and disrupting Chinese supply chains. Zimbabwe moved up its lithium export ban from 2027 to force more local value-added processing, hitting Chinese battery producers hard as they rely on the country for about 15% of their lithium concentrate supply.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这标志着"资源民族主义"在非洲的崛起，资源国不再满足于原材料出口，而是要求产业链本地化以获取更高附加值。对中国而言，这暴露了过度依赖单一来源的供应链脆弱性，同时也预示着全球关键矿产竞争格局正在重塑，投资不再能自动换取资源准入。
+This signals the rise of "resource nationalism" in Africa, where resource-rich countries no longer settle for raw material exports but demand localized industrial chains for higher value capture. For China, it exposes supply chain vulnerabilities from over-reliance on single sources, while foreshadowing a reshaping of global critical minerals competition where investment no longer automatically guarantees resource access.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">企业应加速供应链多元化布局，投资非洲本地加工产能以符合政策导向，同时建立更灵活的资源采购网络。投资者需重新评估资源类海外项目的政治风险溢价，关注"资源民族主义"趋势下的新合作模式（如技术换资源、合资本地加工等）。
+Companies should accelerate supply chain diversification, invest in local African processing capacity to align with policy trends, and build more flexible resource procurement networks. Investors need to reassess political risk premiums for overseas resource projects and explore new cooperation models under the "resource nationalism" trend, such as technology-for-resources exchanges or joint ventures for local processing.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/economy/global-economy/article/3346767/papers-please-china-raises-pressure-panama-amid-canal-row-ship-inspection-wave?utm_source=rss_feed" target="_blank">
+                                Papers please: China raises pressure on Panama amid canal row with ship inspection wave
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">中国近期加大了对悬挂巴拿马国旗船舶的港口检查力度，此举是对巴拿马最高法院取消香港长江和记实业旗下子公司在巴拿马运河港口运营权的回应。巴拿马是全球第二大船舶注册国，这一针对性措施被视为北京向巴拿马政府施压的经济手段。</div>
+<div class="lang-en">China has intensified port inspections on Panama-flagged vessels as retaliation after Panama's Supreme Court annulled the port concession of a CK Hutchison subsidiary. Targeting Panama—a top global ship registry—this move represents Beijing's economic pressure tactic against the Latin American country amid the ongoing port dispute.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一事件标志着中美在拉美战略竞争的白热化，中国首次将"方便旗"船舶注册体系武器化，开创了以海事监管为地缘政治工具的先例。同时，这也暴露了跨国港口投资的地缘政治风险，可能重塑全球航运企业对"中立"注册地的选择逻辑。</div>
+<div class="lang-en">This signals the escalation of US-China strategic competition in Latin America and marks China's first weaponization of the flag-of-convenience registration system, setting a precedent for using maritime regulation as geopolitical leverage. It also exposes geopolitical risks in cross-border port investments and may reshape how global shipping firms select "neutral" registries.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">企业应重新评估供应链对特定船旗国和关键港口的依赖集中度，建立多注册地、多航线的弹性方案；投资者需将东道国司法主权风险与大国博弈因素纳入港口基建项目的尽职调查框架；政策研究者可持续追踪"海事监管武器化"趋势及其对国际海洋法体系的冲击。</div>
+<div class="lang-en">Businesses should reassess supply chain concentration risks on specific flag states and critical ports, building resilience through multi-registry and multi-route strategies. Investors must incorporate host-country judicial sovereignty risks and great-power competition into due diligence frameworks for port infrastructure projects. Policy researchers should track the "weaponization of maritime regulation" trend and its impact on international maritime law systems.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/asia/southeast-asia/article/3346793/super-rich-star-david-yong-hit-12-new-fraud-charges-singapore?utm_source=rss_feed" target="_blank">
+                                ‘Super Rich’ star David Yong hit with 12 new fraud charges in Singapore
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">新加坡Evergreen Group Holdings首席执行官、韩国综艺《Super Rich》明星David Yong（永庆霖）于2024年8月以来多次出庭，近日再被追加12项欺诈指控，累计面临17项控罪。他被指控于2019年底至2023年底期间，与一名叫Thung Sai Fun的人共谋，在Evergreen Assets Management的账目中进行虚假记载，包括虚报综合收益、收入和股息，并涉嫌无牌放贷约120万新元。</div>
+<div class="lang-en">Singapore-based Evergreen Group Holdings CEO and Korean variety show "Super Rich" star David Yong (Yong Khung Lin), who has been appearing in court since August 2024, was hit with 12 additional fraud charges, bringing his total to 17. He is accused of conspiring with an individual named Thung Sai Fun to make false entries in Evergreen Assets Management's accounts from late 2019 to late 2023, including misstating comprehensive income, revenues and dividends, as well as conducting unlicensed moneylending totaling approximately S$1.2 million.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此案揭示了"网红企业家"现象背后的财务合规风险——公众人物借助媒体曝光建立的商业信誉，可能掩盖公司治理和财务透明度的问题。同时，案件涉及长达四年的财务造假和无牌放贷，反映出中小企业在快速扩张过程中容易忽视的监管红线，对投资者和债权人具有警示意义。</div>
+<div class="lang-en">This case exposes the financial compliance risks behind the "influencer entrepreneur" phenomenon—where public figures build business credibility through media exposure that may mask corporate governance and financial transparency issues. Additionally, the four-year span of alleged financial fraud and unlicensed lending highlights regulatory red lines that growing SMEs often overlook, serving as a warning to investors and creditors.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">投资者和合作伙伴可通过此案学习尽职调查方法：核查企业牌照资质、交叉验证公开财务数据、关注高管法律诉讼记录；企业管理者应建立合规审查机制，特别是在跨境业务和融资活动中确保账目真实性与牌照完备性；媒体消费者则需理性看待"明星企业家"光环，区分娱乐形象与商业实质。</div>
+<div class="lang-en">Investors and partners can learn due diligence methods from this case: verifying business licenses, cross-checking public financial data, and monitoring executives' litigation records. Business managers should establish compliance review mechanisms, ensuring account authenticity and proper licensing especially in cross-border operations and financing. Media consumers need to rationally view "star entrepreneur" personas, distinguishing entertainment image from business substance.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Perfect Daily Grind">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://perfectdailygrind.com/2026/03/specialty-coffee-in-turkey/" target="_blank">
+                                Specialty coffee is taking over in Turkey
+                            </a>
+                        </h3>
+                        <span class="source-tag">Perfect Daily Grind</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">土耳其拥有500年历史的传统咖啡文化正在经历深刻变革，精品咖啡（specialty coffee）正在伊斯坦布尔以外的安卡拉、伊兹密尔等城市快速崛起，同时本土品牌如Espressolab正积极向全球市场扩张。</div>
+<div class="lang-en">Turkey's 500-year-old traditional coffee culture is undergoing a profound transformation, with specialty coffee rapidly rising beyond Istanbul to cities like Ankara and Izmir, while domestic brands such as Espressolab are aggressively expanding into global markets.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一趋势反映了年轻一代消费者对咖啡消费场景的重构——从单纯的日常饮品转向社交空间、个性表达和品质追求，同时土耳其正成为欧洲增长最快的品牌咖啡市场之一。</div>
+<div class="lang-en">This trend reflects younger generations' reconstruction of coffee consumption—from mere daily beverage to social space, personal expression, and quality pursuit—while Turkey is becoming one of Europe's fastest-growing branded coffee markets.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">对于咖啡从业者，可关注土耳其精品咖啡的"第三波"转型路径及本土品牌出海策略；对于消费者，可尝试将传统cezve冲泡法与现代精品咖啡理念结合，探索不同场景下的多元咖啡体验。</div>
+<div class="lang-en">For coffee professionals, observe Turkey's "third wave" transformation path and domestic brands' international expansion strategies; for consumers, experiment with combining traditional cezve brewing with modern specialty coffee concepts to explore diverse coffee experiences across different occasions.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/us/article/3346804/washington-signals-it-wants-china-kept-out-brazils-largest-port-auction?utm_source=rss_feed" target="_blank">
+                                Washington signals it wants China kept out of Brazil’s largest port auction
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章报道了美国驻圣保罗总领事凯文·村上一（Kevin Murakami）于3月5日向巴西港口行业高管明确表示，华盛顿不希望中国公司赢得拉丁美洲最大港口桑托斯港主要集装箱码头的特许经营权。这一事件标志着美巴基础设施投资竞争已成为中美地缘政治博弈的新前线。</div>
+<div class="lang-en">This article reports that US Consul-General Kevin Murakami explicitly told Brazilian port industry executives on March 5 that Washington does not want a Chinese company to win the concession for a major container terminal at Santos, Latin America's largest port. This incident signals that competition for infrastructure investment in Brazil has become a new front in the US-China geopolitical rivalry.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此事凸显了基础设施资产正日益成为大国战略竞争的核心筹码，港口等关键节点不仅涉及经济收益，更被赋予主权安全、犯罪防控和战略杠杆等多重意涵。同时，美国在没有本国企业参与竞标的情况下仍主动干预，表明其正在全球范围内系统性构建针对中国投资的"防线"。</div>
+<div class="lang-en">This highlights how infrastructure assets are increasingly becoming core chips in great-power strategic competition, with key nodes like ports carrying multiple implications beyond economic returns—including sovereignty security, crime control, and strategic leverage. Meanwhile, the US intervention despite having no domestic bidders indicates it is systematically building a "defensive line" against Chinese investment globally.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可关注巴西政府最终决策走向，作为观察中等国家如何在美中博弈中平衡利益的典型案例；若涉及跨境投资或供应链布局，需将地缘政治风险评估纳入尽职调查框架，特别是在港口、通信、能源等敏感领域。此外，可追踪美国"近岸外包"政策与拉美基础设施需求的对接动态，识别替代性合作机会。</div>
+<div class="lang-en">One can monitor the Brazilian government's final decision as a typical case study of how middle powers balance interests amid US-China rivalry; for cross-border investment or supply chain planning, geopolitical risk assessment should be integrated into due diligence frameworks, especially in sensitive sectors like ports, telecommunications, and energy. Additionally, tracking the alignment between US "nearshoring" policies and Latin American infrastructure needs can help identify alternative cooperation opportunities.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/china/science/article/3346364/how-china-beating-us-new-weapons-race-fraction-budget?utm_source=rss_feed" target="_blank">
+                                How China is beating the US in new weapons race with a fraction of the budget
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章分析了中国如何以远低于美国的国防预算，在军事创新领域实现快速发展。核心机制在于中国建立了"新型举国动员体制"，将民用科研与工业能力深度整合到国防创新体系中，从而在年军事研发投入仅200-500亿美元（美国为1400亿美元）的情况下，仍能推出多领域先进武器系统。</div>
+<div class="lang-en">This article analyzes how China achieves rapid military innovation development with a defense budget far lower than that of the US. The core mechanism lies in China's establishment of a "new nationwide mobilisation system" that deeply integrates civilian scientific research and industrial capabilities into defense innovation, enabling the launch of advanced weapons across multiple domains despite annual military R&D spending of only US$20-50 billion (compared to US$140 billion for the US).</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一模式挑战了传统国防经济学中"投入决定产出"的假设，揭示了军民融合与制度创新对研发效率的杠杆效应。随着大国竞争加剧，各国国防预算面临紧缩压力，中国的经验可能重塑全球军事创新的范式，同时也引发关于技术扩散、供应链安全和战略威慑平衡的新议题。</div>
+<div class="lang-en">This model challenges the traditional defense economics assumption that "input determines output," revealing the leverage effect of civil-military integration and institutional innovation on R&D efficiency. As great power competition intensifies and defense budgets face tightening pressures globally, China's experience may reshape paradigms of military innovation worldwide, while also raising new concerns regarding technology diffusion, supply chain security, and strategic deterrence balance.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">技术管理者可借鉴"军民融合"思维，打破组织壁垒，将外部科研资源与内部需求高效对接；投资者可关注具备军民两用潜力的技术领域（如AI、量子计算、先进材料）及其商业化路径；政策研究者则需评估这种动员体制在创新激励、知识产权分配和长期可持续性方面的 trade-offs，为本土科技政策设计提供参照。</div>
+<div class="lang-en">Technology managers can adopt the "civil-military fusion" mindset to break organizational silos and efficiently connect external research resources with internal needs; investors may focus on dual-use technology domains (such as AI, quantum computing, and advanced materials) and their commercialization pathways; policy researchers should evaluate the trade-offs of such mobilization systems in terms of innovation incentives, intellectual property distribution, and long-term sustainability to inform domestic technology policy design.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/hong-kong/politics/article/3346785/hong-kong-new-push-get-young-people-register-voters?utm_source=rss_feed" target="_blank">
+                                Hong Kong in new push to get young people to register as voters
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">香港政府推出新措施，鼓励18岁青年登记成为选民。年轻人在换领成人身份证时，可选择以自我声明方式豁免提交地址证明，并可在入境事务处办事处即场进行宣誓。
+The Hong Kong government has launched a new initiative to encourage young people aged 18 to register as voters. When replacing their juvenile identity cards with adult ones, young people can opt for self-declarations to be exempted from producing proof of address and take oaths on-site at Immigration Department offices.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此举降低了青年选民登记的门槛，解决了许多年轻人因缺乏地址证明而无法登记的障碍，有望提升年轻群体的政治参与度。这也反映出政府对扩大选民基础、增强选举代表性的重视。
+This measure lowers the barrier for young voter registration, addressing the obstacle many young people face due to lack of address proof, and is expected to boost political participation among the youth demographic. It also reflects the government's emphasis on expanding the voter base and enhancing electoral representation.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">若你是符合资格的香港青年，可在4月底至6月初期间前往入境事务处办理身份证时同步完成选民登记。政策制定者可参考此"一站式"服务模式，将行政流程整合以提升公共服务效率。
+If you are an eligible Hong Kong youth, you can complete voter registration when visiting the Immigration Department for identity card renewal between late April and early June. Policymakers can reference this "one-stop" service model, integrating administrative processes to improve public service efficiency.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/europe/article/3346801/oscar-winner-sean-penn-skips-academy-awards-ceremony-visit-zelensky-kyiv?utm_source=rss_feed" target="_blank">
+                                Oscar-winner Sean Penn skips Academy Awards ceremony to visit Zelensky in Kyiv
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">奥斯卡影帝西恩·潘（Sean Penn）在赢得最佳男配角奖后，跳过颁奖典礼前往基辅会见乌克兰总统泽连斯基，表达对战时乌克兰的支持。作为一名多次访问乌克兰并积极声援的纪录片导演，他将此行视为个人使命而非官方行程。</div>
+<div class="lang-en">Oscar-winning actor Sean Penn skipped the Academy Awards ceremony after winning Best Supporting Actor to meet Ukrainian President Volodymyr Zelensky in Kyiv. As a documentary filmmaker who has visited Ukraine multiple times, he treated this trip as a personal mission to support the war-torn country.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一行为展现了公众人物如何利用个人影响力将国际关注引向持续冲突地区，超越娱乐新闻框架进入地缘政治议题。它同时揭示了名人外交（celebrity diplomacy）的演变——从象征性姿态转向长期、重复的实地参与，可能为其他领域的影响力人物提供示范。</div>
+<div class="lang-en">This demonstrates how public figures can leverage personal influence to sustain international attention on ongoing conflicts, transcending entertainment framing. It also illustrates the evolution of celebrity diplomacy—from symbolic gestures toward sustained, repeated on-the-ground engagement—potentially setting a template for influential figures across sectors.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">专业人士可思考如何将自身领域的可见性转化为对特定社会议题的长期承诺，而非一次性表态；组织者可借鉴"个人叙事+实地参与"模式设计更有深度的公益传播策略；内容创作者则可关注此类跨界事件中的真实性与表演性张力，挖掘更具层次的故事角度。</div>
+<div class="lang-en">Professionals might consider converting visibility in their field into sustained commitment rather than one-off statements; organizers can adopt the "personal narrative + field engagement" model for deeper cause communication; content creators can explore the tension between authenticity and performativity in such cross-boundary events for more layered storytelling.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/opinion/hong-kong-opinion/article/3346529/iran-war-shows-urgency-hong-kongs-green-shipping-transition?utm_source=rss_feed" target="_blank">
+                                Iran war shows urgency of Hong Kong’s green shipping transition
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文是一篇评论文章，探讨伊朗战争风险如何凸显香港加速绿色航运转型的紧迫性。文章分析了霍尔木兹海峡石油运输中断对亚洲各国的不同影响，并指出香港作为国际航运枢纽，需要在绿色燃料加注和海运战争风险保险方面加快布局。</div>
+<div class="lang-en">This is an opinion piece examining how war risks involving Iran highlight the urgency of Hong Kong's accelerated transition to green shipping. The article analyzes the differential impacts of potential disruptions to oil transit through the Strait of Hormuz on Asian countries, and argues that Hong Kong, as an international maritime hub, must expedite its development of green fuel bunkering and marine war-risk insurance.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">地缘政治冲突暴露传统能源供应链的脆弱性，香港虽因背靠内地而具备一定能源安全缓冲，但其国际航运枢纽地位高度依赖稳定的全球海运体系。绿色航运转型不仅是环保议题，更是提升城市韧性和巩固国际金融中心竞争力的战略必需。</div>
+<div class="lang-en">Geopolitical conflicts expose the fragility of traditional energy supply chains. While Hong Kong enjoys some energy security buffer through its mainland connection, its status as an international shipping hub heavily depends on stable global maritime systems. The green shipping transition is not merely an environmental issue, but a strategic imperative for enhancing urban resilience and reinforcing competitiveness as an international financial center.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">投资者可关注绿色燃料技术、船舶保险及港口基础设施相关板块；政策研究者应追踪香港与内地在能源互联互通及航运标准对接方面的合作进展；企业决策者需评估供应链多元化与低碳转型并行的风险管理策略。</div>
+<div class="lang-en">Investors may monitor sectors related to green fuel technologies, marine insurance, and port infrastructure; policy researchers should track collaboration progress between Hong Kong and mainland China on energy interconnection and shipping standard alignment; corporate decision-makers need to evaluate risk management strategies that parallel supply chain diversification with low-carbon transition.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/us/article/3346807/trump-pressures-china-over-hormuz-experts-see-possible-delay-beijing-summit?utm_source=rss_feed" target="_blank">
+                                Trump says the US has requested that China delay Beijing summit by ‘a month or so’
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">美国总统特朗普表示，原定于3月31日至4月2日的访华行程可能推迟约一个月，原因是美国需要优先处理针对伊朗的军事行动。这一表态为原本备受期待的中美元首会晤增添了不确定性。
+US President Donald Trump indicated that his planned trip to Beijing from March 31 to April 2 may be postponed by about a month due to US military priorities against Iran, adding uncertainty to a highly anticipated summit with Chinese leader Xi Jinping.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一事件反映出地缘政治冲突如何直接干扰大国间的高层外交议程，同时也揭示了特朗普政府在中东政策与对华关系之间的优先级权衡。推迟访问可能暂时减缓中美在贸易、技术竞争等关键议题上的对话进程。
+This incident demonstrates how geopolitical conflicts can directly disrupt high-level diplomatic agendas between major powers, while also revealing the Trump administration's priority balancing between Middle East policy and China relations. The postponement may temporarily slow dialogue progress on critical issues like trade and technology competition.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注后续中美双方重新确认的会晤时间表，以预判双边关系走向及市场反应；分析此类"战争优先"外交决策模式，评估未来类似突发事件对国际商务与供应链的潜在影响；跟踪中国使馆回应及中方官方表态，捕捉外交措辞中的信号。
+Monitor the rescheduled summit timeline to anticipate bilateral relationship trends and market reactions; analyze this "war-first" foreign policy decision pattern to assess potential impacts of similar emergencies on international business and supply chains; track Chinese embassy responses and official statements for diplomatic signaling.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/europe/article/3346802/zelensky-visit-uk-starmer-says-it-vital-continue-supporting-ukraine?utm_source=rss_feed" target="_blank">
+                                Zelensky to visit UK as Starmer says it is ‘vital’ to continue supporting Ukraine
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">乌克兰总统泽连斯基将于周二访问英国，与英国首相斯塔默会晤，随后前往马德里与西班牙首相桑切斯会谈。英国防大臣希利明确表示英国坚定支持乌克兰的立场，并将此与海湾地区的冲突联系起来，强调不能让其成为普京的"意外之财"。</div>
+<div class="lang-en">Ukrainian President Volodymyr Zelensky will visit the UK on Tuesday to meet with Prime Minister Keir Starmer, followed by a trip to Madrid to meet Spanish Prime Minister Pedro Sánchez. British Defence Secretary John Healey reaffirmed the UK's unwavering support for Ukraine and linked this to the Gulf conflict, emphasizing that it must not become a "windfall for Putin."
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此次访问凸显了欧洲主要国家在美国对乌政策不确定性加剧背景下，主动承担更多安全责任的战略转向。英国将乌克兰局势与中东冲突并置为"两大洲的两场冲突"，暗示俄罗斯与伊朗等国形成"侵略轴心"，这为欧洲协调跨地区安全政策提供了新框架。</div>
+<div class="lang-en">This visit highlights a strategic shift where major European powers are taking greater security responsibility amid growing uncertainty about US policy toward Ukraine. By framing Ukraine and the Middle East as "two conflicts on two continents," the UK suggests a Russia-Iran "axis of aggression," offering a new framework for European coordination on cross-regional security policy.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注英国-西班牙-乌克兰三方互动模式，可作为分析欧洲"核心国家"如何构建替代性安全联盟的典型案例。若从事政策研究或国际业务，可追踪此类高层互访后的具体防务合作协议，评估欧洲军工供应链和能源安全领域的投资机会。</div>
+<div class="lang-en">Monitor the UK-Spain-Ukraine trilateral dynamic as a case study of how European "core states" build alternative security alliances. For policy research or international business, track specific defense cooperation agreements following such high-level visits to assess investment opportunities in European defense supply chains and energy security sectors.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="CNX Software">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.cnx-software.com/2026/03/16/sparkfun-openscale-iot-an-esp32-board-with-hx711-adc-for-smart-scales-with-wifi-and-bluetooth-connectivity/" target="_blank">
+                                SparkFun OpenScale IoT – An ESP32 board with HX711 ADC for smart scales with WiFi and Bluetooth connectivity
+                            </a>
+                        </h3>
+                        <span class="source-tag">CNX Software</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">SparkFun OpenScale IoT 是一款基于 ESP32 的开源物联网智能秤开发板，集成 HX711 24位模数转换器，可直接读取称重传感器的精确重量数据，无需从零编写代码即可实现基础功能。它支持 WiFi 和蓝牙无线连接、温度补偿、OTA 固件更新，并提供 Qwiic I²C 扩展接口，适用于工业环境的长期重量监测场景。</div>
+<div class="lang-en">The SparkFun OpenScale IoT is a ready-to-use ESP32-based IoT smart scale development board featuring an integrated HX711 24-bit ADC for precise load cell readings without custom coding for basic operation. It supports WiFi and Bluetooth connectivity, temperature compensation, OTA firmware updates, and a Qwiic I²C expansion port, designed primarily for industrial long-term weight monitoring applications.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">该开发板降低了高精度称重物联网应用的开发门槛，将原本需要复杂配置的硬件集成、无线连接和校准流程简化为即插即用方案，加速原型开发和部署。其开源硬件/固件特性与工业级功能（温度补偿、可调增益、双数据速率）的结合，使其在智能农业、仓储物流、健康监测等领域具有广泛适用性，同时 44.95 美元的定价为中小企业提供了高性价比的工业物联网解决方案。</div>
+<div class="lang-en">This board significantly lowers the barrier to entry for high-precision weighing IoT applications by simplifying complex hardware integration, wireless connectivity, and calibration into a plug-and-play solution, accelerating prototyping and deployment. The combination of open-source hardware/firmware with industrial-grade features (temperature compensation, adjustable gain, dual data rates) makes it applicable across smart agriculture, warehouse logistics, and health monitoring, while its $44.95 price point offers a cost-effective industrial IoT solution for small and medium enterprises.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">可直接用于构建远程库存监控系统（通过 WiFi 实时传输重量数据到浏览器）、自动化农业饲喂站（结合 Qwiic 扩展环境传感器）或实验室长期实验数据采集（利用 10/80 SPS 可选采样率和温度补偿确保稳定性）。进阶应用可参考开源 KiCad 文件和 Arduino 固件进行二次开发，或对比 TTGO T-Weigh 等竞品方案根据 LoRaWAN 需求灵活选型。</div>
+<div class="lang-en">Use it directly to build remote inventory monitoring systems (streaming weight data to browsers via WiFi), automated agricultural feeding stations (adding environmental sensors via Qwiic expansion), or long-term laboratory data acquisition (leveraging 10/80 SPS selectable sampling rates and temperature compensation for stability). For advanced applications, modify the open-source KiCad files and Arduino firmware for customization, or compare with alternatives like the TTGO T-Weigh to select LoRaWAN connectivity if needed.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/" target="_blank">
+                                Run Autonomous, Self-Evolving Agents More Safely with NVIDIA OpenShell
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">NVIDIA 推出了 **OpenShell**，一个开源安全运行时环境，专门用于安全部署自主、持续运行的 AI 代理（称为 "claws"）。它通过沙箱隔离、策略引擎和隐私路由器，在代理外部强制执行安全约束，解决传统代理运行时缺乏核心安全原语的问题。</div>
+<div class="lang-en">NVIDIA has released **OpenShell**, an open-source secure runtime environment specifically designed for safely deploying autonomous, continuously running AI agents (called "claws"). It enforces security constraints outside the agent through sandbox isolation, a policy engine, and a privacy router, addressing the lack of core security primitives in traditional agent runtimes.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">自主 AI 代理正在从"助手"演变为能独立执行、自我进化、长期运行的"爪牙"，但现有基础设施存在根本安全缺陷：防护机制与代理同处一个进程，易被绕过。</div>
+<div class="lang-en">OpenShell 的"进程外策略执行"架构填补了关键空白，使企业能够真正信任并规模化部署这些生产力工具，未来 6-12 个月的基础设施决策将塑造企业代理部署的长期格局。
+
+Autonomous AI agents are evolving from "assistants" to "claws" that execute independently, self-evolve, and run continuously—but existing infrastructure has fundamental security flaws where guardrails live inside the same process they protect. OpenShell's "out-of-process policy enforcement" architecture fills this critical gap, enabling enterprises to truly trust and scale these productivity tools; infrastructure decisions in the next 6-12 months will shape enterprise agent deployment for years to come.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可立即通过 `openshell sandbox create --remote spark --from openclaw` 一键启动沙箱，无需修改代码即可让 OpenClaw、Claude Code、Codex 等代理安全运行。建议结合企业场景：利用策略引擎定义细粒度权限边界，配置隐私路由器实现敏感数据本地处理，并通过实时策略更新与审计追踪建立可信的代理治理框架。</div>
+<div class="lang-en">Developers can immediately launch a sandbox with `openshell sandbox create --remote spark --from openclaw` to run OpenClaw, Claude Code, Codex and other agents safely without code changes. For enterprise scenarios: use the policy engine to define granular permission boundaries, configure the privacy router for on-device sensitive data processing, and establish trustworthy agent governance through live policy updates and audit trails.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/opinion/world-opinion/article/3346554/europe-says-it-must-rearm-what-end?utm_source=rss_feed" target="_blank">
+                                Europe says it must rearm – but to what end?
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文讨论了欧洲主要国家（法国、英国、德国）正在推动大规模军事重整的共识，表面动因是应对俄罗斯威胁，但深层驱动力是跨大西洋联盟关系的弱化。法国总统马克龙宣布增加核弹头并推进"前沿威慑"计划，英德国防首长也联合呼吁欧洲大幅增加军费开支。</div>
+<div class="lang-en">This article discusses the emerging consensus among major European powers (France, UK, Germany) to pursue large-scale military rearmament. While the stated catalyst is Russian aggression, the underlying driver is the weakening of the transatlantic bond. French President Macron announced an increase in nuclear warheads and a "forward deterrence" plan, while British and German defence chiefs jointly urged Europeans to build a moral and strategic case for massive military spending.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">欧洲此次重整军备标志着冷战后"战略自主"概念的实质性回归，反映了欧洲对美国安全承诺可持续性的深层担忧。然而文章指出关键悖论：单纯增加军费预算未必能解决安全危机，因为战略的本质在于政治目标而非武器采购，欧洲尚未明确界定真正的威胁来源。</div>
+<div class="lang-en">This rearmament marks a substantive return to "strategic autonomy" since the Cold War, reflecting Europe's deep concerns about the sustainability of US security commitments. However, the article highlights a critical paradox: merely increasing defence budgets may not solve the security crisis, as strategy is about political purpose rather than procurement—Europe has yet to clearly identify the actual source of its threats.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注欧洲防务科技自主化进程中的投资机会与供应链重组趋势，特别是核威慑、人工智能军事应用和关键基础设施保护领域。对于政策研究者，可深入分析"战略自主"与"跨大西洋依赖"之间的张力如何塑造未来全球安全架构。企业层面，应评估欧洲防务市场整合对现有国际合作协议的潜在影响。</div>
+<div class="lang-en">Monitor investment opportunities and supply chain restructuring in Europe's defence technological independence, particularly in nuclear deterrence, AI military applications, and critical infrastructure protection. For policy researchers, analyze how the tension between "strategic autonomy" and "transatlantic dependence" shapes future global security architecture. At the corporate level, assess how European defence market consolidation may impact existing international cooperation agreements.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/economy/china-economy/article/3346721/shanghai-sees-massive-f1-turnout-boosting-citys-pitch-sporting-destination?utm_source=rss_feed" target="_blank">
+                                Shanghai sees massive F1 turnout, boosting city’s pitch as sporting destination
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章报道了2024年F1中国大奖赛在上海成功举办的情况，三天赛事累计吸引超过23万观众，创下近20年来上海F1赛事 attendance 新高，其中外籍观众占比16%、国内其他地区观众占64%。
+This article reports on the successful hosting of the 2024 F1 Chinese Grand Prix in Shanghai, which attracted over 230,000 cumulative spectators over three days—a near 20-year attendance record for the city, with overseas spectators accounting for 16% and visitors from elsewhere in China making up 64%.</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此次赛事标志着上海作为国际体育赛事目的地城市的强势回归，单日入境外国人突破2.7万人次创纪录，门票收入同比增长超30%，体现了大型国际赛事对消费提振和城市形象提升的双重价值。
+The event marks Shanghai's strong return as an international sports destination, with single-day foreign arrivals exceeding 27,000—a record high—and ticket revenue rising over 30% year-on-year, demonstrating the dual value of major international events in boosting consumption and enhancing city image.</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">对于城市规划和文旅从业者，可研究"赛事经济+入境游"的组合策略，借鉴上海将F1等顶级IP与消费刺激政策结合的模式；对于投资者，可关注国际赛事运营、高端体育旅游及城市品牌营销等相关赛道的机会。
+For urban planners and tourism professionals, study the combined strategy of "event economy + inbound tourism" and Shanghai's model of integrating top-tier IPs like F1 with consumption stimulus policies; for investors, monitor opportunities in international event operations, premium sports tourism, and city brand marketing.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/europe/article/3346788/frenchman-jailed-10-years-azerbaijan-im-not-spy?utm_source=rss_feed" target="_blank">
+                                Frenchman jailed for 10 years in Azerbaijan: ‘I’m not a spy’
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这是一篇关于法国公民马丁·瑞安（Martin Ryan）在阿塞拜疆被判处10年监禁的新闻报道。瑞安于2023年12月被捕，被指控为法国情报机构从事间谍活动，收集有关阿塞拜疆及其与俄罗斯、中国相关企业的信息。此案发生在阿塞拜疆与法国因亚美尼亚问题关系恶化的外交紧张时期。</div>
+<div class="lang-en">This is a news report about French citizen Martin Ryan being sentenced to 10 years in prison in Azerbaijan. Ryan was arrested in December 2023 and accused of spying for French intelligence services, gathering information about Azerbaijan and Russia- and China-linked companies. The case occurred during a period of diplomatic tensions between Azerbaijan and France over Paris' support for Armenia.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">此案反映了地缘政治紧张局势下外国公民面临的安全风险，尤其是涉及能源丰富的高加索地区国家。它揭示了情报活动与商业信息收集之间的模糊界限，以及外交关系恶化时如何可能被用作政治筹码。同时，这也提醒跨国企业和个人在敏感地区运营时需重新评估安全风险。</div>
+<div class="lang-en">This case highlights security risks faced by foreign citizens amid geopolitical tensions, particularly in energy-rich Caucasus states. It reveals the blurred line between intelligence activities and commercial information gathering, and how such cases may be used as political leverage when diplomatic relations sour. It also reminds multinational businesses and individuals to reassess security risks when operating in sensitive regions.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">跨国企业应建立更严格的情报合规框架，明确区分合法商业调研与可能被视为间谍活动的行为边界。个人在敏感国家工作或旅行前，应研究当地法律对信息收集的定义，并避免与外国使领馆的安全人员接触。此外，可关注此案后续外交交涉，作为理解国际人权与领事保护机制的实例。</div>
+<div class="lang-en">Multinational enterprises should establish stricter intelligence compliance frameworks to clearly distinguish between legitimate commercial research and activities that may be deemed espionage. Individuals should research local legal definitions of information gathering before working or traveling in sensitive countries, and avoid contact with foreign embassy security personnel. Additionally, one can follow subsequent diplomatic negotiations in this case as an example to understand international human rights and consular protection mechanisms.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="SCMP Business">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://www.scmp.com/news/world/americas/article/3346808/cubas-national-electric-grid-collapses-leaving-millions-without-power?utm_source=rss_feed" target="_blank">
+                                Trump vows to ‘take’ Cuba as island reels from total power cut linked to oil embargo
+                            </a>
+                        </h3>
+                        <span class="source-tag">SCMP Business</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文报道了美国总统特朗普在古巴因美国石油禁运而陷入全国大停电之际，公开宣称要"接管"古巴的威胁性言论。这是特朗普对古巴最明确的武力威胁之一，背景是特朗普政府加强对古巴的经济封锁，导致这个拥有960万人口的加勒比岛国陷入严重能源危机。</div>
+<div class="lang-en">This article reports on U.S. President Donald Trump's explicit threat to "take" Cuba as the communist island nation plunged into a total power blackout caused by an American oil embargo. It marks one of Trump's most direct threats of force against Cuba, occurring against the backdrop of the Trump administration's intensified economic blockade that has pushed the 9.6 million-population Caribbean island into a severe energy crisis.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这一事件标志着美国对古巴政策可能出现重大转向，从长期的经济制裁升级为直接的领土威胁，违背了现代国际法中的主权原则。同时，这也反映了特朗普政府"美国优先"外交政策的极端化倾向，以及大国对小国采取胁迫手段的危险先例，可能引发地区不稳定和人道主义灾难。</div>
+<div class="lang-en">This event signals a potential major shift in U.S. policy toward Cuba, escalating from decades-long economic sanctions to direct territorial threats in violation of modern international law's sovereignty principles. It also reflects the radicalization of Trump's "America First" foreign policy and sets a dangerous precedent of major powers coercing smaller nations, potentially triggering regional instability and humanitarian catastrophe.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">关注国际能源安全与地缘政治的交叉分析，理解经济制裁作为现代战争替代手段的实际效果与伦理争议。对于从事国际商务、人道援助或政策研究的人士，可追踪古巴危机发展以评估加勒比地区投资风险，或研究小国在超级大国压力下的韧性策略与替代能源解决方案。</div>
+<div class="lang-en">Those interested in the intersection of energy security and geopolitics can analyze how economic sanctions function as modern warfare alternatives and their ethical controversies. For professionals in international business, humanitarian aid, or policy research, tracking the Cuban crisis helps assess Caribbean investment risks or study small-state resilience strategies and alternative energy solutions under superpower pressure.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="Hackaday">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://hackaday.com/2026/03/16/how-i-3d-printed-my-own-lego-compatible-train-bridges/" target="_blank">
+                                How I 3D Printed My Own Lego-Compatible Train Bridges
+                            </a>
+                        </h3>
+                        <span class="source-tag">Hackaday</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">这篇文章讲述了作者如何利用3D打印技术，设计并制作了一套与乐高官方轨道兼容的定制化火车桥梁系统。文章详细介绍了从识别乐高官方产品缺口（缺乏桥梁）、研究轨道几何结构、确定10度坡度参数，到反复测试迭代的全过程，最终实现了约两米长的双层交叉铁路桥。</div>
+<div class="lang-en">This article describes how the author designed and built a custom 3D-printed bridge system compatible with official Lego train tracks. It covers the entire process from identifying a gap in Lego's official product line (lack of bridges), researching track geometry, determining a 10-degree grade parameter, through iterative testing—resulting in a ~2-meter double-deck crossover bridge.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">这件事展示了个人制造技术如何填补大型厂商的产品空白，将"不可能"变为可定制解决方案。它揭示了3D打印在玩具/ hobby领域的独特价值：不仅能复制现有零件，更能创造官方无法经济量产的几何结构（如超长坡道、定制弧度）。这也反映了创客文化中的DIY精神——当市场需求太小众时，个人可以成为自己的供应商。</div>
+<div class="lang-en">This demonstrates how personal manufacturing can fill gaps left by major manufacturers, turning "impossible" into customizable solutions. It reveals 3D printing's unique value in the hobby space: not just replicating parts, but creating geometries (extra-long ramps, custom curves) that official channels cannot economically produce. It also reflects maker culture's DIY ethos—when a market need is too niche, individuals can become their own suppliers.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">如果你有3D打印机，可以借鉴作者的方法：从L-Gauge等社区资源获取标准尺寸，用无支撑打印策略（拱形/曲线设计）优化耗材效率，并为特定用例（如坡度、长度）做参数化设计。更广泛的启发是：识别你常用产品中的"被忽视的缺口"，用数字制造快速验证原型——无论是玩具配件、家居小物还是工具改造。关键心态是"迭代即乐趣"，而非追求完美一次性成功。</div>
+<div class="lang-en">If you have a 3D printer, borrow the author's approach: source standard dimensions from community resources like L-Gauge, optimize material efficiency with support-free printing strategies (arches/curves), and parametrize designs for specific use cases (grade, length). The broader lesson: identify "neglected gaps" in products you use, then use digital fabrication for rapid prototyping—whether toy accessories, household items, or tool modifications. The key mindset: "iteration is the fun," not perfect first-shot success.</div></div>
+                    </div>
+                </article>
+                
+            </section>
             
             <section class="date-group">
                 <h2 class="date-header">
