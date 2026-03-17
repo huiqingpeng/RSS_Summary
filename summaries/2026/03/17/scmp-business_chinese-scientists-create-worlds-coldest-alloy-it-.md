@@ -1,0 +1,20 @@
+---
+title: "Chinese scientists create world’s coldest alloy. It may surprise DARPA"
+source: "SCMP Business"
+url: "https://www.scmp.com/news/china/science/article/3346452/chinese-scientists-create-worlds-coldest-alloy-it-may-surprise-darpa?utm_source=rss_feed"
+published: "2026-03-17"
+summarized: "2026-03-18T07:12:57.997492"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+中国科学家研发出一种新型稀土合金制冷材料，可在无需氦-3、无运动部件的情况下实现接近绝对零度的极低温，相关成果发表于《自然》期刊。这一"中国方案"直接回应了美国DARPA在两周前紧急发布的量子技术冷却系统招标需求。
+Chinese scientists have developed a novel rare earth alloy cooling material capable of reaching temperatures extremely close to absolute zero without helium-3 or moving parts, with findings published in *Nature*. This "China solution" directly addresses an urgent DARPA solicitation for quantum technology cooling systems issued just two weeks prior.
+
+【为什么重要 / Why it matters】
+该技术打破了量子计算和超灵敏探测领域长期依赖稀缺氦-3资源的瓶颈，氦-3主要产自核武器衰变且供应受地缘政治严格管控。中国不仅实现了技术突破，更展示了从基础研究到可量产模块的快速转化能力，在全球量子竞赛中取得关键先机。
+This technology breaks the long-standing bottleneck of reliance on scarce helium-3—primarily sourced from nuclear weapons decay with geopolitically controlled supply—for quantum computing and ultra-sensitive detection. China has demonstrated not only scientific breakthrough but also rapid translation from basic research to mass-producible modules, securing critical first-mover advantage in the global quantum race.
+
+【我能用什么 / How I can use it】
+技术从业者应关注该合金的专利布局与开源进展，评估其在低温传感器、量子通信设备中的替代应用潜力；科研团队可借鉴"需求响应式"研发模式，建立对DARPA等战略机构技术路线的监测机制；投资者需重新评估量子产业链中制冷环节的供应链风险与国产化替代标的。
+Technology practitioners should monitor patent filings and open-source developments of this alloy, evaluating its potential for cryogenic sensors and quantum communication equipment. Research teams can adopt this "demand-responsive" R&D model by establishing surveillance mechanisms for strategic agency roadmaps like DARPA's. Investors need to reassess supply chain risks and domestic substitution opportunities in the quantum cooling segment of the value chain.

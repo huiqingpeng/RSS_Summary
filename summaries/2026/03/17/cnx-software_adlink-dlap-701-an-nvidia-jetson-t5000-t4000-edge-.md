@@ -1,0 +1,30 @@
+---
+title: "ADLINK DLAP-701 – An NVIDIA Jetson T5000/T4000 Edge AI platform for humanoid robots and vision sensing systems"
+source: "CNX Software"
+url: "https://www.cnx-software.com/2026/03/17/adlink-dlap-701-an-nvidia-jetson-t5000-t4000-edge-ai-platform-for-humanoid-robots-and-vision-sensing-systems/"
+published: "2026-03-17"
+summarized: "2026-03-18T07:00:58.872146"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+ADLINK 最新发布了 DLAP-701 系列边缘 AI 计算平台，基于 NVIDIA 最新的 Jetson Thor T5000/T4000 系统级模块，专为仿人机器人、自主移动机器人（AMR）和视觉传感系统（VSS）设计。该平台最高支持 128GB LPDDR5X 内存，配备丰富的 I/O 接口（包括双千兆以太网、QSFP 28 支持 4×25GbE、多路 USB 3.2、HDMI 输出）以及 M.2 扩展槽（支持 Wi-Fi 6、5G 和 NVMe 存储），同时集成 CAN-FD 接口用于机器人和车辆控制，并具备 TPM 2.0 安全芯片。
+
+ADLINK has launched the DLAP-701 Series, a compact edge AI platform based on NVIDIA's latest Jetson Thor T5000/T4000 system-on-modules, designed specifically for humanoid robots, autonomous mobile robots (AMR), and vision sensing systems (VSS). The platform supports up to 128GB LPDDR5X memory and features extensive I/O options including dual Gigabit Ethernet, QSFP28 supporting 4×25GbE, multiple USB 3.2 ports, HDMI output, and M.2 slots for Wi-Fi 6, 5G, and NVMe storage, along with CAN-FD interfaces for robotics/vehicle control and TPM 2.0 security.
+
+---
+
+【为什么重要 / Why it matters】
+
+这标志着 NVIDIA Jetson Thor 生态系统的快速扩展，T5000/T4000 基于 Blackwell GPU 架构，为边缘端生成式 AI 和机器人工作负载提供显著性能提升。DLAP-701 的工业级设计（-20°C 至 60°C 工作温度、9-36V 宽压输入）使其能够部署于严苛的工业和户外环境，而 QSFP 28 高速网络接口和 CAN-FD 总线支持则精准匹配了多机器人协同和实时控制的需求。同时，ADLINK 同期推出的 DLAP-711（更紧凑）和 DLAP-IGX（基于 IGX T7000，支持 200GbE 和 PCIe Gen5）形成了完整的产品矩阵，覆盖从边缘推理到企业级 AI 计算的完整 spectrum。
+
+This signals rapid ecosystem expansion around NVIDIA Jetson Thor, with T5000/T4000 based on Blackwell GPU architecture delivering significant performance gains for generative AI and robotics workloads at the edge. The DLAP-701's industrial-grade design (-20°C to 60°C operating range, 9-36V wide voltage input) enables deployment in harsh industrial and outdoor environments, while its QSFP 28 high-speed networking and CAN-FD bus support precisely address multi-robot collaboration and real-time control requirements. Simultaneously, ADLINK's co-launched DLAP-711 (more compact) and DLAP-IGX (IGX T7000-based with 200GbE and PCIe Gen5) form a complete product matrix spanning edge inference to enterprise-grade AI computing.
+
+---
+
+【我能用什么 / How I can use it】
+
+对于机器人开发者，可将此平台作为仿人机器人或 AMR 的主控计算单元，利用 NVIDIA Isaac 平台提供的预训练模型和仿真工具链加速开发；对于视觉 AI 应用，可搭配 GMSL2 相机通过高速网络接口构建多节点分布式视觉系统。建议关注软件栈的实际情况——虽然厂商提及 Windows 支持，但 Jetson Thor 实际应以 Ubuntu + JetPack SDK 为主，开发前需确认 CUDA、TensorRT 和 Blackwell 驱动兼容性。此外，可评估 ADLINK EdgeGO 远程管理软件用于规模化部署后的设备运维，并对比同类型的 ASUS IoT PE3000N、Firefly EC-ThorT5000 等竞品方案以优化选型。
+
+For robotics developers, this platform can serve as the main compute unit for humanoid robots or AMRs, leveraging NVIDIA Isaac's pre-trained models and simulation toolchain to accelerate development; for vision AI applications, it can be paired with GMSL2 cameras via high-speed networking to build multi-node distributed vision systems. Developers should verify the actual software stack—while Windows is mentioned, Jetson Thor realistically runs Ubuntu + JetPack SDK, so confirm CUDA, TensorRT, and Blackwell driver compatibility before committing. Additionally, evaluate ADLINK's EdgeGO remote management software for post-deployment device operations at scale, and benchmark against alternatives like ASUS IoT PE3000N and Firefly EC-ThorT5000 to optimize platform selection.
