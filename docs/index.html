@@ -15,7 +15,7 @@
             <h1><a href=".">RSS AI Digest</a></h1>
             <p class="subtitle">AI-powered article summaries from RSS feeds</p>
             <div class="stats">
-                <span class="stat-item">1203 articles</span>
+                <span class="stat-item">1204 articles</span>
                 <span class="stat-divider">•</span>
                 <span class="stat-item">14 sources</span>
             </div>
@@ -79,11 +79,11 @@
         <div class="articles-list" id="articles-list">
             
             <section class="date-group">
-                <h2 class="date-header today">
+                <h2 class="date-header">
                     <span class="date-icon">📅</span>
                     2026-03-18
-                    <span class="new-badge">NEW</span>
-                    <span class="article-count">600</span>
+                    
+                    <span class="article-count">601</span>
                 </h2>
                 
                 <article class="article-card" data-source="arXiv Computer Vision">
@@ -1851,6 +1851,34 @@ Medical professionals can monitor the clinical translation of engineered probiot
 <div class="lang-zh">OMNIFLOW在涵盖微观湍流、理论Navier-Stokes方程和宏观全球天气预报的综合基准上进行了评估。实验表明，该方法在零样本泛化和少样本适应任务中显著优于传统深度学习基线，同时能够生成可解释的物理一致性推理报告，实现了从黑盒拟合到可解释科学推理的范式转变。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">OMNIFLOW可应用于需要严格物理一致性的科学推理场景，如流体力学模拟、天气预报和湍流分析等领域。其实际价值在于为科学研究提供可解释、可泛化的AI工具，避免了传统方法中昂贵的领域特定微调成本，同时确保推理过程符合物理定律，有助于加速科学发现并增强对AI预测的信任度。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="NVIDIA Developer Blog">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/" target="_blank">
+                                How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain
+                            </a>
+                        </h3>
+                        <span class="source-tag">NVIDIA Developer Blog</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>是什么 / What it is</h4>
+<div class="lang-zh">本文介绍了 NVIDIA AI-Q 蓝图——一个基于 LangChain 构建的开源企业级深度研究智能体模板。该蓝图整合了 NVIDIA NeMo Agent Toolkit 和 LangSmith 监控工具，支持开发者构建能够连接企业内部数据源的"浅层"和"深度"研究智能体，实现从快速问答到长篇研究报告的自动化生成。</div>
+<div class="lang-en">This article introduces the NVIDIA AI-Q blueprint—an open-source enterprise deep research agent template built with LangChain. It integrates the NVIDIA NeMo Agent Toolkit and LangSmith monitoring, enabling developers to build "shallow" and "deep" research agents that connect to internal enterprise data sources, automating everything from quick Q&A to long-form research reports.
+
+---</div></div>
+<div class="summary-section"><h4>为什么重要 / Why it matters</h4>
+<div class="lang-zh">企业搜索长期面临数据孤岛和上下文缺失的痛点，而消费级 AI 又难以满足数据隐私和定制化需求。</div>
+<div class="lang-en">NVIDIA AI-Q 通过混合开源模型（如 Nemotron）与前沿模型（如 GPT-5.2）的架构设计，在保证数据本地化的同时实现了生产级的智能体性能，标志着企业 AI 从概念验证向实际部署的关键转变。
+
+Enterprise search has long suffered from data silos and missing context, while consumer AI fails to meet data privacy and customization needs. NVIDIA AI-Q addresses this through a hybrid architecture combining open models (e.g., Nemotron) and frontier models (e.g., GPT-5.2), achieving production-grade agent performance while keeping data on-premise—marking a critical shift from AI proof-of-concepts to real enterprise deployment.
+
+---</div></div>
+<div class="summary-section"><h4>我能用什么 / How I can use it</h4>
+<div class="lang-zh">开发者可克隆该蓝图仓库，通过 Docker Compose 快速启动包含 FastAPI 后端、PostgreSQL 状态管理和 Next.js 前端的全栈服务。关键实践包括：在 `config_web_docker.yml` 中配置多层级 LLM 分工（非思考模式用于快速响应、思考模式用于复杂推理）、利用 LangSmith 追踪智能体执行路径以优化性能，以及通过 NeMo Agent Toolkit 接入企业内部数据源替代公开网络搜索。</div>
+<div class="lang-en">Developers can clone the blueprint repository and launch a full-stack service via Docker Compose, including FastAPI backend, PostgreSQL state management, and Next.js frontend. Key practices include: configuring tiered LLM roles in `config_web_docker.yml` (non-thinking for speed, thinking for reasoning), using LangSmith to trace agent execution for optimization, and replacing web search with internal enterprise data sources through the NeMo Agent Toolkit.</div></div>
                     </div>
                 </article>
                 
