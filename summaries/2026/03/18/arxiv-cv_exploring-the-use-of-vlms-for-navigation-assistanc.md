@@ -1,0 +1,24 @@
+---
+title: "Exploring the Use of VLMs for Navigation Assistance for People with Blindness and Low Vision"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.15624"
+published: "2026-03-18"
+summarized: "2026-03-18T17:18:00.240337"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本研究系统评估了视觉-语言模型（VLMs）在辅助视障人士（pBLV）导航任务中的潜力，测试了GPT-4V、GPT-4o、Gemini-1.5-Pro、Claude-3.5-Sonnet等闭源模型以及Llava系列开源模型在障碍物计数、空间推理和场景理解等核心视觉技能上的表现。研究发现GPT-4o在所有任务中表现最优，而开源模型在复杂环境中的细粒度推理和适应性方面存在明显不足。该研究揭示了当前VLMs在 cluttered 场景物体计数、空间推理偏差以及过度关注物体细节而非空间信息等方面的关键局限，为辅助技术开发提供了重要指导。
+
+【方法概述 / Method】
+
+研究采用多维度评估框架，针对视障用户特定需求设计了专门的提示模板，模拟真实世界的导航辅助场景；通过系统化测试覆盖基础视觉技能（环境障碍物计数、相对空间推理、常识性寻路相关场景理解）和综合导航场景两大类别，对比分析闭源与开源VLM的性能差异。
+
+【实验结果 / Results】
+
+实验结果显示GPT-4o在所有评估任务中 consistently  outperform 其他模型，尤其在空间推理和场景理解方面优势显著；开源模型Llava-v1.6-mistral和Llava-onevision-qwen在复杂环境中的 nuanced reasoning 和适应性表现较弱。共同挑战包括：cluttered 环境中物体计数不准确、空间推理存在系统性偏差、以及模型倾向于优先描述物体细节而非提供空间导航所需的关键信息。
+
+【应用价值 / Applications】
+
+该研究为视障辅助技术的开发者提供了VLMs集成实践指南，指明了通过人类反馈对齐和提升空间推理能力来优化模型适用性的方向；研究成果可直接指导智能导盲设备、移动应用等辅助产品的算法选型与功能设计，推动更可靠、实用的AI导航辅助系统落地。

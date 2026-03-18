@@ -1,0 +1,24 @@
+---
+title: "ModTrack: Sensor-Agnostic Multi-View Tracking via Identity-Informed PHD Filtering with Covariance Propagation"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.15812"
+published: "2026-03-18"
+summarized: "2026-03-18T17:18:57.129234"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了ModTrack，一种模块化的多视角多目标跟踪（MV-MOT）系统，通过将学习方法仅限于检测与特征提取阶段，而融合、关联和跟踪均采用闭式分析方法，实现了与端到端方法相当的性能，同时提供了跨模态、传感器无关的泛化能力和可追溯的不确定性。ModTrack在WildTrack数据集上达到95.5 IDF1和91.4 MOTA，超越所有先前模块化方法21分以上，且核心跟踪器无需修改即可迁移至MultiviewX和RadarScenes等不同数据集和传感器模态。
+
+【方法概述 / Method】
+
+ModTrack将各传感器输出简化为校准后的位置-协方差对$(\mathbf{z}, R)$，通过跨视角聚类和精度加权融合生成统一估计$(\hat{\mathbf{z}}, \hat{R})$；随后采用反馈耦合的、身份信息引导的高斯混合概率假设密度（GM-PHD）滤波器，结合隐马尔可夫模型（HMM）运动模式，在漏检和严重遮挡情况下保持身份一致性。
+
+【实验结果 / Results】
+
+ModTrack在WildTrack数据集上取得95.5 IDF1和91.4 MOTA的性能指标，较所有现有模块化方法提升超过21个百分点，与最先进的端到端方法持平；更重要的是，同一跟踪核心无需任何修改即可直接应用于MultiviewX和RadarScenes数据集，仅需替换感知模块即可扩展至新领域和传感器模态。
+
+【应用价值 / Applications】
+
+ModTrack的实际价值在于其部署灵活性：无需重新训练即可适应不同的传感器布局、模态和数据集，特别适用于需要快速部署到多变环境中的智能监控、自动驾驶和机器人感知系统；其可追踪的不确定性量化也为安全关键应用提供了可靠性保障。
