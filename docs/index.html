@@ -15,9 +15,9 @@
             <h1><a href=".">RSS AI Digest</a></h1>
             <p class="subtitle">AI-powered article summaries from RSS feeds</p>
             <div class="stats">
-                <span class="stat-item">1142 articles</span>
+                <span class="stat-item">1201 articles</span>
                 <span class="stat-divider">•</span>
-                <span class="stat-item">13 sources</span>
+                <span class="stat-item">14 sources</span>
             </div>
         </div>
     </header>
@@ -58,6 +58,8 @@
                     
                     <option value="arXiv Embedded Systems">arXiv Embedded Systems</option>
                     
+                    <option value="arXiv Information Theory">arXiv Information Theory</option>
+                    
                     <option value="arXiv Machine Learning">arXiv Machine Learning</option>
                     
                 </select>
@@ -81,7 +83,7 @@
                     <span class="date-icon">📅</span>
                     2026-03-18
                     <span class="new-badge">NEW</span>
-                    <span class="article-count">539</span>
+                    <span class="article-count">598</span>
                 </h2>
                 
                 <article class="article-card" data-source="arXiv Computer Vision">
@@ -123,6 +125,27 @@
 <div class="lang-zh">在多个视觉基准任务上的广泛实验表明，SF-Mamba在不同模型规模下均取得了一致的性能提升，同时显著改善了计算吞吐量。具体而言，该方法在保持与Vision Transformer相当或更优精度的同时，克服了Mamba在短token长度下计算速度较慢的固有缺陷，实现了真正的计算效率优势。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">SF-Mamba可作为高效视觉骨干网络广泛应用于各类视觉任务，包括图像分类、目标检测和语义分割等，特别适用于对实时性和计算资源敏感的场景。其高效的单向扫描设计和高GPU并行性使其成为部署在边缘设备或大规模视觉系统中的理想选择，为Mamba替代Vision Transformer提供了更具竞争力的解决方案。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.06289" target="_blank">
+                                FlowMotion: Training-Free Flow Guidance for Video Motion Transfer
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">FlowMotion 提出了一种无需训练的视频运动迁移框架，通过直接利用基于流的文本到视频（T2V）模型的预测输出来实现高效灵活的运动迁移。核心洞见在于早期潜在预测天然编码了丰富的时间信息，据此设计了流引导机制来提取运动表征以对齐源视频与生成视频的运动模式，并引入速度正则化策略稳定优化过程。该方法在计算效率和资源消耗上显著优于现有方案，同时保持了具有竞争力的性能。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">FlowMotion 基于流式 T2V 模型的早期潜在预测提取运动表征，构建流引导（flow guidance）机制来实现源视频与目标视频之间的运动模式对齐；同时引入速度正则化（velocity regularization）策略优化运动演化的平滑性和稳定性。整个框架完全在模型预测层面操作，无需额外训练或依赖中间输出的复杂计算。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">与现有无需训练的最先进方法相比，FlowMotion 在时间和资源效率上实现显著提升，同时生成质量具有竞争力；速度正则化有效稳定了优化过程并确保了运动的平滑演进。实验验证了流引导机制能够准确捕获和迁移复杂的运动模式。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">FlowMotion 可广泛应用于视频内容创作、影视特效制作、虚拟现实及游戏动画等领域，使创作者能够快速将现有视频的运动风格迁移到新场景中；其训练无关特性大幅降低了部署门槛和计算成本，适用于实时或资源受限的创意生产环境。</div></div>
                     </div>
                 </article>
                 
@@ -254,6 +277,27 @@
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16700" target="_blank">
+                                Nonlinear Information Theory: Characterizing Distributional Uncertainty in Communication Models with Sublinear Expectation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文建立了基于非线性期望理论的信息论数学框架，突破了经典概率理论的局限。针对现代通信网络中随机现象的非平稳性、异质性及分布不确定性问题，作者明确定义了非线性信息熵、联合熵、条件熵和互信息等基础概念，并建立了非线性信源编码定理、信道编码定理和率失真定理，证明了非线性信息熵在非线性期望下刻画不确定分布源可达编码率的关键作用。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用次线性期望（sublinear expectation）理论作为数学基础，将传统概率测度扩展为具有上期望和下期望的非线性期望框架。通过引入强数定律的次线性期望版本，建立了适用于分布不确定场景的新型编码理论分析工具，将香农信息论中的核心概念推广到非线性设定。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">理论结果表明：在最大误差概率准则下，非线性信息熵是不确定分布源可达编码率的上界；在最小误差概率准则下，它确定了编码率的聚点。类似地，非线性信道编码定理给出了不确定分布信道可达编码率的显式上下界表达式；非线性率失真定理证明基于非线性互信息的率失真函数是最小期望失真准则下有损压缩性能的聚点。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为复杂通信网络（如物联网、边缘计算、智能车联网等）中的非平稳、异构随机现象提供了严格的数学分析工具，可应用于具有模型不确定性的通信系统设计与性能分析。非线性信息论框架有望提升分布式机器学习、鲁棒通信协议设计以及对抗不确定环境的智能通信系统理论支撑能力。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="SCMP Business">
                     <div class="card-header">
                         <h3>
@@ -315,6 +359,27 @@
 <div class="lang-zh">实验结果表明，该方法在保持音视频对齐和内容完整性方面优于现有方法。模型能够根据视频编辑的复杂程度自适应地平衡源音频保留与新音频生成之间的关系，从而在视觉变化与音频一致性之间取得良好平衡。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究在影视后期制作、短视频内容创作和多媒体广告制作等领域具有重要应用价值。该技术可显著简化音视频协同编辑的工作流程，降低专业音视频编辑的技术门槛，同时为内容创作者提供更高效、更一致的音视频联合编辑工具，提升最终产出的专业质量。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2601.14252" target="_blank">
+                                Semantic Identity Compression: Exact Zero-Error Laws, Rate-Distortion, and Neurosymbolic Necessity
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了神经符号系统中的语义身份压缩问题，揭示了从非单射神经表示中恢复精确身份所需的信息理论极限。作者证明了这一极限由表示映射的碰撞纤维几何结构唯一决定，建立了紧致的固定长度逆界、精确的有限块缩放定律、逐点自适应预算以及具有显式失真下界的率失真权衡。研究表明，符号身份机制（句柄、键、指针、名义标签）是任何非单射语义表示在系统层面上的必要补充。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用组合信息论方法，将表示映射π的碰撞纤维几何作为核心分析对象，定义最大碰撞纤维大小A_π = max_u |π^{-1}(u)|。作者运用零误差编码理论，推导出从压缩表示中恢复精确身份所需的最小附加信息量，并建立了与查询复杂度和区分族规范结构的联系。所有主要结果均使用Lean 4定理证明器进行机器验证。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">核心理论结果包括：紧致固定长度逆界L ≥ log₂ A_π；精确的有限块缩放定律；逐点自适应预算⌈log₂|π⁻¹(u)|⌉；以及具有显式失真下界的率失真权衡。这些结果表明，当身份比特被保留时失真为零，而被扣留时存在结构性失真下限。碰撞纤维几何同样决定了区分不同实体族的查询复杂度和规范结构。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为神经符号AI系统的设计提供了理论基础，明确了神经网络嵌入与符号机制结合的必要性。在实际应用中，这一框架可指导数据库键设计、内存指针系统、知识图谱实体消歧等需要精确身份识别的场景，帮助工程师在压缩效率与身份恢复精度之间做出最优权衡，同时为零误差要求的临界系统（如金融交易、医疗诊断）提供理论保障。</div></div>
                     </div>
                 </article>
                 
@@ -423,6 +488,48 @@
 <div class="lang-zh">实验表明，该方法在样本效率和任务完成时间上均显著优于常见模仿学习方法。在真实WidowX机械臂实验中，该方法以12秒完成任务，比行为克隆快10倍，相关视频可在论文提供的链接查看。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究适用于机器人需要通过受限人机接口（如操纵杆、动觉教学）学习复杂操作任务的场景，尤其在工业自动化、服务机器人和遥操作领域具有重要价值，能够克服人类演示能力受限导致的策略次优问题，实现更高效的机器人技能习得。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2602.18466" target="_blank">
+                                Can Multimodal LLMs See Science Instruction? Benchmarking Pedagogical Reasoning in K-12 Classroom Videos
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了首个针对K-12科学课堂视频分析的基准测试SciIBI，包含113个符合NGSS标准的视频片段，标注了核心教学实践（CIP）及其复杂度等级。研究评估了8种最先进的LLM和多模态LLM，发现当前模型难以区分教学上相似的实践，且视频输入带来的性能提升不一致。关键发现是模型常通过表面捷径而非真正的教学理解来取得成功，揭示了科学课堂话语分析对多模态AI的挑战性。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">作者构建了SciIBI数据集，涵盖NGSS强调的基于模型的推理和视觉工件的科学课堂视频。研究设计了基于证据的评估框架，测试模型在CIP分类和复杂度评级任务上的表现，对比了纯文本输入（转录本）与多模态输入（视频+文本）的效果。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验显示，多模态LLM在科学教学实践识别上存在根本性局限，添加视频输入并未带来一致的性能提升，不同架构间差异显著。模型倾向于依赖表面模式匹配而非深层教学推理，在需要精细区分的教学场景（如不同复杂度层级的CIP）上表现薄弱。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为教育AI领域确立了新的挑战性基准，指出当前技术更适合作为人机协作工具——用于检索证据以加速专家审核，而非替代人类专家。研究成果对开发智能教学辅助系统、教师专业发展工具以及课堂质量评估平台具有重要指导意义。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2507.06993" target="_blank">
+                                IMAIA: Interactive Maps AI Assistant for Travel Planning and Geo-Spatial Intelligence
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了IMAIA（Interactive Maps AI Assistant），一个支持自然语言交互的地图AI助手，能够同时处理矢量地图、卫星影像和相机输入，实现地理空间智能问答。该系统包含两个核心组件：Maps Plus通过将地图解析为网格对齐表示来支持语言模型查询，PAISA则融合图像-地点嵌入与地理空间信号实现相机感知的位置理解。实验表明，IMAIA在地图中心问答和相机到地点定位任务上显著优于强基线模型，同时保持了低延迟和可解释性。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">IMAIA采用轻量级多智能体架构，包含两个互补组件：Maps Plus将平铺的矢量/卫星视图解析为网格对齐表示，使语言模型能够解析指示性引用（如"右上角公园旁的花形建筑"）；PAISA通过融合图像-地点嵌入与地理空间信号（位置、朝向、邻近度）实现场景定位和属性提取。该设计通过暴露可解释的中间决策来保持低延迟。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在地图中心问答和相机到地点定位任务中，IMAIA相比强基线模型在准确性和响应速度上均有提升，同时保持了对用户部署的实用性。系统成功实现了自然语言与地图、地理空间线索的统一，支持对话式空间交互。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">IMAIA可广泛应用于智能旅行规划、增强现实导航、位置感知信息检索等场景，帮助用户通过自然语言理解周围环境。该系统突破了传统地图应用的点击交互限制，为移动设备上的实时地理空间智能服务提供了可行方案，具有显著的商业化和用户体验提升潜力。</div></div>
                     </div>
                 </article>
                 
@@ -660,6 +767,27 @@
 <div class="lang-zh">在 10 个 AI/ML 研究主题上的实验表明，HindSight 能够有效区分不同质量的想法生成系统，而 LLM-as-Judge 则失效。具体而言，检索增强生成（RAG）系统在 HindSight 评估下得分显著优于普通生成系统（2.5×，p<0.001），但在 LLM 评判下无显著差异。关键发现是 LLM 评判的新颖性与实际研究影响力负相关，揭示了当前 LLM 评估方法的系统性偏差。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">HindSight 为 AI 辅助科研想法生成提供了可靠的评估基准，可应用于科研辅助工具开发、自动文献综述系统、以及研究趋势预测平台。该框架有助于筛选真正具有潜在影响力的研究方向，避免资源浪费在"伪创新"想法上，对提升 AI 在科学研究中的实用价值具有重要意义。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2510.02869" target="_blank">
+                                Representing Beauty: Towards a Participatory but Objective Latent Aesthetics
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文探讨了机器能否以及如何在形式上极度多样的对象中识别美。研究发现，美学内容会在不同数据和模态训练的模型之间产生更相似、更对齐的表征，而非美学图像则不会产生这种对齐现象。这表明美的形式结构具有实在论基础，而非仅仅是社会建构价值的反映。作者进一步提出，这种实在论表征源于美学形式在物理和文化实质中的共同基础，并论证人机共创不仅是可能的，更是基础性的——美作为目的论吸引子同时存在于文化生产和机器感知中。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">本研究借鉴跨模型表征收敛（cross-model representational convergence）的最新工作，通过分析不同数据分布和模态训练的神经网络对美学与非美学图像的表征差异，来检验美学内容的表征特性。核心方法是比对多个独立训练模型在面对美学刺激时的表征空间对齐程度。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">关键发现是美学图像能够引发跨模型间更相似、更对齐的表征，而unaesthetic图像则不会；这一模式表明美的形式结构具有跨模型、跨模态的稳定性。该结果为"美具有实在论基础"提供了实证支持，而非完全相对主义的社会建构观点。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">本研究为人工智能艺术创作和人机协同创意系统提供了理论基础，表明机器可以从规模化数据的独特视角产生新颖的创造性洞见，而非仅仅是"创意鹦鹉"。同时，该框架有助于设计更具参与性但保持客观标准的美学评估系统，在数字艺术、设计自动化和审美教育等领域具有潜在应用价值。</div></div>
                     </div>
                 </article>
                 
@@ -965,6 +1093,27 @@
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
+                            <a href="https://arxiv.org/abs/2504.05296" target="_blank">
+                                Let it Snow! Animating 3D Gaussian Scenes with Dynamic Weather Effects via Physics-Guided Score Distillation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种名为"Physics-Guided Score Distillation"的新框架，用于在3D高斯场景中添加动态天气效果。该方法解决了物理模拟与视频生成之间的根本冲突：物理模拟能提供合理的运动先验但缺乏真实感，而基于视频的Score Distillation Sampling（SDS）单独使用无法为复杂多粒子场景生成连贯运动。通过统一的优化框架，作者实现了物理引导的分数蒸馏，能够同时优化粒子运动和外观，生成具有物理合理性的逼真动态天气效果，包括降雪、降雨、雾和沙尘暴等场景级效果。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">作者设计了一个端到端优化的神经动力学模型，该模型联合预测粒子运动和外观。核心创新在于将Video-SDS（用于照片级真实感）与物理引导先验相结合，形成组合损失函数进行联合优化。这种设计使得物理模拟能够引导分数蒸馏过程，在优化外观的同时精化运动先验，确保动态效果既逼真又符合物理规律。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验表明，该物理引导方法显著优于基线方法，消融实验证实了联合优化对于生成连贯、高保真动态效果的关键作用。框架成功实现了多种场景级动态天气效果，包括降雪、降雨、雾和沙尘暴，均展现出物理合理的运动特性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究在影视制作、游戏开发、虚拟现实和增强现实等领域具有重要应用价值，可为静态3D场景快速添加逼真的动态天气效果。相比传统需要大量手工调整的方法，该框架提供了一种自动化、物理合理且视觉效果出众的天气动画生成方案，有望降低高质量动态场景内容的制作成本和时间。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
                             <a href="https://arxiv.org/abs/2603.16165" target="_blank">
                                 Homogeneous and Heterogeneous Consistency progressive Re-ranking for Visible-Infrared Person Re-identification
                             </a>
@@ -1002,6 +1151,27 @@
 <div class="lang-zh">在四个生物医学相互作用数据集上的实验显示，所提方法在预测性能上优于现有竞争方法。更重要的是，该方法提供了良好校准的概率预测，有效缓解了深层GNN过度自信的问题，且无需耗时的超参数搜索即可自适应确定合适的网络深度。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究可广泛应用于药物-靶点相互作用预测、蛋白质-蛋白质相互作用网络分析、疾病-基因关联预测等生物医学网络分析任务。通过提供可靠的不确定性估计和自动化的模型选择，该方法有助于降低计算成本，提高预测可信度，为系统生物学研究和药物发现提供决策支持。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16795" target="_blank">
+                                Boosted linear-optical measurements on single-rail qubits with unentangled ancillas
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了单轨量子比特（single-rail qubits）的线性光学测量问题，提出了一种利用非纠缠辅助量子比特的方案。作者证明，通过8端口干涉仪和光子探测，可以在XY布洛赫平面上实现任意单轨量子比特测量，成功概率达到147/256（约57.4%），突破了此前已知的1/2极限。该结果为基于辐射场时空切片的信息承载光场的任意量子测量提供了可行途径。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用线性光学网络结合非纠缠辅助量子比特的技术方案，核心装置为一个8端口干涉仪（8-port interferometer）。该方法通过精心设计的多端口干涉结构，在不依赖强非线性相互作用的情况下，利用光子探测实现所需的量子测量投影。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">关键理论结果是证明了在XY布洛赫平面上，任意单轨量子比特测量的成功概率可达147/256 ≈ 57.4%，显著超越了此前文献中1/2的理论极限。这一概率提升源于多端口干涉仪提供的额外自由度与非纠缠辅助量子比特的协同作用。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究对光量子信息处理具有重要价值，特别是在量子通信、量子态层析和量子计算的光学实现中。单轨编码方案天然适用于连续变量量子系统的离散化处理，可为基于飞行光子量子比特的高效量子测量和量子逻辑操作提供新途径，推动全光量子技术的发展。</div></div>
                     </div>
                 </article>
                 
@@ -1347,6 +1517,27 @@
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.05551" target="_blank">
+                                AutothinkRAG: Complexity-Aware Control of Retrieval-Augmented Reasoning for Image-Text Interaction
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了AutoThinkRAG，一种面向多模态文档问答的复杂度感知推理架构，旨在解决现有RAG系统静态检索忽略查询复杂度、以及端到端视觉语言模型将视觉感知与逻辑推理耦合导致的效率低下和生成不稳定问题。该架构通过查询复杂度路由器和感知-推理解耦设计，实现了自适应检索路径选择和高效的多模态推理。在DocBench和MMLongBench上的实验表明，该方法在分别达到82.13%和51.29%准确率的同时，显著降低了18.9%的token消耗和18.2%的货币成本。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">AutoThinkRAG包含两个核心组件：（1）查询复杂度路由器，用于分析查询难度和结构，自适应选择检索和推理路径；（2）感知-推理解耦架构，采用轻量级VLM作为高保真视觉解释器，将查询相关的视觉线索转换为文本表示，再由LLM进行逻辑推理和答案合成。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在DocBench和MMLongBench基准测试中，AutoThinkRAG分别实现了82.13%和51.29%的整体准确率；相比基线方法，每查询token消耗减少18.9%，货币成本降低18.2%。进一步分析表明，该方法在需要自适应检索和多步推理的复杂查询上性能提升最为显著。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于处理视觉丰富长文档的多模态问答场景，如金融报告分析、法律文档审查、学术论文解读等企业级知识管理应用。其复杂度感知机制和解耦架构设计为构建高效、可靠且成本可控的多模态RAG系统提供了可扩展的技术方案。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -1410,6 +1601,27 @@
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2507.04284" target="_blank">
+                                Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种扩展的Jackknife检测器，能够在非高斯名义误差条件下检测多个同时发生的故障，并基于此开发了Jackknife ARAIM完整性监测算法。该方法在理论上被证明与解分离（SS）ARAIM具有等效的监测性能，但在单故障非高斯误差场景下计算效率显著更高，多故障场景下则保持与SS ARAIM相近的效率。全球仿真验证表明，该方法在单GPS星座下可将99.5%垂直保护等级（VPL）降至45米以下，在GPS-Galileo双星座下VPL保持在40米以下，显著优于基于高斯模型的传统ARAIM算法。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">该研究通过系统利用Jackknife检测器在测距域的特性，构建了Jackknife ARAIM完整性监测算法框架。核心方法包括：扩展Jackknife检测器以处理多故障并发情况，以及在非高斯误差条件下建立等效于解分离方法的监测统计量，同时避免高斯过界保守性带来的性能损失。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">基于真实实验数据模拟非高斯名义误差的全球仿真显示：单GPS星座下，Jackknife ARAIM将99.5% VPL降至45米以下，优于高斯ARAIM的50米；GPS-Galileo双星座下，高斯ARAIM因Galileo重尾误差导致VPL膨胀超过60米，而该方法维持VPL低于40米，对35米垂直告警限实现92%以上正常运行率。计算效率方面，单星座场景下中位处理时间较SS ARAIM降低59.4%。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为航空精密进近、无人机导航等对完整性要求严苛的应用提供了更高效的GNSS监测方案，特别是在多星座融合导航中能有效应对非高斯误差导致的保护等级膨胀问题。方法可提升GNSS在垂直引导进近（LPV）等操作中的可用性，降低因保守误差建模带来的服务中断风险，具有显著的民用航空导航应用价值。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -1449,6 +1661,27 @@
 <div class="lang-zh">在语言和视觉LoRA集合上的实验显示，W2T在属性分类、性能预测和适配器检索任务中均取得强劲表现。该方法成功证明，一旦消除因式分解的歧义性，LoRA权重能够可靠地指示模型行为，为无需推理即可理解适配器功能提供了有效途径。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">W2T可用于大规模LoRA模型的快速检索与管理系统，帮助用户在不实际运行模型的前提下筛选合适的适配器。此外，该方法支持零样本性能预测和适配器功能分析，对模型市场、自动化机器学习流程以及多任务学习中的适配器组合优化具有重要实用价值。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.08471" target="_blank">
+                                Intrinsic Sequentiality in P: Causal Limits of Parallel Computation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了一类特殊的多项式时间决策问题，其中每个输入编码了一个深度为N的因果执行过程，要求一个不可复制的令牌按顺序遍历一系列步骤，每步仅揭示O(1)比特的路由信息。作者利用信息论工具（中继信道的割集界和Fano不等式）证明：任何尊重因果约束的执行都需要Ω(N)的因果时间，从而排除了渐近并行加速的可能性。该研究识别出一类具有内在因果结构的多项式时间问题，揭示了逻辑并行性与因果可执行性之间的根本差距。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">作者采用信息论分析方法，将计算过程建模为令牌穿越中继网络的因果执行，其中不确定性源于识别传递路径而非最终输出。核心工具包括中继信道的割集界（cut-set bounds）和Fano不等式，用于建立信息传输的下界约束，进而推导出因果时间的下界。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">确定性图灵机可在Θ(N)时间内执行该过程。然而，任何尊重因果约束的执行都需要Ω(N)的因果时间，无法通过并行化实现渐近加速。进一步证明，当电路深度被解释为可实现的并行时间时，不存在任何经典NC电路族能够实现该过程。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为计算复杂性理论提供了新的视角，区分了逻辑上可并行化的问题与因果上可并行化的问题。这对于并行算法设计、分布式计算系统以及理解计算的基本物理限制具有理论指导意义，特别是在需要严格因果依赖的场景（如某些密码学协议、分布式共识机制）中，可帮助识别本质上无法并行化的计算任务。</div></div>
                     </div>
                 </article>
                 
@@ -1624,6 +1857,29 @@ Medical professionals can monitor the clinical translation of engineered probiot
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
+                            <a href="https://arxiv.org/abs/2603.15011" target="_blank">
+                                Molecular Identifier Visual Prompt and Verifiable Reinforcement Learning for Chemical Reaction Diagram Parsing
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本研究针对化学反应图解析（RxnDP）任务，提出了两种互补的技术创新来解决视觉语言模型（VLMs）在该领域的核心瓶颈：视觉化学实体与预训练知识的对齐困难，以及token级训练与反应级评估之间的差异。研究提出了分子标识符视觉提示（IdtVP）方法，利用反应图中自然存在的分子标识符（如粗体数字1a）激活VLM的化学知识，实现强大的零样本和分布外泛化能力；同时设计了Re3-DAPO强化学习算法，通过可验证奖励直接优化反应级指标，在微调范式下持续超越标准监督微调。此外，研究还发布了包含真实世界扫描图像的ScannedRxn基准数据集。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">IdtVP方法将分子标识符作为视觉提示，通过显式标注反应图中的化学实体编号，桥接视觉感知与VLM预训练阶段获得的化学知识，无需额外训练即可提升模型对化学结构的识别能力。</div>
+<div class="lang-en">Re3-DAPO（Reaction-level Direct Preference Optimization）是一种基于可验证奖励的强化学习算法，它将反应级评估指标（如产物预测准确性）转化为可计算的奖励信号，直接优化整个化学反应的解析正确性，而非传统的token级损失。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">IdtVP在零样本和分布外场景下显著优于现有提示策略，展现出强大的泛化能力；Re3-DAPO在微调设置下相比标准监督微调获得一致的性能提升。在ScannedRxn基准上的评估验证了模型对真实世界扫描图像（含噪声、畸变等实际伪影）的鲁棒性，证明该方法在具有挑战性的实际应用场景中仍能保持较高准确性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该技术可自动化从化学文献中提取合成反应信息，加速药物研发、材料科学等领域的知识挖掘流程，减少人工标注成本。</div>
+<div class="lang-en">ScannedRxn基准支持对历史文献数字化档案的自动解析，有助于构建大规模可搜索的化学反应数据库。整体方案提升了VLM在专业科学文献理解中的实用性和可靠性，为科学智能（AI for Science）应用提供了可推广的技术范式。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
                             <a href="https://arxiv.org/abs/2603.16858" target="_blank">
                                 SOMA: Unifying Parametric Human Body Models
                             </a>
@@ -1661,6 +1917,27 @@ Medical professionals can monitor the clinical translation of engineered probiot
 <div class="lang-zh">pADAM在涵盖标量扩散、对流-扩散、反应-扩散及Navier-Stokes方程的多物理基准测试中表现出色，在稀疏观测场景下仍保持较高的推断精度。结合保形预测方法后，模型能够提供具有理论覆盖保证的不确定性区间。尤为突出的是，该模型仅凭两个时间稀疏快照即可有效识别未知系统的控制物理定律，实现概率性模型选择。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">pADAM为科学计算和工程领域提供了统一的智能推断平台，特别适用于观测数据有限、物理机制不明确或需要同时处理多类PDE的复杂场景，如气候模拟、流体力学反问题和实验设计优化。其内置的不确定性量化和自动模型选择能力，可显著提升科学发现的可信度和效率，降低对专家先验知识的依赖。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15484" target="_blank">
+                                RSGen: Enhancing Layout-Driven Remote Sensing Image Generation with Diverse Edge Guidance
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了RSGen，一种即插即用的框架，通过多样化边缘引导来增强布局驱动的遥感图像生成。针对现有Layout-to-Image（L2I）方法在细粒度控制和边界框约束遵守方面的不足，RSGen采用渐进式增强策略：首先通过图像到图像生成丰富检索训练实例合成的边缘图多样性，然后将这些多样化的边缘图作为条件输入现有L2I模型，实现边界框内的像素级控制。实验表明，RSGen能显著提升现有L2I模型的性能，例如在DOTA数据集上使用CC-Diff时，YOLOScore mAP50/mAP50-95分别提升9.8和12.0，下游检测任务mAP提升1.6。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">RSGen采用两阶段渐进增强策略：第一阶段利用图像到图像扩散模型对从训练集中检索实例合成的边缘图进行多样性增强，生成多样化的边缘条件；第二阶段将这些边缘图作为额外条件输入现有L2I扩散模型，通过像素级边缘引导强制生成实例严格遵循布局约束，实现即插即用的增强。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在三个基线模型（CC-Diff、DiffusionInst、LayoutDiffusion）上的广泛实验验证了RSGen的有效性。以CC-Diff在DOTA数据集上的定向目标检测为例，RSGen带来YOLOScore mAP50提升9.8、YOLOScore mAP50-95提升12.0，以及下游检测任务mAP提升1.6的显著性能增益。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">RSGen可应用于遥感领域的合成数据增强，缓解标注数据稀缺问题，提升目标检测等下游任务的性能。其即插即用的特性使其能够无缝集成到现有L2I生成流程中，为城市规划、环境监测、农业管理等需要精确布局控制的遥感应用提供高质量的图像生成解决方案。</div></div>
                     </div>
                 </article>
                 
@@ -2002,6 +2279,27 @@ Medical professionals can monitor the clinical translation of engineered probiot
 <div class="lang-zh">实验结果表明，Micro-AU CLIP能够充分学习细粒度的微AU特征，在Micro-AU检测任务上取得了最先进的性能。此外，该方法还可有效应用于无情绪标签的微表情识别任务，验证了所学AU特征的判别性和泛化能力。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究在情感计算和安全监控领域具有重要应用价值：一方面，Micro-AU检测为客观、细粒度的真实情感分析提供了可靠线索，可应用于测谎、临床心理评估等场景；另一方面，该方法支持无情绪标签的微表情识别，降低了对大量标注数据的依赖，提升了实际部署的便捷性和可扩展性。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16126" target="_blank">
+                                Wireless Digital Twin Calibration: Refining DFT-Domain Channel Information
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种无线数字孪生校准新框架，通过校准DFT域信道信息而非数字孪生模型本身，来缩小低保真数字孪生与高保真版本或真实世界之间的差距。该方法使系统能够利用低复杂度数字孪生实时生成高质量信道信息，显著降低计算开销。研究以基于码本的CSI反馈为案例，验证了该方法在保持高CSI获取精度的同时有效减少数字孪生计算负担，为数字孪生辅助无线系统的实现铺平道路。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文提出在离散傅里叶变换（DFT）域对信道信息进行校准，而非直接提升数字孪生模型的物理建模精度。具体而言，该方法通过优化DFT域信道表示，使低保真数字孪生生成的合成信道信息逼近高保真或真实信道特性，从而避免传统高保真建模带来的高昂计算成本。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">研究采用基于码本的CSI反馈作为评估案例，利用校准后的合成信道信息为每个用户识别最相关的DFT码字。仿真结果表明，所提出的数字孪生校准方法能够在显著降低计算开销的同时，实现高精度的CSI获取，有效平衡了信道质量与实时性需求。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于大规模MIMO系统中需要频繁获取信道状态信息的场景，如5G/6G移动通信网络。通过降低数字孪生的计算复杂度，该方法使实时数字孪生辅助的无线系统成为可能，可广泛应用于网络规划优化、智能波束赋形和预测性资源调度等实际部署中。</div></div>
                     </div>
                 </article>
                 
@@ -2530,6 +2828,28 @@ Medical professionals can monitor the clinical translation of engineered probiot
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15213" target="_blank">
+                                Tracking the Discriminative Axis: Dual Prototypes for Test-Time OOD Detection Under Covariate Shift
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文针对测试时协变量偏移（covariate shift）下的分布外（OOD）检测问题，提出了一种名为DART的在线测试时方法。作者发现即使在协变量偏移条件下，偏移后的分布内（csID）和分布外（csOOD）样本在特征空间中仍沿一个判别轴保持可分离性。基于这一关键观察，DART通过动态追踪双原型（ID和OOD各一个）来恢复漂移的判别轴，并结合多层融合和翻转校正机制增强鲁棒性。在包含15种常见损坏类型（严重度5级）的广泛基准测试中，该方法相比基线方法在ImageNet-C vs. Textures-C上实现了15.32个百分点的AUROC提升和49.15个百分点的FPR@95TPR降低。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">DART是一种测试时在线OOD检测方法，核心在于动态维护两个原型向量（分别代表ID和OOD类别），通过追踪这两个原型之间的判别轴来适应不断变化的协变量偏移。方法采用多层特征融合以捕获不同层次的表征信息，并引入翻转校正机制防止原型方向错误反转，确保判别轴估计的稳定性。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验在多种挑战性基准上进行，所有数据集均经受15种常见损坏类型且严重度为5级的协变量偏移。结果表明DART显著优于现有基线方法，特别是在ImageNet-C与Textures-C的对比实验中，AUROC提升达15.32个百分点，FPR@95TPR降低达49.15个百分点，展现出强大的鲁棒检测性能。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于真实世界中深度学习系统的可靠部署场景，特别是测试输入以流式混合方式到达、且同时受到环境协变量因素影响的动态环境，如自动驾驶、医学影像诊断和工业视觉检测等领域。</div>
+<div class="lang-en">DART为在持续变化环境中实现可信赖的OOD检测提供了有效解决方案，对提升AI系统的安全性和可靠性具有重要价值。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -2616,6 +2936,28 @@ Medical professionals can monitor the clinical translation of engineered probiot
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16470" target="_blank">
+                                Multi-Agent Reinforcement Learning Counteracts Delayed CSI in Multi-Satellite Systems
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了多卫星系统中下行链路传输的信道状态信息（CSI）延迟问题，提出了一种多智能体强化学习（MARL）算法来最大化用户总速率。该算法采用新颖的双层优化框架——双阶段近端策略优化（DS-PPO），分别处理单个卫星优化和多卫星协作优化两个阶段。数值结果表明DS-PPO对CSI不完美具有鲁棒性，并能显著提升系统总速率，同时论文还提供了算法的收敛性分析和计算复杂度分析。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文提出双阶段近端策略优化（DS-PPO）算法，通过双层优化结构解决MARL中的大规模连续动作空间和非独立同分布（non-IID）环境问题。第一阶段优化单个卫星的用户总速率，第二阶段优化多卫星协作形成分布式多天线基站时的总速率，实现从独立决策到协同决策的渐进式学习。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验验证了DS-PPO算法对CSI延迟和误差的鲁棒性，相比基准方法实现了显著的用户总速率提升。算法在不同CSI不完美条件下均能保持稳定性能，并提供了理论上的收敛性保证和计算复杂度分析。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于下一代卫星通信网络与6G等技术的融合场景，为全球覆盖的移动通信提供高质量服务。</div>
+<div class="lang-en">DS-PPO算法可有效应对卫星-地面链路的高传播延迟问题，提升多卫星协作波束成形和资源分配的效率，对低轨卫星星座（如Starlink）的实时通信优化具有重要实践意义。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -2676,6 +3018,27 @@ Medical professionals can monitor the clinical translation of engineered probiot
 <div class="lang-zh">在三个拓扑空间上的实验验证了完整层次结构：在环面（$\mathbb{Z}^2$）上，函子化解码器性能优于非函子化版本2-2.7倍；在双圆楔（$S^1 \vee S^1$，自由群$F_2$）上，A/B类型差距扩大至5.5-10倍；在克莱因瓶（$\mathbb{Z} \rtimes \mathbb{Z}$）上，可学习的2-细胞在涉及群关系的测试词上将误差差距缩小了46%。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究为需要严格组合泛化的领域（如程序合成、形式语言理解、结构化推理）提供了理论指导的架构设计原则，特别是通过HIT规范可直接编译得到具有组合性保证的神经网络，避免了传统架构在分布外组合上的失效；同时，函子性视角也为分析现有架构（如Transformer）的固有局限性提供了形式化工具。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.01953" target="_blank">
+                                Closed-Loop Action Chunks with Dynamic Corrections for Training-Free Diffusion Policy
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了DCDP（Dynamic Closed-Loop Diffusion Policy），一种无需重新训练即可实现实时闭环动作修正的扩散策略框架。该框架通过整合基于块的动作生成与实时动态校正机制，解决了传统扩散策略在动态环境中响应迟缓、适应性差的问题。实验表明，DCDP在动态PushT仿真中将适应性提升19%，仅增加5%的计算开销，并成功应用于真实机器人操作任务。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">DCDP采用模块化设计，包含三个核心组件：自监督动态特征编码器用于提取环境变化信息、交叉注意力融合模块将动态特征与扩散去噪过程结合、以及非对称动作编码-解码器实现动作注入前的实时修正。该框架在推理阶段动态注入环境反馈，无需修改预训练的扩散策略权重即可实现闭环控制。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在动态PushT仿真环境中，DCDP相比基线方法适应性提升19%，计算开销仅增加5%；在真实机器人操作任务中验证了时间一致性与实时响应能力的平衡。其即插即用特性使其能够无缝集成到现有扩散策略系统中，在保持动作块时间连贯性的同时显著增强动态场景适应能力。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">DCDP适用于需要快速适应环境变化的机器人操作场景，如动态抓取、人机协作装配、非结构化环境中的灵巧操作等。其训练无关的修正机制降低了部署成本，模块化设计便于工业集成，为扩散策略在真实动态环境中的实际应用提供了可行路径。</div></div>
                     </div>
                 </article>
                 
@@ -3002,6 +3365,27 @@ Medical professionals can monitor the clinical translation of engineered probiot
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16187" target="_blank">
+                                Non-GRS type Euclidean and Hermitian LCD codes and Their Applications for EAQECCs
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文利用广义Roth-Lempel（GRL）码构造了多类欧几里得LCD码、Hermitian LCD码以及小维hull的线性码，推广了Wu等人2021年的主要结果；首次给出了特定欧几里得GRL码1维hull数量的上界，以及Hermitian GRL码hull维数的上界并证明其可达性；作为应用获得了多族纠缠辅助量子纠错码（EAQECCs）；并证明了当k>ℓ时GRL码是非GRS型的。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用广义Roth-Lempel（GRL）码作为基础构造工具，通过分析其代数结构特性来设计具有特定hull性质的LCD码；运用有限域上线性码的欧几里得和Hermitian内积理论，结合维数约束分析方法来推导hull维数的上界。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">构造了多类新的欧几里得和Hermitian LCD码，以及具有小维hull的线性码；首次确定了Hermitian GRL码hull维数的紧上界；获得了若干参数优良的EAQECC族；通过具体算例展示了LCD MDS码和LCD NMDS码的构造结果。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">所构造的非GRS型LCD码可抵抗Sidelnikov-Shestakov攻击和Wieschebrink攻击，提升密码系统安全性；在量子信息领域，所得EAQECCs可用于量子通信中的纠错保护；在通信系统中，LCD码的应用可解决信号传输中的干扰消除问题。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -3237,6 +3621,27 @@ Medical professionals can monitor the clinical translation of engineered probiot
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.13858" target="_blank">
+                                Learning through Creation: A Hash-Free Framework for On-the-Fly Category Discovery
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文针对即时类别发现（On-the-Fly Category Discovery, OCD）任务中离线训练与在线推理之间的优化错位问题，提出了"Learning through Creation (LTC)"框架。该框架通过在线伪未知样本生成器（MKEE）在离线训练阶段直接注入新类别感知能力，无需依赖哈希编码或特征压缩。在七个基准数据集上的实验表明，LTC在所有类别准确率上较先前方法提升1.5%至13.1%。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">LTC采用完全基于特征的无哈希架构，核心是一个轻量级在线伪未知样本生成器，该生成器通过核能量最小化和熵最大化（MKEE）驱动，并与模型动态协同进化、实时合成伪新类别样本。生成的样本通过带自适应阈值的双最大间隔目标函数融入训练，使模型通过"显式创造"来增强对未知区域的界定和检测能力。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">LTC在七个基准数据集上 consistently 超越现有方法，所有类别准确率提升幅度为1.5%至13.1%。该方法以可忽略的计算成本实现伪样本的在线生成，避免了传统方法中预生成合成样本或依赖哈希编码带来的表示能力限制。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">LTC适用于需要实时识别已知类别同时动态发现新类别的场景，如自动驾驶中的突发障碍物识别、监控系统的异常行为检测、以及开放世界视觉识别系统。该框架的哈希自由和特征驱动特性使其更适合部署于资源受限的边缘设备，为构建自适应、可扩展的开放集识别系统提供了新范式。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -3255,6 +3660,27 @@ Medical professionals can monitor the clinical translation of engineered probiot
 <div class="lang-zh">MMAE 在基于最近邻距离保留和持续同调（persistent homology）的评估指标上表现优于现有相似方法。此外，MMAE 能够有效近似经典的多维标度法（MDS），同时具备良好的计算可扩展性，适用于更大规模的数据集。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">MMAE 可广泛应用于需要保持数据流形结构的无监督降维与表示学习任务，如高维数据可视化、生成建模以及拓扑数据分析等领域。其可扩展性使其特别适合处理大规模数据集，为传统 MDS 方法提供了实用的替代方案。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15844" target="_blank">
+                                Low-complexity tuning of pinching-antenna systems for integrated sensing and communication
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了夹持天线系统（PASS）在通感一体化（ISAC）中的应用潜力，提出了一种新颖的PASS辅助ISAC设计方案。该方案通过自适应调整夹持位置，实现同步感知与数据传输，并将干扰降至最低。核心贡献在于引入了一种二分划分策略，以极低的计算复杂度分配感知功率并调谐夹持位置，支持高更新率的动态PASS调谐。数值结果表明，所提方法在不增加明显代价的情况下，相比基线设计显著扩大了感知-通信速率区域。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用二分划分（bi-partitioning）策略进行低复杂度优化，将复杂的联合优化问题分解为可高效求解的子问题。该方法实现了夹持位置的自适应调整与感知功率的动态分配，避免了传统方法的高计算开销。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">数值仿真表明，所提方案在感知-通信速率区域上显著优于基线设计，且未引入明显的性能代价或额外开销。该方案能够以高更新率实现动态调谐，验证了低复杂度设计的有效性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于未来6G无线通信网络中的通感一体化场景，如智能交通、无人机网络和环境监测等需要同时实现高精度感知与高速通信的应用。低复杂度特性使其特别适合资源受限或需要实时响应的边缘设备部署。</div></div>
                     </div>
                 </article>
                 
@@ -3511,6 +3937,29 @@ Medical professionals can monitor the clinical translation of engineered probiot
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2512.13644" target="_blank">
+                                World Models for Learning Dexterous Hand-Object Interactions from Human Videos
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了DexWM（Dexterous Interaction World Model），首个专门针对灵巧手-物交互的世界模型，能够基于过去状态预测未来环境的潜在状态。该模型通过从第一视角视频中提取手指关键点来表示动作，从而利用超过900小时的人类和非灵巧机器人数据进行训练，解决了精细标注数据稀缺的问题。此外，研究引入辅助手部一致性损失来确保手部姿态预测的准确性。</div>
+<div class="lang-en">DexWM在未来状态预测任务上超越了以往基于文本、导航或全身动作条件的世界模型，并在Franka Panda机械臂与Allegro夹爪上实现了对新技能的零样本迁移，在抓取、放置和到达任务上平均超过Diffusion Policy 50%以上。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">DexWM采用基于潜在状态的世界模型架构，以手指关键点作为动作表示，将高维灵巧动作空间压缩为可学习的紧凑表征。模型训练结合了视觉特征预测和辅助手部一致性损失，后者通过约束预测的手部配置与真实手部姿态的一致性来增强对精细手指运动的建模能力。数据来源包括大规模第一视角人类操作视频和机器人操作数据，无需昂贵的动作标注。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">DexWM在未来状态预测基准上显著优于现有世界模型，包括基于文本、导航和全身动作条件的对比方法。在真实机器人硬件上的零样本迁移实验中，DexWM在抓取、放置和到达三类灵巧操作任务上平均成功率超过Diffusion Policy达50%以上，展现出对新技能的强泛化能力。消融实验验证了手指关键点动作表示和手部一致性损失对模型性能的关键贡献。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为机器人灵巧操作学习开辟了从海量人类视频中提取知识的新途径，降低了对昂贵遥操作数据收集的依赖。</div>
+<div class="lang-en">DexWM可广泛应用于服务机器人、工业装配、医疗辅助等需要精细手指操作的场景，其零样本迁移能力使得预训练模型能够快速适应新任务和新物体，加速机器人技能学习周期并提升部署效率。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -3604,6 +4053,27 @@ This incident highlights the tension between public figures' influence and judic
 <div class="summary-section"><h4>我能用什么 / How I can use it</h4>
 <div class="lang-zh">可将此方法用于STEM教育活动，让学生直观理解过饱和溶液与晶体生长动力学；也可作为家庭科学实验项目，培养耐心与观察能力。若追求更持久的成果，可参考文中提到的醋酸铜晶体方案，但需注意其毒性并做好安全防护。</div>
 <div class="lang-en">This method can be applied to STEM education activities, helping students visualize supersaturation and crystal growth kinetics; or as a home science project cultivating patience and observation skills. For more durable results, consider the copper(II) acetate alternative mentioned, with proper safety precautions due to its toxicity.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16275" target="_blank">
+                                Rotatable Antenna-Enabled Mobile Edge Computing
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了可旋转天线（RA）赋能的移动边缘计算（MEC）系统，通过独立调整天线波束指向方向来主动改善延迟敏感用户的无线信道条件。研究目标是最小化最大计算延迟，联合优化MEC服务器计算资源分配、接收波束成形和RA偏转角度。作者提出了一种高效的交替优化（AO）框架来解决该非凸问题，仿真结果表明所提方案相比传统基准方法显著降低了最大计算延迟。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用交替优化（AO）框架将原问题分解为三个子问题分别求解：基于KKT条件推导最优边缘计算资源分配；利用半定松弛（SDR）结合二分搜索优化接收波束成形；通过分式规划（FP）和连续凸近似（SCA）优化RA偏转角度。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">仿真结果验证了所提出的RA赋能MEC方案在降低最大计算延迟方面的有效性，相比传统基准方法实现了显著的性能提升，证明了可旋转天线技术引入的新空间自由度能够有效改善通信可靠性并提升计算效率。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于对低延迟有严格要求的移动边缘计算场景，如增强现实/虚拟现实（AR/VR）、自动驾驶、工业物联网等实时应用。可旋转天线技术为MEC系统提供了额外的空间自由度，通过主动优化信道条件来保障关键业务的QoS，具有重要的工程实践价值。</div></div>
                     </div>
                 </article>
                 
@@ -3713,6 +4183,49 @@ This incident highlights the tension between public figures' influence and judic
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15792" target="_blank">
+                                Almost-iid information theory
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文探讨了信息论中"几乎独立同分布（almost-iid）"资源的核心问题：由于实际物理操作无法完全验证系统的独立同分布（iid）特性，基于de Finetti定理的对称性假设只能保证资源是almost-iid的。作者证明了almost-iid态的条件熵在渐近意义下与iid态的条件熵一致，从而回答了almost-iid资源是否与完美iid资源在信息处理任务中同等有效这一关键问题。作为重要应用，该结果表明压缩纠缠（squashed entanglement）对almost-iid态具有鲁棒性。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文运用de Finetti定理作为理论基础，将操作上有意义的对称性假设与almost-iid态的描述联系起来。通过严格的信息论推导，作者建立了almost-iid态与iid态之间条件熵的渐近等价关系，核心在于证明两者在渐近极限下的差异趋于消失。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">主要理论结果是证明了almost-iid态的条件熵渐近等于对应iid态的条件熵。作为直接推论，压缩纠缠这一重要的纠缠度量在almost-iid态上的取值，在渐近意义下与其在iid态上的取值相匹配，表明该纠缠度量对almost-iid偏离具有鲁棒性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为量子信息论提供了更坚实的操作基础，使得理论结果能够应用于实际场景中无法严格保证iid条件的物理系统。压缩纠缠的鲁棒性结果对量子密钥分发、量子信道容量分析等依赖纠缠量化的任务具有实际意义，降低了对源完美独立性的苛刻要求。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.06183" target="_blank">
+                                CRIMSON: A Clinically-Grounded LLM-Based Metric for Generative Radiology Report Evaluation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了CRIMSON，一种基于临床的LLM评估框架，用于胸部X光报告生成任务。该框架从诊断正确性、上下文相关性和患者安全性三个维度评估报告，并整合患者年龄、临床指征等完整临床上下文，避免正常或临床无关发现对评分的过度影响。</div>
+<div class="lang-en">CRIMSON通过临床显著性分级（紧急、需行动非紧急、无需行动、预期/良性）实现错误严重性感知的加权评分，并在多个基准测试中展现出与放射科专家判断的高度一致性。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">CRIMSON采用基于指南的决策规则，将错误分类为涵盖虚假发现、遗漏发现及八种属性级错误（位置、严重程度、测量值、诊断过度解读等）的综合分类体系。每个发现根据与心胸放射科主治医师合作开发的指南被分配临床显著性等级，从而实现对临床后果严重错误的优先加权。该方法利用大型语言模型进行自动化评估，同时结合完整的临床上下文信息。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在ReXVal数据集上，CRIMSON与六位委员会认证放射科医师标注的临床显著错误计数显示出强相关性（Kendall's τ = 0.61-0.71，Pearson's r = 0.71-0.84）。在新增的RadJudge挑战性通过-失败场景基准和包含100+配对案例的RadPref放射科医师偏好基准中，CRIMSON均展现出与专家判断的最强一致性，优于现有评估指标。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">CRIMSON可用于自动化评估放射学报告生成系统的临床质量，支持AI辅助诊断工具的开发与监管审批。该框架及其发布的基准测试（RadJudge、RadPref）和微调MedGemma模型为可复现的医学报告生成评估提供了标准化工具，有助于推动临床安全的医疗AI系统部署，减少因评估指标与临床实际脱节而导致的患者安全风险。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -3731,6 +4244,27 @@ This incident highlights the tension between public figures' influence and judic
 <div class="lang-zh">实验表明，SemTok在图像重建任务上达到了新的最优水平（state-of-the-art），在显著降低token数量的同时保持了优异的重建保真度。基于SemTok构建的掩码自回归生成模型在下游图像生成任务中取得了明显提升，验证了一维语义分词的有效性和优越性。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">SemTok可广泛应用于高效图像生成、多模态大模型对齐及视觉-语言预训练等场景，其紧凑的语义表示大幅降低计算开销，有利于模型规模化扩展。该方法为视觉生成模型提供了更高效的潜在空间表示方案，在实时图像合成、低带宽视觉传输及边缘设备部署等实际应用中具有重要价值。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.09531" target="_blank">
+                                Association of Progressive PPFE and Mortality in Lung Cancer Screening Cohorts
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本研究探讨了进行性胸膜肺实质纤维弹性组织增生症（PPFE）在肺癌筛查人群中的临床意义。通过分析两项大型肺癌筛查队列（NLST和SUMMIT）的纵向低剂量CT数据，研究发现进行性PPFE与死亡率独立相关，且与呼吸系统不良结局密切相关。该结果表明，PPFE的定量评估可作为识别肺癌筛查项目中呼吸系统疾病高风险个体的临床相关影像学生物标志物。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">研究者采用自动化算法对两项肺癌筛查研究（NLST：n=7,980；SUMMIT：n=8,561）的基线和随访低剂量CT扫描进行PPFE体积定量分析。基于分布阈值将PPFE年变化率二分类为进行性PPFE，并使用Cox比例风险模型和发病率比率（IRR）评估其与死亡率及临床结局的关联。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">进行性PPFE在两个队列中均与死亡率显著相关（NLST：HR=1.25，95%CI：1.01-1.56，p=0.042；SUMMIT：HR=3.14，95%CI：1.66-5.97，p<0.001）。在SUMMIT队列中，进行性PPFE与更高的呼吸系统住院率（IRR=2.79，p<0.001）、抗生素和类固醇使用增加（IRR=1.55，p=0.010）以及改良医学研究委员会呼吸困难评分升高趋势（OR=1.40，p=0.055）相关。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为肺癌筛查项目提供了可整合的影像学风险评估工具，通过自动化CT定量分析识别PPFE进展的高风险个体，有助于早期干预和优化呼吸健康管理。这一生物标志物可增强现有肺癌筛查的临床价值，实现肺部疾病的双重筛查目的。</div></div>
                     </div>
                 </article>
                 
@@ -3970,6 +4504,27 @@ This incident highlights the tension between public figures' influence and judic
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究适用于需要精细听觉反馈的机器人操作场景，如易碎物品抓取（通过碰撞声判断接触状态）、液体倾倒（通过声音判断液位）、工具使用（通过声学反馈调整力度）等动态交互任务。</div>
 <div class="lang-en">HEAR框架使机器人能够在视觉受限或需要多模态验证的环境中实现更可靠的操作，为家庭服务机器人、工业装配和医疗辅助机器人等应用提供了技术基础。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2504.05033" target="_blank">
+                                CloSE: A Geometric Shape-Agnostic Cloth State Representation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种新颖的布料变形状态表示方法CloSE（Cloth StatE），用于解决布料操作中的非刚性变形表示难题。该方法首先基于布料边缘段的拓扑指数构建dGLI圆盘表示，然后通过提取跨形状、尺寸和方向一致的关键特征，将其抽象为紧凑连续的圆形表示。实验表明，CloSE能够准确预测多种模拟服装数据集的折叠位置，并在语义标注和高低层规划任务中展现出强大性能。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文提出两阶段表示方法：首先计算布料边缘段的拓扑指数（dGLI），并将其排列在圆形网格上形成dGLI圆盘热图；随后从该热图中提取与形状无关的判别性特征，压缩为低维的CloSE圆形向量表示。该表示具有几何形状无关性、连续性和紧凑性，可统一描述不同形状布料的变形状态。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">CloSE在多个模拟服装数据集上实现了准确的折叠位置预测，验证了其对不同形状、尺寸和方向布料的泛化能力。在语义标注任务中，该表示能有效区分布料的不同折叠状态；在规划任务中，CloSE同时支持高层任务规划（如目标状态设定）和低层动作规划（如抓取点选择），展现出多尺度适用性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">CloSE可广泛应用于机器人布料操作领域，包括家用服务机器人（如叠衣、整理）、服装制造业自动化（如质检、折叠包装）以及虚拟试衣等场景。其形状无关特性使其能够泛化到训练时未见过的新颖布料形状，降低了实际部署时的数据收集成本，为开发通用布料操作机器人提供了重要的状态感知基础。</div></div>
                     </div>
                 </article>
                 
@@ -4505,6 +5060,27 @@ This incident highlights the tension between public figures' influence and judic
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15631" target="_blank">
+                                From description to design: Automated engineering of complex systems with desirable emergent properties
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种基于优化的通用流程，通过将描述复杂系统的统计量重新用作损失函数，利用梯度下降优化器自动设计微观特征和相互作用，从而工程化地实现期望的涌现特性。以耦合Kuramoto振子系统为测试平台，该方法能够可靠地生成具有非平凡全局性质的系统，包括高阶协同信息、多吸引子亚稳态以及模块化和整合信息等介观结构。该研究推动复杂系统科学从以描述和事后解释为主的领域，向能够工程化设计具有期望涌现特性的实际系统的方向发展。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">作者构建了一个优化框架，将传统用于描述复杂系统涌现模式的统计量（如信息论指标、网络拓扑度量等）转化为可微分的损失函数，通过梯度下降优化算法自动搜索满足目标宏观性质的微观参数配置。该方法还整合了系统约束条件（如连接成本、拓扑限制）作为优化过程中的正则化项或硬约束。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在Kuramoto振子系统上的实验表明，该方法成功实现了多种复杂的涌现特性：包括高阶协同信息结构、具有多个稳定状态的多吸引子亚稳态动力学，以及模块化和整合信息等介观组织结构。优化过程能够有效处理实际约束，在限制连接成本或指定拓扑结构的情况下仍能找到可行的参数解。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该方法为复杂系统的逆向工程提供了通用工具，可应用于神经科学中设计具有特定信息整合特性的脑网络模型、电力系统中优化耦合振子网络以实现稳定同步、以及社会-技术系统中设计具有期望集体行为的多智能体系统。其框架的通用性使其能够扩展到任何具有可微分描述统计量的复杂系统领域。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -4744,6 +5320,27 @@ This incident highlights the tension between public figures' influence and judic
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
+                            <a href="https://arxiv.org/abs/2603.15228" target="_blank">
+                                HYDRA: Unifying Multi-modal Generation and Understanding via Representation-Harmonized Tokenization
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出HYDRA框架，旨在解决统一多模态模型中视觉理解与生成任务之间的表征鸿沟问题。核心创新是HYDRA-TOK，一种表征和谐的纯ViT分词器，通过生成-语义瓶颈（GSB）实现从结构保留的Gen-ViT到语义编码的Sem-ViT的渐进式转换。实验表明，HYDRA在视觉重建（rFID 0.08）和生成任务（GenEval 0.86、DPG-Bench 86.4）上达到SOTA，同时在8项理解基准上平均超越先前原生统一多模态模型10.0个百分点。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">HYDRA-TOK采用渐进式学习架构，首先通过Gen-ViT捕获保留结构的视觉基元，然后经GSB模块将特征压缩至低维空间过滤噪声以支持鲁棒合成，再恢复维度以赋能复杂语义理解。整个框架在单一参数空间内原生集成感知与生成，无需解耦编码器或离散量化。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">HYDRA在视觉重建任务上实现rFID 0.08的优异指标，在生成评估中取得GenEval 0.86、DPG-Bench 86.4和WISE 0.53的顶尖成绩。在理解任务方面，相比先前原生统一多模态模型，在8项挑战性基准上平均提升10.0个百分点，首次实现生成与理解的双重SOTA。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为统一多模态AI系统提供了新的技术范式，可广泛应用于需要同时具备视觉内容生成与语义理解能力的场景，如智能图像编辑、交互式视觉问答、多模态内容创作等，有望降低多任务模型的部署成本并提升跨任务协同效率。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
                             <a href="https://arxiv.org/abs/2603.16063" target="_blank">
                                 ViT-AdaLA: Adapting Vision Transformers with Linear Attention
                             </a>
@@ -4781,6 +5378,27 @@ This incident highlights the tension between public figures' influence and judic
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究适用于需要从单条长事件序列中挖掘因果关系的领域，如车辆故障诊断、工业制造系统监控和医疗患者轨迹分析等。</div>
 <div class="lang-en">TRACE的线性扩展性和GPU并行能力使其能够处理大规模事件词汇表，为复杂系统的实时根因分析和决策支持提供了实用工具。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16267" target="_blank">
+                                Novel CRT-based Asymptotically Ideal Disjunctive Hierarchical Secret Sharing Scheme
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了基于中国剩余定理（CRT）的析取分层秘密共享（DHSS）方案，指出Yang等人（ISIT, 2024）的理想DHSS方案和Tiplea等人（IET Information Security, 2021）的渐近理想DHSS方案存在安全漏洞。为此，作者提出了一种新的CRT-based渐近完美DHSS方案，该方案支持灵活的份额大小，当所有份额大小相等时达到渐近理想状态，信息率达到1，并具有计算安全性。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">本文采用中国剩余定理（CRT）作为核心技术，构建分层秘密共享方案，通过将参与者集合划分为具有不同信任度和阈值的不相交子集（层级）来实现分层访问控制。该方案在设计上兼顾了份额大小的灵活性和渐近理想性，确保在份额等长条件下信息率趋近于最优。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">论文主要证明了所提方案的安全性，表明其克服了现有CRT-based DHSS方案中存在的安全缺陷或信息率低于1/2的局限。当所有份额大小相等时，该方案达到渐近理想状态，信息率为1，实现了计算安全性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于需要分层访问控制和安全密钥管理的场景，如企业数据保护、云存储安全、多方安全计算等。其支持灵活份额大小的特性使其在实际部署中具有更好的适应性，而高信息率和计算安全性保证了高效且可靠的秘密共享服务。</div></div>
                     </div>
                 </article>
                 
@@ -5324,6 +5942,28 @@ This incident highlights the tension between public figures' influence and judic
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
+                            <a href="https://arxiv.org/abs/2603.15432" target="_blank">
+                                Gym-V: A Unified Vision Environment System for Agentic Vision Research
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了 Gym-V，一个面向智能体视觉研究的统一环境系统，包含 179 个程序生成的视觉环境，覆盖 10 个领域并支持可控难度设置。研究发现，观察脚手架（如图像说明和游戏规则）对训练成功的影响比强化学习算法的选择更为关键，且跨领域训练能带来广泛泛化能力，而狭窄训练则可能导致负迁移。</div>
+<div class="lang-en">Gym-V 旨在为视觉语言模型（VLM）智能体的训练与评估提供标准化基础设施，加速该领域的研究进展。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">Gym-V 构建了一个统一的平台架构，整合了程序生成的视觉环境、可配置的难度参数以及标准化的训练和评估工具包。该平台支持对视觉智能体进行受控实验，使研究者能够系统性地操控观察条件（如是否提供图像说明、游戏规则等）和训练设置（单领域 vs. 多领域、单轮 vs. 多轮交互），从而分离不同因素对智能体学习效果的影响。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验表明，当提供图像说明和游戏规则等观察脚手架时，视觉智能体才能成功学习，否则即使使用先进的 RL 算法也会失败。跨领域迁移实验显示，在多样化任务类别上训练的智能体具有更强的泛化能力，而在单一狭窄领域训练的智能体可能出现负迁移现象，且多轮交互会放大这些效应。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">Gym-V 为视觉智能体研究提供了类似 OpenAI Gym 的标准化基础设施，支持快速迭代、可复现实验和公平比较，解决了当前视觉智能体领域工具碎片化的问题。该平台可广泛应用于视觉语言模型的强化学习训练、智能体能力诊断、跨领域泛化研究以及新型智能体架构的基准测试，为学术界和工业界开发更强大的通用视觉智能体奠定基础。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
                             <a href="https://arxiv.org/abs/2603.16050" target="_blank">
                                 The Era of End-to-End Autonomy: Transitioning from Rule-Based Driving to Large Driving Models
                             </a>
@@ -5360,6 +6000,27 @@ This incident highlights the tension between public figures' influence and judic
 <div class="lang-zh">该研究在包含6,600多条出行弧段和超过38,000次出行的亚特兰大都会区案例中进行评估，计算结果表明2LRC-TND能够有效设计考虑需求不确定性和情境信息的公交网络，显著优于传统固定需求模型。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该框架适用于大城市公交系统规划与优化，帮助交通规划者在不确定需求环境下做出更鲁棒的决策；其实际价值在于提升公共交通服务质量和覆盖率，促进潜在用户向实际用户的转化，从而支持可持续城市交通发展。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16472" target="_blank">
+                                Directivity Enhancement of Movable Antenna Arrays with Mutual Coupling
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了可移动天线（MA）阵列中互耦效应用于方向性增强的潜力。传统天线阵列中，互耦通常被视为有害因素，但在特定条件下可被利用以提升远场方向性（即波束成形增益）。理论上，N元超方向性阵列在端射方向的方向性可达N²，远超传统无耦阵列的全向方向性N。作者提出了一种低复杂度的贪婪搜索与梯度下降（GS-GD）算法来优化天线位置，以最大化任意给定方向的方向性，数值结果表明优化后的MA阵列设计相比传统均匀线性阵列（ULA）可获得显著的方向性增益。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文提出了一种两阶段优化算法GS-GD：第一阶段通过贪婪搜索从离散网格点中依次选择天线位置，第二阶段利用梯度下降进行连续精细化优化。该方法充分考虑了天线单元之间的互耦效应，通过优化空间位置配置来实现超方向性辐射特性。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">数值实验表明，利用天线互耦优化的MA阵列设计在所有方向上均显著优于无互耦的传统ULA；所提出的GS-GD算法在大多数方向上能够接近全局最优解，验证了该低复杂度算法在可移动天线阵列优化中的有效性和实用性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为下一代无线通信系统（如6G）中的高性能波束成形提供了新思路，可应用于需要高增益定向传输的场景，如毫米波通信、卫星通信和雷达系统。通过可移动天线技术动态调控互耦效应，能够在不增加天线数量的前提下显著提升阵列增益，降低硬件成本与复杂度。</div></div>
                     </div>
                 </article>
                 
@@ -5402,6 +6063,27 @@ This incident highlights the tension between public figures' influence and judic
 <div class="lang-zh">在多个数据集上的实验表明，ERGO相比原始模型和竞争方法实现了更高的准确率和效率。具体而言，在V*基准上，ERGO以7B参数规模超越Qwen2.5-VL-7B 4.7个百分点，同时将视觉token使用量削减至23%，实现3倍推理加速。该方法在保持细粒度视觉细节的同时显著降低了计算成本。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">ERGO适用于需要处理高分辨率图像的实时视觉语言应用场景，如自动驾驶中的高清路况分析、医疗影像诊断、卫星图像解译和工业质检等。其高效的"粗到细"推理机制使边缘设备部署成为可能，同时"思考图像"的能力扩展了视觉推理的适用范围，为资源受限环境下的多模态AI应用提供了实用解决方案。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2602.23520" target="_blank">
+                                Exact Consistency Under Partial Views: Graph Colorability, Capacity, and Equality in Multi-Location Encodings
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文构建了多位置编码(multi-location encodings)失效的结构理论。作者证明：可容许的部分视图会在潜在元组上诱导出混淆图(confusability graph)；在精确坐标视图模型中，该图类可由坐标一致集的向上闭族精确刻画，而使用T进制标签的精确恢复等价于T-可着色性。重复组合产生强幂次，归一化块速率序列收敛于渐近香农容量，其上界为Lovász-ϑ函数。当混淆关系具有传递性时，该上界理论是紧的；meet-witnessing和fiber coherence提供了可验证的充分条件。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用图论与信息论相结合的方法，将多位置编码的一致性问题转化为图着色问题。核心工具包括：利用向上闭族(upward-closed families)对混淆图进行组合刻画，通过Lovász ϑ函数建立容量上界，以及引入仿射限制下的可表示拟阵(representable matroid)来约束混淆性。作者还发展了meet-witnessing和fiber coherence等代数条件来判定传递性。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">理论结果表明：(1) 渐近香农容量存在且被Lovász-ϑ函数上界约束；(2) 当混淆关系传递时，该上界是紧的（达到容量）；(3) 在仿射结构下，拟阵秩给出了混淆性的组合上界。这些结果为编码设计提供了可计算的复杂度界限和可验证的正确性条件。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该理论统一适用于编程语言运行时、数据库和依赖管理器等系统。核心应用价值在于：建立了因果传播(causal propagation)与来源可观测性(provenance observability)作为可验证结构完整性的充要条件，为分布式系统、版本控制和软件供应链安全中的数据一致性验证提供了理论基础。</div></div>
                     </div>
                 </article>
                 
@@ -5834,6 +6516,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16036" target="_blank">
+                                CSS codes from the Bruhat order of Coxeter groups
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种基于Coxeter群Bruhat序生成CSS量子纠错码的新方法。利用Bruhat序作为正则CW复形的面偏序集这一拓扑性质，作者构造了多种具有可控参数的CSS码族，包括稳定子权重受限的码（如[6006, 924, {≤14,≤7}]和[22880,3432,{≤8,≤16}]）以及具有高度不规则稳定子权重分布的码（如[571,199,{5,5}]）。此外，作者还发展了权重约化方法处理少数重稳定子，并提取了可解释为带元校验CSS码的四项链复形。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">该方法以有限或无限（可约或不可约）Coxeter群为研究对象，利用其Bruhat序的面偏序集区间结构构造链复形，进而转化为CSS量子纠错码。通过不同的构造方法，可以控制稳定子的权重分布特性；对于出现少数高权重稳定子的情况，作者专门开发了权重约化技术。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">论文获得了多个具有优良参数的CSS码实例：稳定子权重受限的码包括[6006, 924, {≤14,≤7}]（实际稳定子权重为14和9）和[22880,3432,{≤8,≤16}]（权重16和10）；同时构造了具有高度不规则稳定子权重分布的码如[571,199,{5,5}]。此外，还成功提取了长度为3的四项链复形，可解释为具有元校验结构的CSS码。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为量子纠错码设计提供了基于代数拓扑和群论的系统化构造框架，所生成的CSS码可应用于需要特定稳定子权重约束的量子计算场景。具有可控稳定子权重的码有利于降低量子硬件的实现难度，而元校验结构则为发展更高效的量子纠错协议提供了新的数学基础。该方法适用于广泛的Coxeter群类型，具有良好的可扩展性。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -6111,6 +6814,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">LeAD-M3D在KITTI和Waymo数据集上达到最先进的精度，并在Rope3D数据集上取得最佳汽车类别AP；与此前高精度模型相比，推理速度提升最高达3.6倍，在精度-效率权衡上建立了新的帕累托前沿。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究为自动驾驶、机器人导航等需要实时3D环境感知的应用提供了低成本解决方案，无需依赖昂贵的LiDAR传感器或立体相机，仅需单目摄像头即可实现高精度实时检测，具有重要的实际部署价值和商业化潜力。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.14482" target="_blank">
+                                V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">V-JEPA 2.1 是一系列自监督模型，能够学习图像和视频的高质量密集视觉表征，同时保持强大的全局场景理解能力。该研究通过四种关键设计——密集预测损失、深度自监督、多模态分词器以及模型容量与训练数据的有效扩展——实现了空间结构化、语义连贯且时间一致的表征。实验表明，该模型在多个挑战性基准测试中达到最先进性能，包括Ego4D短期物体交互预测（7.71 mAP）、EPIC-KITCHENS高级动作预测（40.8 Recall@5）以及真实机器人抓取成功率较V-JEPA-2 AC提升20个百分点。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">V-JEPA 2.1 采用基于掩码的密集预测损失，使可见和掩码token均参与训练信号以显式编码时空信息；同时在多个中间编码器层分层应用自监督目标以提升表征质量。此外，多模态分词器实现了图像与视频的统一训练，并通过模型规模与数据量的有效扩展进一步优化性能。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">V-JEPA 2.1 在多项任务中取得领先成绩：机器人导航（TartanDrive 5.687 ATE）、深度估计（NYUv2线性探测0.307 RMSE）、全局视频识别（Something-Something-V2 77.7准确率），以及在Ego4D和EPIC-KITCHENS等第一人称视频理解基准上的最优表现。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为机器人操作与导航（如抓取任务成功率显著提升）、自动驾驶场景理解、视频动作预测与深度估计等实际应用提供了强大的视觉表征基础，其密集特征学习能力尤其适用于需要精细空间-时间推理的具身智能任务。</div></div>
                     </div>
                 </article>
                 
@@ -6798,6 +7522,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.14497" target="_blank">
+                                WorldVLM: Combining World Model Forecasting and Vision-Language Reasoning
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了WorldVLM，一种将视觉-语言模型（VLMs）与世界模型（WMs）相结合的混合架构，用于自动驾驶系统。该架构利用VLM强大的上下文推理能力生成高层行为指令，指导世界模型进行场景动态预测，从而克服了纯VLM空间理解不足以及纯WM缺乏语义推理能力的局限。研究评估了不同的条件化策略，并为混合架构设计提供了关键见解，旨在实现可解释且具备环境感知能力的端到端自动驾驶。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">WorldVLM采用混合架构设计，将VLM作为高层决策模块生成行为命令（如转向、加速等指令），并将这些命令作为条件输入传递给世界模型，引导其预测未来场景演变。研究探索了多种VLM到WM的条件化策略，以优化两个模块之间的信息传递与协同机制。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">论文对不同的条件化策略进行了系统性评估，验证了VLM指导能够有效提升世界模型的预测质量和驾驶决策的可解释性；实验表明该混合设计在保持动态预测准确性的同时增强了泛化能力，为端到端自动驾驶提供了更具上下文感知能力的解决方案。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">WorldVLM可应用于自动驾驶汽车的端到端决策系统，特别适用于需要复杂场景理解和长期规划的城市场景；该架构的模块化设计支持可解释的决策过程，有助于安全关键系统的验证与监管，同时为VLM与WM的融合研究提供了可扩展的技术框架。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="SCMP Business">
                     <div class="card-header">
                         <h3>
@@ -7019,6 +7764,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="summary-section"><h4>我能用什么 / How I can use it</h4>
 <div class="lang-zh">若计划经中东转机或前往该地区，应密切关注航司政策更新并考虑替代航线（如经欧洲或东南亚中转）。对于企业差旅管理者，可借此案例完善应急预案，将地缘政治风险评估纳入出行决策流程。</div>
 <div class="lang-en">If planning to transit through or travel to the Middle East, closely monitor airline policy updates and consider alternative routes (such as via Europe or Southeast Asia). For corporate travel managers, use this case to improve contingency plans and integrate geopolitical risk assessment into travel decision-making processes.</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2512.14001" target="_blank">
+                                CLAIM: Camera-LiDAR Alignment with Intensity and Monodepth
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了CLAIM，一种利用单目深度估计模型进行相机-激光雷达外参标定的新方法。该方法采用由粗到精的搜索策略，通过基于分块皮尔逊相关的结构损失和基于互信息的纹理损失来优化变换矩阵，无需复杂的数据预处理、特征提取或特征匹配步骤。在KITTI、Waymo和MIAS-LCEC数据集上的实验表明，CLAIM优于现有最先进方法。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">CLAIM利用预训练的单目深度模型作为桥梁，将图像转换为伪深度图以实现与激光雷达点云的几何对齐。优化过程采用由粗到精的分层搜索策略，联合优化基于分块皮尔逊相关系数的结构一致性损失和基于互信息的强度纹理一致性损失，从而估计相机与激光雷达之间的最优刚性变换。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">论文在三个公开数据集（KITTI、Waymo、MIAS-LCEC）上验证了CLAIM的有效性，实验结果显示其在标定精度上显著优于现有最先进方法。该方法对初始估计值具有较好的鲁棒性，且无需针对不同场景调整超参数。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">CLAIM可广泛应用于自动驾驶车辆的传感器在线标定与自标定场景，解决因振动、温度变化或机械冲击导致的外参漂移问题。该方法简化了传统标定流程，降低了部署门槛，适用于需要频繁维护或难以进行人工标定的实际运营环境。</div></div>
                     </div>
                 </article>
                 
@@ -7453,6 +8219,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="Unknown">
+                    <div class="card-header">
+                        <h3>
+                            <a href="" target="_blank">
+                                Untitled
+                            </a>
+                        </h3>
+                        <span class="source-tag">Unknown</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出χ₀框架，针对长程机器人操作中的分布不一致问题（人类示教分布、策略归纳偏置与测试执行分布之间的偏移），通过三大技术支柱实现资源高效的高可靠性操作。该方法仅用20小时数据和8张A100 GPU，在双臂协作服装操作任务（铺平、折叠、悬挂）上达到24小时连续自主运行，成功率较SOTA方法π₀.₅提升近250%。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">χ₀构建于三个核心技术：（i）模型算术，通过权重空间融合策略整合多样化示教分布；（ii）阶段优势估计器，提供稳定密集的任务进度信号以解决非阶段方法的数值不稳定性；（iii）训练-部署对齐，结合时空增强、启发式DAgger修正与时序分块平滑来弥合分布差距。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验表明，χ₀在双机器人长程服装操作任务中展现出极高的可靠性，能够从任意初始状态连续运行24小时无需人工干预。与当前最先进的π₀.₅相比，χ₀在数据量（20小时）和计算资源（8×A100）显著减少的情况下，成功率提升近250%，证明了其资源效率与鲁棒性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">χ₀适用于需要高可靠性长程自主操作的工业与服务场景，如自动化服装处理、仓储物流中的柔性物体操作等。其资源高效的特性降低了大规模机器人部署的门槛，为生产级机器人系统的实际落地提供了可行路径，尤其在数据获取困难或计算资源受限的场合具有显著优势。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -7534,6 +8321,28 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">实验表明，TabbyFlow在表格数据合成任务上 consistently 优于TabDDPM和TabSyn等扩散基线方法，且仅需不超过100步采样即可达到优异性能，计算效率显著提升。最优传输（OT）路径是更稳健的默认选择，对早停更具鲁棒性；而方差保持（VP）路径在降低隐私风险方面具有潜力。随机化流在保持边缘分布的同时，部分场景下能生成高效用且披露风险更低的合成数据。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究为隐私保护数据共享提供了更高效、更灵活的合成数据生成工具，适用于医疗健康、金融等敏感数据领域。流匹配方法的低计算成本特性使其适合大规模数据发布和实时应用场景，而随机采样器的引入为组织在数据效用与隐私合规之间进行精细调控提供了新途径。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.14610" target="_blank">
+                                Make it SING: Analyzing Semantic Invariants in Classifiers
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了SING（Semantic Interpretation of the Null-space Geometry）方法，用于分析和解释分类器中的语义不变量。这些不变量存在于分类器的零空间中，导致不同的输入映射到相同的输出，但其语义内容此前难以被人类理解。</div>
+<div class="lang-en">SING通过将网络特征映射到多模态视觉语言模型，生成等价图像并为变化分配语义解释，从而揭示了不同模型（如ResNet50和DinoViT）在保持类别语义方面的差异。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">SING的核心方法是建立从网络特征到多模态视觉语言模型的映射，从而获取自然语言描述和视觉示例来描述零空间诱导的语义偏移。该方法可应用于单张图像以发现局部不变量，也可应用于图像集合以进行类别和模型层面的统计分析。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">研究发现ResNet50会将相关语义属性泄漏到零空间中，而使用自监督DINO预训练的DinoViT在不变量空间中保持类别语义方面表现更优。这些发现通过SING方法生成的语义解释和等价图像得到了验证。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">SING可用于深入理解神经网络的行为特性，帮助评估和改进模型的鲁棒性与可解释性。该方法在模型诊断、安全关键应用中的漏洞分析，以及指导更具语义一致性的模型设计方面具有重要价值。</div></div>
                     </div>
                 </article>
                 
@@ -7713,6 +8522,29 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
+                            <a href="https://arxiv.org/abs/2412.01525" target="_blank">
+                                Towards Clinical Practice in CT-Based Pulmonary Disease Screening: An Efficient and Reliable Framework
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一个高效可靠的CT肺部疾病筛查框架（ERF），旨在解决深度学习模型处理完整3D CT体积时计算成本过高的问题。该框架包含两个核心创新：基于聚类的子采样方法（CSS）用于高效选择具有代表性和多样性的CT切片子集，以及模糊感知不确定性量化机制（AUQ）用于识别因细微病变和伪影导致的数据模糊性。在包含2,654个CT体积的两个公开数据集上验证，ERF在保持与全体积分析相当诊断性能（超过90%的准确率和召回率）的同时，将处理时间减少超过60%。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">CSS方法通过结合高效的k近邻搜索与迭代优化过程，在保持诊断特征完整性的前提下选择紧凑而全面的切片子集，避免了传统子采样技术引入伪影或丢弃关键信息的问题。</div>
+<div class="lang-en">AUQ机制利用辅助分类器之间的预测差异构建专门的模糊性评分，通过在训练期间最大化该差异来有效标记模型因视觉噪声或复杂病理而缺乏信心的样本。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">ERF在3种肺部疾病的诊断任务上实现了与全体积分析相当的性能，准确率和召回率均超过90%，同时处理时间缩短超过60%。该框架在2,654个CT体积的两个公开数据集上得到验证，证明了其在计算效率和诊断可靠性之间的有效平衡。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为时间敏感的临床环境中部署快速、准确且可信赖的AI辅助筛查工具提供了重要进展，有助于减轻放射科医生的巨大工作负担。</div>
+<div class="lang-en">ERF框架的高效性和可靠性使其特别适用于需要实时或近实时处理的大规模肺部疾病筛查项目，推动深度学习CT分析从研究走向广泛的临床实践。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
                             <a href="https://arxiv.org/abs/2603.16489" target="_blank">
                                 Unlearning for One-Step Generative Models via Unbalanced Optimal Transport
                             </a>
@@ -7728,6 +8560,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">在CIFAR-10和ImageNet-256数据集上的实验验证了UOT-Unlearn的有效性，该框架在遗忘成功率指标（PUL）和保留样本质量指标（u-FID）上均显著优于现有基线方法。结果表明该方法能够在有效消除目标类别生成能力的同时，维持非目标类别的高质量图像生成性能。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究为单步生成模型提供了首个可行的机器遗忘解决方案，可应用于需要快速移除特定生成内容（如版权争议图像、有害或不当内容）的场景。其即插即用的特性使其能够便捷集成到现有的高效单步生成框架中，在保障生成模型安全性和合规性方面具有重要实用价值，特别适用于对推理速度要求高的实际部署环境。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2508.02586" target="_blank">
+                                The Length of Functional Batch and PIR Codes
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本研究探讨了在任意有限域上，固定维数和列表大小的功能批处理码（Functional Batch Codes）和私有信息检索码（PIR Codes）的最小长度计算问题。作者将此前针对二元码的若干结果推广到一般有限域情形，并进行了精细化处理。论文提出了新的上下界估计，分析了该参数的渐近行为，并计算了多组参数下的具体数值，同时为非二元域上的功能批处理猜想提供了关于"正确"列表大小的理论见解。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用组合数学与编码理论相结合的方法，通过将二元码的结果推广到任意有限域，建立功能批处理码和PIR码最小长度的理论框架。具体技术包括构造性上界证明、信息论下界推导，以及利用有限域的代数结构进行参数优化分析。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">研究获得了功能批处理码和PIR码最小长度的新上下界，刻画了该参数随码长和域大小变化的渐近特性。作者计算了多组具体参数下的最小长度精确值或紧界，并验证了所提界限的紧性，为理解列表大小与码效率之间的权衡关系提供了定量依据。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究对分布式存储系统、隐私保护数据库查询和云计算中的高效数据检索具有重要理论指导意义。功能批处理码和PIR码的优化设计可降低存储冗余度和通信开销，提升大规模数据系统中多用户并行查询和隐私保护访问的性能与安全性。</div></div>
                     </div>
                 </article>
                 
@@ -7854,6 +8707,48 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">多模态模型相比纯文本方法将F1-NoAH提升4.6个百分点，并将类别性能差距缩小一半；文本引导晚期融合策略额外带来+4.1 Macro F1的提升。最终在BAH数据集上达到0.694 Macro F1（标注测试集）和0.715（私有排行榜），训练仅需单GPU不足25分钟。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究在临床心理评估、心理咨询和精神健康监测中具有重要价值，可帮助专业人员识别患者言语与非言语信号之间的矛盾，从而更准确地评估其真实情感状态和决策犹豫程度。高效的单GPU训练特性也使其便于在实际临床环境中快速部署和应用。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2507.21524" target="_blank">
+                                Large Language Models for Wireless Communications: From Adaptation to Autonomy
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文探讨了大语言模型（LLMs）在无线通信领域的变革性作用，提出从适配预训练模型、开发无线专用基础模型到实现具备自主推理能力的智能体LLMs三大发展方向。文章系统梳理了LLM在无线系统中的最新进展与典型案例，强调其相较于传统方法在推理、泛化和零样本学习方面的独特优势，并指出多模态融合、轻量化模型协作与自我改进能力等未来研究机遇。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用综述性研究方法，从三个技术层级分析LLM在无线通信中的应用路径：第一层通过提示工程、微调等技术将通用预训练LLM适配至特定通信任务；第二层构建面向无线领域的专用基础模型以兼顾通用性与计算效率；第三层发展具备自主决策与多智能体协调能力的Agentic LLM架构。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">论文以案例研究形式展示了LLM在无线通信中的实证效果，包括在网络优化、频谱管理和故障诊断等任务中，LLM方法相比传统基于规则和机器学习的方法展现出更强的泛化能力和任务迁移性；同时表明专用无线基础模型在保持性能的同时显著降低了推理开销，而多智能体LLM系统实现了分布式网络元素的自主协同决策。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为6G及未来智能无线网络的发展提供了技术路线图，LLM驱动的自主网络可动态适应复杂多变的电磁环境，实现自配置、自优化和自愈合。实际应用场景涵盖智能基站管理、动态频谱共享、网络切片优化以及应急通信中的快速决策支持，有望大幅降低人工运维成本并提升网络整体智能化水平。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16037" target="_blank">
+                                On the cumulative residual interval entropy of doubly truncated random variables
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出并研究了一种新的不确定性度量——累积残差区间熵（CRIE），定义为双截断（区间）连续随机变量的累积残差熵。该度量推广了Rao等人提出的累积残差熵以及Asadi和Zohrevand提出的动态累积残差熵，适用于数据落在两个端点之间的应用场景。论文建立了广义风险率和双截断平均剩余寿命的性质，并基于可靠性度量、协方差、相关变换和递增变换给出了CRIE的多种表示形式，同时提供了上下界和单调性结果。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用理论概率分析方法，通过定义双截断随机变量的累积残差熵来构建新的不确定性度量框架。研究利用广义风险率和双截断平均剩余寿命等可靠性理论工具，结合协方差分析和相关变换技术，建立CRIE的数学性质和表示定理。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">论文主要获得理论结果：建立了CRIE基于可靠性函数、协方差结构和相关变换的多种等价表示；证明了CRIE的上下界估计；得到了关于分布参数和区间的单调性结论。这些结果为双截断数据的熵分析提供了完整的理论工具。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">CRIE适用于数据自然受限在区间内的实际场景，如医学研究中患者的生存时间分析（已知存活至某时刻且未超过另一时刻）、工程可靠性中部件在特定工作区间内的寿命评估、以及经济学中收入或价格区间数据的分布不确定性度量，为截断数据分析提供了更精细的熵理论工具。</div></div>
                     </div>
                 </article>
                 
@@ -8456,6 +9351,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2601.00702" target="_blank">
+                                DefVINS: Visual-Inertial Odometry for Deformable Scenes
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了DefVINS，首个面向可变形场景的视觉-惯性里程计（VIO）系统，解决了传统VIO刚性假设在变形环境中的失效问题。该方法将里程计状态分解为刚性IMU锚定分量与基于嵌入变形图的非刚性场景形变，并首次发布了真实可变形场景VIO基准数据集VIMandala。理论分析揭示了惯性测量如何约束相机运动并使原本不可观的模态变得可识别，实验表明DefVINS在合成与真实基准上均优于刚性VIO和非刚性视觉里程计基线。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">DefVINS采用双分量状态建模：刚性部分由IMU积分锚定，非刚性部分通过嵌入变形图（embedded deformation graph）表示场景形变。基于可观性分析，设计了基于条件数的激活策略，在激励不足时避免病态更新，确保数值稳定性。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在合成Drunkard's基准（扩展IMU仿真）和真实VIMandala基准上的评估显示，DefVINS显著优于传统刚性VIO方法（有效抑制位姿漂移）和非刚性视觉里程计基线（避免局部非刚性运动过拟合），验证了IMU锚定策略在可变形场景中的有效性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于医疗内窥镜导航、软体机器人交互、弹性材料操作等可变形环境场景，为需要同时估计相机位姿和动态场景形变的应用提供了首个鲁棒的视觉-惯性解决方案，填补了该领域基准数据集的空白。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -8795,6 +9711,29 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">实验表明该方法能够从单手机闪光灯序列中重建高质量的3D可重光照面部扫描。系统成功捕捉了完整面部细节，包括具有挑战性的口腔内部、头发和眼睛区域，在便捷性与重建质量之间取得了显著平衡。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该技术可广泛应用于数字人创建、虚拟现实/增强现实、游戏角色建模以及远程协作等场景。其"居家可用"的特性极大降低了专业面部捕捉的门槛，使普通用户无需昂贵设备或专业工作室即可获得影视级3D面部资产，有望推动个性化数字内容创作的民主化发展。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.13397" target="_blank">
+                                TennisExpert: Towards Expert-Level Analytical Sports Video Understanding
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了TennisExpert，一个面向专家级网球视频理解的分析框架，并配套发布了大规模基准数据集TennisVL。</div>
+<div class="lang-en">TennisVL包含200多场职业比赛（471.9小时）和4万多个回合级片段，专注于战术推理、球员决策和比赛势头等专家级分析解说，而非简单的描述性解说。TennisExpert框架通过视频语义解析器和基于Qwen3-VL-8B的记忆增强模型，有效捕捉短长期时间上下文，在实验中 consistently 超越GPT-5、Gemini和Claude等专有基线模型。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">TennisExpert采用多模态架构，核心组件包括：（1）视频语义解析器，用于提取关键比赛元素如比分、击球序列、落球点和球员位置；（2）分层记忆增强模块，基于Qwen3-VL-8B构建，分别处理短期和长期时间上下文信息。该设计在保证分析准确性的同时兼顾实时部署的效率需求。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">TennisExpert在各项评估中 consistently 超越包括GPT-5、Gemini和Claude在内的强专有基线模型，展现出更优的战术上下文捕捉能力和比赛动态理解能力。实验表明该框架在专家级分析解说生成任务上具有显著优势，能够更好地推理球员决策和比赛势头变化。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究可直接应用于专业网球分析、自动化教练系统和实时比赛解说等场景。</div>
+<div class="lang-en">TennisVL数据集为体育视频理解研究提供了重要的基准资源，而TennisExpert框架的高效设计使其适合实时部署，有望推动智能体育分析技术的产业化应用。</div></div>
                     </div>
                 </article>
                 
@@ -9267,6 +10206,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2507.03589" target="_blank">
+                                You May Use the Same Channel Knowledge Map for Environment-Aware NLoS Sensing and Communication
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种利用信道知识图（CKM）实现环境感知非视距（NLoS）感知与通信一体化（ISAC）的新方法。核心创新在于：为无线通信构建的同一CKM可直接用于NLoS无线感知，实现"一石二鸟"的双重效益。该方法将感知目标视为虚拟用户设备（UE），将无线通信信道先验转化为感知信道先验，并通过信道角度-时延图（CADM）具体实现，显著提升了复杂NLoS环境下的目标定位性能。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用信道知识图（CKM）技术，以信道角度-时延图（CADM）为具体实例，建立通信信道与感知信道之间的角度-时延分布关系。通过将感知目标建模为虚拟UE，将通信信道先验信息转换为感知信道先验信息，从而利用单一CKM同时支持通信和感知功能。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">大量仿真结果表明，所提方法相比经典基于几何的感知方法实现了显著的性能提升。该性能优势进一步通过克拉美-罗下界（CRLB）分析得到验证，证明了所提框架在NLoS环境下目标定位的理论最优性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于6G网络中的复杂环境场景，特别是城市低空空域等存在信号遮挡和NLoS多径传播的区域。通过复用通信基础设施实现感知功能，可大幅降低部署成本，推动ISAC在无人机监控、智能交通、应急救援等场景的实际应用。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -9443,6 +10403,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.10349" target="_blank">
+                                EmoStory: Emotion-Aware Story Generation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了情感感知故事生成这一新任务，旨在生成具有明确情感导向且保持主体一致性的视觉故事序列。作者指出现有故事生成方法主要关注叙事连贯性而忽视情感表达，为此设计了EmoStory两阶段框架，通过基于智能体的故事规划与区域感知生成机制，将抽象情感转化为具体视觉元素。实验表明，该方法在情感准确性、提示对齐度和主体一致性方面均优于现有最先进方法。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">EmoStory采用两阶段架构：规划阶段通过"情感智能体"和"作家智能体"协作，将目标情感转化为连贯的故事提示；生成阶段则利用区域感知组合技术，在保持主体一致性的同时注入情感相关视觉元素。该框架通过显式的区域控制机制解决了情感抽象性与视觉具体性之间的映射难题。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">研究团队在包含25个主体和600个情感故事的新构建数据集上进行了评估。定量与定性实验结果以及用户研究表明，EmoStory在情感准确性、提示对齐度和主体一致性等关键指标上均显著优于现有最先进的故事生成方法。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该技术可广泛应用于个性化儿童绘本生成、情感化广告叙事、影视分镜预可视化、游戏剧情设计以及心理健康治疗辅助等领域，为需要情感共鸣的视觉内容创作提供自动化工具，提升人机交互中的情感表达能力。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -9527,6 +10508,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.06471" target="_blank">
+                                Match4Annotate: Propagating Sparse Video Annotations via Implicit Neural Feature Matching
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了Match4Annotate，一种轻量级框架，用于实现视频内和视频间的点标注与掩膜标注传播。该方法通过在测试时拟合基于SIREN的隐式神经表示到DINOv3特征，生成连续高分辨率的时空特征场，并学习平滑的隐式形变场来引导帧间对应匹配。在三个具有挑战性的临床超声数据集上的评估表明，该方法在跨视频传播方面达到了最先进的性能，同时在视频内传播方面与专用跟踪器保持竞争力。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">Match4Annotate采用测试时优化的隐式神经特征匹配策略：首先利用SIREN（正弦激活的隐式神经网络）构建连续的时空特征场，然后学习帧对之间的隐式形变场来实现平滑的对应匹配。该方法统一支持点和掩膜两种标注类型，无需逐视频初始化即可实现跨视频泛化。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在三个临床超声数据集上的实验表明，Match4Annotate在跨视频标注传播任务上显著优于特征匹配和单次分割基线方法，同时与专用视频跟踪器在视频内传播任务上表现相当。这验证了轻量级测试时优化特征匹配管道在可扩展标注工作流中的有效性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究主要面向医学影像等专家标注成本高昂的专业领域，可大幅减少逐帧视频标注所需的人力投入。其跨视频泛化能力使其能够利用已有标注视频辅助新视频的标注，为构建大规模医学影像数据集提供高效、低成本的解决方案，具有广泛的临床研究和AI辅助诊断应用前景。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -9545,6 +10547,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">在UEA30多变量时间序列分类基准和SleepEDFx睡眠分期任务（含EEG、EOG、EMG等异构临床模态）两个实验设置中，该方法展现出强劲性能：模块化基线模型本身已具备竞争力，而LLM引导的NAS进一步提升了其表现，在大多数基准数据集上达到已发表方法的性能范围。更重要的是，该方法成功实现了完全自动化的架构搜索流程，无需人工介入调参。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究为医疗、金融等严格受隐私法规约束的领域提供了可行的自动化机器学习解决方案，使机构能够在不暴露敏感数据的前提下利用大型语言模型的推理能力进行模型开发。特别适用于医院开发患者特异性模型、多模态生理信号分析等场景，既满足GDPR/HIPAA等合规要求，又降低了深度学习专家的人力成本，推动隐私保护型AI的普及化应用。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.14267" target="_blank">
+                                DiFlowDubber: Discrete Flow Matching for Automated Video Dubbing via Cross-Modal Alignment and Synchronization
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了DiFlowDubber，一种用于自动化视频配音的新型两阶段训练框架。该框架通过离散流匹配生成骨干网络，将预训练文本到语音（TTS）模型的知识有效迁移到视频驱动配音任务中。论文设计了FaPro模块从面部表情捕获全局韵律和风格线索，并引入Synchronizer模块桥接文本、视频与语音之间的模态差距，实现精确的语音-唇形同步。在两个主要基准数据集上的实验表明，DiFlowDubber在多项指标上均优于先前方法。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">DiFlowDubber采用基于离散流匹配的生成式骨干网络，结合两阶段训练策略：首先利用预训练TTS模型进行知识迁移，然后通过FaPro模块提取面部表情的韵律和风格信息来指导后续语音属性建模，最后通过Synchronizer模块实现跨模态对齐与时间同步。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在两个主要基准数据集上的实验表明，DiFlowDubber在多项评估指标上均优于现有方法，能够生成更具表现力的韵律、更丰富的声学特征以及更精确的语音-唇形同步效果。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该技术可广泛应用于电影制作、多媒体内容创作以及辅助语音技术等领域，为视频本地化、无障碍内容生产和跨语言视频传播提供高质量的自动化配音解决方案。</div></div>
                     </div>
                 </article>
                 
@@ -9740,6 +10763,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">分析表明，大多数标准和监管定义均衍生自OECD框架，但该框架的历史演进未能解决而是叠加了概念模糊性。研究提出的操作定义成功区分了模型组件（参数、架构）与系统组件（接口、输入输出处理），并通过理论情景和真实案例（包括实际AI事故）验证了其在责任分配中的实用性。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该框架可直接服务于欧盟AI法案等新兴AI法规的实施，帮助监管机构明确"提供者"与"部署者"等不同主体的合规义务边界。对于企业而言，该定义有助于判断模型修改与系统修改的法律后果差异；对于标准制定组织，则为协调全球AI治理术语提供了可操作的参考基准。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.06691" target="_blank">
+                                One-Shot Badminton Shuttle Detection for Mobile Robots
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种面向移动机器人的鲁棒单样本羽毛球检测框架。为解决缺乏自我中心视角羽毛球检测数据集的问题，作者构建了包含20,510帧半自动标注图像的数据集，涵盖11种不同背景的室内外环境，并按难度分为三个等级。通过微调YOLOv8网络，在相似测试环境中实现F1分数0.86，在全新环境中达到0.70，并验证了其在移动相机机器人上的适用性。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">作者提出了一种新颖的半自动标注流程，用于从固定相机 footage 中高效标注数据；针对下游任务设计了专门的评估指标，并基于YOLOv8网络进行微调优化，以实现实时羽毛球检测。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">该检测器在训练相似环境中F1分数达0.86，在完全未见环境中为0.70；分析表明检测性能关键依赖于羽毛球尺寸和背景纹理复杂度；定性实验证实了其在移动相机机器人上的应用可行性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该检测器专为移动机器人的自我中心动态视角设计，区别于以往固定相机设置的研究，可为羽毛球追踪、轨迹估计和系统（重新）初始化等下游任务提供基础构建模块，适用于室内外的机器人羽毛球互动场景。</div></div>
                     </div>
                 </article>
                 
@@ -10079,6 +11123,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15783" target="_blank">
+                                Multi-objective Optimization for Over-the-Air Federated Edge Learning-enabled Collaborative Integrated Sensing and Communications
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种新颖的多目标集成感知与通信（ISAC）框架，实现基于空中联邦边缘学习（OTA-FEEL）的协作无线感知。该框架支持感知与学习的多任务OTA聚合，利用上行信号同时服务于通信和目标感知双重目的。研究通过表征局部充分统计量、设计正交脉冲整形方法抑制干扰，并推导目标坐标的最优无偏估计，最终建立了多目标优化问题以同时最小化均方误差（MSE）和感知误差界，数值结果表明该框架能在不影响OTA-FEEL主任务性能的前提下提升感知精度。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文首先表征各边缘设备的局部充分统计量并建立其平稳性，提出一种新颖的正交脉冲整形方法通过匹配滤波抑制其他设备上行传输的干扰；然后将所有设备的联合似然函数最大化问题转化为各设备的分布式似然最大化问题，推导目标坐标的最优无偏估计，并利用克拉美-罗界（CRB）表征感知误差方差下界。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">数值结果表明，所提出的双用途OTA-FEEL赋能协作ISAC框架能够在不损害主OTA-FEEL任务性能的情况下提升感知精度；与传统单次协作感知方案受限于局部估计器平均误差不同，所提算法达到了所考虑问题的CRB下界。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于需要同时进行分布式机器学习模型训练和目标感知的边缘计算场景，如智能交通系统中的车辆协同感知与模型更新、工业物联网中的设备状态监测与预测性维护，以及智慧城市中的多源数据融合与实时决策，实现了通信与感知资源的高效复用。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -10361,6 +11426,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
+                            <a href="https://arxiv.org/abs/2603.13961" target="_blank">
+                                USIS-PGM: Photometric Gaussian Mixtures for Underwater Salient Instance Segmentation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了USIS-PGM，一种用于水下显著实例分割（USIS）的单阶段框架，以解决水下图像退化带来的挑战。该方法通过频率感知模块增强边界线索，利用动态加权模块进行内容自适应特征重加权，并采用基于Transformer的实例激活模块区分显著实例。此外，论文引入光度高斯混合（PGM）生成多尺度高斯热图来监督中间解码器特征，从而提升显著实例定位精度并生成结构更连贯的分割掩码。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">USIS-PGM采用编码器-解码器架构，编码器包含频率感知模块和动态加权模块以增强特征表示；解码器集成Transformer-based实例激活模块实现实例级区分。核心创新在于PGM机制，该机制从真实掩码生成多尺度高斯热图，作为中间监督信号引导网络学习更精确的空间定位和结构信息。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验结果表明USIS-PGM模型具有优越性能和实际应用价值（注：原文摘要未提供具体量化指标，完整实验结果需参考论文正文）。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究对海洋机器人系统具有重要价值，可实现水下显著目标检测与实例级掩码预测，支持水下视觉场景理解。潜在应用包括水下自主导航、海洋生物监测、海底资源勘探及水下机器人抓取等任务。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
                             <a href="https://arxiv.org/abs/2603.16871" target="_blank">
                                 WorldCam: Interactive Autoregressive 3D Gaming Worlds with Camera Pose as a Unifying Geometric Representation
                             </a>
@@ -10526,6 +11612,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-en">RegGAN在ECS、FID和QualiCLIP三项指标上均排名第一，在FSS上排名第二。人工评估进一步验证了RegGAN在表情质量、身份保持和真实感方面的显著优势。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究可广泛应用于需要鲁棒面部表情合成的场景，如影视制作中的数字人表情驱动、游戏角色动画生成、虚拟现实中的化身表情控制，以及跨域人脸图像编辑（如艺术肖像、雕像风格迁移）。其强大的分布外泛化能力使其特别适用于训练数据受限或目标域多样的实际应用环境。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16632" target="_blank">
+                                Optimal Radio Resource Management for ISAC Under Imperfect Information: A Resource Economy-Driven Perspective
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了下行链路通感一体化（ISAC）系统的无线资源管理（RRM）设计，联合优化时隙分配、波束自适应、功能选择和用户-目标配对，旨在不完美信息条件下实现资源消耗的经济化。该研究考虑了由运动、量化、反馈延迟和硬件限制引起的信息不完美问题，通过多目标函数最小化能量和时间消耗，并将时间节省作为严格优先目标。所提出的定制方法揭示了问题中隐藏的凸性结构，实现了精确重构为混合整数半定规划（MISDP），可获得全局最优解。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">作者将RRM问题建模为半无限、非凸混合整数非线性规划（MINLP），并提出了一种量身定制的方法，通过挖掘问题的内在结构来揭示隐藏的凸性。该方法将原问题精确重构为混合整数半定规划（MISDP），从而能够求解全局最优解，克服了此类复杂问题缺乏通用求解方法的难题。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">仿真实验揭示了所考虑的RRM组件之间的重要相互依赖关系，验证了联合优化的必要性。与基线方案相比，所提出的方法实现了显著的性能提升，增益最高可达88%，证明了在不完美信息条件下资源经济化驱动的RRM设计的有效性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究适用于6G及未来无线通信网络中的通感一体化系统，如车联网、无人机网络和智能交通系统，这些场景需要同时实现高精度感知和可靠通信。所提出的资源经济化框架能够在硬件受限和信息不完美的实际条件下，显著提升系统的时间效率和能量效率，为ISAC系统的实际部署提供了理论基础和优化工具。</div></div>
                     </div>
                 </article>
                 
@@ -10785,6 +11892,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.13506" target="_blank">
+                                LibraGen: Playing a Balance Game in Subject-Driven Video Generation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了LibraGen框架，用于解决主体驱动视频生成（S2V）中视频生成基础模型（VGFM）的内在先验能力（如运动连贯性、视觉美学、提示对齐）与新获得的S2V能力之间的平衡难题。核心思想是"抬高支点，调谐平衡"——将数据质量视为支点，采用质量优于数量的策略，并通过混合数据过滤流程、调谐平衡的后训练范式（包含监督微调和两种定制的直接偏好优化）以及时间依赖的动态无分类器引导方案，实现了仅用千级规模训练数据即可超越开源和商业S2V模型的性能。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">LibraGen采用三阶段技术方案：（1）数据层面，构建自动化与人工过滤相结合的混合流程提升数据质量；（2）训练层面，设计"调谐平衡"后训练范式，在监督微调中同时引入交叉对和配对内数据，并采用模型融合实现权衡，随后设计Consis-DPO和Real-Fake DPO两种定制化的直接偏好优化管道进行合并优化；（3）推理层面，引入时间依赖的动态无分类器引导机制实现灵活细粒度控制。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验结果表明，LibraGen在主体驱动视频生成任务上显著优于现有的开源和商业S2V模型，且仅需千级规模的训练数据即可达到这一性能，证明了质量优于数量策略以及平衡调谐方法的有效性。时间依赖的动态分类器自由引导方案进一步提升了生成结果的灵活性和可控性。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究在个性化视频内容创作、数字人视频生成、广告营销素材定制、影视预可视化等领域具有重要应用价值，为以较低数据成本实现高质量主体驱动视频生成提供了可行方案，有助于推动定制化视频生成技术的普及和落地。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -10870,6 +11998,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Information Theory">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.16034" target="_blank">
+                                Adaptive Multi-Head Finite-State Gamblers
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Information Theory</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文研究了自适应多头有限状态赌徒（adaptive multi-head finite-state gamblers）模型，将原有的遗忘型（oblivious）头移动机制扩展为数据依赖的自适应机制。作者证明自适应机制增强了预测能力：对于任意 h≥2，存在序列其遗忘型 h-头有限状态预维度严格大于自适应 h-头预维度。此外，自适应有限状态预维度随头数增加形成严格层级结构，即对任意 h≥1，存在序列其自适应 (h+1)-头预维度严格小于自适应 h-头预维度。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用理论计算机科学中的计算复杂性分析方法，对比研究两种多头有限状态赌徒模型：遗忘型（头移动预先确定、与输入数据无关）与自适应型（头移动根据已读数据动态决定）。通过构造性证明和维度理论工具，分析两种模型在序列预测能力上的差异。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">核心理论结果表明：（1）自适应性严格增强预测能力——自适应 h-头模型能识别某些遗忘型模型无法有效捕捉的非局部简单模式；（2）自适应预维度存在严格层级——增加头数总能带来严格更强的预测能力，即自适应 (h+1)-头模型类真包含于自适应 h-头模型类。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为序列预测、数据压缩和算法信息论提供了更精细的计算模型，有助于理解有限状态计算中"记忆"（通过多头探测过去）与"适应性"（数据依赖决策）的交互作用。结果可用于设计更高效的流数据压缩算法，以及刻画序列的固有结构复杂度。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
@@ -10951,6 +12100,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">在翼型设计、燃气轮机燃烧室以及可扩展维度的解析基准三个任务上，Diag-CFM相比标准CFM和可逆神经网络基线实现了数量级的往返精度提升，且性能优势在设计维度扩展至$P=100$时依然保持。提出的两种不确定性度量在候选选择、预测弃权和分布外检测任务上持续优于基于集成和通用替代方法，展现出稳定可靠的校准性能。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究为工程逆向设计提供了高维、稳定且具备内在不确定性量化的生成式解决方案，适用于航空航天（翼型优化）、能源动力（燃烧系统设计）等需要探索多样化设计方案的领域。不确定性量化能力使系统能够在实际部署中主动拒绝不可靠预测、识别超出训练分布的目标需求，显著提升了AI辅助设计工具的安全性和实用性。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15618" target="_blank">
+                                Look Before Acting: Enhancing Vision Foundation Representations for Vision-Language-Action Models
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文系统分析了视觉-语言-动作（VLA）模型在动作生成过程中视觉token敏感性随层深递减的问题，发现深层网络对视觉信息的利用不足。基于此观察，作者提出DeepVision-VLA框架，通过Vision-Language Mixture-of-Transformers（VL-MoT）实现视觉基础模型与VLA骨干网络的共享注意力机制，并将多级视觉特征注入深层网络；同时引入Action-Guided Visual Pruning（AGVP）技术，利用浅层注意力剪枝无关视觉token。该模型在模拟和真实世界任务上分别超越先前最优方法9.0%和7.5%。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用Vision-Language Mixture-of-Transformers（VL-MoT）架构，使视觉基础模型与VLA骨干网络共享注意力机制，从而将视觉专家的多层级特征注入VLA网络的深层。此外，设计Action-Guided Visual Pruning（AGVP）模块，利用浅层注意力分数识别并保留任务相关的视觉token，剪除无关区域，以最小计算开销强化关键视觉线索。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">DeepVision-VLA在模拟机器人操作任务上较先前最优方法提升9.0%，在真实世界任务上提升7.5%，显著改善了复杂精细操作任务的性能。实验验证了深层视觉特征注入和注意力引导剪枝策略的有效性，表明增强深层网络视觉表征对VLA模型至关重要。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为机器人灵巧操作、家庭服务机器人及工业自动化等需要精确视觉-动作协调的场景提供了更可靠的VLA模型设计范式。通过揭示视觉信息在VLA网络中的传播机制并提出针对性增强方案，为开发高效、鲁棒的具身智能系统提供了理论指导和实践参考。</div></div>
                     </div>
                 </article>
                 
@@ -11230,6 +12400,28 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.10967" target="_blank">
+                                Med-DualLoRA: Local Adaptation of Foundation Models for 3D Cardiac MRI
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了Med-DualLoRA，一种用于3D心脏MRI（CMR）疾病检测的联邦参数高效微调框架，旨在解决基础模型在多中心非独立同分布（non-IID）数据下的联邦微调挑战。该方法通过加性分解将全局共享的低秩适应（LoRA）与本地私有LoRA模块分离，在保护隐私的同时实现个性化适应。实验表明，Med-DualLoRA在ACDC和M&Ms多中心数据集上取得了显著优于其他联邦PEFT基线的性能（平衡准确率0.768，特异性0.612），同时大幅降低通信开销。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">Med-DualLoRA采用双LoRA分解策略，将适配器参数拆分为全局共享组件和本地私有组件，两者均在本地训练但仅聚合全局部分。该方法仅需微调两个Transformer块即可保持性能，通过选择性参数共享实现高效个性化。框架在联邦学习设置下运行，每个数据供应商作为独立客户端，确保本地适配器不离开站点。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">在基于3D电影CMR基础模型的多中心疾病检测任务中，Med-DualLoRA相比其他联邦PEFT基线实现了统计显著的改进。关键指标包括平衡准确率0.768和特异性0.612，同时通过仅共享全局LoRA组件将通信成本降至最低。消融实验证实，仅适应两个Transformer块即可在效率与性能间取得最佳平衡。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为临床环境下医学基础模型的隐私保护部署提供了可扩展解决方案，特别适用于多中心医院协作场景。</div>
+<div class="lang-en">Med-DualLoRA使各机构能在不共享原始数据的前提下联合优化模型，同时保留针对本地患者群体的个性化适应能力，对推动公平、高效的医疗AI系统具有重要实践意义。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -11466,6 +12658,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                 <article class="article-card" data-source="arXiv Computer Vision">
                     <div class="card-header">
                         <h3>
+                            <a href="https://arxiv.org/abs/2509.05469" target="_blank">
+                                From Image Generation to Infrastructure Design: a Multi-agent Pipeline for Street Design Generation
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本研究提出了一种多智能体系统，用于直接在真实街景图像上编辑和重新设计自行车道设施，以支持主动交通规划中的公众参与。该系统整合了车道定位、提示优化、设计生成和自动评估等模块，能够生成真实且符合上下文的设计方案。实验表明，该系统能适应多样化的道路几何形状和环境条件，持续产生视觉连贯且符合指令的结果，为交通基础设施规划中的多智能体流程应用奠定了基础。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用多智能体协作框架，包含四个核心模块：车道定位模块识别现有道路结构，提示优化模块将设计需求转化为精确的生成指令，设计生成模块基于扩散模型合成改造后的街景图像，自动评估模块验证输出结果的空间准确性和视觉一致性。各智能体通过迭代反馈机制协同工作，实现从输入图像到最终设计方案的端到端生成。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验在多种城市场景下进行验证，结果表明系统能够处理不同的道路几何形态（如弯曲路段、交叉口）和环境条件（如光照变化、遮挡物），生成的设计方案在视觉真实性和空间精确性方面表现稳定。评估显示输出结果与输入指令高度一致，且改造后的自行车道在图像中保持合理的透视关系和尺度比例。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该系统可直接应用于城市规划部门的公众参与工作坊，快速生成多种街道改造方案供市民讨论和投票，显著降低传统设计流程的时间和人力成本。同时可作为决策支持工具，帮助交通工程师在方案比选阶段直观展示不同自行车道布局的效果，促进利益相关方的协作决策，推动主动交通基础设施的民主化设计进程。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
                             <a href="https://arxiv.org/abs/2512.10267" target="_blank">
                                 Long-LRM++: Preserving Fine Details in Feed-Forward Wide-Coverage Reconstruction
                             </a>
@@ -11589,6 +12802,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
                     </div>
                 </article>
                 
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2502.17531" target="_blank">
+                                Laplace-Beltrami Operator for Gaussian Splatting
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文针对3D高斯泼溅（Gaussian Splatting）表示提出了一种直接计算拉普拉斯-贝尔特拉米算子（Laplace-Beltrami Operator）的方法。该方法利用马氏距离（Mahalanobis distance）在高斯泼溅上直接进行几何处理，避免了将高斯中心转换为点云或网格的传统做法。实验表明，该方法在编码于高斯中心中的点云上具有更高的精度，同时可用于优化过程中输出质量的评估。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">作者基于马氏距离定义了适用于高斯泼溅的拉普拉斯-贝尔特拉米算子，将高斯的几何特性（协方差矩阵）纳入距离度量中。该方法概念上与点云拉普拉斯相似，但直接作用于高斯表示本身，无需额外的网格重建或纯点云近似。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验显示，所提方法在由高斯中心编码的点云上比传统点云拉普拉斯方法具有更优的精度。此外，该算子能够有效处理高斯泼溅中存在的离群点，避免几何处理应用中的噪声问题，并可在优化过程中实时评估重建质量。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该研究为高斯泼溅表示提供了直接的几何处理工具，可应用于3D重建质量评估、形状分析、去噪、平滑等几何处理任务。其无需转换表示形式的特性降低了计算开销，对实时渲染和重建流程中的质量监控具有重要价值。</div></div>
+                    </div>
+                </article>
+                
                 <article class="article-card" data-source="arXiv Machine Learning">
                     <div class="card-header">
                         <h3>
@@ -11607,6 +12841,27 @@ Tracking Nepal's subsequent policy developments offers a case study of anti-esta
 <div class="lang-zh">实验表明，强制简洁且确定的响应能够有效提升数学推理能力，但该方法的成功高度依赖于基础模型的先验逻辑推理能力。研究发现，当基础模型的内在推理能力不足时，无监督RL会出现策略崩溃（policy collapse）和奖励作弊（reward hacking）等灾难性不稳定现象。通过几何诊断，作者发现成功的训练案例呈现出特定的流形包络结构，这为预测和解释训练稳定性提供了可量化的指标。</div></div>
 <div class="summary-section"><h4>应用价值 / Applications</h4>
 <div class="lang-zh">该研究为大语言模型数学推理能力的 scalable 提升提供了无需昂贵标注的替代路径，降低了强化学习在教育和科研领域的应用门槛。提出的流形包络诊断工具可用于实时监控和预测训练稳定性，帮助从业者避免资源浪费。此外，该工作为理解无监督学习的内在机制提供了新的几何视角，对更广泛的无监督RL应用（如代码生成、科学推理等）具有方法论指导意义。</div></div>
+                    </div>
+                </article>
+                
+                <article class="article-card" data-source="arXiv Computer Vision">
+                    <div class="card-header">
+                        <h3>
+                            <a href="https://arxiv.org/abs/2603.15143" target="_blank">
+                                Clinical Priors Guided Lung Disease Detection in 3D CT Scans
+                            </a>
+                        </h3>
+                        <span class="source-tag">arXiv Computer Vision</span>
+                    </div>
+                    <div class="summary-full">
+                        <div class="summary-section"><h4>论文摘要 / Abstract</h4>
+<div class="lang-zh">本文提出了一种性别感知的两阶段肺部疾病分类框架，用于解决医学影像数据中严重的类别不平衡问题。该方法首先通过性别分类器预测患者性别，然后将CT图像路由至相应的性别特异性疾病分类器进行最终诊断。实验结果表明，该方法显著提升了少数类别疾病（尤其是鳞状细胞癌）的识别性能，同时保持了其他类别的竞争力。</div></div>
+<div class="summary-section"><h4>方法概述 / Method</h4>
+<div class="lang-zh">论文采用两阶段级联架构：第一阶段训练性别分类器从CT扫描中预测患者性别；第二阶段构建性别特异性的疾病分类器，根据第一阶段输出将样本路由至对应性别的分类器。这种设计显式地将性别信息融入疾病识别流程，利用性别相关的影像学特征差异来缓解数据分布不平衡的影响。</div></div>
+<div class="summary-section"><h4>实验结果 / Results</h4>
+<div class="lang-zh">实验结果显示，所提方法有效改善了少数类别疾病的识别性能，特别是对鳞状细胞癌的检测效果显著提升，同时在其他疾病类别上保持了具有竞争力的分类性能。性别先验信息的引入帮助模型更好地捕捉了与性别相关的影像学特征模式。</div></div>
+<div class="summary-section"><h4>应用价值 / Applications</h4>
+<div class="lang-zh">该方法可集成至计算机辅助诊断系统，提升肺部疾病CT筛查的准确性和公平性，尤其有助于改善女性患者中某些肺癌亚型（如鳞状细胞癌）的诊断不足问题。其两阶段设计思想也可推广至其他存在人群亚组差异和类别不平衡的医学影像分析任务。</div></div>
                     </div>
                 </article>
                 
