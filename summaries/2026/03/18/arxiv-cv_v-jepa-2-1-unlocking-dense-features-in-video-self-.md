@@ -1,0 +1,20 @@
+---
+title: "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.14482"
+published: "2026-03-18"
+summarized: "2026-03-18T19:04:17.935085"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+V-JEPA 2.1 是一系列自监督模型，能够学习图像和视频的高质量密集视觉表征，同时保持强大的全局场景理解能力。该研究通过四种关键设计——密集预测损失、深度自监督、多模态分词器以及模型容量与训练数据的有效扩展——实现了空间结构化、语义连贯且时间一致的表征。实验表明，该模型在多个挑战性基准测试中达到最先进性能，包括Ego4D短期物体交互预测（7.71 mAP）、EPIC-KITCHENS高级动作预测（40.8 Recall@5）以及真实机器人抓取成功率较V-JEPA-2 AC提升20个百分点。
+
+【方法概述 / Method】
+V-JEPA 2.1 采用基于掩码的密集预测损失，使可见和掩码token均参与训练信号以显式编码时空信息；同时在多个中间编码器层分层应用自监督目标以提升表征质量。此外，多模态分词器实现了图像与视频的统一训练，并通过模型规模与数据量的有效扩展进一步优化性能。
+
+【实验结果 / Results】
+V-JEPA 2.1 在多项任务中取得领先成绩：机器人导航（TartanDrive 5.687 ATE）、深度估计（NYUv2线性探测0.307 RMSE）、全局视频识别（Something-Something-V2 77.7准确率），以及在Ego4D和EPIC-KITCHENS等第一人称视频理解基准上的最优表现。
+
+【应用价值 / Applications】
+该研究为机器人操作与导航（如抓取任务成功率显著提升）、自动驾驶场景理解、视频动作预测与深度估计等实际应用提供了强大的视觉表征基础，其密集特征学习能力尤其适用于需要精细空间-时间推理的具身智能任务。

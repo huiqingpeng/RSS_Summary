@@ -1,0 +1,20 @@
+---
+title: "TennisExpert: Towards Expert-Level Analytical Sports Video Understanding"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.13397"
+published: "2026-03-18"
+summarized: "2026-03-18T19:03:39.625025"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了TennisExpert，一个面向专家级网球视频理解的分析框架，并配套发布了大规模基准数据集TennisVL。TennisVL包含200多场职业比赛（471.9小时）和4万多个回合级片段，专注于战术推理、球员决策和比赛势头等专家级分析解说，而非简单的描述性解说。TennisExpert框架通过视频语义解析器和基于Qwen3-VL-8B的记忆增强模型，有效捕捉短长期时间上下文，在实验中 consistently 超越GPT-5、Gemini和Claude等专有基线模型。
+
+【方法概述 / Method】
+TennisExpert采用多模态架构，核心组件包括：（1）视频语义解析器，用于提取关键比赛元素如比分、击球序列、落球点和球员位置；（2）分层记忆增强模块，基于Qwen3-VL-8B构建，分别处理短期和长期时间上下文信息。该设计在保证分析准确性的同时兼顾实时部署的效率需求。
+
+【实验结果 / Results】
+TennisExpert在各项评估中 consistently 超越包括GPT-5、Gemini和Claude在内的强专有基线模型，展现出更优的战术上下文捕捉能力和比赛动态理解能力。实验表明该框架在专家级分析解说生成任务上具有显著优势，能够更好地推理球员决策和比赛势头变化。
+
+【应用价值 / Applications】
+该研究可直接应用于专业网球分析、自动化教练系统和实时比赛解说等场景。TennisVL数据集为体育视频理解研究提供了重要的基准资源，而TennisExpert框架的高效设计使其适合实时部署，有望推动智能体育分析技术的产业化应用。
