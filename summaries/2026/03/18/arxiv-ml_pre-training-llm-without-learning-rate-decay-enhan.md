@@ -1,0 +1,20 @@
+---
+title: "Pre-training LLM without Learning Rate Decay Enhances Supervised Fine-Tuning"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.16127"
+published: "2026-03-18"
+summarized: "2026-03-18T16:10:34.124999"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本研究探讨了学习率调度策略在大规模语言模型预训练中的作用，特别关注其对监督微调（SFT）后下游性能的影响。研究发现，尽管基于衰减的学习率调度器能最小化预训练损失，但Warmup-Stable-Only（WSO）策略——即在预热后保持恒定学习率而不衰减——在SFT后的下游任务表现上始终优于衰减策略。这一结论在不同训练机制（包括中途训练和过度训练）下均成立，表明优化预训练指标可能会损害模型的下游适应能力。
+
+【方法概述 / Method】
+论文采用对比实验方法，在1B和8B参数规模的模型上比较WSO与多种基于衰减的学习率调度策略。通过损失景观分析（loss landscape analysis）探究不同调度策略对模型优化几何性质的影响，并系统评估了在中途训练（mid-training）和过度训练（over-training）等不同训练机制下的表现。
+
+【实验结果 / Results】
+实验表明，基于衰减的学习率调度器虽然能获得更低的预训练损失，但会导致模型收敛到更尖锐的极小值（sharper minima）；而WSO策略保留了更平坦的极小值（flatter minima），从而增强了模型的适应能力。关键的是，WSO在SFT后的下游任务性能上持续优于衰减策略，且这一优势在不同模型规模和训练机制下保持稳定。
+
+【应用价值 / Applications】
+该研究为大规模语言模型的训练策略和模型发布策略提供了实用指导：预训练阶段采用WSO策略可显著提升模型对下游任务的适应能力。这一发现对需要高效微调的行业应用（如领域适配、个性化模型部署）具有重要价值，建议模型开发者在预训练阶段重新权衡预训练损失与下游适应性的优化目标。
