@@ -8,6 +8,9 @@ from typing import List, Dict, Optional
 
 logger = logging.getLogger(__name__)
 
+# Custom User-Agent to avoid blocking from some feeds
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
 
 class RSSFetcher:
     """Fetches articles from RSS feeds."""
@@ -59,7 +62,7 @@ class RSSFetcher:
         logger.info(f"Fetching feed: {source_name}")
 
         try:
-            feed = feedparser.parse(source_url)
+            feed = feedparser.parse(source_url, agent=USER_AGENT)
 
             if feed.bozo and not feed.entries:
                 logger.warning(f"Failed to parse feed: {source_name} - {feed.bozo_exception}")

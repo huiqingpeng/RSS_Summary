@@ -73,3 +73,31 @@ sources:
     slug: "pdg"
     url: "https://perfectdailygrind.com/feed/"
     category: "lifestyle"
+
+  # ============================================================
+  # 6. 学术资源
+  # ============================================================
+  - name: "arXiv Embedded Systems"
+    slug: "arxiv-embedded"
+    url: "https://export.arxiv.org/rss/cs.OS"
+    category: "academic"
+
+  - name: "arXiv Computer Architecture"
+    slug: "arxiv-arch"
+    url: "https://export.arxiv.org/rss/cs.AR"
+    category: "academic"
+
+  - name: "arXiv Machine Learning"
+    slug: "arxiv-ml"
+    url: "https://export.arxiv.org/rss/cs.LG"
+    category: "academic"
+
+  - name: "arXiv Computer Vision"
+    slug: "arxiv-cv"
+    url: "https://export.arxiv.org/rss/cs.CV"
+    category: "academic"
+
+  - name: "arXiv Information Theory"
+    slug: "arxiv-it"
+    url: "https://export.arxiv.org/rss/cs.IT"
+    category: "academic"

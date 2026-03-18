@@ -35,6 +35,25 @@ SUMMARIZE_PROMPT = """你是一位专业的技术知识提炼助手。请阅读�
 {content}
 """
 
+# 学术论文专用的提示词 - 更适合 arXiv 论文结构
+SUMMARIZE_PROMPT_PAPER = """你是一位专业的学术论文解读助手。请阅读以下学术论文，并按照以下结构输出笔记：
+
+【论文摘要 / Abstract】
+用 3-4 句话概括论文的核心贡献和主要发现。
+
+【方法概述 / Method】
+用 2-3 句话描述论文采用的方法或技术方案。
+
+【实验结果 / Results】
+用 2-3 句话总结关键实验结果或性能指标。
+
+【应用价值 / Applications】
+用 2-3 句话说明该研究的实际应用场景和价值。
+
+---论文内容如下---
+{content}
+"""
+
 
 class AISummarizer:
     """Summarizes articles using AI."""
@@ -86,32 +105,39 @@ class AISummarizer:
         else:
             raise ValueError(f"Unknown AI provider: {self.provider}")
 
-    def summarize(self, title: str, content: str) -> Optional[str]:
+    def summarize(self, title: str, content: str, category: str = None) -> Optional[str]:
         """
         Summarize an article.
 
         Args:
             title: Article title
             content: Article text content
+            category: Source category (e.g., 'academic' for papers)
 
         Returns:
             Summarized text or None on failure
         """
+        # Select prompt based on category
+        if category == 'academic':
+            prompt_template = SUMMARIZE_PROMPT_PAPER
+        else:
+            prompt_template = SUMMARIZE_PROMPT
+
         # Truncate content if too long
         if len(content) > self.max_chars:
             content = content[:self.max_chars] + "\n\n[Content truncated...]"
 
         try:
             if self.provider == 'claude':
-                return self._summarize_claude(title, content)
+                return self._summarize_claude(title, content, prompt_template)
             elif self.provider == 'openai':
-                return self._summarize_openai(title, content)
+                return self._summarize_openai(title, content, prompt_template)
 
         except Exception as e:
             logger.error(f"Error summarizing article '{title}': {e}")
             return None
 
-    def _summarize_claude(self, title: str, content: str) -> str:
+    def _summarize_claude(self, title: str, content: str, prompt_template: str) -> str:
         """Summarize using Claude API."""
         message = self.client.messages.create(
             model=self.model,
@@ -119,14 +145,14 @@ class AISummarizer:
             messages=[
                 {
                     "role": "user",
-                    "content": SUMMARIZE_PROMPT.format(content=f"标题: {title}\n\n{content}")
+                    "content": prompt_template.format(content=f"标题: {title}\n\n{content}")
                 }
             ]
         )
 
         return message.content[0].text
 
-    def _summarize_openai(self, title: str, content: str) -> str:
+    def _summarize_openai(self, title: str, content: str, prompt_template: str) -> str:
         """Summarize using OpenAI API."""
         response = self.client.chat.completions.create(
             model=self.model,
@@ -134,7 +160,7 @@ class AISummarizer:
             messages=[
                 {
                     "role": "user",
-                    "content": SUMMARIZE_PROMPT.format(content=f"标题: {title}\n\n{content}")
+                    "content": prompt_template.format(content=f"标题: {title}\n\n{content}")
                 }
             ]
         )

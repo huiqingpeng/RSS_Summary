@@ -126,6 +126,7 @@ def process_article(article: Dict, extractor: ArticleExtractor, summarizer: AISu
     """
     url = article['url']
     title = article['title']
+    category = article.get('source_category')
 
     logging.info(f"Processing: {title}")
 
@@ -144,7 +145,7 @@ def process_article(article: Dict, extractor: ArticleExtractor, summarizer: AISu
         logging.error(f"Failed to archive article: {e}")
 
     # Generate AI summary
-    summary = summarizer.summarize(title, extracted['text'])
+    summary = summarizer.summarize(title, extracted['text'], category)
 
     if summary is None:
         logging.warning(f"Failed to generate summary for {url}, marking as failed")
@@ -204,9 +205,12 @@ def main():
         logger.info("No new articles found")
         sys.exit(0)
 
-    # Limit articles (0 = no limit)
-    if args.max_articles > 0:
-        articles = articles[:args.max_articles]
+    # Limit articles - use CLI arg, config, or default (30)
+    max_articles = args.max_articles
+    if max_articles == 0:
+        max_articles = config.get('fetch', {}).get('max_articles_per_run', 30)
+    if max_articles > 0:
+        articles = articles[:max_articles]
     logger.info(f"Processing up to {len(articles)} articles")
 
     # Initialize extractor and summarizer
