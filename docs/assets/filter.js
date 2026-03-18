@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         articleCards.forEach(card => {
             const cardSource = card.getAttribute('data-source');
             const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
-            const summary = card.querySelector('.summary-preview')?.textContent.toLowerCase() || '';
+            const summary = card.querySelector('.summary-full')?.textContent?.toLowerCase() || '';
 
             const matchesSource = selectedSource === 'all' || cardSource === selectedSource;
             const matchesSearch = searchTerm === '' || title.includes(searchTerm) || summary.includes(searchTerm);
