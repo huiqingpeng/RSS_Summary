@@ -36,5 +36,4 @@ fetch:
   # Only fetch articles from the last N days (0 = no limit)
   max_days_back: 2
   # Maximum articles to process per run (0 = no limit)
-  # Recommended: 20-50 to avoid high API costs
-  max_articles_per_run: 30
+  max_articles_per_run: 100

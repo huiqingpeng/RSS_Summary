@@ -1,0 +1,24 @@
+---
+title: "MDM-Prime-v2: Binary Encoding and Index Shuffling Enable Compute-optimal Scaling of Diffusion Language Models"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.16077"
+published: "2026-03-18"
+summarized: "2026-03-18T15:40:20.189900"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了 MDM-Prime-v2，一种改进的掩码扩散语言模型，通过引入二进制编码（Binary Encoding）和索引洗牌（Index Shuffling）解决了 MDM-Prime 框架的两个关键局限：子词粒度超参数选择缺乏指导原则，以及子词分词器与 BPE 分词器结合时导致的似然估计退化问题。扩展分析表明，MDM-Prime-v2 的计算效率相比自回归模型（ARM）提升 21.8 倍。在计算最优配置下，该模型在 OpenWebText 上达到 7.77 的困惑度，显著优于 ARM（12.99）、MDM（18.94）和 MDM-Prime（13.41）。扩展至 11 亿参数后，模型在多项常识推理任务上展现出卓越的零样本准确率。
+
+【方法概述 / Method】
+
+MDM-Prime-v2 的核心创新在于将整数编码替换为二进制编码，使子词分词器与 BPE 分词器解耦，同时通过索引洗牌技术打破子词位置与二进制位之间的固定对应关系，从而改善扩散过程的建模。作者基于变分下界的紧性分析指导了这些设计选择，确保模型在子词级别进行扩散建模时保持统计有效性。
+
+【实验结果 / Results】
+
+在计算最优的扩展对比中，MDM-Prime-v2 在 OpenWebText 数据集上取得 7.77 的困惑度，较 ARM、MDM 和 MDM-Prime 分别降低 40%、59% 和 42%。扩展分析显示该模型相比自回归模型具有 21.8 倍的计算效率优势。当模型规模扩展至 1.1B 参数时，在多项常识推理任务的零样本评估中表现出优异性能。
+
+【应用价值 / Applications】
+
+MDM-Prime-v2 的高效扩展特性使其适用于大规模语言模型的资源受限训练场景，可显著降低计算成本。该模型在文本生成和常识推理任务上的优异表现，为需要高质量文本理解和生成的应用场景（如对话系统、内容创作和知识推理）提供了更具效率的替代方案，特别是在追求计算最优配置的工业部署环境中具有重要价值。
