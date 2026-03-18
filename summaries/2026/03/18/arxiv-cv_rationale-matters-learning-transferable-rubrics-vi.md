@@ -1,0 +1,20 @@
+---
+title: "Rationale Matters: Learning Transferable Rubrics via Proxy-Guided Critique for VLMReward Models"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.16600"
+published: "2026-03-18"
+summarized: "2026-03-18T18:15:44.632519"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了Proxy-GRM，一种通过代理引导的评判机制来显式优化视觉-语言模型生成式奖励模型（GRM）中评分标准（rubric）质量的方法。该方法训练轻量级代理模型来验证候选评分标准能否准确预测偏好顺序，并将代理的预测准确率作为可微分的评分质量奖励信号。仅用约5万条数据，Proxy-GRM就在多个视觉-语言奖励基准上达到SOTA性能，超越了使用四倍数据量的方法，且学习到的评分标准可迁移至未见的评估器。
+
+【方法概述 / Method】
+Proxy-GRM采用三阶段流程：首先生成候选评分标准，然后训练两个轻量级代理模型（Proxy-SFT和Proxy-RL）仅依据评分标准来预测查询-响应对的偏好顺序，最后将代理的预测准确率作为强化学习的奖励信号来优化评分标准生成。该方法将评分标准质量验证嵌入到端到端的强化学习训练中，避免了昂贵的LLM-as-judge调用。
+
+【实验结果 / Results】
+Proxy-GRM在VL-Reward Bench、Multimodal Reward Bench和MM-RLHF-Reward Bench上均取得SOTA结果，仅用~50k数据即超越使用~200k数据的基线方法。消融实验表明Proxy-SFT作为验证器优于Proxy-RL，且隐式奖励聚合策略表现最佳。关键发现是学到的评分标准具有强迁移性：在测试时可直接用于未见过的评估器，无需额外训练即可提升奖励预测准确率。
+
+【应用价值 / Applications】
+该研究为视觉-语言模型的自动评估提供了数据高效且可迁移的奖励建模方案，可广泛应用于VLM输出质量评估、RLHF训练中的奖励信号生成，以及需要可解释评判标准的场景（如内容审核、教育评测）。评分标准的可迁移性使其能够部署为即插即用的评估模块，降低多场景适配成本。

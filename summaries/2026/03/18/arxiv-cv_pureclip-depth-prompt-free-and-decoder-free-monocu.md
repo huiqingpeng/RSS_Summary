@@ -1,0 +1,20 @@
+---
+title: "PureCLIP-Depth: Prompt-Free and Decoder-Free Monocular Depth Estimation within CLIP Embedding Space"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.16238"
+published: "2026-03-18"
+summarized: "2026-03-18T18:08:40.036275"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了 PureCLIP-Depth，一种完全无需提示词（prompt-free）、无需解码器（decoder-free）的单目深度估计（MDE）模型，完全在 CLIP 嵌入空间内进行运算。与近期依赖几何特征的模型不同，该研究探索了一种由概念信息驱动的新方法，直接在概念化的 CLIP 空间中完成从 RGB 域到深度域的映射学习。该方法在室内和室外数据集上均取得了基于 CLIP 嵌入模型的最先进性能。
+
+【方法概述 / Method】
+PureCLIP-Depth 的核心在于学习 RGB 图像与深度图之间在 CLIP 嵌入空间内的直接映射关系，无需传统的解码器结构或人工设计的提示词。该方法完全依托于对比语言-图像预训练（CLIP）的语义嵌入空间，利用概念信息而非几何特征进行深度估计。
+
+【实验结果 / Results】
+实验表明，PureCLIP-Depth 在多个室内和室外基准数据集上达到了当前基于 CLIP 嵌入的深度估计模型中的最优性能。论文未提供具体的定量指标数值，但强调了其在该特定方法类别中的领先地位。
+
+【应用价值 / Applications】
+该研究为单目深度估计提供了一种轻量级、无需复杂解码器架构的新范式，可应用于实时场景理解、机器人导航、增强现实等对计算效率要求较高的视觉任务。其完全基于 CLIP 嵌入空间的特性也使其易于与其他视觉-语言任务进行联合部署和迁移学习。

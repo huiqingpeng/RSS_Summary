@@ -1,0 +1,24 @@
+---
+title: "Kestrel: Grounding Self-Refinement for LVLM Hallucination Mitigation"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.16664"
+published: "2026-03-18"
+summarized: "2026-03-18T18:17:23.983302"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了Kestrel，一种无需训练的大型视觉语言模型（LVLM）幻觉缓解框架。该框架结合显式视觉定位代理与证据验证的自精炼机制，首先收集视觉证据并将工具输出转换为结构化文本证据，然后通过LVLM评判器验证证据并迭代自精炼答案以避免过度修正。实验表明，Kestrel在多个幻觉基准上显著提升性能（如POPE平均提升3.31%，MME-Hallucination提升28.34分），同时提供可解释的验证轨迹用于幻觉诊断分析。
+
+【方法概述 / Method】
+
+Kestrel采用双阶段流程：第一阶段通过视觉定位代理收集显式视觉证据，并将外部工具输出转化为可复用的结构化文本证据；第二阶段利用LVLM作为评判器对证据进行验证，并基于验证后的证据进行迭代式自精炼，通过证据核查机制控制修正程度以防止过度纠正。
+
+【实验结果 / Results】
+
+在POPE和MME-Hallucination等幻觉基准测试中，Kestrel配合Qwen3-VL模型取得显著性能提升，POPE平均提升3.31%，MME-Hallucination提升28.34分。消融实验表明，自精炼模块和定位代理各自平均贡献约2.0%的POPE性能增益，验证了框架各组件的有效性。
+
+【应用价值 / Applications】
+
+Kestrel为部署大型视觉语言模型提供了低成本、可解释的幻觉缓解方案，适用于需要高可靠性的多模态应用场景，如医疗影像分析、自动驾驶视觉理解和文档智能处理等。其透明的验证轨迹还有助于研究人员诊断模型幻觉来源，推动LVLM的可解释性研究。
