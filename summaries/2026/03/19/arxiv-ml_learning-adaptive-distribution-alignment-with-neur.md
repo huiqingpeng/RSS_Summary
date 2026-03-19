@@ -1,0 +1,20 @@
+---
+title: "Learning Adaptive Distribution Alignment with Neural Characteristic Function for Graph Domain Adaptation"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2602.10489"
+published: "2026-03-19"
+summarized: "2026-03-19T14:11:54.553111"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文针对图域适应（Graph Domain Adaptation, GDA）中复杂多维的分布偏移问题，提出了自适应分布对齐框架ADAlign。与现有依赖人工设计图滤波器和启发式选择对齐元素的方法不同，ADAlign无需手动指定对齐标准，能够自动识别每次迁移中最相关的差异并进行联合对齐。该框架通过引入神经谱差异（Neural Spectral Discrepancy, NSD）实现自适应能力，在10个数据集和16个迁移任务上取得了最优性能，同时具有更低的内存占用和更快的训练速度。
+
+【方法概述 / Method】
+ADAlign的核心是神经谱差异（NSD），这是一个基于理论推导的参数化距离度量，利用神经特征函数在谱域中编码特征与结构的高阶依赖关系。NSD通过可学习的频率采样器，以极小极大范式自适应地强调每个任务中最具信息量的谱成分，从而实现对属性、结构及其交互关系的统一建模和动态对齐。
+
+【实验结果 / Results】
+实验在10个数据集和16个迁移任务上进行，结果表明ADAlign不仅超越了当前最优基线方法，还在效率方面表现优异——具有更低的内存使用量和更快的训练速度。这验证了该框架在处理多样化且动态演化的分布偏移时的灵活性和鲁棒性。
+
+【应用价值 / Applications】
+ADAlign可广泛应用于需要跨图迁移知识的场景，如社交网络分析中跨平台用户行为预测、分子性质预测中跨数据集模型迁移、以及推荐系统中跨领域物品推荐等。其自适应特性使其特别适用于分布偏移特征未知或动态变化的实际应用环境，减少了对领域专家设计启发式规则的依赖。

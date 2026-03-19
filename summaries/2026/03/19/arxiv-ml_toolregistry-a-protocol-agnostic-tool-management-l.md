@@ -1,0 +1,20 @@
+---
+title: "ToolRegistry: A Protocol-Agnostic Tool Management Library for Function-Calling LLMs"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2507.10593"
+published: "2026-03-19"
+summarized: "2026-03-19T14:16:41.714804"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了 ToolRegistry，一个面向函数调用大语言模型（Function-Calling LLMs）的协议无关工具管理系统。该系统已从一个单一库演进为包含核心注册表、服务器适配层和工具仓库的三包模块化生态，支持 MCP、OpenAPI 等多种协议适配，并提供统一注册、自动化模式生成、双模式并发执行等核心功能。评估表明，该系统可减少 60-80% 的工具集成代码量，实现最高 3.1 倍的性能提升，并在实际案例中显著改善开发效率与代码可维护性。
+
+【方法概述 / Method】
+ToolRegistry 采用模块化架构设计，将功能拆分为三个独立包：core 包负责工具注册管理与执行引擎，server 包提供 MCP 和 OpenAPI 协议适配器及路由功能，hub 包托管经过生产验证的工具实现。系统支持四种 MCP 传输机制，内置基于事件系统的变更传播机制和细粒度工具生命周期控制，并通过 Web 管理面板实现运行时动态管理。
+
+【实验结果 / Results】
+实验评估显示，ToolRegistry 在工具集成场景下可减少 60-80% 的代码量，通过并发执行机制实现最高 3.1 倍的性能提升。系统与 OpenAI 函数调用标准保持广泛兼容，并在多个真实世界案例中验证了开发效率和代码可维护性的显著改善。
+
+【应用价值 / Applications】
+ToolRegistry 适用于需要快速集成外部工具能力的 LLM 应用开发场景，如智能助手、自动化工作流和复杂推理系统。其协议无关特性使开发者能够无缝切换或组合 MCP、OpenAPI 等不同工具协议，降低多协议环境下的开发与维护成本，加速生产级 LLM 应用的构建与部署。

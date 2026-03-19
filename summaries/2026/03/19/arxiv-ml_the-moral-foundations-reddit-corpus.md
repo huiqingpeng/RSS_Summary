@@ -1,0 +1,20 @@
+---
+title: "The Moral Foundations Reddit Corpus"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2208.05545"
+published: "2026-03-19"
+summarized: "2026-03-19T14:14:03.572060"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了道德基础Reddit语料库（Moral Foundations Reddit Corpus），包含16,123条来自12个不同子版块的英文Reddit评论，由至少三名训练有素的标注员依据更新后的道德基础理论（MFT）框架对8类道德情感进行手工标注。研究发现，大型语言模型（Llama3-8B、Ministral-8B）在零样本、少样本和参数高效微调设置下，在该主观任务上仍落后于经过微调的编码器模型（如BERT），凸显了人工标注道德语料库对于AI对齐评估的持续重要性。
+
+【方法概述 / Method】
+研究者从Reddit平台12个不同子版块中筛选并手工标注了16,123条英文评论，涵盖Care、Proportionality、Equality、Purity、Authority、Loyalty、Thin Morality、Implicit/Explicit Morality等8个道德情感类别。为评估模型性能，研究者对比测试了大型语言模型（Llama3-8B、Ministral-8B）在零样本、少样本和PEFT设置下的表现，以及经过微调的BERT等编码器模型。
+
+【实验结果 / Results】
+实验结果表明，尽管大型语言模型在多种自然语言处理任务中表现出色，但在道德情感检测这一高度主观的任务上，经过微调的编码器模型（如BERT）仍然优于LLMs。这一发现挑战了LLMs在主观价值判断任务上的能力假设，表明此类任务仍需依赖专门的人工标注数据进行模型训练。
+
+【应用价值 / Applications】
+该语料库为自然语言处理和社会科学领域提供了宝贵的研究资源，可用于开发和评估道德情感检测模型、研究在线道德话语模式，以及分析道德框架如何影响捐赠、环保行动、政治参与等社会行为。同时，该数据集对于AI对齐研究具有重要价值，可用于评估和提升人工智能系统在理解和处理人类道德价值观方面的能力。
