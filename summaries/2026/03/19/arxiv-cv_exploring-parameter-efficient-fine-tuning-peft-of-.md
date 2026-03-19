@@ -1,0 +1,20 @@
+---
+title: "Exploring parameter-efficient fine-tuning (PEFT) of billion-parameter vision models with QLoRA and DoRA: insights into generalization for limited-data image classification under a 98:1 test-to-train regime"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.17782"
+published: "2026-03-19"
+summarized: "2026-03-19T15:17:57.621220"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本研究针对精准畜牧业中的自动化行为分类问题，系统比较了从头训练（ResNet-18、ViT-Small）、冻结特征提取和参数高效微调（PEFT）三种方法，使用包含67亿参数的DINOv3基础模型。在仅2,160张训练图像和211,800张测试图像（98:1的测试训练比）的极端数据限制条件下，研究发现PEFT方法显著优于其他方案，最佳QLoRA配置达到83.16%的测试准确率，同时揭示了增加适配器容量可持续改善泛化性能而不会导致过拟合的重要现象。
+
+【方法概述 / Method】
+论文采用QLoRA和DoRA两种参数高效微调技术对DINOv3基础模型进行微调，系统探索了不同秩（rank=8, 16, 64）和目标模块配置（仅q_proj层vs所有线性层）的影响；同时设置从头训练的ResNet-18和ViT-Small以及冻结DINOv3特征提取作为对比基线，在猪只行为分类数据集上进行全面评估。
+
+【实验结果 / Results】
+最佳QLoRA配置（all-linear层，rank=64）以仅2.72%的可训练参数（183M）在5.8小时内达到83.16%的测试准确率，显著优于ResNet-18（72.87%，16.8小时）、ViT-Small（61.91%，18.7小时）和冻结DINOv3（76.56%，17.5小时）；DoRA达到相近准确率（83.14%）但训练时间更长（11.0小时）。关键发现是增加适配器容量（扩大秩或目标模块范围）持续提升泛化性能而未出现过拟合，表明欠拟合而非过拟合是农业图像适应中的主要挑战。
+
+【应用价值 / Applications】
+本研究为精准畜牧业中部署十亿参数级视觉模型提供了实用的PEFT部署指南，特别适用于标注数据稀缺但需处理大规模测试数据的农业场景；研究成果可推广至其他资源受限的计算机视觉应用，帮助从业者在有限计算预算下有效利用大规模基础模型，推动可持续和高效的智能农业系统发展。
