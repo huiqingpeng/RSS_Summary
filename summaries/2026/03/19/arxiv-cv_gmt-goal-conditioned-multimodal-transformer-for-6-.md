@@ -1,0 +1,20 @@
+---
+title: "GMT: Goal-Conditioned Multimodal Transformer for 6-DOF Object Trajectory Synthesis in 3D Scenes"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.17993"
+published: "2026-03-19"
+summarized: "2026-03-19T16:20:17.357474"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了GMT（Goal-Conditioned Multimodal Transformer），一种用于在3D场景中合成可控6自由度物体操作轨迹的多模态Transformer框架。该模型通过联合利用3D边界框几何、点云上下文、语义物体类别和目标位姿，生成真实且目标导向的物体轨迹。实验表明，GMT在空间精度和方向控制方面显著优于现有的人体动作和人物交互基线方法（如CHOIS和GIMO），并在多样化物体和复杂3D环境中展现出强大的泛化能力。
+
+【方法概述 / Method】
+GMT采用多模态Transformer架构，将轨迹表示为连续的6自由度位姿序列，并通过定制的条件策略融合几何、语义、上下文和目标导向信息。该方法整合了3D边界框、点云、语义类别和目标位姿等多种输入模态，实现对复杂3D场景的全面理解。
+
+【实验结果 / Results】
+在合成和真实世界基准测试上的大量实验表明，GMT在6自由度物体轨迹合成任务上超越了当前最先进的人体动作和人物交互基线方法。该方法在空间精度和方向控制方面取得了显著提升，为基于学习的操作规划建立了新的性能基准。
+
+【应用价值 / Applications】
+该研究可广泛应用于机器人操作规划、虚拟现实交互和自动化物流等领域，使机器人能够在复杂3D环境中执行精确的物体抓取和放置任务。GMT的多模态场景理解能力和强泛化性为智能机器人在真实世界场景中的部署提供了重要技术支持。

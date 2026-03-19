@@ -1,0 +1,24 @@
+---
+title: "The MCC approaches the geometric mean of precision and recall as true negatives approach infinity"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2305.00594"
+published: "2026-03-19"
+summarized: "2026-03-19T16:23:24.827364"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文证明了当真实负例数（TN）趋于无穷大时，Matthews相关系数（MCC）收敛于Fowlkes-Mallows（FM）分数，即精确率与召回率的几何平均。该结果此前在生态学文献中以φ系数和Ochiai指数的形式被提及，但本文首次在二元分类器的背景下进行了完整讨论和严格证明，包括Lean形式化验证。研究还探讨了大型语言模型在证明辅助和文献检索中的新兴作用。
+
+【方法概述 / Method】
+
+论文采用数学分析方法，通过极限推导证明MCC在TN→∞时的渐近行为。作者提供了完整的解析证明，并使用Lean定理证明器进行了形式化验证，确保结果的严谨性。此外，研究还借助LLM工具辅助文献检索，发现生态学领域关于φ系数与Ochiai指数关系的早期工作。
+
+【实验结果 / Results】
+
+核心数学结果表明：lim_{TN→∞} MCC = FM = √(Precision × Recall)。这一收敛性质说明，在开放世界场景（如目标检测）中，当负例空间无界时，原本依赖四元混淆矩阵的MCC退化为仅依赖TP、FP、FN的FM分数。形式化证明已通过Lean验证，确认了结论的正确性。
+
+【应用价值 / Applications】
+
+该结果对开放世界目标检测等难以枚举全部负例的场景具有重要指导意义——研究者可直接使用计算更简便的FM分数替代MCC，而无需担心信息损失。此外，论文展示了LLM辅助数学证明和跨学科文献发现的潜力，为计算科学方法论提供了新思路。
