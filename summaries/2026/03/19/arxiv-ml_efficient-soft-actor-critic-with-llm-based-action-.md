@@ -1,0 +1,24 @@
+---
+title: "Efficient Soft Actor-Critic with LLM-Based Action-Level Guidance for Continuous Control"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.17468"
+published: "2026-03-19"
+summarized: "2026-03-19T12:12:20.104491"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了GuidedSAC，一种结合大语言模型（LLM）与Soft Actor-Critic（SAC）的新型强化学习算法，旨在解决大规模状态-动作空间中的高效探索问题。该算法利用LLM作为智能监督器，通过分析近期轨迹的状态信息和视觉回放，提供动作级别的干预指导以实现目标导向的探索。理论分析证明GuidedSAC在保持SAC收敛保证的同时提升了收敛速度，实验表明其在离散和连续控制任务中均显著优于标准SAC及RND、ICM、E3B等先进探索增强变体。
+
+【方法概述 / Method】
+
+GuidedSAC的核心方法是将预训练的大语言模型嵌入SAC框架作为动作级指导模块，LLM监督器接收包含状态描述和视觉回放的轨迹信息，输出针对具体动作的调整建议以引导智能体进行更有针对性的探索。该设计实现了高层语义理解与低层策略优化的结合，并通过理论分析确保改进后的算法仍满足SAC的收敛性保证。
+
+【实验结果 / Results】
+
+实验在toy text任务和复杂MuJoCo基准环境上进行，涵盖离散与连续控制场景；结果表明GuidedSAC在样本效率和最终性能两个维度上均稳定超越标准SAC，同时优于RND（随机网络蒸馏）、ICM（内在好奇模块）和E3B（基于椭圆包络的探索）等当前最先进的探索增强方法。
+
+【应用价值 / Applications】
+
+GuidedSAC可应用于样本受限的复杂机器人控制、自动驾驶决策及高维连续动作空间的强化学习任务，通过LLM的语义推理能力显著降低探索成本；该研究也为大语言模型与强化学习的深度融合提供了可行范式，有望推动通用人工智能在物理世界交互中的落地应用。

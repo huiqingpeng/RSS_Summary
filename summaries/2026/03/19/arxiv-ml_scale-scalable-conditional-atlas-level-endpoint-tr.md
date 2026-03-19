@@ -1,0 +1,24 @@
+---
+title: "SCALE:Scalable Conditional Atlas-Level Endpoint transport for virtual cell perturbation prediction"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.17380"
+published: "2026-03-19"
+summarized: "2026-03-19T12:10:57.683195"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了SCALE，一种专门用于虚拟细胞扰动预测的大规模基础模型，解决了该领域三个关键瓶颈：低效的训练推理流程、高维稀疏表达空间中的不稳定建模，以及过度强调重建精度而忽视生物学保真度的评估协议。SCALE通过基于BioNeMo的可扩展框架实现12.51倍预训练加速和1.29倍推理加速，采用条件传输建模结合LLaMA细胞编码与端点导向监督，并在Tahoe-100M基准上以细胞级生物学指标评估，相比SOTA方法STATE提升PDCorr 12.02%、DE Overlap 10.66%。
+
+【方法概述 / Method】
+
+SCALE将扰动预测形式化为条件传输问题，实现了集合感知的流架构（set-aware flow architecture），该架构将基于LLaMA的细胞编码器与端点导向监督相结合。同时构建了基于BioNeMo的训练推理框架，显著提升数据吞吐量、分布式可扩展性和部署效率。
+
+【实验结果 / Results】
+
+在匹配系统设置下，SCALE相比先前SOTA流程实现预训练12.51倍加速和推理1.29倍加速。在Tahoe-100M基准测试中，采用以生物学意义指标为核心的严格细胞级评估协议，SCALE相比STATE模型在PDCorr（扰动效应相关性）上提升12.02%，在DE Overlap（差异表达基因重叠）上提升10.66%。
+
+【应用价值 / Applications】
+
+SCALE可广泛应用于药物发现中的虚拟筛选、基因治疗靶点预测、以及细胞因子组合效应评估等场景，使研究人员能够在计算环境中进行大规模"硅基"细胞实验。该研究揭示了推进虚拟细胞技术需要可扩展基础设施、稳定传输建模与生物学忠实评估的协同设计，为单细胞基因组学的基础模型开发提供了重要范式。
