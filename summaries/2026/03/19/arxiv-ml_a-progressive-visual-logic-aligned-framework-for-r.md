@@ -1,0 +1,20 @@
+---
+title: "A Progressive Visual-Logic-Aligned Framework for Ride-Hailing Adjudication"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.17328"
+published: "2026-03-19"
+summarized: "2026-03-19T13:11:45.874635"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了RideJudge，一种渐进式视觉-逻辑对齐框架，用于解决网约车责任纠纷裁决问题。针对多模态大语言模型在通用视觉语义与严格证据协议之间存在根本性差距的问题，该研究通过合成轨迹引擎（SynTraj）将抽象责任概念具象化为轨迹模式，并引入自适应上下文优化策略和裁决链机制来增强推理透明度。实验表明，仅8B参数的RideJudge模型达到了88.41%的准确率，超越了32B规模的基线模型。
+
+【方法概述 / Method】
+该框架核心包含三个技术组件：SynTraj合成引擎通过生成具体轨迹模式来弥合抽象责任概念与视觉语义之间的差距；自适应上下文优化策略结合专家知识蒸馏，解决海量法规与有限上下文窗口的冲突；裁决链机制（Chain-of-Adjudication）强制实施主动证据查询，确保推理过程的透明性和可解释性。
+
+【实验结果 / Results】
+RideJudge-8B模型在责任纠纷裁决任务上达到88.41%的准确率，显著超越32B参数规模的基线模型。此外，序数敏感强化学习机制（Ordinal-Sensitive Reinforcement Learning）有效校准了复杂责任评估中的决策边界，解决了稀疏二元反馈在分层严重性评估中的不足。
+
+【应用价值 / Applications】
+该研究为网约车平台提供了可解释、高效率的自动化纠纷裁决解决方案，能够替代耗时长、成本高的人工审核流程。其渐进式视觉-逻辑对齐方法具有推广潜力，可应用于其他需要准司法决策透明度的多模态推理场景，如保险理赔判定和交通事故责任认定等领域。

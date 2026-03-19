@@ -1,0 +1,24 @@
+---
+title: "Arch-VQ: Discrete Architecture Representation Learning with Autoregressive Priors"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2503.22063"
+published: "2026-03-19"
+summarized: "2026-03-19T13:19:42.388414"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出 Arch-VQ，一种从离散视角重新思考神经网络架构表示学习的新框架。该框架采用向量量化变分自编码器（VQ-VAE）学习离散潜在空间，并用自回归 Transformer 建模潜在先验分布，有效解决了传统连续表示方法中采样产生大量无效或重复架构的问题。在 NASBench-101、NASBench-201 和 DARTS 三个搜索空间上，Arch-VQ 将有效且唯一架构的生成率分别提升了 22%、26% 和 135%。此外，离散嵌入的自回归建模显著增强了下游神经预测器的性能。
+
+【方法概述 / Method】
+
+Arch-VQ 采用 VQ-VAE 将离散神经网络架构编码为离散潜在向量，替代传统的连续高斯分布表示；随后使用自回归 Transformer 学习这些离散码本向量的先验分布，实现表示学习与先验建模的解耦。该设计使潜在空间与底层离散架构搜索空间更加对齐，避免了连续空间到离散空间的"不自然映射"。
+
+【实验结果 / Results】
+
+在三个标准 NAS 基准数据集上，Arch-VQ 显著优于现有连续表示学习方法：有效且唯一架构的生成率在 NASBench-101 上提升 22%，NASBench-201 上提升 26%，DARTS 上提升 135%。同时，基于离散自回归先验的神经预测器展现出更强的下游性能，验证了离散表示在实际应用中的优越性。
+
+【应用价值 / Applications】
+
+Arch-VQ 可直接应用于神经架构搜索（NAS）系统，提高架构生成质量和搜索效率，减少无效架构的评估开销。其离散表示框架还可扩展至其他组合优化问题的表示学习，为需要离散决策的机器学习系统设计提供新思路，特别是在资源受限场景下加速自动化机器学习流程。

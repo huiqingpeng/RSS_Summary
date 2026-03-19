@@ -1,0 +1,24 @@
+---
+title: "LoST: Level of Semantics Tokenization for 3D Shapes"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.17995"
+published: "2026-03-19"
+summarized: "2026-03-19T13:17:03.432005"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了Level-of-Semantics Tokenization (LoST)，一种全新的3D形状tokenization方法，通过语义显著性而非几何细节层次（LoD）来组织token序列，使自回归模型能够先生成完整且语义合理的形状主体，再逐步细化实例特定的几何和语义细节。为训练LoST，作者引入了Relational Inter-Distance Alignment (RIDA)损失函数，将3D形状潜在空间的关系结构与DINO语义特征空间对齐。实验表明，LoST在重建质量和自回归3D生成效率上均达到SOTA，且仅需先前方法0.1%-10%的token量。
+
+【方法概述 / Method】
+
+LoST摒弃了传统基于几何LoD层次的空间tokenization方案，转而采用语义显著性驱动的token排序策略；核心训练机制RIDA通过约束3D潜在空间中样本对之间的距离关系与DINO视觉特征空间中的对应关系一致，实现无需显式语义标注的隐式语义对齐。
+
+【实验结果 / Results】
+
+LoST在几何和语义重建指标上大幅超越现有LoD-based 3D shape tokenizer；在自回归3D生成任务中，LoST以极少的token（仅为先前方法的0.1%-10%）实现了高效高质量生成，同时支持语义检索等下游应用。
+
+【应用价值 / Applications】
+
+LoST可广泛应用于高效3D内容生成、交互式形状编辑和语义感知的3D资产检索等场景；其token高效特性显著降低自回归3D生成的计算成本，为实时应用和轻量化部署提供可能，同时语义一致性支持基于高层语义意图的精确控制和检索。
