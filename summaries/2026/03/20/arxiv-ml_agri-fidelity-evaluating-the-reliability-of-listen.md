@@ -1,0 +1,24 @@
+---
+title: "AGRI-Fidelity: Evaluating the Reliability of Listenable Explanations for Poultry Disease Detection"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.18247"
+published: "2026-03-20"
+summarized: "2026-03-20T12:09:08.899775"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文针对禽类疾病检测中的可听化解释（listenable explanations）可靠性评估问题，提出了AGRI-Fidelity框架。现有可解释人工智能（XAI）指标仅针对单一模型测量忠实度，忽略了模型多样性问题——即接近最优的分类器可能依赖不同甚至虚假的声学线索。在嘈杂的农场环境中，通风噪声等静态伪影会产生忠实但不可靠的解释，因为基于掩码的指标无法惩罚冗余的捷径。AGRI-Fidelity通过跨模型共识与循环时间置换相结合构建零分布并计算错误发现率（FDR），在无需空间真值的情况下抑制静态伪影，同时保留时间局部化的生物声学标记。
+
+【方法概述 / Method】
+
+AGRI-Fidelity采用双重机制评估解释可靠性：首先利用跨模型共识（cross-model consensus）捕捉多个近最优模型间的一致性特征，识别真正具有判别性的生物声学标记；其次通过循环时间置换（cyclic temporal permutation）构建统计零分布，量化特征的时间局部性。该方法将两者结合计算错误发现率（FDR），从而区分可靠的生物声学信号与静态环境伪影。
+
+【实验结果 / Results】
+
+在真实农场数据集和受控实验数据集上的验证表明，AGRI-Fidelity能够为所有数据点提供可靠性感知的判别能力，而传统的基于掩码的忠实度指标无法实现这一点。该方法有效识别并抑制了由通风噪声等静态伪影产生的虚假解释，同时保留了与禽类疾病相关的时间局部化声学特征。
+
+【应用价值 / Applications】
+
+该研究为智慧农业中的动物健康监测提供了可靠的AI决策支持工具，特别适用于缺乏标注数据或难以获取空间真值的农场环境。AGRI-Fidelity可推广至其他农业声学监测场景（如 livestock welfare 评估），帮助养殖户和兽医在嘈杂环境中做出更可信的疾病诊断决策，降低因模型依赖虚假声学线索而导致的误诊风险。
