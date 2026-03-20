@@ -1,0 +1,20 @@
+---
+title: "Recurrent neural network-based robust control systems with regional properties and application to MPC design"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2506.20334"
+published: "2026-03-20"
+summarized: "2026-03-20T14:16:05.317721"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文针对一类递归神经网络描述的系统，研究了输出反馈控制方案的设计问题。作者提出了一种基于线性矩阵不等式（LMI）的观测器和静态状态反馈控制器设计方法，利用全局和区域增量输入-状态稳定性（incremental ISS）实现恒定设定点跟踪，并保证对干扰和状态估计不确定性的鲁棒性。为解决区域增量ISS的潜在局限性，作者进一步提出了用基于管状结构的非线性模型预测控制器（NMPC）替代静态控制律的方案，证明了该方案能够扩大吸引域并保证收敛性和递归可行性。
+
+【方法概述 / Method】
+论文采用基于线性矩阵不等式（LMI）的系统性设计流程，联合设计观测器与静态状态反馈控制器，核心在于利用增量ISS性质分析闭环系统的鲁棒稳定性。针对区域增量ISS的局限性，引入基于管状结构的非线性模型预测控制（Tube-based NMPC）框架，将区域增量ISS性质嵌入NMPC的优化问题构造中。
+
+【实验结果 / Results】
+理论结果通过在pH中和过程基准系统上的数值仿真得到验证，表明所提出的NMPC方案相比静态反馈控制律具有更大的吸引域，同时保证了闭环系统的收敛性和优化问题的递归可行性，验证了区域增量ISS性质在鲁棒NMPC设计中的有效性。
+
+【应用价值 / Applications】
+该研究为递归神经网络建模的复杂工业过程（如化工过程中的pH控制）提供了系统化的鲁棒控制器设计工具，所提出的LMI-based方法和NMPC框架可直接应用于需要处理模型不确定性、外部干扰和状态估计误差的实际控制场景，尤其适用于对稳定性和鲁棒性有严格要求的先进过程控制系统。

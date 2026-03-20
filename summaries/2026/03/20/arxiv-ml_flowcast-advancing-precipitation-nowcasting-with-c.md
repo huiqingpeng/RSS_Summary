@@ -1,0 +1,20 @@
+---
+title: "FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2511.09731"
+published: "2026-03-20"
+summarized: "2026-03-20T14:08:40.016086"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+FlowCast 是首个将条件流匹配（Conditional Flow Matching, CFM）应用于降水临近预报的端到端概率模型，直接学习噪声到数据的映射以替代扩散模型的迭代采样。实验表明，FlowCast 在概率性能和预测精度上均超越现有最优方法，同时 CFM 目标函数在相同架构下比扩散目标更准确、更高效，仅需极少采样步骤即可保持高性能。该研究确立了 CFM 作为高维时空预测任务中实用且强大的替代方案。
+
+【方法概述 / Method】
+FlowCast 采用条件流匹配作为核心生成框架，在压缩的潜在空间中直接学习噪声到降水场数据的确定性映射，避免了扩散模型的多步迭代过程。该方法通过端到端训练实现单步或极少步数的高保真样本生成，显著提升了计算效率。
+
+【实验结果 / Results】
+FlowCast 在降水临近预报任务上建立了新的最优性能标准，其概率预测质量超越现有基线，同时确定性预测精度也优于传统确定性模型。对比实验显示，CFM 目标函数在相同网络架构下比扩散模型目标函数更准确，且仅需显著更少的采样步骤即可维持高性能。
+
+【应用价值 / Applications】
+FlowCast 可实时应用于洪水风险管理和应急决策支持系统，满足时间关键型场景对快速、可靠降水预报的需求。其高效生成特性使其特别适用于计算资源受限或需要高频更新的气象服务业务平台，为灾害预警和公共安全提供技术支撑。
