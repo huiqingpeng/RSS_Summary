@@ -1,0 +1,20 @@
+---
+title: "Perceptio: Perception Enhanced Vision Language Models via Spatial Token Generation"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.18795"
+published: "2026-03-20"
+summarized: "2026-03-20T15:16:38.352368"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了Perceptio，一种通过显式空间token生成来增强感知能力的大型视觉语言模型。该模型突破了传统LVLMs仅能隐式推理空间关系的局限，通过在自回归序列中直接生成2D语义分割token和3D深度token，实现了精细的空间定位能力。实验表明，Perceptio在多个基准测试上达到最优性能，包括RefCOCO系列分割任务提升0.8-1.4 cIoU，HardBLINK空间理解准确率提升10.3%，证明了显式空间思维链能有效强化视觉语言模型的空间定位能力。
+
+【方法概述 / Method】
+Perceptio采用双路径空间token生成机制：首先通过从单目深度估计教师模型蒸馏VQVAE深度码本，将密集深度信息压缩为紧凑序列；其次整合SAM2-based语义分割token与VQ-VAE深度token到LLM中，使模型遵循"先生成空间token，后回答"的推理范式。为稳定深度token生成，作者设计了复合深度token目标函数（标记损失、token损失和计数损失）以及用于可微重建的软合并技术，并采用多任务协同训练策略。
+
+【实验结果 / Results】
+Perceptio在多项基准测试中取得最先进性能：指代表达分割任务在RefCOCO/+/g上分别提升0.8/1.4/1.1 cIoU；HardBLINK空间理解基准准确率提升10.3%；通用多模态理解基准MMBench准确率提升1.0%。这些结果验证了显式空间推理token对增强LVLMs空间感知能力的有效性。
+
+【应用价值 / Applications】
+Perceptio可广泛应用于需要精细空间理解的场景，如机器人导航与操作（需准确的3D深度感知）、增强现实/虚拟现实中的场景理解、自动驾驶中的环境感知，以及图像编辑和医学影像分析等需要像素级精确定位的任务。该方法为构建具备人类级空间推理能力的通用视觉助手奠定了技术基础。

@@ -1,0 +1,24 @@
+---
+title: "CycleCap: Improving VLMs Captioning Performance via Self-Supervised Cycle Consistency Fine-Tuning"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.18282"
+published: "2026-03-20"
+summarized: "2026-03-20T15:07:15.975609"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出 CycleCap，一种基于循环一致性（cycle consistency）的自监督微调方法，用于提升视觉语言模型（VLMs）的图像描述生成性能。该方法利用图像→文本→图像的循环重建过程，将原始图像与重建图像的相似度作为奖励信号，通过 GRPO 算法直接优化 VLM，无需人工标注的图像-文本对。实验表明，CycleCap 在 1B 到 7B 参数的四种 VLM 上均取得一致提升，在描述准确性和幻觉抑制方面超越现有监督式循环一致性训练方法。
+
+【方法概述 / Method】
+
+CycleCap 的核心流程为：VLM 生成图像描述，预训练的文本到图像模型（如 Stable Diffusion）根据该描述重建图像，通过计算原始图像与重建图像的 CLIP 相似度或像素级相似度作为奖励，采用 GRPO（Group Relative Policy Optimization）算法对 VLM 进行强化学习微调。该方法完全自监督，仅需原始图像即可训练，无需成对的图文标注数据。
+
+【实验结果 / Results】
+
+CycleCap 在多个图像描述基准（如 COCO、Flickr30K）和幻觉检测基准（如 POPE、CHAIR）上进行了评估，结果显示：在 1B 至 7B 参数规模的四种不同 VLM 架构上，该方法均实现了稳定且显著的性能提升；相比依赖监督式循环一致性损失构建偏好数据集的最先进方法，CycleCap 在描述准确性和减少幻觉方面表现更优，同时避免了昂贵的数据标注成本。
+
+【应用价值 / Applications】
+
+CycleCap 可广泛应用于需要高质量图像描述的场景，如视觉辅助工具、图像检索、自动内容审核及多模态内容生成等。其自监督特性使其能够利用海量无标注图像进行训练，大幅降低数据准备成本，为资源受限场景下的 VLM 定制化部署提供了实用解决方案，同时有助于提升模型输出的可信度和事实 grounding。

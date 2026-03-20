@@ -1,0 +1,20 @@
+---
+title: "myMNIST: Benchmark of PETNN, KAN, and Classical Deep Learning Models for Burmese Handwritten Digit Recognition"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2603.18597"
+published: "2026-03-20"
+summarized: "2026-03-20T15:12:31.751092"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文首次对myMNIST（缅甸手写数字数据集）进行了系统性基准测试，评估了涵盖经典深度学习、KAN网络、能量模型和物理启发式PETNN在内的11种架构。研究发现CNN仍是强基线模型（F1=0.9959，准确率=0.9970），而PETNN(GELU)紧随其后（F1=0.9955，准确率=0.9966），显著优于LSTM、GRU、Transformer及KAN变体。该基准为缅甸数字识别研究建立了可复现的对比标准，并揭示了新兴架构与经典模型之间的性能差距。
+
+【方法概述 / Method】
+研究在myMNIST数据集上对比测试了四大类模型：经典深度学习（MLP、CNN、LSTM、GRU、Transformer）、KAN变体（FastKAN、EfficientKAN）、能量模型JEM，以及三种激活函数的PETNN（Sigmoid、GELU、SiLU）。采用精确率、召回率、F1分数和准确率作为统一评估指标，确保跨架构的公平比较。
+
+【实验结果 / Results】
+CNN以F1=0.9959和准确率0.9970取得最佳性能；PETNN(GELU)表现次之（F1=0.9955，准确率0.9966），超越所有循环神经网络、Transformer和KAN模型；JEM作为能量模型也展现出竞争力（F1=0.9944）。KAN类模型（FastKAN/EfficientKAN）准确率约0.992，虽落后于顶尖模型但提供了有意义的替代基线。
+
+【应用价值 / Applications】
+该基准为缅甸自然语言处理和人工智能研究提供了首个公开可复现的数字识别性能标准，有助于推动低资源语言的手写识别技术发展。研究成果可应用于缅甸语文档数字化、金融票据自动处理、教育软件中的手写输入识别等实际场景，同时为评估新兴神经网络架构在区域文字上的表现提供了方法论参考。
