@@ -1,0 +1,20 @@
+---
+title: "Can LLMs Reason Like Automated Theorem Provers for Rust Verification? VCoT-Bench: Evaluating via Verification Chain of Thought"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.18334"
+published: "2026-03-20"
+summarized: "2026-03-20T13:11:43.556186"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文研究了大型语言模型（LLMs）在Rust程序验证中的推理能力，发现现有评估方法将验证视为黑盒，仅通过二元成功/失败结果评判模型，无法揭示模型是否真正理解验证所需的逻辑推导。为此，作者提出了VCoT-Lift框架，将底层求解器推理提升为高层次、人类可读的验证步骤，并构建了包含1,988个任务的VCoT-Bench基准测试。评估显示，当前最先进的LLMs在验证推理方面表现出严重的脆弱性，远未达到自动定理证明器的推理水平。
+
+【方法概述 / Method】
+VCoT-Lift框架通过将自动定理证明器（如Z3、CVC5）的底层SMT求解过程转换为显式的"验证思维链"（Verification Chain-of-Thought），为细粒度评估提供可解释的真实标签。基于此框架构建的VCoT-Bench基准测试从三个正交维度评估LLMs：缺失证明的鲁棒性、不同证明类型的能力覆盖，以及对证明位置的敏感性。
+
+【实验结果 / Results】
+对十个最先进的LLMs（包括GPT-4、Claude等）的评估揭示了严重的性能脆弱性：模型在验证推理任务上表现不佳，尤其在处理部分缺失的证明提示时稳定性差，对不同证明位置和类型的泛化能力有限。结果表明当前LLMs尚未具备自动定理证明器所展现的形式化推理能力。
+
+【应用价值 / Applications】
+该研究为安全软件开发中LLM辅助Rust验证工具的开发提供了重要的评估基准和改进方向，有助于识别模型在形式化验证推理中的具体短板。VCoT-Lift框架的透明化推理方法可应用于教育场景，帮助开发者理解复杂验证逻辑，同时也为构建更可靠的AI辅助形式化验证系统奠定了基础。

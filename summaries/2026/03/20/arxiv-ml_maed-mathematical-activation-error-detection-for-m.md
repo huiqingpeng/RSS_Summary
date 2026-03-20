@@ -1,0 +1,20 @@
+---
+title: "MAED: Mathematical Activation Error Detection for Mitigating Physical Fault Attacks in DNN Inference"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.18120"
+published: "2026-03-20"
+summarized: "2026-03-20T13:09:39.869049"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了MAED（数学激活误差检测），一种首个针对嵌入式系统中DNN推理阶段的算法级错误检测框架，利用数学恒等式在运行时持续验证非线性激活函数计算的正确性，以防御恶意故障注入攻击和自然故障。该方案在ReLU、sigmoid和tanh三种主流激活函数上实现了接近100%的误差检测率，同时在微控制器上引入不到1%的时钟周期开销，在FPGA上几乎不增加额外面积。
+
+【方法概述 / Method】
+MAED基于数学恒等式（如sigmoid和tanh的奇偶对称性、导数关系等）设计运行时检测机制，通过验证激活函数输入输出之间的数学关系来识别计算错误；该框架以算法级实现，无需修改底层硬件架构，可集成到现有DNN推理流程中。
+
+【实验结果 / Results】
+通过故障模型仿真评估，MAED对现有DNN推理故障攻击实现了接近100%的错误检测率；在ATmega328P微控制器上运行时开销低于1%时钟周期，在AMD/Xilinx Artix-7 FPGA上几乎零面积开销，但sigmoid和tanh的延迟增加约20%；已成功集成到TensorFlow框架进行验证。
+
+【应用价值 / Applications】
+该研究适用于安全关键的嵌入式AI系统，如自动驾驶、医疗设备和工业控制等场景，可有效防护物理故障攻击和单粒子翻转等自然故障导致的DNN推理错误；其低硬件开销特性特别适合资源受限的边缘计算设备部署。

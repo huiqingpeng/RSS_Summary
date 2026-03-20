@@ -1,0 +1,24 @@
+---
+title: "ResNets of All Shapes and Sizes: Convergence of Training Dynamics in the Large-scale Limit"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.18168"
+published: "2026-03-20"
+summarized: "2026-03-20T13:10:13.539150"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本论文建立了残差神经网络（ResNets）训练动力学在联合无穷深度L、隐藏宽度M和嵌入维度D极限下的收敛性。作者证明了在最大局部特征更新（MLU）机制下，经过有限训练步数后，ResNet与其大规模极限之间的误差为O(1/L + √(D/(LM)) + 1/√D)。对于参数预算P = Θ(LMD)，最优缩放下的收敛速率达到O(P^(-1/6))。该分析本质上利用了残差块的两层结构，并可形式化地应用于包括有限键-查询维度的Transformer在内的多种最先进架构。
+
+【方法概述 / Method】
+
+论文采用平均场理论框架，结合腔方法（cavity method）与函数层面的混沌传播（propagation of chaos）论证，在所谓的"骨架映射"（skeleton maps）上进行分析——这些映射将权重更新表示为来自过去的中心极限定理型求和的函数。研究分为两步：首先固定嵌入维度D，证明训练动力学收敛到平均ODE动力学；然后研究该平均ODE模型的大D极限，通过三角不等式得到最终误差界。
+
+【实验结果 / Results】
+
+理论推导表明，在嵌入空间测量的误差率O(1/L + √(D/(LM)) + 1/√D)是经验紧的（empirically tight）。对于总参数P = Θ(LMD)的预算，通过优化(L, M, D)的缩放关系，可获得整体收敛速率O(P^(-1/6))。这是首批针对DMFT型极限的严格定量收敛结果之一，为理解超大规模神经网络的极限行为提供了理论保证。
+
+【应用价值 / Applications】
+
+该研究为现代深度学习架构（如ResNets和Transformer）的规模化训练提供了理论基础，特别是在理解模型规模（深度、宽度、嵌入维度）与训练稳定性之间的关系方面具有重要价值。结果可用于指导超大规模模型的最优架构设计，帮助研究者和工程师在给定计算预算下选择最优的深度-宽度-维度配置，并为神经网络的极限行为分析建立了严格的数学框架。

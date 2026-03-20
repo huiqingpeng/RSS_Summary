@@ -1,0 +1,24 @@
+---
+title: "CRAFT: Aligning Diffusion Models with Fine-Tuning Is Easier Than You Think"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.18991"
+published: "2026-03-20"
+summarized: "2026-03-20T13:18:37.730665"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了CRAFT（Composite Reward Assisted Fine-Tuning），一种轻量高效的扩散模型对齐微调范式。该方法通过Composite Reward Filtering（CRF）技术构建高质量一致的训练数据集，并在此基础上执行增强版监督微调（SFT）。理论分析证明CRAFT实际上优化了基于组的强化学习下界，建立了精选数据SFT与强化学习之间的原理性联系。实验表明，CRAFT仅需100个样本即可超越使用数千偏好样本的SOTA偏好优化方法，且收敛速度提升11-220倍。
+
+【方法概述 / Method】
+
+CRAFT采用两阶段策略：首先利用复合奖励过滤（CRF）技术从原始数据中筛选出高质量、一致性强的样本构建训练集；然后在该精选数据集上执行增强监督微调。该方法通过奖励模型评估样本质量，避免了传统SFT对昂贵高质量图像的依赖，也无需DPO类方法所需的大规模偏好对比数据。
+
+【实验结果 / Results】
+
+CRAFT在仅使用100个训练样本的情况下，性能显著优于使用数千偏好样本对的最新SOTA偏好优化方法。在计算效率方面，CRAFT实现了相比基线偏好优化方法11-220倍的收敛加速，展现出极高的训练效率。这些结果验证了高质量数据筛选在扩散模型对齐中的关键作用。
+
+【应用价值 / Applications】
+
+CRAFT为扩散模型的实际部署提供了高效可行的微调方案，特别适用于计算资源受限或难以获取大规模偏好标注数据的场景，如个性化图像生成、特定风格迁移等应用。该方法降低了对昂贵人工标注的依赖，使中小型研究团队也能实现高质量的模型对齐，有望推动扩散模型在更广泛领域的普及应用。

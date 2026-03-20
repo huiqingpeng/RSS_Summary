@@ -1,0 +1,20 @@
+---
+title: "Model Order Reduction of Cerebrovascular Hemodynamics Using POD_Galerkin and Reservoir Computing_based Approach"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.18837"
+published: "2026-03-20"
+summarized: "2026-03-20T13:16:21.012490"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文研究了脑血管系统非定常血流动力学的模型降阶（MOR）策略，对比了基于物理的侵入式方法与基于数据的非侵入式框架。研究利用本征正交分解（POD）将高保真三维计算流体力学（CFD）快照压缩到低维潜在空间，并评估了POD-Galerkin投影模型与POD-储备计算（RC）递归学习模型的性能。两种方法均实现了相比全阶模拟10²至10³量级的计算加速，证明了其作为壁面剪切应力等流场量预测的高效准确替代模型的潜力。
+
+【方法概述 / Method】
+研究采用POD对理想化基底动脉分叉的高保真CFD快照进行降维，构建低维系数空间。随后分别实现两种时序演化方案：POD-Galerkin通过将Navier-Stokes方程投影到POD基上建立降阶模型；POD-RC则利用储备计算（一种递归神经网络架构）从数据中学习系数的时间演化规律，并引入多谐波多幅值训练信号以提升训练效率。
+
+【实验结果 / Results】
+两种降阶方法均实现了10²至10³量级的计算加速比，同时保持了对关键血流动力学量（如壁面剪切应力）的准确预测能力。POD-RC数据驱动方法在训练效率方面通过多谐波多幅值信号设计得到优化，与基于物理的POD-Galerkin方法形成了有效互补。
+
+【应用价值 / Applications】
+该研究为脑血管疾病的血流动力学实时模拟和临床决策支持提供了高效计算工具，可应用于动脉瘤风险评估、手术规划及血流动力学监测等场景。模型降阶技术显著降低了三维CFD仿真的计算成本，使个性化脑血管血流分析在临床应用中的可行性大幅提升。
