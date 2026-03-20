@@ -1,0 +1,24 @@
+---
+title: "A Re-ranking Method using K-nearest Weighted Fusion for Person Re-identification"
+source: "arXiv Computer Vision"
+url: "https://arxiv.org/abs/2509.04050"
+published: "2026-03-20"
+summarized: "2026-03-20T16:13:17.265491"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了一种基于K近邻加权融合（K-nearest Weighted Fusion, KWF）的重排序方法用于行人再识别任务。该方法通过无监督方式选取K个邻近特征进行聚合，生成多视角特征以减少单视角特征带来的视角偏差问题。实验表明，该方法在MSMT17和Occluded-DukeMTMC等挑战性数据集上分别实现了9.8%和22.0%的Rank@1提升，且无需模型微调或额外标注，计算效率显著优于其他重排序方法。
+
+【方法概述 / Method】
+
+该研究提出K近邻加权融合（KWF）重排序框架，核心假设是同一身份的行人特征具有高度相似性。方法首先基于初始检索结果选取K个最近邻特征，然后通过加权聚合策略融合这些邻域特征生成多视角表示，最后利用融合后的特征重新计算相似度进行排序。研究还系统探索了多种权重选择策略以优化聚合效果。
+
+【实验结果 / Results】
+
+实验在Market1501、MSMT17和Occluded-DukeMTMC三个标准数据集上进行，结果表明该方法对初始排序的前M个候选进行重排序时，Rank@1和mAP均有显著提升。特别是在遮挡严重的Occluded-DukeMTMC数据集上取得22.0%的Rank@1提升，在大型数据集MSMT17上提升9.8%。此外，该方法相比现有重排序技术在计算效率方面具有明显优势。
+
+【应用价值 / Applications】
+
+该方法可广泛应用于大规模视频监控系统中的行人检索与追踪场景，如智能安防、跨摄像头人员搜索等。由于无需模型重训练或额外人工标注，该方法具备即插即用的特性，易于部署到现有行人再识别系统中，在提升识别准确率的同时保持较高的计算效率，适合实时性要求较高的实际应用场景。
