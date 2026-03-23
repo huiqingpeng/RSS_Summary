@@ -1,0 +1,30 @@
+---
+title: "Deploying Disaggregated LLM Inference Workloads on Kubernetes"
+source: "NVIDIA Developer Blog"
+url: "https://developer.nvidia.com/blog/deploying-disaggregated-llm-inference-workloads-on-kubernetes/"
+published: "2026-03-23"
+summarized: "2026-03-24T07:13:40.910229"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+本文探讨了在 Kubernetes 上部署**分解式（Disaggregated）大语言模型推理**的技术架构。与传统单体推理不同，该方法将 LLM 推理流程拆分为独立的预填充（Prefill）、解码（Decode）和路由（Routing）阶段，每个阶段作为独立服务运行，可分别配置资源和扩展策略。文章重点介绍了如何通过 Kubernetes 调度能力（如 Gang Scheduling、拓扑感知放置）和高级 API（如 LeaderWorkerSet）来编排这种多角色分布式工作负载。
+
+This article explores the technical architecture of **disaggregated large language model (LLM) inference** deployed on Kubernetes. Unlike traditional monolithic inference, this approach splits the LLM inference pipeline into independent stages—Prefill, Decode, and Routing—each running as separate services with distinct resource configurations and scaling policies. The post focuses on how to orchestrate such multi-role distributed workloads using Kubernetes scheduling capabilities (e.g., Gang Scheduling, topology-aware placement) and high-level APIs like LeaderWorkerSet.
+
+---
+
+【为什么重要 / Why it matters】
+
+分解式推理解决了传统单体部署的核心痛点：**GPU 利用率低下和扩展僵化**。预填充阶段计算密集，而解码阶段受内存带宽限制，两者硬件需求截然不同；强行捆绑导致资源浪费。通过独立扩展各阶段，系统能精准匹配实际流量模式（如长上下文引发的预填充突发），并针对每阶段优化 GPU 选型（高算力 vs. 高带宽内存）。这是 LLM 推理从"能跑"走向"高效、弹性、低成本"的关键演进。
+
+Disaggregated inference addresses core pain points of traditional monolithic deployment: **poor GPU utilization and rigid scaling**. Prefill is compute-intensive while decode is memory-bandwidth-bound, with fundamentally different hardware needs; forcing them together wastes resources. Independent per-stage scaling allows precise matching of actual traffic patterns (e.g., prefill bursts from long contexts) and GPU selection optimized for each stage (high FLOPS vs. fast HBM). This represents a critical evolution from "making LLM inference work" to "making it efficient, elastic, and cost-effective."
+
+---
+
+【我能用什么 / How I can use it】
+
+若你在 Kubernetes 上运行 LLM 推理，可评估 **LeaderWorkerSet (LWS)** 或 **NVIDIA Grove** 等 API 来声明式定义多角色推理应用的结构，并搭配支持**层级 Gang 调度**和**拓扑感知放置**的调度器（如 KAI Scheduler）。具体场景包括：为预填充和解码分别配置 Tensor Parallel 组，利用 NVLink 亲和性减少通信延迟；或基于实际负载独立扩缩容各阶段，避免为峰值预填充过度配置解码资源。对于已有推理框架（如 vLLM、TensorRT-LLM），可调研其是否支持分解式模式及配套的 Kubernetes 集成方案。
+
+If running LLM inference on Kubernetes, evaluate APIs like **LeaderWorkerSet (LWS)** or **NVIDIA Grove** to declaratively define multi-role inference application structures, paired with schedulers supporting **hierarchical gang scheduling** and **topology-aware placement** (e.g., KAI Scheduler). Concrete applications include: configuring separate Tensor Parallel groups for prefill and decode with NVLink affinity to reduce communication latency; or independently scaling each stage based on actual load, avoiding over-provisioning decode resources for prefill peaks. For existing inference frameworks (e.g., vLLM, TensorRT-LLM), investigate their support for disaggregated modes and corresponding Kubernetes integrations.
