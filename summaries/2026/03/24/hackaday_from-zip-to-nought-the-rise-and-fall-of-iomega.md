@@ -1,0 +1,26 @@
+---
+title: "From Zip To Nought: The Rise and Fall of Iomega"
+source: "Hackaday"
+url: "https://hackaday.com/2026/03/24/from-zip-to-nought-the-rise-and-fall-of-iomega/"
+published: "2026-03-24"
+summarized: "2026-03-25T07:05:12.255316"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+
+本文讲述了Iomega公司从1980年成立到2008年被收购的兴衰史——这家以Bernoulli Box和标志性的紫色Zip驱动器闻名的存储技术公司，曾凭借100MB容量的Zip磁盘在1990年代中期成为华尔街宠儿，市值一度接近70亿美元，却因无法应对CD-R、DVD和USB闪存驱动器等替代技术的冲击而迅速衰落。
+
+This article chronicles the rise and fall of Iomega from its founding in 1980 to its 2008 acquisition—a storage technology company famous for the Bernoulli Box and iconic purple Zip drives, which became a Wall Street darling in the mid-1990s with its 100MB Zip disks (peaking at nearly $7 billion valuation) before collapsing under competition from CD-R, DVD, and USB flash drives.
+
+【为什么重要 / Why it matters】
+
+Iomega的案例揭示了技术创新的双刃剑特性：即便拥有真正的工程突破和短暂的市场主导地位，企业若过度依赖单一专有技术而未能预见或适应破坏性替代品，仍会被更便宜、更通用、更简单的解决方案颠覆。这也反映了1990年代末至2000年代初消费电子市场的残酷转型——从机械复杂、封闭生态的存储方案向标准化、低成本、即插即用的技术范式迁移。
+
+Iomega's case illustrates the double-edged nature of technological innovation: even with genuine engineering breakthroughs and temporary market dominance, companies can be disrupted by cheaper, more universal, and simpler alternatives if they over-rely on single proprietary technologies. It also reflects the brutal transition in late-1990s to early-2000s consumer electronics—from mechanically complex, closed-ecosystem storage solutions toward standardized, low-cost, plug-and-play technology paradigms.
+
+【我能用什么 / How I can use it】
+
+作为技术从业者或投资者，可将此作为"创新者窘境"的经典案例分析，用于评估当前AI、区块链等热门领域中的平台风险与替代技术威胁；企业战略层面，应建立技术雷达机制，持续监控成本曲线下降更快、用户体验更简化的潜在颠覆者，避免在单一产品成功时过度扩张产能与人员；个人技能发展上，则需警惕对任何单一技术栈的深度依赖，保持对跨平台、开源、标准化趋势的敏感度。
+
+For technologists or investors, use this as a classic "Innovator's Dilemma" case study to evaluate platform risks and alternative technology threats in current hot fields like AI or blockchain; at the corporate strategy level, establish technology radar mechanisms to continuously monitor potential disruptors with faster-declining cost curves and simplified user experiences, avoiding overexpansion during single-product success; for personal skill development, remain vigilant against deep dependency on any single technology stack, maintaining sensitivity to cross-platform, open-source, and standardization trends.

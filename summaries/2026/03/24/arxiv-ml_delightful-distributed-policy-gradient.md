@@ -1,0 +1,24 @@
+---
+title: "Delightful Distributed Policy Gradient"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.20521"
+published: "2026-03-24"
+summarized: "2026-03-25T07:10:57.326008"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了**Delightful Policy Gradient (DG)**，一种用于分布式强化学习的新方法，解决从陈旧、有缺陷或不匹配的actor收集的数据中学习的问题。核心洞见是：高惊讶度（surprisal）的失败会主导更新方向但携带很少有用信号，而高惊讶度的成功则揭示当前策略会错过的机会。DG通过"delight"（优势与惊讶度的乘积）来门控每次更新，抑制罕见失败、放大罕见成功，无需行为概率。在多种污染采样场景下，DG的梯度与真实梯度的余弦相似度随策略改进而增长，而标准策略梯度则崩溃。
+
+【方法概述 / Method】
+
+DG的核心机制是用**delight = advantage × surprisal**替代标准策略梯度中的权重。当优势与惊讶度同号时（罕见成功，两者皆正），delight为正且放大更新；当异号时（罕见失败，优势负、惊讶度正），delight为负且抑制更新。这与重要性采样等盲目重加权方法不同——DG利用优势的符号信息来区分"好惊讶"与"坏惊讶"，且不依赖行为概率的精确知识。
+
+【实验结果 / Results】
+
+在MNIST分类任务模拟陈旧数据的实验中，**无需离策略校正的DG优于使用精确行为概率的重要性加权PG**。在Transformer序列任务上，面对陈旧性、actor缺陷、奖励损坏和罕见发现四种摩擦同时作用时，DG实现了约**10倍的误差降低**；当所有四种摩擦共同作用时，其计算优势达到**数量级提升且随任务复杂度增长**。
+
+【应用价值 / Applications】
+
+DG特别适用于**大规模分布式RL系统**，如游戏AI（OpenAI Five、AlphaStar）、机器人控制和语言模型RLHF训练，这些场景中actor-learner延迟、异构硬件和软件缺陷不可避免。该方法无需精确的行为概率即可有效学习，降低了对分布式基础设施的同步要求，为构建更鲁棒、可扩展的分布式RL系统提供了新范式。

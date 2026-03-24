@@ -1,0 +1,27 @@
+---
+title: "ESP-IDF v6.0 framework adds support for ESP32-C5 and ESP32-C61, preview for ESP32-H21 and ESP32-H4"
+source: "CNX Software"
+url: "https://www.cnx-software.com/2026/03/24/esp-idf-v6-0-framework-adds-support-for-esp32-c5-and-esp32-c61-preview-for-esp32-h21-and-esp32-h4/"
+published: "2026-03-24"
+summarized: "2026-03-25T07:03:20.569547"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+乐鑫科技（Espressif Systems）发布了 ESP-IDF v6.0 开发框架，为 ESP32-C5 和 ESP32-C61 芯片提供稳定支持，同时为 ESP32-H21 和 ESP32-H4 低功耗无线微控制器提供预览支持。该版本引入了全新的安装管理器、更轻量的 C 标准库、安全升级、Wi-Fi 增强功能以及安全的引导加载程序 OTA 更新能力。
+
+Espressif Systems released the ESP-IDF v6.0 framework with stable support for ESP32-C5 and ESP32-C61 SoCs, plus preview support for ESP32-H21 and ESP32-H4 low-power wireless microcontrollers. This version introduces a new installation manager, a lighter C standard library, security upgrades, Wi-Fi enhancements, and safe bootloader OTA update capabilities.
+
+---
+
+【为什么重要 / Why it matters】
+ESP-IDF v6.0 标志着乐鑫物联网开发生态系统的重大演进，通过 Picolibc 替代 Newlib 显著降低内存占用，同时升级至 MbedTLS 4.x 和 PSA Crypto API 以应对现代安全合规要求。新增的 MCP 服务器支持使 AI 辅助编程工具能够深度理解项目结构，而 Wi-Fi Aware USD 和 WPA3 兼容模式则拓展了设备在邻近感知和混合安全网络场景中的应用潜力。
+
+ESP-IDF v6.0 represents a significant evolution of Espressif's IoT development ecosystem, dramatically reducing memory footprint by replacing Newlib with Picolibc while upgrading to MbedTLS 4.x and PSA Crypto API to meet modern security compliance requirements. The added MCP server support enables AI-assisted programming tools to deeply understand project structures, while Wi-Fi Aware USD and WPA3 compatible mode expand device applications in proximity-aware and mixed-security network scenarios.
+
+---
+
+【我能用什么 / How I can use it】
+开发者可通过 ESP-IDF Installation Manager（EIM）简化跨平台安装流程，并利用 CMakePresets.json 管理多环境构建配置以提升 CI/CD 效率；针对资源受限项目，可迁移至 Picolibc 获取性能优化，同时评估遗留加密代码向 PSA Crypto API 的迁移需求。对于 AI 辅助开发场景，建议启用内置 MCP 服务器以增强 VS Code Copilot 或 Cursor 等工具对 ESP-IDF 项目的上下文理解能力。
+
+Developers can streamline cross-platform installation via the ESP-IDF Installation Manager (EIM) and utilize CMakePresets.json for multi-environment build configurations to improve CI/CD efficiency; for resource-constrained projects, migrate to Picolibc for performance gains while evaluating legacy cryptographic code migration to PSA Crypto APIs. For AI-assisted development scenarios, enable the built-in MCP server to enhance contextual understanding of ESP-IDF projects in tools like VS Code Copilot or Cursor.
