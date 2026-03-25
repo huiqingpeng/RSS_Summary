@@ -1,0 +1,24 @@
+---
+title: "Large Language Models for Missing Data Imputation: Understanding Behavior, Hallucination Effects, and Control Mechanisms"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.22332"
+published: "2026-03-25"
+summarized: "2026-03-26T07:12:27.299317"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本研究系统评估了大型语言模型（LLMs）在表格数据缺失值填补任务中的性能表现。通过对比五种主流LLM与六种传统填补方法在29个数据集（含9个合成数据集）上的零样本提示工程表现，研究发现Gemini 3.0 Flash和Claude 4.5 Sonnet等领先模型在真实世界开源数据集上 consistently 优于传统方法，但这种优势依赖于预训练阶段对领域特定模式的语义学习；而在合成数据集上，传统统计方法如MICE表现更佳。研究同时揭示了LLM填补在计算成本和货币成本方面的显著trade-off。
+
+【方法概述 / Method】
+
+研究采用零样本提示工程方法，在MCAR（完全随机缺失）、MAR（随机缺失）和MNAR（非随机缺失）三种缺失机制下，对五种广泛使用的LLM（包括Gemini 3.0 Flash、Claude 4.5 Sonnet等）与六种SOTA传统填补基线进行大规模对比实验。实验设计涵盖20个真实世界开源数据集和9个合成数据集，缺失率最高达20%，通过标准化实验协议解决以往研究在可扩展性、跨模型比较和缺失机制处理不一致方面的局限。
+
+【实验结果 / Results】
+
+实验表明，领先LLM在真实世界数据集上 consistently 超越传统方法，但在合成数据集上传统方法（如MICE）表现更优，证实LLM的有效性源于语义上下文理解而非纯统计重建。研究同时量化了显著的效率trade-off：LLM在填补质量上占优，但计算时间和货币成本显著更高。此外，研究识别出LLM的"幻觉效应"——即模型可能生成看似合理但与数据生成分布不一致的填补值。
+
+【应用价值 / Applications】
+
+该研究为数据科学从业者选择缺失值填补策略提供了实证指导：对于富含语义信息的复杂真实世界表格数据，LLM可作为高质量但高成本的语义驱动填补工具；而对于结构简单或缺乏领域背景的数据，传统统计方法更具成本效益。研究建立的系统benchmark框架和实验协议也为后续LLM-based数据清洗、数据增强及可解释性AI研究奠定了基础。

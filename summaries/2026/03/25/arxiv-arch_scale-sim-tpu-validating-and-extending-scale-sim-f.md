@@ -1,0 +1,20 @@
+---
+title: "SCALE-Sim TPU: Validating and Extending SCALE-Sim for TPUs"
+source: "arXiv Computer Architecture"
+url: "https://arxiv.org/abs/2603.22535"
+published: "2026-03-25"
+summarized: "2026-03-26T07:05:44.700391"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了SCALE-Sim TPU，一个经过验证和扩展的SCALE-Sim v3版本，专门用于TPU风格加速器。研究通过Google TPU v4硬件测量验证了SCALE-Sim的脉动GEMM模型，并建立了模拟周期数与硬件延迟之间的强线性相关关系。此外，作者为非脉动逐元素操作引入了轻量级学习延迟模型，并集成了StableHLO前端以支持现代ML框架的直接模拟，显著提升了全模型性能分析的保真度、覆盖范围和实用性。
+
+【方法概述 / Method】
+论文采用硬件验证与学习建模相结合的方法：首先通过TPU v4真实测量数据验证脉动阵列GEMM模拟的准确性；其次利用张量大小和形状特征训练轻量级神经网络，为逐元素操作建立数据驱动的延迟预测模型；最后通过StableHLO中间表示实现与JAX、PyTorch等现代ML编译器栈的无缝集成。
+
+【实验结果 / Results】
+实验表明SCALE-Sim的模拟周期数与TPU v4硬件延迟呈现强线性相关性，支持简单的周期-延迟映射转换。对于非脉动操作，学习延迟模型实现了低于3%的中位数相对误差，显著改善了端到端延迟估计精度。StableHLO前端集成使得现代ML框架工作负载可直接用于模拟，无需手动转换。
+
+【应用价值 / Applications】
+该研究为TPU架构设计和优化提供了高保真度的性能分析工具，可用于神经网络模型在部署前的性能预测与瓶颈分析。StableHLO集成大幅降低了模拟使用门槛，使机器学习工程师和编译器开发者能够在标准开发流程中直接评估模型在TPU上的执行效率，加速硬件-软件协同设计迭代。

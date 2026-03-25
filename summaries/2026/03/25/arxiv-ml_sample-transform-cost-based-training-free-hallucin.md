@@ -1,0 +1,20 @@
+---
+title: "Sample Transform Cost-Based Training-Free Hallucination Detector for Large Language Models"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.22303"
+published: "2026-03-25"
+summarized: "2026-03-26T07:09:07.201822"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了一种基于样本变换成本的无训练幻觉检测器，用于识别大型语言模型（LLM）中的幻觉问题。核心思想是利用LLM与提示词定义的分布复杂度作为幻觉指标，通过计算样本间token嵌入的最优传输距离（Wasserstein距离）来量化该分布复杂度。由此推导出两个互补信号：AvgWD（平均成本）和EigenWD（成本复杂度），实验表明这两种信号在多个模型和数据集上与强不确定性基线方法具有竞争力，且表现出互补行为。
+
+【方法概述 / Method】
+该方法将LLM生成的多个响应样本视为离散分布，通过计算样本间token嵌入集合的最优传输距离构建Wasserstein距离矩阵。基于该矩阵提取两个检测信号：AvgWD衡量样本间的平均变换成本，EigenWD通过特征值分析捕捉成本矩阵的复杂度结构。对于黑盒LLM，采用可访问的教师模型进行强制教学（teacher forcing）来扩展框架适用性。
+
+【实验结果 / Results】
+AvgWD和EigenWD在幻觉检测任务上与现有的强不确定性基线方法表现相当，且两者在不同模型和数据集上展现出互补的检测特性。实验验证了基于分布复杂度的信号能够有效区分LLM的真实输出与幻觉内容，无需任何训练过程即可实现可靠的幻觉检测。
+
+【应用价值 / Applications】
+该检测器具有轻量级、无需训练的优势，可广泛部署于各类LLM系统以增强可信度，特别适用于资源受限或无法访问模型内部参数的场景。对于黑盒API模型，通过教师模型扩展使其具备实际部署潜力，为LLM安全应用（如事实核查、问答系统、内容生成审核）提供高效的幻觉风险预警机制。
