@@ -1,0 +1,23 @@
+---
+title: "3D Printed Wire Stripper Uses PLA Blades"
+source: "Hackaday"
+url: "https://hackaday.com/2026/03/26/3d-printed-wire-stripper-uses-pla-blades/"
+published: "2026-03-26"
+summarized: "2026-03-27T07:11:58.807201"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+这是一篇介绍 Da_Rius 设计的 3D 打印剥线钳的文章。该工具的创新之处在于其切割绝缘层的刀片并非金属材质，而是用 PLA 塑料 3D 打印而成，配合少量金属紧固件、热熔螺母和弹簧即可组装完成。
+
+This article introduces a 3D-printed wire stripper designed by Da_Rius. The innovation lies in its insulation-cutting blades, which are made from 3D-printed PLA plastic rather than metal, requiring only a few metal fasteners, heat-set inserts, and springs for assembly.
+
+【为什么重要 / Why it matters】
+这一设计挑战了"切割工具必须用金属"的固有认知，展示了 3D 打印材料在功能性工具中的潜力。对于电子爱好者和创客社区而言，它降低了专业工具的获取门槛，同时体现了 DIY 文化中"自制工具"的成就感和社交价值。
+
+This design challenges the conventional assumption that cutting tools must be metal, demonstrating the potential of 3D-printed materials in functional tools. For electronics enthusiasts and the maker community, it lowers the barrier to obtaining professional tools while embodying the sense of accomplishment and social value of "making your own tools" in DIY culture.
+
+【我能用什么 / How I can use it】
+可以参考此设计思路，尝试用 3D 打印替代传统金属零件制作轻负载工具；若需定制弹簧，可借鉴作者的六角扳手+打印夹具方案来弯折弹簧钢丝；此外，可进一步探索不同塑料材质（如 PETG、尼龙）对刀片耐用性的影响。
+
+You can adopt this design approach to replace traditional metal parts with 3D-printed components for light-duty tools; if custom springs are needed, refer to the author's hex key + printed jig method for bending spring wire; additionally, explore how different plastics (such as PETG or nylon) might affect blade durability.
