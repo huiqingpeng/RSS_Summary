@@ -1,0 +1,15 @@
+---
+title: "Making a Nichrome Wirewound Power Resistor"
+source: "Hackaday"
+url: "https://hackaday.com/2026/03/28/making-a-nichrome-wirewound-power-resistor/"
+published: "2026-03-28"
+fetched: "2026-03-29T07:01:55.982835"
+---
+
+Although not really a cost-effective or a required skill unless you have some very specific needs not met by off-the-shelf power resistor options, making your own own wirewound power resistor is definitely educational, as well as a fascinating look at a common part that few people spare a thought on. Cue [TheElectronBench]’s video tutorial on how to make one of these components from scratch.
+The resistance value is determined by the length of nichrome wire, which is an alloy of nickel and chromium (NiCr) with a resistivity of around 1.12 µΩ/m. It’s also extremely durable when heated, as it forms a protective outer layer of chromium oxide. This makes it suitable for very high power levels, but also requires the rest of the power resistor assembly to be able to take a similar punishment.
+For the inner tube of this DIY power resistor a tube of alumina ceramic was used, around which the nichrome wire is wound. This resistor targets 15 Ohm at a maximum load of 50 Watt, this means a current of about 1.83 A is expected at 27.4 V. The used nichrome wire has a measured resistance of 10.4 Ohm, ergo 1.44 meter has to be cut and wound.
+This entire assembly is then embedded in refractory cement (fireproof cement), as this will keep the wire in place, while also able to take the intense temperature cycling during operation. As a bonus this will prevent toasting the surrounding environment too much, never mind lighting things on fire as the nichrome wire heats up.
+As explained in the video, this is hardly the only way to create such a power resistor, with multiple types of alternative alloys available, different cores to wind around and various options to embed the assembly. The demonstrated method is however one that should give solid results and be well within the capabilities and budget of a hobbyist.
+An important point with nichrome is that you cannot really solder to it, so you’ll need something along the lines of a mechanical (crimping) connection. There are also different winding methods that can affect the inductance of the resistor, since this type of resistor is by its design also a coil. This is however not covered in the video as for most applications it’s not an issue.
+Overall, this video tutorial would seem to be a solid introduction to nichrome power resistors, including coverage of many issues you may encounter along the way. Feel free to sound off in the comment section with your own experiences with power resistors, especially if you made them as well.
