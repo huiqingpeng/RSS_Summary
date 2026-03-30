@@ -1,0 +1,24 @@
+---
+title: "PQuantML: A Tool for End-to-End Hardware-aware Model Compression"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.26595"
+published: "2026-03-30"
+summarized: "2026-03-31T07:25:50.464495"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+PQuantML 是一个开源的硬件感知神经网络模型压缩库，专为端到端工作流设计。该工具通过统一接口支持剪枝和量化的联合或单独应用，简化了压缩模型的训练过程。论文在大型强子对撞机（LHC）实时数据处理的边缘计算任务——喷注子结构分类（jet tagging）上进行了评估，结果表明 PQuantML 在保持准确性的同时实现了显著的参数量和位宽缩减，并与 QKeras 和 HGQ 等现有工具进行了对比。
+
+【方法概述 / Method】
+
+PQuantML 实现了多种不同粒度级别的剪枝方法，以及支持高粒度量化（High-Granularity Quantization）的定点量化技术。该库允许用户灵活选择剪枝与量化的组合方式，包括单独应用或联合优化，并通过统一的编程接口简化了端到端的模型压缩流程。
+
+【实验结果 / Results】
+
+在喷注标记任务上，PQuantML 结合多种剪枝方法与定点量化，在大幅降低模型参数量和位宽的同时保持了模型准确性。实验还将 PQuantML 的压缩效果与 QKeras 和 HGQ 等现有工具进行了比较分析。
+
+【应用价值 / Applications】
+
+PQuantML 主要面向具有严格延迟约束的边缘计算环境，如高能物理实验中的实时数据处理场景。该工具可广泛应用于需要在资源受限硬件上部署高性能机器学习模型的领域，为科学计算和工业边缘AI部署提供高效的模型压缩解决方案。

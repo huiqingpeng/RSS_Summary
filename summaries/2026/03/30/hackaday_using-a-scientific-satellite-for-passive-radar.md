@@ -1,0 +1,27 @@
+---
+title: "Using a Scientific Satellite for Passive Radar"
+source: "Hackaday"
+url: "https://hackaday.com/2026/03/30/using-a-scientific-satellite-for-passive-radar/"
+published: "2026-03-30"
+summarized: "2026-03-31T07:05:03.914276"
+ai_provider: "openai"
+---
+
+【是什么 / What it is】
+这篇文章介绍了如何利用NASA与ISRO联合研制的NISAR合成孔径雷达卫星作为信号源，构建被动雷达系统。作者Jean-Michel Friedt使用SDR（软件定义无线电）和树莓派接收卫星发射的L波段啁啾雷达信号，通过双天线设计分离直射信号与地面反射信号，从而生成地形图像。这是一种无需自己发射信号、借助现有天基RF源实现雷达成像的创新方法。
+
+This article describes how to build a passive radar system using the NISAR synthetic-aperture radar satellite—jointly developed by NASA and ISRO—as the signal source. Author Jean-Michel Friedt used an SDR (software-defined radio) and Raspberry Pi to receive the satellite's L-band chirp radar signals, employing a dual-antenna setup to separate direct signals from ground reflections to generate terrain images. This is an innovative approach that achieves radar imaging without transmitting any signals of one's own, instead leveraging existing space-based RF sources.
+
+---
+
+【为什么重要 / Why it matters】
+这项技术大幅降低了雷达系统的门槛：无需昂贵的发射设备和频谱许可，仅需几百美元的SDR和自制天线即可实现卫星级别的雷达成像。它展示了"机会信号"（signals of opportunity）在遥感领域的潜力，同时为教育、业余科研和低成本监测应用开辟了新路径。此外，它验证了商用GNSS天线接收专业雷达信号的可行性，模糊了专业与业余设备之间的界限。
+
+This technology dramatically lowers the barrier to radar systems: no expensive transmitters or spectrum licenses are needed—just a few hundred dollars' worth of SDRs and homemade antennas can achieve satellite-grade radar imaging. It demonstrates the potential of "signals of opportunity" in remote sensing while opening new avenues for education, amateur research, and low-cost monitoring applications. Additionally, it validates that commercial GNSS antennas can receive professional radar signals, blurring the line between professional and amateur equipment.
+
+---
+
+【我能用什么 / How I can use it】
+爱好者可以复现该方案，使用MAX2771等低成本SDR模块配合树莓派搭建自己的被动雷达，用于监测本地地形变化或实验雷达信号处理。可进一步探索其他卫星信号源（如SAR卫星、通信卫星）或地面发射源（如数字电视、5G基站）的被动雷达应用。若对空中目标跟踪感兴趣，可参考ADS-B同步的被动雷达方案；同时需注意研究当地无线电法规，避免潜在法律风险。
+
+Hobbyists can replicate this setup using low-cost SDR modules like the MAX2771 paired with a Raspberry Pi to build their own passive radar for monitoring local terrain changes or experimenting with radar signal processing. Further exploration could include other satellite sources (SAR satellites, communication satellites) or terrestrial transmitters (digital TV, 5G base stations) for passive radar applications. For those interested in aerial target tracking, ADS-B-synchronized passive radar systems are worth investigating; meanwhile, be sure to research local radio regulations to avoid potential legal issues.

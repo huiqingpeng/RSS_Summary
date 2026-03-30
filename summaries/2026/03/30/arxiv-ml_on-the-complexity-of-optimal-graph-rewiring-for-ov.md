@@ -1,0 +1,24 @@
+---
+title: "On the Complexity of Optimal Graph Rewiring for Oversmoothing and Oversquashing in Graph Neural Networks"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.26140"
+published: "2026-03-30"
+summarized: "2026-03-31T07:22:23.868344"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文从理论角度研究了图神经网络（GNN）中图结构优化的计算复杂性。作者将缓解过平滑（oversmoothing）和过挤压（oversquashing）问题分别形式化为基于谱间隙（spectral gap）和传导率（conductance）的图优化问题，并证明这两个问题的精确优化均为NP-hard，其判定版本为NP-complete。这些结果为理解图重连（graph rewiring）在GNN优化中的基本极限提供了理论基础，并为实践中使用近似算法和启发式方法提供了理论依据。
+
+【方法概述 / Method】
+
+作者采用计算复杂性理论的分析方法，通过从经典NP-hard问题——最小二分（Minimum Bisection）问题进行归约，证明了过平滑缓解问题（基于最大化谱间隙）和过挤压缓解问题（基于最小化图传导率）的NP-hard性。具体而言，分别构造了从最小二分到这两个问题的多项式时间归约，建立了严格的复杂性理论结果。
+
+【实验结果 / Results】
+
+本文主要为理论工作，核心结果是证明了：（1）基于谱间隙的过平滑缓解优化问题是NP-hard的；（2）基于传导率的过挤压缓解优化问题同样是NP-hard的；（3）这两个问题的判定版本均为NP-complete。这些结果表明，不存在多项式时间算法能够精确求解最优图重连问题（除非P=NP）。
+
+【应用价值 / Applications】
+
+该研究为GNN中的图重连技术提供了重要的理论指导：一方面解释了为何现有方法多采用启发式策略而非精确算法，另一方面为未来设计具有可证明近似保证的算法奠定了基础。研究结果适用于需要深度GNN架构的应用场景，如分子性质预测、社交网络分析和知识图谱推理等，帮助研究者更合理地设计图结构优化策略。

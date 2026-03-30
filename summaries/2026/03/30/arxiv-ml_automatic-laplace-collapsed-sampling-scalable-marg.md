@@ -1,0 +1,24 @@
+---
+title: "Automatic Laplace Collapsed Sampling: Scalable Marginalisation of Latent Parameters via Automatic Differentiation"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.26644"
+published: "2026-03-30"
+summarized: "2026-03-31T07:26:28.847133"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出自动拉普拉斯折叠采样（ALCS），一种利用自动微分对贝叶斯模型中潜在参数进行边缘化的通用框架，并与嵌套采样结合以稳健高效地探索超参数空间。ALCS通过最大后验（MAP）优化和拉普拉斯近似将高维潜在变量折叠为标量贡献，将有效维度从$d_\theta + d_z$降至仅$d_\theta$，使高维设置下的贝叶斯证据计算变得可行。该方法还扩展到Student-t等参数族以处理重尾潜在变量，并通过GPU并行化实现大规模应用。
+
+【方法概述 / Method】
+
+ALCS的核心方法是在嵌套采样的每次似然评估中，使用自动微分计算MAP估计和Hessian矩阵，通过拉普拉斯近似对潜在变量$z$进行解析边缘化。MAP优化和Hessian评估在GPU硬件上跨存活点并行化，且自动微分支持超越高斯近似的局部参数近似（如Student-t分布）。
+
+【实验结果 / Results】
+
+作者在层次模型、时间序列模型和离散似然模型等多种基准上验证了ALCS，确定了高斯近似成立的场景，并建立了事后有效样本量（ESS）诊断方法，可在无需昂贵联合采样的情况下定位超参数空间中的失败区域。实验表明Student-t近似能改善重尾潜在变量的证据估计。
+
+【应用价值 / Applications】
+
+ALCS为复杂贝叶斯模型（如包含大量潜在变量的层次模型和时间序列模型）的证据计算和模型选择提供了可扩展的自动化解决方案，无需手工推导梯度或Hessian，降低了贝叶斯推断的工程门槛。其GPU并行化能力使其适用于大规模机器学习应用，而灵活的近似框架可适应不同数据特性。
