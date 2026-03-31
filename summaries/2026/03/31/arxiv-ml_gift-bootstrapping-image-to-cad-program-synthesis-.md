@@ -1,0 +1,24 @@
+---
+title: "GIFT: Bootstrapping Image-to-CAD Program Synthesis via Geometric Feedback"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.27448"
+published: "2026-03-31"
+summarized: "2026-04-01T07:24:23.345833"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+
+本文提出了 Geometric Inference Feedback Tuning (GIFT)，一种利用几何反馈将测试时计算转化为高质量训练样本的数据增强框架，用于解决图像到CAD程序合成中训练数据稀缺的问题。GIFT 包含两种机制：Soft-Rejection Sampling (GIFT-REJECT) 保留多样性的高保真程序，以及 Failure-Driven Augmentation (GIFT-FAIL) 将近失败预测转化为合成训练样本。该方法在减少80%推理计算的同时，将平均IoU提升了12%，且无需额外人工标注或专门架构即可与复杂多模态系统竞争。
+
+【方法概述 / Method】
+
+GIFT 通过几何反馈实现自举式数据增强，将测试时的推理搜索摊销到模型参数中。核心机制包括：GIFT-REJECT 采用软拒绝采样策略，保留与视觉几何对齐的多样化程序而非仅匹配精确真值；GIFT-FAIL 则分析几何验证失败的近 miss 案例，生成针对性合成训练数据以增强对复杂几何的鲁棒性。
+
+【实验结果 / Results】
+
+实验表明，GIFT 相比强监督基线将平均IoU提升12%，同时实现80%的推理计算削减。该方法在保持与更复杂多模态系统竞争力的同时，无需额外人工标注或专门架构设计，有效验证了测试时计算向训练数据转化的可行性。
+
+【应用价值 / Applications】
+
+GIFT 为生成式CAD设计提供了可扩展的数据高效训练范式，降低了工程数据集收集的高昂成本门槛。其方法可推广至其他需要视觉-符号对齐的程序合成任务，如机器人操作规划、三维场景理解等，为工业设计和智能制造中的自动化建模工具开发奠定基础。
