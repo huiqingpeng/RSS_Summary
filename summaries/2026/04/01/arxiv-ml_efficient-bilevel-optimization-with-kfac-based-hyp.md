@@ -1,0 +1,20 @@
+---
+title: "Efficient Bilevel Optimization with KFAC-Based Hypergradients"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.29108"
+published: "2026-04-01"
+summarized: "2026-04-02T07:15:32.391877"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文针对双层优化（Bilevel Optimization, BO）中的超梯度计算瓶颈问题，提出了一种基于Kronecker分解近似曲率（KFAC）的高效方法。现有方法如共轭梯度法（CG）或Neumann级数展开往往忽略曲率信息或使用粗糙近似，而本文方法通过隐函数定理结合KFAC，在保持较低内存和计算开销的同时提供曲率感知的超梯度估计。实验表明，该方法在元学习和AI安全等任务上，于BERT规模的模型中均展现出优于传统方法的性能-效率权衡。
+
+【方法概述 / Method】
+论文基于隐函数定理（IFT）的双层优化框架，将KFAC近似引入Hessian逆-向量积（IHVP）的计算中。KFAC通过Kronecker因子分解对Hessian矩阵进行低秩近似，避免了精确求逆的高昂代价，同时保留了二阶曲率信息，实现了比共轭梯度和短Neumann展开更精确且高效的超梯度估计。
+
+【实验结果 / Results】
+在多种任务（包括元学习和AI安全）及最大至BERT规模的模型上的评估显示，KFAC-based方法在准确性和计算效率之间取得了更优的平衡。相比无曲率信息的梯度展开（unrolling）方法，该方法性能持续提升；相比CG和Neumann方法，则在相近或更低的内存与运行时间开销下获得更好的优化效果，证明了曲率信息在大规模模型中的价值。
+
+【应用价值 / Applications】
+该方法可广泛应用于需要双层优化的机器学习场景，如神经网络架构搜索、超参数优化、元学习和模型对齐等AI安全任务。其高效性和可扩展性使其特别适合大规模预训练模型（如BERT级别）的实际部署，为资源受限环境下的复杂优化问题提供了实用解决方案。

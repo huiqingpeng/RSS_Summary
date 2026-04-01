@@ -1,0 +1,20 @@
+---
+title: "Quality-Controlled Active Learning via Gaussian Processes for Robust Structure-Property Learning in Autonomous Microscopy"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.29135"
+published: "2026-04-01"
+summarized: "2026-04-02T07:15:39.202360"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了一种质量控制的门控主动学习框架，用于解决自主显微镜系统中低质量噪声数据影响结构-性能学习任务的问题。该方法将好奇心驱动的采样与基于简谐振子模型拟合的物理信息质量过滤器相结合，能够在数据采集过程中自动排除低保真度数据。在PbTiO₃薄膜的带激励压电响应谱（BEPS）数据集上的评估表明，该方法优于随机采样、标准主动学习和多任务学习策略，并在BiFeO₃薄膜的实时实验中验证了其有效性。
+
+【方法概述 / Method】
+论文采用高斯过程（Gaussian Processes）作为基础模型，构建了一个门控主动学习框架。该框架的核心是引入基于简谐振子（Simple Harmonic Oscillator）模型拟合的物理信息质量控制器，作为数据筛选的门控机制，在采样阶段过滤掉低质量测量数据。主动学习策略采用好奇心驱动的不确定性采样，结合质量门控实现智能数据获取。
+
+【实验结果 / Results】
+在含有空间局部化噪声的预采集BEPS数据集上，门控方法在Image-to-Spectrum（Im2Spec）和Spectrum-to-Image（Spec2Im）任务中均显著优于基线方法。标准主动学习器常将噪声误解释为不确定性，从而采集有害样本降低性能，而门控方法通过噪声处理提升了前向和逆向预测的可靠性。该方法还在BiFeO₃薄膜的实时自主显微镜实验中成功部署，证明了实际应用可行性。
+
+【应用价值 / Applications】
+该研究为自驱动实验室的混合自主模式提供了技术支撑，适用于材料科学中需要高精度结构-性能关系学习的自主实验系统，如压电材料表征、功能材料筛选等。通过物理信息质量评估与主动决策的协同，该方法可推广至其他存在测量噪声的自主科学发现场景，提升实验效率和数据可靠性。

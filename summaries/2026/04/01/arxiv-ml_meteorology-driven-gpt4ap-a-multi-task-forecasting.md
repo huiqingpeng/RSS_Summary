@@ -1,0 +1,20 @@
+---
+title: "Meteorology-Driven GPT4AP: A Multi-Task Forecasting LLM for Atmospheric Air Pollution in Data-Scarce Settings"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2603.29974"
+published: "2026-04-01"
+summarized: "2026-04-02T07:21:27.315984"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文提出了GPT4AP（Meteorology-Driven GPT for Air Pollution），一种基于预训练GPT-2骨干网络和rsLoRA参数高效微调的多任务空气污染预测框架。该模型通过冻结自注意力和前馈层、仅适配轻量级位置编码和输出模块，显著减少可训练参数数量。在少样本（10%数据）、零样本跨站点迁移和长期预测三种设置下，GPT4AP在数据稀缺场景中展现出优于DLinear和ETSformer等基线模型的泛化能力，同时在数据充足场景下保持竞争力。
+
+【方法概述 / Method】
+GPT4AP采用预训练的GPT-2作为骨干网络，结合高斯秩稳定低秩自适应（rsLoRA）技术进行参数高效微调。具体实现上，模型冻结核心Transformer层的自注意力和前馈网络，仅训练轻量级的位置编码适配模块和任务特定的输出头，从而在大幅降低计算开销的同时保留预训练知识。
+
+【实验结果 / Results】
+在少样本场景（10%训练数据）下，GPT4AP平均MSE/MAE达到0.686/0.442，优于DLinear（0.728/0.530）和ETSformer（0.734/0.505）；在零样本跨站点迁移中，平均MSE/MAE为0.529/0.403，展现出更强的域泛化能力；在完整数据长期预测中，平均MAE为0.429，与专用时间序列模型性能相当。
+
+【应用价值 / Applications】
+该研究为监测站点稀疏地区（如发展中国家或偏远区域）的空气污染预测提供了实用解决方案，可支持环境监测部门的决策制定和公共健康预警。其参数高效设计使得在边缘设备或计算资源受限环境中部署大规模语言模型进行污染预报成为可能，具有显著的实际推广价值。
