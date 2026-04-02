@@ -1,0 +1,20 @@
+---
+title: "PASM: Population Adaptive Symbolic Mixture-of-Experts Model for Cross-location Hurricane Evacuation Decision Prediction"
+source: "arXiv Machine Learning"
+url: "https://arxiv.org/abs/2604.00074"
+published: "2026-04-02"
+summarized: "2026-04-03T07:17:10.099580"
+ai_provider: "openai"
+---
+
+【论文摘要 / Abstract】
+本文针对飓风疏散决策预测中的跨区域泛化难题，提出了一种名为PASM（Population-Adaptive Symbolic Mixture-of-Experts）的新方法。研究发现，传统模型在一个地区训练后难以迁移到其他地区，原因在于相似特征的家庭在不同州呈现系统性的决策差异，而非简单的特征分布偏移。PASM通过结合大语言模型引导的符号回归与混合专家架构，实现了可解释的闭式决策规则发现与自适应子群体专业化。在Hurricanes Harvey和Irma数据集上，仅用100个校准样本从佛罗里达/德克萨斯迁移到佐治亚州，PASM的Matthews相关系数达到0.607，显著优于XGBoost、TabPFN、GPT-5-mini及元学习基线方法，同时消除了人口统计学上的公平性差异。
+
+【方法概述 / Method】
+PASM采用双层架构：首先利用大语言模型（LLM）引导符号回归自动生成人类可读的数学表达式作为候选决策规则；其次构建混合专家（Mixture-of-Experts）网络，通过数据驱动的路由机制将输入样本分配给最适合的专家模块。该路由机制能够识别行为模式不同的子群体，并为每个子群体分配 distinct 的公式原型，实现推理时的自适应专业化。
+
+【实验结果 / Results】
+在跨州迁移任务中（佛罗里达/德克萨斯→佐治亚州），PASM在仅100个目标域校准样本的条件下取得MCC=0.607，相比XGBoost（0.404）、TabPFN（0.333）、GPT-5-mini（0.434）及MAML/原型网络（≤0.346）均有显著提升。路由机制成功将不同公式原型分配给不同子群体，使行为画像直接可解释。经Bonferroni校正后的公平性审计显示，四个人口统计维度上均无统计显著性差异。
+
+【应用价值 / Applications】
+PASM可应用于应急管理部门的飓风疏散规划，提供透明、可解释的决策支持工具，帮助政策制定者理解不同社区群体的疏散行为模式。该方法特别适用于数据稀缺的跨区域灾害响应场景，能够在有限本地样本下快速适配新地区，同时保证算法公平性，避免对弱势群体的系统性误判，支持资源分配与疏散指令的精准化制定。
